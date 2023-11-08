@@ -34,15 +34,15 @@ header {
 }
 
 .header-center h1 {
-    font-size: 5.5rem;
+    font-size: 5.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    font-family: cursive;
-    margin-bottom: -0.3rem;
+    margin-bottom: -1.2rem;
 }
 
 .header-center p {
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
