@@ -56,3 +56,66 @@ header {
     margin-bottom: 15rem;
     color: transparent;
 }
+
+/* hero section styling */
+
+.hero-section {
+    margin-top: 5rem;
+}
+
+.hero-section-text-content-heading {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.hero-section-text-content-sub-heading {
+    margin-bottom: 4rem;
+}
+
+.hero-section-text-content-sub-heading p {
+    margin: auto;
+    width: 85%;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(105, 105, 105);
+    line-height: 3rem;
+}
+
+.flag {
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: white;
+}
+
+/* states container */
+.states-container {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.states-restaurant {
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.19);
+    padding: 20px 18px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.states-restaurant p {
+    font-size: 1.3rem;
+}
+
+.states-restaurant img {
+    width: 15px;
+}
+
+.states-restaurant:hover {
+    box-shadow: 1.8px 1.8px 9px rgba(0, 0, 0, 0.2);
+}
