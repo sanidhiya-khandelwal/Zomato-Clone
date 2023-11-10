@@ -122,6 +122,7 @@ header {
 }
 
 /* footer */
+/* footer */
 footer {
     margin-top: 4rem;
     background: rgb(248, 248, 248);
@@ -132,7 +133,7 @@ footer {
     margin-top: 4rem;
     display: flex;
     justify-content: center;
-    gap: 43em;
+    gap: 43rem;
 
 }
 
@@ -166,24 +167,25 @@ footer {
 
 /* footer hero section */
 .footer-hero-section {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap: 1.9rem;
+    justify-content: center;
+
 }
 
 .footer-heading {
     font-family: monospace;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     letter-spacing: 2.5px;
     margin-bottom: 1rem;
+    font-weight: 900;
 }
 
 .footer-links {
     margin-bottom: 10px;
-}
-
-.footer-links:hover {
-    color: black !important;
+    font-size: 0.8rem;
 }
 
 a {
@@ -197,4 +199,41 @@ a {
 .social-links-container img {
     width: 25px;
     cursor: pointer;
+}
+
+.download {
+    display: flex;
+    justify-content: space-between;
+    width: 9.8rem;
+    background-color: rgb(35, 87, 87);
+    padding: 0.5rem;
+    margin-top: 10px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.download img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.download-content p,
+.download-content h3 {
+    font-size: 0.8rem;
+}
+
+.footer-footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1140px);
+    justify-content: center;
+}
+
+.horizontal-line {
+    margin: 3rem 0rem 2.5rem;
+}
+
+.last-content {
+    color: rgb(105, 105, 105);
+    margin-bottom: 2rem;
 }
