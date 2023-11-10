@@ -93,8 +93,9 @@ header {
 /* states container */
 .states-container {
     display: grid;
-    grid-template-columns: repeat(3, 280px);
+    grid-template-columns: repeat(3, 350px);
     gap: 2rem;
+    padding: 0 8rem;
     justify-content: center;
 }
 
@@ -118,4 +119,82 @@ header {
 
 .states-restaurant:hover {
     box-shadow: 1.8px 1.8px 9px rgba(0, 0, 0, 0.2);
+}
+
+/* footer */
+footer {
+    margin-top: 4rem;
+    background: rgb(248, 248, 248);
+    padding: 0.2rem 8rem 0;
+}
+
+.footer-header {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 43em;
+
+}
+
+.footer-img {
+    width: 10rem;
+    height: 2rem
+}
+
+.footer-header-drop-down {
+    display: flex;
+    gap: 2rem;
+}
+
+.languages,
+.countries {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 7.5rem;
+    cursor: pointer;
+    padding: 9px;
+}
+
+.languages img,
+.countries img {
+    width: 1.3rem;
+}
+
+/* footer hero section */
+.footer-hero-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.footer-heading {
+    font-family: monospace;
+    font-size: 1.1rem;
+    letter-spacing: 2.5px;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links:hover {
+    color: black !important;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+}
+
+
+/* social media */
+.download img,
+.social-links-container img {
+    width: 25px;
+    cursor: pointer;
 }
