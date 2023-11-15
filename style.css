@@ -145,24 +145,129 @@ footer {
 .footer-header-drop-down {
     display: flex;
     gap: 2rem;
+    height: 42px;
 }
 
-.languages,
-.countries {
+.show-language,
+.show-country {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     border: 1px solid black;
     border-radius: 6px;
-    width: 7.5rem;
+    width: auto;
     cursor: pointer;
     padding: 9px;
+}
+
+.show-language-on-language-box {
+    font-size: 1rem;
+}
+
+.countries {
+    position: relative;
+}
+
+/* country drop down */
+.countries-drop-down {
+    position: relative;
+    top: -215px;
+    right: 310px;
+    width: 0.1rem;
+    padding: 5px;
+    display: none;
+    z-index: 1;
+}
+
+.countries-drop-down-container {
+    position: relative;
+    bottom: 45px;
+    right: -15px;
+    width: 36rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 145px);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+}
+
+.triangular-box-1 {
+    position: absolute;
+    right: 210px;
+    bottom: -10px;
+    transform: rotate(45deg);
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+}
+
+.flag-with-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 7px;
+    z-index: 1;
+    padding: 5px 2px;
+    cursor: pointer;
+}
+
+.flag-with-name:hover {
+    background-color: rgb(248, 248, 248);
 }
 
 .languages img,
 .countries img {
     width: 1.3rem;
+}
+
+/* languages drop down container  */
+.languages {
+    position: relative;
+}
+
+.languages-drop-down {
+    display: none;
+}
+
+.languages-drop-down-container {
+    position: absolute;
+    left: -32px;
+    bottom: 52px;
+    width: 10rem;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+    padding: 0px 4px 5px 4px;
+}
+
+.triangular-box-2 {
+    position: absolute;
+    right: 70px;
+    bottom: -10px;
+    transform: rotate(45deg);
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+}
+
+.language-with-name {
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+.language-with-name p {
+    font-size: 1.2rem;
+}
+
+
+.language-with-name:hover {
+    background-color: rgb(248, 248, 248);
 }
 
 /* footer hero section */
