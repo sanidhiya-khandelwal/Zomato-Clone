@@ -10,6 +10,7 @@ header {
     background-image: url('./assets/icons/header-image.avif');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .navbar {
@@ -68,6 +69,7 @@ header {
     letter-spacing: 0.1rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 4rem;
 }
 
@@ -92,8 +94,10 @@ header {
 
 /* states container */
 .states-container {
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 2rem;
     padding: 0 8rem;
     justify-content: center;
@@ -107,6 +111,7 @@ header {
     justify-content: space-between;
     cursor: pointer;
     border-radius: 5px;
+    width: 30%;
 }
 
 .states-restaurant p {
@@ -122,19 +127,18 @@ header {
 }
 
 /* footer */
-/* footer */
 footer {
     margin-top: 4rem;
-    background: rgb(248, 248, 248);
+    background-color: rgb(248, 248, 248);
     padding: 0.2rem 8rem 0;
 }
 
 .footer-header {
     margin-top: 4rem;
     display: flex;
-    justify-content: center;
-    gap: 43rem;
-
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
 }
 
 .footer-img {
@@ -273,10 +277,10 @@ footer {
 /* footer hero section */
 .footer-hero-section {
     margin-top: 4rem;
-    display: grid;
-    grid-template-columns: repeat(5, 200px);
-    gap: 1.9rem;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
 
 }
 
@@ -329,16 +333,179 @@ a {
 }
 
 .footer-footer {
-    display: grid;
-    grid-template-columns: repeat(1, 1140px);
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .horizontal-line {
     margin: 3rem 0rem 2.5rem;
+    display: flex;
+    width: 100%;
 }
 
 .last-content {
     color: rgb(105, 105, 105);
     margin-bottom: 2rem;
+}
+
+/* media queries */
+@media all and (width<=1000px) {
+    .states-restaurant p {
+        font-size: 0.9rem;
+    }
+
+    .states-restaurant img {
+        width: 10px;
+    }
+}
+
+@media all and (width<=830px) {
+
+    /* hero section */
+    .states-container {
+        width: 100%;
+    }
+
+    .states-restaurant {
+        width: 45%;
+        height: 20px;
+    }
+
+    .states-restaurant p {
+        font-size: 1rem;
+    }
+
+    .states-restaurant img {
+        width: 9px;
+    }
+
+    /* Footer */
+
+    .footer-header {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .footer-img {
+        margin-bottom: 24px;
+    }
+
+    .footer-header-drop-down {
+        /* flex-wrap: wrap; */
+    }
+
+}
+
+@media all and (width<=500px) {
+    header {
+        height: 450px;
+    }
+
+    .header-center h1 {
+        font-size: 3.5rem;
+        margin-bottom: 0.1px;
+    }
+
+    .header-center p {
+        font-size: 1.3rem;
+    }
+
+    /* hero section */
+    .hero-section-text-content-heading {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-section-text-content-sub-heading p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    /* states container */
+    .states-container {
+        padding: 0 0rem;
+    }
+
+
+    .states-restaurant {
+        height: 50px;
+        width: 90%;
+    }
+
+    .states-restaurant p {
+        font-size: 0.9rem;
+    }
+
+    .states-restaurant img {
+        width: 15px;
+    }
+
+    /* footer */
+    footer {
+        margin-top: 3rem;
+        padding: 0.2rem 0% 0%;
+    }
+
+
+    .footer-header {
+        margin-top: 1rem;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .footer-header-drop-down {
+        flex-wrap: wrap;
+    }
+
+    .social-links {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-heading {
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 25px 0 15px;
+        letter-spacing: 5px;
+    }
+
+    .social-links-container a {
+        margin-right: 20px;
+    }
+
+    .download-container {
+        display: flex;
+        justify-content: space-around;
+        order: -1;
+    }
+
+    .download {
+        width: 7rem;
+        padding: 0.5rem;
+        margin-top: 35px;
+    }
+
+    .download img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .download-content p,
+    .download-content h3 {
+        font-size: 0.6rem;
+    }
+
+    .footer-hero-section {
+        margin-top: 1rem;
+    }
+
+    .footer-footer {
+        padding: 0 10px;
+    }
+
 }
