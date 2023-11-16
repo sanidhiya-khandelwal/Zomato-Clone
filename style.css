@@ -59,7 +59,6 @@ header {
 }
 
 /* hero section styling */
-
 .hero-section {
     margin-top: 5rem;
 }
@@ -349,56 +348,6 @@ a {
     margin-bottom: 2rem;
 }
 
-/* media queries */
-@media all and (width<=1000px) {
-    .states-restaurant p {
-        font-size: 0.9rem;
-    }
-
-    .states-restaurant img {
-        width: 10px;
-    }
-}
-
-@media all and (width<=830px) {
-
-    /* hero section */
-    .states-container {
-        width: 100%;
-    }
-
-    .states-restaurant {
-        width: 45%;
-        height: 20px;
-    }
-
-    .states-restaurant p {
-        font-size: 1rem;
-    }
-
-    .states-restaurant img {
-        width: 9px;
-    }
-
-    /* Footer */
-
-    .footer-header {
-        margin-top: 4rem;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 15px;
-    }
-
-    .footer-img {
-        margin-bottom: 24px;
-    }
-
-    .footer-header-drop-down {
-        /* flex-wrap: wrap; */
-    }
-
-}
 
 @media all and (width<=500px) {
     header {
