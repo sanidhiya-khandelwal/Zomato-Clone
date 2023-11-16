@@ -349,6 +349,8 @@ a {
 }
 
 
+/* media queries */
+
 @media all and (width<=500px) {
     header {
         height: 450px;
@@ -404,6 +406,10 @@ a {
         margin-top: 1rem;
         justify-content: start;
         width: 100%;
+    }
+
+    .footer-img {
+        margin-bottom: 24px;
     }
 
     .footer-header-drop-down {
