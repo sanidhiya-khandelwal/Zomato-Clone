@@ -351,6 +351,7 @@ a {
 
 /* media queries */
 
+
 @media all and (width<=500px) {
     header {
         height: 450px;
@@ -414,6 +415,14 @@ a {
 
     .footer-header-drop-down {
         flex-wrap: wrap;
+    }
+
+    .countries-drop-down-container {
+        bottom: 265px;
+        right: -260px;
+        margin-left: 40px;
+        width: 18rem;
+        grid-template-columns: repeat(2, 145px);
     }
 
     .social-links {
