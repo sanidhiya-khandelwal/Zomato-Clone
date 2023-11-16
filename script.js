@@ -87,7 +87,6 @@ function countiresWithFlagName() {
         countriesDropDownContainer.appendChild(flagWithName);
 
         flagWithName.addEventListener('click', function () {
-            console.log('flagWithName', flagWithName.textContent);
             countryFlag.setAttribute('src', flagImage.src)
             mainCountryName.textContent = flagWithName.textContent;
 
