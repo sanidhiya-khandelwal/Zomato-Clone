@@ -1,3 +1,41 @@
+//cities list
+
+var cities = [
+    'Agra Restaurants', 'Allahabad Restaurants', 'Amravati Restaurants',
+    'Amritsar Restaurants', 'Bengaluru Restaurants', 'Bhopal Restaurants',
+    'Bhubaneswar Restaurants', 'Chennai Restaurants', 'Cuttack Restaurants',
+    'Delhi Restaurants', 'Goa Restaurants', 'Guntur Restaurants',
+    'Gwalior Restaurants', 'Indore Restaurants', 'Jaipur Restaurants',
+    'Jammu Restaurants', 'Jhansi Restaurants', 'Kanpur Restaurants',
+    'Kochi Restaurants', 'Kota Restaurants', 'Ooty Restaurants',
+    'Rishikesh Restaurants', 'Salem Restaurants', 'Shimla Restaurants',
+    'Trichy Restaurants', 'Udaipur Restaurants', 'Vellore Restaurants',
+    'Varansai Restaurants'
+]
+var statesContainer = document.querySelector('.states-container');
+function displayCities(item) {
+    var statesRestaurant = document.createElement('div');
+    statesRestaurant.classList.add('states-restaurant');
+    var cityName = document.createElement('p');
+    var rightArrow = document.createElement('img');
+
+    cityName.textContent = item;
+    rightArrow.src = './assets/icons/right-arrow.png';
+
+    console.log(cityName);
+    statesRestaurant.appendChild(cityName);
+    statesRestaurant.appendChild(rightArrow);
+
+    statesContainer.appendChild(statesRestaurant);
+}
+
+cities.forEach((item, idx) => {
+    displayCities(item);
+})
+
+
+
+
 var showCountry = document.querySelector('.show-country')
 var countriesDropDown = document.querySelector('.countries-drop-down');
 var showLanguages = document.querySelector('.show-language');
@@ -130,3 +168,4 @@ function language() {
         displayData(item, idx)
     })
 }
+
