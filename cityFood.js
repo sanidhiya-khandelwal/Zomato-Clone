@@ -1,4 +1,19 @@
+var downArrow = document.querySelector('.down-arrow-img');
+var detectCurrentLocation = document.querySelector('.detect-current-location')
 
+var flag = 0;
+downArrow.addEventListener('click', function () {
+    if (flag == 0) {
+        downArrow.style.transform = 'rotate(180deg)'
+        detectCurrentLocation.style.visibility = 'visible';
+        flag = 1;
+    } else {
+        downArrow.style.transform = 'rotate(0deg)'
+        detectCurrentLocation.style.visibility = 'hidden';
+        flag = 0;
+    }
+
+})
 
 
 var showCountry = document.querySelector('.show-country')
