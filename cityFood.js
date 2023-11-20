@@ -1,3 +1,4 @@
+// location code
 var downArrow = document.querySelector('.down-arrow-img');
 var detectCurrentLocation = document.querySelector('.detect-current-location')
 
@@ -15,6 +16,41 @@ downArrow.addEventListener('click', function () {
 
 })
 
+// category selection code
+var deliveryBlock = document.querySelector('.delivery');
+var diningOut = document.querySelector('.dining-out');
+var nightLife = document.querySelector('.night-life');
+var deliveryImage = document.querySelector('.delivery-image')
+var diningOutImage = document.querySelector('.dining-out-image');
+var nightLifeImage = document.querySelector('.night-life-image');
+
+deliveryBlock.addEventListener('click', function () {
+    deliveryBlock.style.borderBottom = "2px solid rgb(253, 74, 74)";
+    diningOut.style.borderBottom = "none";
+    nightLife.style.borderBottom = "none";
+    deliveryImage.style.backgroundColor = "yellow";
+    diningOutImage.style.backgroundColor = "rgb(248, 248, 248)";
+    nightLifeImage.style.backgroundColor = "rgb(248, 248, 248)";
+})
+
+diningOut.addEventListener('click', function () {
+    deliveryBlock.style.borderBottom = "none";
+    diningOut.style.borderBottom = "2px solid rgb(253, 74, 74)";
+    nightLife.style.borderBottom = "none";
+    diningOutImage.style.backgroundColor = "rgb(229, 243, 243)";
+    nightLifeImage.style.backgroundColor = "rgb(248, 248, 248)";
+    deliveryImage.style.backgroundColor = "rgb(248, 248, 248)";
+
+})
+
+nightLife.addEventListener('click', function () {
+    deliveryBlock.style.borderBottom = "none";
+    diningOut.style.borderBottom = "none";
+    nightLife.style.borderBottom = "2px solid rgb(253, 74, 74)";
+    nightLifeImage.style.backgroundColor = "rgb(237, 244, 255)";
+    deliveryImage.style.backgroundColor = "rgb(248, 248, 248)";
+    diningOutImage.style.backgroundColor = "rgb(248, 248, 248)";
+})
 
 var showCountry = document.querySelector('.show-country')
 var countriesDropDown = document.querySelector('.countries-drop-down');

@@ -131,7 +131,72 @@ header {
     font-size: 1.2rem;
 }
 
+/* bread-cumb */
+.bread-crumb {
+    margin-top: -70px;
+    padding: 0 6rem;
+}
 
+.bread-cumb-container p {
+    color: rgb(130, 130, 130)
+}
+
+.bread-cumb-container p a {
+    color: black;
+}
+
+.bread-cumb-container p a:hover {
+    color: red;
+}
+
+/* categories */
+.categories {
+    padding: 0 6rem 3rem;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid rgb(236, 231, 231);
+}
+
+.categories-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.delivery,
+.dining-out,
+.night-life {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 18%;
+    padding-left: 25px;
+    gap: 15px;
+    margin-bottom: -3rem;
+    cursor: pointer;
+    color: rgb(105, 105, 105);
+}
+
+.delivery {
+    border-bottom: 2px solid rgb(253, 74, 74);
+}
+
+.delivery p,
+.dining-out p,
+.night-life p {
+    font-size: 1.2rem;
+}
+
+.delivery img,
+.dining-out img,
+.night-life img {
+    width: 55px;
+    padding: 0.2rem;
+    background-color: rgb(248, 248, 248);
+    border-radius: 12px;
+}
+
+.delivery img {
+    background-color: yellow;
+}
 
 /* footer */
 footer {
