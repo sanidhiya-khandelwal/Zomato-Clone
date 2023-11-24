@@ -70,6 +70,216 @@
         </div>
     </div>
 
+    <div class="filters">
+        <div class="filter-container">
+            <div class="filter-box">
+                <img src="./assets/icons/filter.png" alt="filter-image">
+                <p>Filters</p>
+            </div>
+            <div class="rating-box">
+                <p>Rating: 4.0+</p>
+            </div>
+            <div class="pure-veg-box">
+                <p>Pure Veg</p>
+            </div>
+            <!-- <div class="cuisines-box">
+                <p>Cuisines</p>
+                <img src="./assets/icons/down-arrow-grey-color.png" alt="">
+            </div> -->
+        </div>
+    </div>
+
+    <!-- all-filters -->
+    <div class="all-filters">
+        <div class="all-filter-container">
+            <div class="all-filter-header">
+                <p>Filters</p>
+                <img src="./assets/icons/close-button.jpg" alt="close-button" class="filter-close-icon">
+            </div>
+            <hr>
+            <div class="all-filter-hero-section">
+                <div class="filter-container">
+                    <div class="filter-container-left-section">
+                        <div class="filter-1 filter-0">
+                            <h3>Sort by</h3>
+                            <p class="sort-by-type">Popularity</p>
+                        </div>
+                        <div class="filter-1 filter-2">
+                            <h3>Cuisines</h3>
+                        </div>
+                        <div class="filter-1 filter-3">
+                            <h3>Rating</h3>
+                        </div>
+                        <div class="filter-1 filter-4">
+                            <h3>Cost per person</h3>
+                        </div>
+                        <div class="filter-1 filter-5">
+                            <h3>More filters</h3>
+                        </div>
+                    </div>
+                    <div class="filter-container-right-section">
+                        <div class="filter-1-options">
+                            <div class="popularity-box filter-option-box">
+                                <input type="checkbox" name="popularity" id="popularity"
+                                    onclick="handleCheckboxClick('popularity')">&nbsp;
+                                <label for="popularity">Popularity</label>
+                            </div>
+                            <div class="rating-high-to-low-box filter-option-box">
+                                <input type="checkbox" name="rating" id="rating"
+                                    onclick="handleCheckboxClick('rating')">&nbsp;
+                                <label for="rating">Rating: High to Low</label>
+                            </div>
+                            <div class="delivery-time-box filter-option-box">
+                                <input type="checkbox" name="delivery-time" id="delivery-time"
+                                    onclick="handleCheckboxClick('delivery-time')">&nbsp;
+                                <label for="delivery-time">Delivery Time</label>
+                            </div>
+                            <div class="cost-low-to-high-box filter-option-box">
+                                <input type="checkbox" name="cost-low-to-high" id="cost-low-to-high"
+                                    onclick="handleCheckboxClick('cost-low-to-high')">&nbsp;
+                                <label for="cost-low-to-high">Cost: Low to High</label>
+                            </div>
+                            <div class="cost-high-to-low-box filter-option-box">
+                                <input type="checkbox" name="cost-high-to-low" id="cost-high-to-low"
+                                    onclick="handleCheckboxClick('cost-high-to-low')">&nbsp;
+                                <label for="cost-high-to-low">Cost: High to Low</label>
+                            </div>
+                        </div>
+                        <div class="filter-2-options">
+                            <div class="filter-2-options-container">
+                                <div class="filter-2-options-search-box">
+                                    <img src="./assets/icons/search (2).png" alt="cuisine-search"
+                                        class="cuisine-search">
+                                    <input type="text" placeholder="Search here" class="blinking-cursor">
+                                    <img src="./assets/icons/close-button.jpg" alt="cuisine-close-button"
+                                        class="cuisine-close-button">
+                                </div>
+                                <div class="filter-2-options-categories">
+                                    <div class="filter-2-options-categories-containers">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-3-options">
+                            <div class="filter-3-options-header">
+                                <h5>Rating</h5>
+                                <h3 class="rating-display">Any</h3>
+                            </div>
+                            <div class="filter-3-options-container">
+                                <div class="any-rating">
+                                    <p class="rate-circle-1"></p>
+                                    <h4 class="rating-any">Any</h4>
+                                </div>
+                                <p class="rate-line-1"></p>
+                                <div class="any-rating">
+                                    <p class="rate-circle-2"></p>
+                                    <h4 class="rating3_5">3.5</h4>
+                                </div>
+                                <p class="rate-line-2"></p>
+                                <div class="any-rating">
+                                    <p class="rate-circle-3"></p>
+                                    <h4 class="rating4">4.0</h4>
+                                </div>
+                                <p class="rate-line-3"></p>
+                                <div class="any-rating">
+                                    <p class="rate-circle-4"></p>
+                                    <h4 class="rating4_5">4.5</h4>
+                                </div>
+                                <p class="rate-line-4"></p>
+                                <div class="any-rating">
+                                    <p class="rate-circle-5"></p>
+                                    <h4 class="rating5">5.0</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-4-options">
+                            <div class="filter-4-options-header">
+                                <h5>Cost per person</h5>
+                                <div class="cost-display-range">
+                                    <h3 class="range-from">₹0</h3>
+                                    <h3 class="rang-to">Any</h3>
+                                </div>
+                            </div>
+                            <div class="filter-4-options-container">
+                                <div class="cost-filter-ranges">
+                                    <div class="cost-filter-container">
+                                        <h4 class="cost-zero">₹0</h4>
+                                        <div class="attached-box"></div>
+                                    </div>
+                                    <div class="any-cost">
+                                        <p class="cost-circle-1"></p>
+                                        <p class="cost-line-1"></p>
+                                    </div>
+                                </div>
+                                <div class="cost-filter-ranges">
+                                    <div class="cost-filter-container">
+                                        <h4 class="cost-one-fity">₹150</h4>
+                                        <div class="attached-box"></div>
+                                    </div>
+                                    <div class="any-cost">
+                                        <p class="cost-circle-2"></p>
+                                        <p class="cost-line-2"></p>
+                                    </div>
+                                </div>
+                                <div class="cost-filter-ranges">
+                                    <div class="cost-filter-container">
+                                        <h4 class="cost-three-hundred">₹300</h4>
+                                        <div class="attached-box"></div>
+                                    </div>
+                                    <div class="any-cost">
+                                        <p class="cost-circle-3"></p>
+                                        <p class="cost-line-3"></p>
+                                    </div>
+                                </div>
+                                <div class="cost-filter-ranges">
+                                    <div class="cost-filter-container">
+                                        <h4 class="cost-six-hundred">₹600</h4>
+                                        <div class="attached-box"></div>
+                                    </div>
+                                    <div class="any-cost">
+                                        <p class="cost-circle-4"></p>
+                                        <p class="cost-line-4"></p>
+                                    </div>
+                                </div>
+                                <div class="cost-filter-ranges">
+                                    <div class="cost-filter-container">
+                                        <h4 class="cost-six-hundred">Any</h4>
+                                        <div class="attached-box"></div>
+                                    </div>
+                                    <div class="any-cost">
+                                        <p class="cost-circle-5"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-5-options">
+                            <div class="filter-5-options-container">
+                                <div class="filter-5-search">
+                                    <div class="filter-5-search-container">
+                                        <img src="./assets/icons/search (2).png" alt="search">
+                                        <input type="text" name="" id="" placeholder="Search here">
+                                    </div>
+                                    <div class="close-filter-5">
+                                        <img src="./assets/icons/close-button.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="hero-section-footer">
+                    <button class="clear-all-btn">Clear all</button>
+                    <button class="apply-btn">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <!-- hero section -->
 
 

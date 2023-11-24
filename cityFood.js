@@ -52,6 +52,297 @@ nightLife.addEventListener('click', function () {
     diningOutImage.style.backgroundColor = "rgb(248, 248, 248)";
 })
 
+// filter box
+var body = document.querySelector('body');
+var filterBox = document.querySelector('.filter-box');
+var allFilters = document.querySelector('.all-filters');
+filterBox.addEventListener('click', function () {
+    allFilters.style.display = 'block';
+    body.style.background = 'rgba(0, 0, 0, 0.4)';
+    body.style.position = 'fixed';
+})
+
+var filterCloseButton = document.querySelector('.filter-close-icon');
+filterCloseButton.addEventListener('click', () => {
+    allFilters.style.display = 'none';
+    body.style.background = 'none';
+})
+
+var sortByType = document.querySelector('.sort-by-type')
+var popularityBox = document.querySelector('.popularity-box');
+var ratingHighToLowBox = document.querySelector('.rating-high-to-low-box');
+var deliveryTimeBox = document.querySelector('.delivery-time-box');
+var costLowToHighBox = document.querySelector('.cost-low-to-high-box');
+var costHighToLowBox = document.querySelector('.cost-high-to-low-box');
+
+popularityBox.addEventListener('click', () => sortByType.textContent = 'Popularity');
+ratingHighToLowBox.addEventListener('click', () => sortByType.textContent = 'Rating: High to Low');
+deliveryTimeBox.addEventListener('click', () => sortByType.textContent = 'Delivery Time');
+costLowToHighBox.addEventListener('click', () => sortByType.textContent = 'Cost: Low to High');
+costHighToLowBox.addEventListener('click', () => sortByType.textContent = 'Cost: High to Low');
+
+//only 1 input box should be clickable at one time
+function handleCheckboxClick(checkboxId) {
+    const checkboxes = document.querySelectorAll('.filter-option-box input[type="checkbox"]');
+
+    checkboxes.forEach((checkbox) => {
+        if (checkbox.id !== checkboxId) {
+            checkbox.checked = false;
+        }
+    })
+}
+
+
+
+var filter0 = document.querySelector('.filter-0');
+var filter2 = document.querySelector('.filter-2');
+var filter3 = document.querySelector('.filter-3');
+var filter4 = document.querySelector('.filter-4');
+var filter5 = document.querySelector('.filter-5')
+
+var filter1Options = document.querySelector('.filter-1-options');
+var filter2Options = document.querySelector('.filter-2-options');
+var filter3Options = document.querySelector('.filter-3-options');
+var filter4Options = document.querySelector('.filter-4-options');
+var filter5Options = document.querySelector('.filter-5-options');
+
+filter0.addEventListener('click', () => {
+    filter1Options.style.display = 'block';
+    filter2Options.style.display = 'none';
+    filter3Options.style.display = 'none';
+    filter4Options.style.display = 'none';
+    filter5Options.style.display = 'none';
+
+    filter0.style.backgroundColor = 'white';
+    filter2.style.backgroundColor = 'rgb(248,248,248)';
+    filter3.style.backgroundColor = 'rgb(248,248,248)';
+    filter4.style.backgroundColor = 'rgb(248,248,248)';
+    filter5.style.backgroundColor = 'rgb(248,248,248)';
+})
+
+filter2.addEventListener('click', () => {
+    filter1Options.style.display = 'none';
+    filter2Options.style.display = 'flex';
+    filter3Options.style.display = 'none';
+    filter4Options.style.display = 'none';
+    filter5Options.style.display = 'none';
+
+    filter0.style.backgroundColor = 'rgb(248,248,248)';
+    filter2.style.backgroundColor = 'white';
+    filter3.style.backgroundColor = 'rgb(248,248,248)';
+    filter4.style.backgroundColor = 'rgb(248,248,248)';
+    filter5.style.backgroundColor = 'rgb(248,248,248)';
+})
+
+filter3.addEventListener('click', () => {
+    filter1Options.style.display = 'none';
+    filter2Options.style.display = 'none';
+    filter3Options.style.display = 'block';
+    filter4Options.style.display = 'none';
+    filter5Options.style.display = 'none';
+
+    filter0.style.backgroundColor = 'rgb(248,248,248)';
+    filter2.style.backgroundColor = 'rgb(248,248,248)';
+    filter3.style.backgroundColor = 'white';
+    filter4.style.backgroundColor = 'rgb(248,248,248)';
+    filter5.style.backgroundColor = 'rgb(248,248,248)';
+})
+
+filter4.addEventListener('click', () => {
+    filter1Options.style.display = 'none';
+    filter2Options.style.display = 'none';
+    filter3Options.style.display = 'none';
+    filter4Options.style.display = 'block';
+    filter5Options.style.display = 'none';
+
+    filter0.style.backgroundColor = 'rgb(248,248,248)';
+    filter2.style.backgroundColor = 'rgb(248,248,248)';
+    filter3.style.backgroundColor = 'rgb(248,248,248)';
+    filter4.style.backgroundColor = 'white';
+    filter5.style.backgroundColor = 'rgb(248,248,248)';
+})
+
+filter5.addEventListener('click', () => {
+    filter1Options.style.display = 'none';
+    filter2Options.style.display = 'none';
+    filter3Options.style.display = 'none';
+    filter4Options.style.display = 'none';
+    filter5Options.style.display = 'block';
+
+    filter0.style.backgroundColor = 'rgb(248,248,248)';
+    filter2.style.backgroundColor = 'rgb(248,248,248)';
+    filter3.style.backgroundColor = 'rgb(248,248,248)';
+    filter4.style.backgroundColor = 'rgb(248,248,248)';
+    filter5.style.backgroundColor = 'white';
+})
+
+
+// rating code
+var ratingDisplay = document.querySelector('.rating-display');
+var ratingAny = document.querySelector('.rate-circle-1');
+var rating3_5 = document.querySelector('.rate-circle-2');
+var rating4_0 = document.querySelector('.rate-circle-3');
+var rating4_5 = document.querySelector('.rate-circle-4');
+
+var rateLine1 = document.querySelector('.rate-line-1');
+var rateLine2 = document.querySelector('.rate-line-2');
+var rateLine3 = document.querySelector('.rate-line-3');
+
+ratingAny.addEventListener('click', () => {
+    ratingDisplay.textContent = 'Any';
+
+    ratingAny.style.backgroundColor = 'rgb(226, 55, 68)';
+    rateLine1.style.backgroundColor = 'rgb(226, 55, 68)';
+    rating3_5.style.backgroundColor = 'rgb(226, 55, 68)';
+    rateLine2.style.backgroundColor = 'rgb(226, 55, 68)';
+    rating4_0.style.backgroundColor = 'rgb(226, 55, 68)';
+    rateLine3.style.backgroundColor = 'rgb(226, 55, 68)';
+    ratingAny.style.width = '1.2rem';
+    ratingAny.style.height = '1.2rem';
+    rating3_5.style.width = '1rem';
+    rating3_5.style.height = '1rem';
+    rating4_0.style.width = '1rem';
+    rating4_0.style.height = '1rem';
+    rating4_5.style.width = '1rem';
+    rating4_5.style.height = '1rem';
+})
+
+rating3_5.addEventListener('click', () => {
+    ratingDisplay.textContent = '3.5+';
+    if (window.getComputedStyle(rating3_5).backgroundColor == 'rgb(226, 55, 68)') {
+        ratingAny.style.backgroundColor = 'rgb(232, 232, 232)';
+        rateLine1.style.backgroundColor = 'rgb(232, 232, 232)';
+        ratingAny.style.width = '1rem';
+        ratingAny.style.height = '1rem';
+        rating3_5.style.width = '1.2rem';
+        rating3_5.style.height = '1.2rem';
+    }
+    else {
+        rating3_5.style.backgroundColor = 'rgb(226, 55, 68)';
+        rateLine2.style.backgroundColor = 'rgb(226, 55, 68)';
+        rating4_0.style.backgroundColor = 'rgb(226, 55, 68)';
+        rateLine3.style.backgroundColor = 'rgb(226, 55, 68)';
+        ratingAny.style.width = '1rem';
+        ratingAny.style.height = '1rem';
+        rating3_5.style.width = '1.2rem';
+        rating3_5.style.height = '1.2rem';
+        rating4_0.style.width = '1rem';
+        rating4_0.style.height = '1rem';
+        rating4_5.style.width = '1rem';
+        rating4_5.style.height = '1rem';
+    }
+
+
+})
+
+rating4_0.addEventListener('click', () => {
+    ratingDisplay.textContent = '4.0+';
+
+    if (window.getComputedStyle(rating4_0).backgroundColor === 'rgb(226, 55, 68)') {
+        ratingAny.style.backgroundColor = 'rgb(232, 232, 232)';
+        rateLine1.style.backgroundColor = 'rgb(232, 232, 232)';
+        rating3_5.style.backgroundColor = 'rgb(232, 232, 232)';
+        rateLine2.style.backgroundColor = 'rgb(232, 232, 232)';
+
+
+        ratingAny.style.width = '1rem';
+        ratingAny.style.height = '1rem';
+        rating3_5.style.width = '1rem';
+        rating3_5.style.height = '1rem';
+        rating4_0.style.width = '1.2rem';
+        rating4_0.style.height = '1.2rem';
+    }
+    else {
+        rating4_0.style.backgroundColor = 'rgb(226, 55, 68)';
+        rateLine3.style.backgroundColor = 'rgb(226, 55, 68)';
+        ratingAny.style.width = '1rem';
+        ratingAny.style.height = '1rem';
+        rating3_5.style.width = '1rem';
+        rating3_5.style.height = '1rem';
+        rating4_0.style.width = '1.2rem';
+        rating4_0.style.height = '1.2rem';
+        rating4_5.style.width = '1rem';
+        rating4_5.style.height = '1rem';
+    }
+
+
+})
+
+rating4_5.addEventListener('click', () => {
+    ratingDisplay.textContent = '4.5+';
+
+    ratingAny.style.backgroundColor = 'rgb(232, 232, 232)';
+    rateLine1.style.backgroundColor = 'rgb(232, 232, 232)';
+    rating3_5.style.backgroundColor = 'rgb(232, 232, 232)';
+    rateLine2.style.backgroundColor = 'rgb(232, 232, 232)';
+    rating4_0.style.backgroundColor = 'rgb(232, 232, 232)';
+    rateLine3.style.backgroundColor = 'rgb(232, 232, 232)';
+    ratingAny.style.width = '1rem';
+    ratingAny.style.height = '1rem';
+    rating3_5.style.width = '1rem';
+    rating3_5.style.height = '1rem';
+    rating4_0.style.width = '1rem';
+    rating4_0.style.height = '1rem';
+
+    rating4_5.style.width = '1.2rem';
+    rating4_5.style.height = '1.2rem';
+
+})
+
+//cost filter code
+
+
+// cuisines display
+
+var cuisines = [
+    'Abruzzese', 'Aceh', 'Aegean', 'Afghan', 'Afghani', 'African',
+    'Bakery', 'BBQ', 'Bengali', 'Bihari', 'Biryani', 'Burger',
+    'Cake', 'Chinese', 'Coffee', 'Curry', 'Desserts', 'Dimsum',
+    'French', 'Fish', 'Fried Chicken', 'Gujrati', 'Healthy Food', 'Hot Dogs',
+    'Ice Cream', 'Indian', 'Japanese', 'Juices', 'Kashmiri', 'Kebab',
+    'Korean', 'Momos', 'Mughlai', 'Paan', 'Pancake', 'Pasta',
+    'Pastry', 'Pizza', 'Rajasthani', 'Roast Chicken', 'Rolls', 'Salad',
+    'Sandwich', 'Seafood', 'Shake', 'Singaporean', 'Snacks', 'Sushi',
+    'Tea', 'Thai', 'Tibetan', 'Turkish Pizza', 'Vegetarian', 'Waffle',
+    'Yum Cha', 'Zambian'
+]
+
+var filter2OptionsCategoriesContainers = document.querySelector('.filter-2-options-categories-containers');
+cuisines.forEach((item, idx) => {
+    var box1 = document.createElement('div');
+    box1.classList.add('box-1');
+
+    var circle = document.createElement('div');
+    circle.classList.add('circle');
+
+    var circleContent = document.createElement('div');
+    circleContent.classList.add('circle-content');
+
+    circle.innerHTML = "";
+    circleContent.textContent = item;
+
+    box1.appendChild(circle);
+    box1.appendChild(circleContent);
+
+    filter2OptionsCategoriesContainers.appendChild(box1);
+
+    var box = 1;
+    box1.addEventListener('click', () => {
+        if (box == 1) {
+            circle.style.backgroundColor = 'rgb(239, 79, 95)';
+            box = 0;
+        } else {
+            circle.style.backgroundColor = 'white';
+            box = 1;
+        }
+
+    })
+}
+
+)
+
+
+// footer code
 var showCountry = document.querySelector('.show-country')
 var countriesDropDown = document.querySelector('.countries-drop-down');
 var showLanguages = document.querySelector('.show-language');
