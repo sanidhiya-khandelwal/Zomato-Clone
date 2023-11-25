@@ -341,6 +341,26 @@ cuisines.forEach((item, idx) => {
 
 )
 
+// delivery restaurants code
+
+var deliveryRestaurants = [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}]
+
 
 // footer code
 var showCountry = document.querySelector('.show-country')

@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+body {
+    max-width: 1450px;
+    margin: auto;
+}
 
 /* header */
 header {
@@ -79,6 +83,7 @@ header {
 .dish-container input {
     border: none;
     width: 250px;
+    font-size: 1.2rem;
 }
 
 .dish-container input:focus {
@@ -615,6 +620,91 @@ header {
     cursor: pointer;
     margin-top: 1rem;
 }
+
+/* hero section */
+.deliveryRestaurants {
+    padding: 0 5rem;
+}
+
+.deliveryRestaurants-Header {
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.deliveryRestaurants-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.deliveryRestaurants-card {
+    padding: 0.5rem;
+    width: 30%;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-bottom: 1.5rem;
+}
+
+.deliveryRestaurants-card:hover {
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.deliveryRestaurants-card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    position: relative;
+}
+
+.discount-container {
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    background-color: rgb(37, 111, 239);
+    color: white;
+    padding: 0.2rem;
+}
+
+.deliveryRestaurants-name {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem 0;
+}
+
+.restaurant-rating {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 0.7rem;
+}
+
+.restaurant-rating p {
+    margin-bottom: 3px;
+}
+
+.cuisine-price {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(105, 105, 105);
+}
+
+.cuisine {
+    max-width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.time {
+    display: flex;
+    justify-content: end;
+    margin-top: 0.3rem;
+}
+
 
 /* footer */
 footer {
