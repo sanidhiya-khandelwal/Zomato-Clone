@@ -54,11 +54,13 @@ nightLife.addEventListener('click', function () {
 
 // filter box
 var body = document.querySelector('body');
+var filters = document.querySelector('.filters')
 var filterBox = document.querySelector('.filter-box');
 var allFilters = document.querySelector('.all-filters');
 filterBox.addEventListener('click', function () {
     allFilters.style.display = 'block';
-    body.style.background = 'rgba(0, 0, 0, 0.4)';
+    // body.style.background = 'rgba(0, 0, 0, 0.4)';
+    // filters.style.background = 'rgba(0, 0, 0, 0.3)';
     body.style.position = 'fixed';
 })
 
