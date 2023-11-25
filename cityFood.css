@@ -643,6 +643,7 @@ header {
     cursor: pointer;
     border-radius: 9px;
     margin-bottom: 1.5rem;
+    position: relative;
 }
 
 .deliveryRestaurants-card:hover {
@@ -650,16 +651,17 @@ header {
     background-color: white;
 }
 
-.deliveryRestaurants-card img {
+.foodImage {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 15px;
-    position: relative;
+    height: 15rem;
+
 }
 
 .discount-container {
     position: absolute;
-    bottom: 10px;
+    bottom: 100px;
     z-index: 1;
     background-color: rgb(37, 111, 239);
     color: white;
@@ -672,7 +674,7 @@ header {
     margin: 0.3rem 0;
 }
 
-.restaurant-rating {
+.restaurant-rating-container {
     display: flex;
     align-items: center;
     padding: 0.2rem;

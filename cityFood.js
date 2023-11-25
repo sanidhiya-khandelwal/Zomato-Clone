@@ -342,26 +342,238 @@ cuisines.forEach((item, idx) => {
 
 )
 
-// delivery restaurants code
-
+// show delivery restaurants code
 var deliveryRestaurants = [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}]
+    {
+        img: './assets/food/Al_zameer_rest.avif',
+        discount: '40% OFF',
+        restaurantName: 'Al Zameer',
+        rating: '4.1',
+        cuisine: 'North Indian, Mughlai',
+        price: '₹150 for one',
+        delieveryTime: '26 mins',
+    },
+    {
+        img: './assets/food/bhaghat_halwai.avif',
+        discount: '30% OFF',
+        restaurantName: 'Bhaghat Halwai',
+        rating: '4.3',
+        cuisine: 'Street Food, Fast Food, Pizza, Sandwich, Chinese, South Indian, Shake, Beverages',
+        price: '₹100 for one',
+        delieveryTime: '35 mins',
+    },
+    {
+        img: './assets/food/bhawna_sweets.avif',
+        discount: '45% OFF',
+        restaurantName: 'Bhawna Sweets',
+        rating: '4.5',
+        cuisine: 'Mithai, Desserts, Bakery',
+        price: '₹300 for one',
+        delieveryTime: '5 mins',
+    },
+    {
+        img: './assets/food/Bikanerwala.avif',
+        discount: '30% OFF',
+        restaurantName: 'Bikanerwala',
+        rating: '4.5',
+        cuisine: 'Street Food, North Indian, Chinese, Mithai, South Indian, Fast Food, Desserts, Beverages',
+        price: '₹200 for one',
+        delieveryTime: '15 mins',
+    },
+    {
+        img: './assets/food/Biryani_hotspot.avif',
+        discount: '15% OFF',
+        restaurantName: 'Biryani Hotspot',
+        rating: '3.5',
+        cuisine: 'Biryani, North Indian, Mughlai, Kebab',
+        price: '₹350 for one',
+        delieveryTime: '55 mins',
+    },
+    {
+        img: './assets/food/cake_Company.avif',
+        discount: '25% OFF',
+        restaurantName: 'Cake Company',
+        rating: '3.0',
+        cuisine: 'Desserts, Bakery',
+        price: '₹100 for one',
+        delieveryTime: '20 mins',
+    },
+    {
+        img: './assets/food/chopsticks.avif',
+        discount: '45% OFF',
+        restaurantName: 'Chopsticks',
+        rating: '3.6',
+        cuisine: 'Chinese, Momos, Fast Food, North Indian, Street Food',
+        price: '₹100 for one',
+        delieveryTime: '120 mins'
+    },
+    {
+        img: './assets/food/karchi.avif',
+        discount: '25% OFF',
+        restaurantName: 'Karchi',
+        rating: '5.0',
+        cuisine: 'North Indian, Mughlai, Kebab, Biryani, Fast Food',
+        price: '₹100 for one',
+        delieveryTime: '90 mins',
+    },
+    {
+        img: './assets/food/kfc.avif',
+        discount: '35% OFF',
+        restaurantName: 'KFC',
+        rating: '3.9',
+        cuisine: 'Burger, Fast Food, Biryani, Desserts, Beverages',
+        price: '₹400 for one',
+        delieveryTime: '30 mins',
+    },
+    {
+        img: './assets/food/Kwality.avif',
+        discount: '10% OFF',
+        restaurantName: 'Kwality On Wheels',
+        rating: '3.5',
+        cuisine: 'North Indian, Chinese, Continental, Fast Food',
+        price: '₹200 for one',
+        delieveryTime: '60 mins',
+    },
+    {
+        img: './assets/food/La_pinoz.avif',
+        discount: '35% OFF',
+        restaurantName: 'La Pinoz',
+        rating: '4.9',
+        cuisine: 'Pizza, Pasta, Italian, Fast Food',
+        price: '₹200 for one',
+        delieveryTime: '10 mins',
+    },
+    {
+        img: './assets/food/Nazeer_foods.avif',
+        discount: '15% OFF',
+        restaurantName: 'Nazeer Foods',
+        rating: '4.9',
+        cuisine: 'North Indian, Fast Food, Biryani',
+        price: '₹500 for one',
+        delieveryTime: '50 mins',
+    },
+    {
+        img: './assets/food/mcdonald.avif',
+        discount: '10% OFF',
+        restaurantName: 'Mcdonald',
+        rating: '4.0',
+        cuisine: 'Burger, Fast Food, Beverages',
+        price: '₹300 for one',
+        delieveryTime: '40 mins',
+    },
+    {
+        img: './assets/food/royal_briyani.avif',
+        discount: '10% OFF',
+        restaurantName: 'Royal Briyani',
+        rating: '4.0',
+        cuisine: 'Biryani, Kebab, North Indian',
+        price: '₹500 for one',
+        delieveryTime: '45 mins',
+    },
+    {
+        img: './assets/food/New_pizza_king.avif',
+        discount: '20% OFF',
+        restaurantName: 'New Pizza King',
+        rating: '4.2',
+        cuisine: 'Pizza',
+        price: '₹400 for one',
+        delieveryTime: '30 mins',
+    },
+    {
+        img: './assets/food/pizzahut.avif',
+        discount: '25% OFF',
+        restaurantName: 'Pizzahut',
+        rating: '3.0',
+        cuisine: 'Pizza',
+        price: '₹300 for one',
+        delieveryTime: '55 mins',
+    },
+]
+var deliveryRestaurantsContainer = document.querySelector('.deliveryRestaurants-container');
 
+deliveryRestaurants.forEach((item, idx) => {
+    console.log(item);
+    var deliveryRestaurantsCard = document.createElement('div');
+    deliveryRestaurantsCard.classList.add('deliveryRestaurants-card');
+
+    var restaurantsImage = document.createElement('img');
+    restaurantsImage.classList.add('foodImage');
+    restaurantsImage.src = item.img;
+
+    var discountContainer = document.createElement('div');
+    discountContainer.classList.add('discount-container');
+
+    var discountPercentage = document.createElement('p');
+    discountPercentage.classList.add('discount-percentage');
+    discountPercentage.textContent = item.discount;
+
+    var deliveryRestaurantsDetails = document.createElement('div');
+    deliveryRestaurantsDetails.classList.add('deliveryRestaurants-details');
+
+    var deliveryRestaurantsName = document.createElement('div');
+    deliveryRestaurantsName.classList.add('deliveryRestaurants-name');
+
+    var restaurantName = document.createElement('b');
+    restaurantName.classList.add('restaurant-name');
+    restaurantName.textContent = item.restaurantName;
+
+    var restaurantRatingContainer = document.createElement('div');
+    restaurantRatingContainer.classList.add('restaurant-rating-container');
+
+
+    var restaurantRating = document.createElement('b');
+    restaurantRating.classList.add('restaurant-rating');
+    restaurantRating.textContent = item.rating;
+
+    var starIcon = document.createElement('p');
+    starIcon.classList.add('star-icon')
+    starIcon.innerHTML = '&#9734';
+    starIcon.style.margin = '0 0 3px 2px'
+
+    var cuisinePrice = document.createElement('div');
+    cuisinePrice.classList.add('cuisine-price');
+
+    var cuisine = document.createElement('p');
+    cuisine.classList.add('cuisine');
+    cuisine.textContent = item.cuisine;
+
+    var price = document.createElement('div');
+    price.classList.add('price');
+
+    var priceForOne = document.createElement('p');
+    priceForOne.classList.add('price-for-one');
+    priceForOne.textContent = item.price;
+
+    var time = document.createElement('div');
+    time.classList.add('time');
+    time.textContent = item.delieveryTime;
+
+    var deliveryTime = document.createElement('b');
+    deliveryTime.classList.add('delivery-time');
+
+    deliveryRestaurantsCard.appendChild(restaurantsImage);
+    discountContainer.appendChild(discountPercentage);
+    deliveryRestaurantsCard.appendChild(discountContainer);
+
+    deliveryRestaurantsName.appendChild(restaurantName);
+    restaurantRatingContainer.appendChild(restaurantRating);
+    restaurantRatingContainer.appendChild(starIcon);
+    deliveryRestaurantsName.appendChild(restaurantRatingContainer);
+    deliveryRestaurantsDetails.appendChild(deliveryRestaurantsName);
+
+    cuisinePrice.appendChild(cuisine);
+    price.appendChild(priceForOne);
+    cuisinePrice.appendChild(price);
+    deliveryRestaurantsDetails.appendChild(cuisinePrice);
+
+    time.appendChild(deliveryTime);
+    deliveryRestaurantsDetails.appendChild(time);
+
+    deliveryRestaurantsCard.appendChild(deliveryRestaurantsDetails);
+
+    deliveryRestaurantsContainer.appendChild(deliveryRestaurantsCard);
+
+})
 
 // footer code
 var showCountry = document.querySelector('.show-country')
@@ -369,6 +581,7 @@ var countriesDropDown = document.querySelector('.countries-drop-down');
 var showLanguages = document.querySelector('.show-language');
 var languageDropDown = document.querySelector('.languages-drop-down')
 var countiresAdded = false;
+
 
 
 showCountry.addEventListener('click', () => {
