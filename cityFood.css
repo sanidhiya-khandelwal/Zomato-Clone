@@ -205,8 +205,11 @@ header {
 
 /* filters */
 .filters {
-    padding: 0 6rem;
-    margin-top: 1rem;
+    padding: 1.8rem 6rem;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: white;
 }
 
 .filter-container {
