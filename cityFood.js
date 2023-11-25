@@ -66,6 +66,7 @@ var filterCloseButton = document.querySelector('.filter-close-icon');
 filterCloseButton.addEventListener('click', () => {
     allFilters.style.display = 'none';
     body.style.background = 'none';
+    body.style.position = 'static';
 })
 
 var sortByType = document.querySelector('.sort-by-type')
