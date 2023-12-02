@@ -1178,6 +1178,69 @@ a {
     .deliveryRestaurants-Header {
         font-size: 1.5rem;
     }
+
+    /* footer disclaimer */
+
+    .footer-disclaimer-sm {
+        position: fixed;
+        bottom: 0px;
+        z-index: 2;
+        width: 100%;
+        background-color: black;
+        padding: 0 2rem;
+    }
+
+    .order-on-app-notification {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-notification-container {
+        display: flex;
+        min-height: 4rem;
+        align-items: center;
+    }
+
+    .white-close-image {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    .noti-line {
+        border-left: 2px solid white;
+        height: 2rem;
+    }
+
+    .white-close-image img {
+        width: 25px;
+    }
+
+    .noti-zomato-icon {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        font-size: 0.8rem;
+        margin-left: 5px;
+    }
+
+    .noti-zomato-icon img {
+        width: 25px;
+    }
+
+    .app-link {
+        display: flex;
+        align-items: center;
+        width: 7rem;
+        height: 2rem;
+        background-color: white;
+        color: rgb(226, 55, 68);
+        font-size: 0.9rem;
+        border-radius: 50px;
+        padding: 0 0.2rem;
+    }
 }
 
 @media all and (width<=850px) {
@@ -1217,5 +1280,14 @@ a {
 
     .deliveryRestaurants-Header {
         font-size: 1.25rem;
+    }
+
+    .footer-disclaimer-sm {
+        position: fixed;
+        bottom: 0px;
+        z-index: 2;
+        width: 100%;
+        background-color: black;
+        padding: 0 1rem;
     }
 }
