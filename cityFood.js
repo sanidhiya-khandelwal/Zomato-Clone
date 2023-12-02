@@ -725,3 +725,11 @@ function language() {
     })
 }
 
+
+// order on app notfication close
+var footerDisclaimerSM = document.querySelector('.footer-disclaimer-sm');
+var footerDisclaimerClose = document.querySelector('.close-notification')
+
+footerDisclaimerClose.addEventListener('click', () => {
+    footerDisclaimerSM.style.display = 'none';
+})
