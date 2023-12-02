@@ -1114,6 +1114,6 @@ a {
 
 @media all and (width<=500px) {
     .filter-container {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
