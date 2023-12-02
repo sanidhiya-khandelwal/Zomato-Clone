@@ -1,3 +1,17 @@
+// makes search container visible on scroll in small screens
+window.addEventListener('scroll', function () {
+    var dishContainer = document.querySelector('.dish-sm');
+    var scrollPosition = window.scrollY;
+    if (scrollPosition > 100) {
+        dishContainer.style.display = 'block';
+    }
+    else {
+        dishContainer.style.display = 'none';
+    }
+})
+
+
+
 // location code
 var downArrow = document.querySelector('.down-arrow-img');
 var detectCurrentLocation = document.querySelector('.detect-current-location')
@@ -494,7 +508,6 @@ var deliveryRestaurants = [
 var deliveryRestaurantsContainer = document.querySelector('.deliveryRestaurants-container');
 
 deliveryRestaurants.forEach((item, idx) => {
-    console.log(item);
     var deliveryRestaurantsCard = document.createElement('div');
     deliveryRestaurantsCard.classList.add('deliveryRestaurants-card');
 
