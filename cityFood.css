@@ -6,12 +6,14 @@
 }
 
 body {
+    width: 110%;
     max-width: 1450px;
     margin: auto;
 }
 
 /* header */
 header {
+    width: 100%;
     margin-top: 1.5rem;
     padding: 0 6rem;
     display: flex;
