@@ -1096,21 +1096,19 @@ a {
 }
 
 @media all and (width<=700px) {
-    .filter-container {
-        margin-left: 2rem;
+
+    .filter-container,
+    .deliveryRestaurants-Header {
+        margin-left: 1rem;
     }
 
     .deliveryRestaurants-container {
-        margin-left: 2rem;
+        margin-left: 1rem;
         width: 100%;
     }
 
     .deliveryRestaurants-card {
         width: 100%;
-    }
-
-    .deliveryRestaurants-Header {
-        margin-left: 2rem;
     }
 }
 
