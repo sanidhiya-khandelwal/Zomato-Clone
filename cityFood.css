@@ -136,6 +136,15 @@ header {
     font-size: 1.2rem;
 }
 
+.right-header-sm {
+    display: none;
+}
+
+.right-header-sm img {
+    width: 2.5rem;
+    display: none;
+}
+
 /* bread-cumb */
 .bread-crumb {
     margin-top: -70px;
@@ -940,7 +949,7 @@ a {
     /* footer */
     footer {
         margin-top: 3rem;
-        padding: 0.2rem 0% 0%;
+        padding: 0.2rem 3% 0%;
     }
 
 
@@ -1013,4 +1022,100 @@ a {
         padding: 0 10px;
     }
 
+}
+
+/* media query */
+@media all and (width<=1300px) {
+    header {
+        margin-top: 0rem;
+        padding: 1.5rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 6px -6px;
+    }
+
+    .search-locality {
+        display: none;
+    }
+
+    .right-header {
+        display: none;
+    }
+
+
+    .right-header-sm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        width: 8rem;
+    }
+
+    .sm-app {
+        background-color: red;
+        height: 2.5rem;
+        width: 5rem;
+        border-radius: 50px;
+        color: white;
+    }
+
+    .sm-app p {
+        text-align: center;
+        margin-top: 0.6rem;
+    }
+
+    .right-header-sm img {
+        display: block;
+    }
+
+    .bread-crumb {
+        display: none;
+    }
+
+    .categories {
+        display: none;
+    }
+
+    .filters {
+        margin-top: -5rem;
+        margin-left: -4rem;
+    }
+
+    .deliveryRestaurants {
+        padding: 0 5rem;
+        margin: -1rem 0 0 -3rem;
+    }
+
+    .deliveryRestaurants-Header {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (width<=850px) {
+    .deliveryRestaurants-card {
+        width: 45%;
+    }
+}
+
+@media all and (width<=700px) {
+    .filter-container {
+        margin-left: 2rem;
+    }
+
+    .deliveryRestaurants-container {
+        margin-left: 2rem;
+        width: 100%;
+    }
+
+    .deliveryRestaurants-card {
+        width: 100%;
+    }
+
+    .deliveryRestaurants-Header {
+        margin-left: 2rem;
+    }
+}
+
+@media all and (width<=500px) {
+    .filter-container {
+        font-size: 0.8rem;
+    }
 }
