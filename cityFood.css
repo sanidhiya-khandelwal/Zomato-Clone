@@ -219,11 +219,11 @@ header {
     top: 0px;
     z-index: 2;
     background-color: white;
+
 }
 
 .filter-container {
     display: flex;
-    gap: 1rem;
 }
 
 .filter-box,
@@ -292,6 +292,7 @@ header {
 
 .filter-container {
     display: flex;
+    gap: 1rem;
 }
 
 .filter-container-left-section {
@@ -1114,6 +1115,13 @@ a {
 
 @media all and (width<=500px) {
     .filter-container {
+        display: flex;
+        justify-content: space-between;
+        width: 18rem;
         font-size: 0.7rem;
+    }
+
+    .deliveryRestaurants-Header {
+        font-size: 1.25rem;
     }
 }
