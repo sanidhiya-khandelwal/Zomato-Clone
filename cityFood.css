@@ -19,6 +19,11 @@ header {
     justify-content: space-between;
 }
 
+.extra-space-top,
+.dish-container-sm {
+    display: none;
+}
+
 .left-header {
     display: flex;
     align-items: center;
@@ -153,6 +158,7 @@ header {
     display: none;
 }
 
+
 /* bread-cumb */
 .bread-crumb {
     margin-top: -70px;
@@ -224,7 +230,8 @@ header {
 .filters {
     padding: 1.8rem 6rem;
     position: sticky;
-    top: 80px;
+    /* top: 80px; */
+    top: 0;
     z-index: 2;
     background-color: white;
 
@@ -1041,6 +1048,18 @@ a {
         box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 6px -6px;
     }
 
+    /* extra space on top */
+    .extra-space-top {
+        display: block;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        border: 2px solid white;
+        width: 100%;
+        z-index: 2;
+        color: white;
+    }
+
     .search-locality-sm {
         display: flex;
         align-items: center;
@@ -1049,6 +1068,10 @@ a {
         width: 100%;
         padding: 1.5rem 2rem;
         box-shadow: rgba(28, 28, 28, 0.06) 0px 1px 4px;
+    }
+
+    .filters {
+        top: 80px;
     }
 
     .dish-sm {
