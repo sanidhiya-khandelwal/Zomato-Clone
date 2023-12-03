@@ -1,12 +1,15 @@
 // makes search container visible on scroll in small screens
 window.addEventListener('scroll', function () {
     var dishContainer = document.querySelector('.dish-sm');
+    var deliveryDiningContainerSM = document.querySelector('.delivery-dining-container-sm')
     var scrollPosition = window.scrollY;
-    if (scrollPosition > 100) {
+    if (scrollPosition > 150) {
         dishContainer.style.display = 'block';
+        deliveryDiningContainerSM.style.display = 'none';
     }
     else {
         dishContainer.style.display = 'none';
+        deliveryDiningContainerSM.style.display = 'flex';
     }
 })
 
