@@ -734,7 +734,7 @@ footerDisclaimerClose.addEventListener('click', () => {
     footerDisclaimerSMContainer.style.display = 'none';
 })
 
-//delivery dining out
+//delivery dining out for small screen
 var deliveryContainerSM = document.querySelector('.delivery-container-sm');
 var diningOutContainerSM = document.querySelector('.dining-out-container-sm');
 
