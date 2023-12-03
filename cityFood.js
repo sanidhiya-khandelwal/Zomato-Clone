@@ -727,9 +727,23 @@ function language() {
 
 
 // order on app notfication close
-var footerDisclaimerSM = document.querySelector('.footer-disclaimer-sm');
+var footerDisclaimerSMContainer = document.querySelector('.footer-disclaimer-sm-container');
 var footerDisclaimerClose = document.querySelector('.close-notification')
 
 footerDisclaimerClose.addEventListener('click', () => {
-    footerDisclaimerSM.style.display = 'none';
+    footerDisclaimerSMContainer.style.display = 'none';
+})
+
+//delivery dining out
+var deliveryContainerSM = document.querySelector('.delivery-container-sm');
+var diningOutContainerSM = document.querySelector('.dining-out-container-sm');
+
+deliveryContainerSM.addEventListener('click', () => {
+    deliveryContainerSM.style.borderTop = "2px solid red";
+    diningOutContainerSM.style.borderTop = "2px solid white";
+})
+
+diningOutContainerSM.addEventListener('click', () => {
+    diningOutContainerSM.style.borderTop = "2px solid red";
+    deliveryContainerSM.style.borderTop = "2px solid white";
 })
