@@ -6,7 +6,6 @@
 }
 
 body {
-    /* width: 110%; */
     max-width: 1450px;
     margin: auto;
 }
@@ -15,7 +14,6 @@ body {
 
 /* header */
 header {
-    /* width: 100%; */
     margin-top: 1.5rem;
     padding: 0 6rem;
     display: flex;
@@ -234,11 +232,9 @@ header {
 .filters {
     padding: 1.8rem 6rem;
     position: sticky;
-    /* top: 80px; */
     top: 0;
     z-index: 2;
     background-color: white;
-
 }
 
 .filter-container {
@@ -969,6 +965,9 @@ a {
 
 /* media query */
 @media all and (width<=1300px) {
+    body {
+        width: 100%;
+    }
 
     header {
         margin-top: 0rem;
@@ -1006,13 +1005,11 @@ a {
         position: sticky;
         top: 5px;
         display: block;
-        width: 93%;
-        margin: auto;
-        margin-left: 1rem;
         padding: 0.3rem 0.8rem;
         display: none;
         z-index: 2;
         background-color: white;
+        border: 3px solid white;
     }
 
     .dish-container-sm {
@@ -1216,7 +1213,7 @@ a {
     }
 
     .deliveryRestaurants-container {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         width: 100%;
     }
 
@@ -1230,19 +1227,30 @@ a {
 }
 
 @media all and (width<=500px) {
-    body {
-        width: 100%;
+
+    body,
+    header,
+    .dish-sm,
+    .footer-disclaimer-sm,
+    .footer-disclaimer-sm-container,
+    footer,
+    .filters {
+        width: 28.5rem;
     }
 
-    header {
-        width: 100%;
+
+    .filters {
+        margin-left: 0rem;
+        margin-right: 1rem;
     }
+
 
     .filter-container {
         display: flex;
         justify-content: space-between;
         width: 18rem;
         font-size: 0.7rem;
+        margin-left: -4.5rem;
     }
 
     .deliveryRestaurants-Header {
@@ -1253,7 +1261,6 @@ a {
         position: fixed;
         bottom: 0px;
         z-index: 2;
-        width: 100%;
         display: block;
     }
 
@@ -1262,7 +1269,6 @@ a {
     footer {
         margin-top: 3rem;
         padding: 0.2rem 3% 0%;
-        width: 105%;
     }
 
 
@@ -1334,5 +1340,6 @@ a {
     .footer-footer {
         padding: 0 10px;
     }
+
 
 }
