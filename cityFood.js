@@ -1,3 +1,20 @@
+//Fetching the City name from URL
+const currentUrl = window.location.href;
+const url = new URL(currentUrl);
+const params = new URLSearchParams(url.search);
+const cityValue = params.get("city");
+const capitalizedCity = cityValue.charAt(0).toUpperCase() + cityValue.slice(1);
+
+
+//Adding City Name wherever necessary
+var cityName = document.querySelector('.city-name');
+cityName.textContent = capitalizedCity;
+var cityNameInBreadcrumb = document.querySelector('.city-name-in-breadcrumb');
+cityNameInBreadcrumb.textContent = capitalizedCity;
+var deliveryRestaurantsHeaderCityName = document.querySelector('.deliveryRestaurants-Header-city-name');
+deliveryRestaurantsHeaderCityName.textContent = capitalizedCity;
+
+
 // makes search container visible on scroll in small screens
 window.addEventListener('scroll', function () {
     var dishContainer = document.querySelector('.dish-sm');
@@ -76,8 +93,6 @@ var filterBox = document.querySelector('.filter-box');
 var allFilters = document.querySelector('.all-filters');
 filterBox.addEventListener('click', function () {
     allFilters.style.display = 'block';
-    // body.style.background = 'rgba(0, 0, 0, 0.4)';
-    // filters.style.background = 'rgba(0, 0, 0, 0.3)';
     body.style.position = 'fixed';
 })
 
