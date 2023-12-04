@@ -108,14 +108,21 @@
     <div class="filters" style="border: 4px solid white;">
         <div class="filter-container">
             <div class="filter-box">
-                <img src="./assets/icons/filter.png" alt="filter-image">
+                <img src="./assets/icons/filter.png" alt="filter-image" class="filter-image">
+                <p class="filter-count" style="display: none;">0</p>
                 <p>Filters</p>
             </div>
             <div class="rating-box">
-                <p>Rating: 4.0+</p>
+                <p class="rating-box-filter"
+                    style="display: flex; flex-direction: row; align-items: center;gap: 0.5rem;">
+                    Rating: 4.0+</p>
+                <p class="cross-1" style="display: none;">X</p>
             </div>
             <div class="pure-veg-box">
-                <p>Pure Veg</p>
+                <p class="pure-veg-filter" style="display: flex; flex-direction: row; align-items: center;gap: 0.5rem;">
+                    Pure Veg </p>
+                <p class="cross-2" style="display: none;">X</p>
+
             </div>
         </div>
     </div>

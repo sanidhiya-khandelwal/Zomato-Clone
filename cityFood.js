@@ -15,6 +15,9 @@ var deliveryRestaurantsHeaderCityName = document.querySelector('.deliveryRestaur
 deliveryRestaurantsHeaderCityName.textContent = capitalizedCity;
 
 
+
+
+
 // makes search container visible on scroll in small screens
 window.addEventListener('scroll', function () {
     var dishContainer = document.querySelector('.dish-sm');
@@ -622,6 +625,86 @@ deliveryRestaurants.forEach((item, idx) => {
 
     deliveryRestaurantsContainer.appendChild(deliveryRestaurantsCard);
 
+})
+
+
+//filter
+//filter image and filter count visible hidden
+var filterImage = document.querySelector('.filter-image');
+var filterCount = document.querySelector('.filter-count')
+
+
+//Rating 4.0+ filter
+var ratingBoxFilter = document.querySelector('.rating-box')
+var cross1 = document.querySelector('.cross-1')
+ratingBoxFlag = 1;
+
+ratingBoxFilter.addEventListener('click', () => {
+
+    if (ratingBoxFlag == 1) {
+        ratingBoxFilter.style.backgroundColor = 'red';
+        ratingBoxFilter.style.color = 'white';
+        cross1.style.display = 'block';
+        ratingBoxFlag = 0;
+        // filter count and making it visible hidden based on count
+        filterImage.style.display = 'none';
+        filterCount.style.display = 'flex';
+        filterCount.textContent = parseInt(filterCount.textContent) + 1;
+    } else {
+        ratingBoxFilter.style.backgroundColor = 'white';
+        ratingBoxFilter.style.color = 'rgb(156, 156, 156)';
+        cross1.style.display = 'none';
+        ratingBoxFlag = 1;
+        // filter count and making it visible hidden based on count using if else
+        filterCount.textContent = parseInt(filterCount.textContent) - 1;
+        if (filterCount.textContent == 0) {
+            filterCount.style.display = 'none';
+            filterImage.style.display = 'flex';
+        }
+        else {
+            filterImage.style.display = 'none';
+            filterCount.style.display = 'flex';
+            filterCount.textContent = filterCount.textContent;
+        }
+
+
+    }
+})
+
+
+//pure veg filter
+var pureVegFilter = document.querySelector('.pure-veg-box')
+var cross2 = document.querySelector('.cross-2')
+pureVegFlag = 1;
+
+pureVegFilter.addEventListener('click', () => {
+
+    if (pureVegFlag == 1) {
+        pureVegFilter.style.backgroundColor = 'red';
+        pureVegFilter.style.color = 'white';
+        cross2.style.display = 'block';
+        pureVegFlag = 0;
+        // filter count and making it visible hidden
+        filterImage.style.display = 'none';
+        filterCount.style.display = 'flex';
+        filterCount.textContent = parseInt(filterCount.textContent) + 1;
+    } else {
+        pureVegFilter.style.backgroundColor = 'white';
+        pureVegFilter.style.color = 'rgb(156, 156, 156)';
+        cross2.style.display = 'none';
+        pureVegFlag = 1;
+        // filter count and making it visible hidden based on count using if else
+        filterCount.textContent = parseInt(filterCount.textContent) - 1;
+        if (filterCount.textContent == 0) {
+            filterCount.style.display = 'none';
+            filterImage.style.display = 'flex';
+        }
+        else {
+            filterImage.style.display = 'none';
+            filterCount.style.display = 'flex';
+            filterCount.textContent = filterCount.textContent;
+        }
+    }
 })
 
 // footer code
