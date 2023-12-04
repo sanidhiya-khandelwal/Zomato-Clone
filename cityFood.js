@@ -386,6 +386,7 @@ var deliveryRestaurants = [
         cuisine: 'North Indian, Mughlai',
         price: '₹150 for one',
         delieveryTime: '26 mins',
+        veg: false,
     },
     {
         img: './assets/food/bhaghat_halwai.avif',
@@ -395,6 +396,7 @@ var deliveryRestaurants = [
         cuisine: 'Street Food, Fast Food, Pizza, Sandwich, Chinese, South Indian, Shake, Beverages',
         price: '₹100 for one',
         delieveryTime: '35 mins',
+        veg: true,
     },
     {
         img: './assets/food/bhawna_sweets.avif',
@@ -404,6 +406,7 @@ var deliveryRestaurants = [
         cuisine: 'Mithai, Desserts, Bakery',
         price: '₹300 for one',
         delieveryTime: '5 mins',
+        veg: true,
     },
     {
         img: './assets/food/Bikanerwala.avif',
@@ -413,6 +416,7 @@ var deliveryRestaurants = [
         cuisine: 'Street Food, North Indian, Chinese, Mithai, South Indian, Fast Food, Desserts, Beverages',
         price: '₹200 for one',
         delieveryTime: '15 mins',
+        veg: true,
     },
     {
         img: './assets/food/Biryani_hotspot.avif',
@@ -422,6 +426,7 @@ var deliveryRestaurants = [
         cuisine: 'Biryani, North Indian, Mughlai, Kebab',
         price: '₹350 for one',
         delieveryTime: '55 mins',
+        veg: false,
     },
     {
         img: './assets/food/cake_Company.avif',
@@ -431,6 +436,7 @@ var deliveryRestaurants = [
         cuisine: 'Desserts, Bakery',
         price: '₹100 for one',
         delieveryTime: '20 mins',
+        veg: true,
     },
     {
         img: './assets/food/chopsticks.avif',
@@ -439,7 +445,8 @@ var deliveryRestaurants = [
         rating: '3.6',
         cuisine: 'Chinese, Momos, Fast Food, North Indian, Street Food',
         price: '₹100 for one',
-        delieveryTime: '120 mins'
+        delieveryTime: '120 mins',
+        veg: true,
     },
     {
         img: './assets/food/karchi.avif',
@@ -449,6 +456,7 @@ var deliveryRestaurants = [
         cuisine: 'North Indian, Mughlai, Kebab, Biryani, Fast Food',
         price: '₹100 for one',
         delieveryTime: '90 mins',
+        veg: false,
     },
     {
         img: './assets/food/kfc.avif',
@@ -458,6 +466,7 @@ var deliveryRestaurants = [
         cuisine: 'Burger, Fast Food, Biryani, Desserts, Beverages',
         price: '₹400 for one',
         delieveryTime: '30 mins',
+        veg: true,
     },
     {
         img: './assets/food/Kwality.avif',
@@ -467,6 +476,7 @@ var deliveryRestaurants = [
         cuisine: 'North Indian, Chinese, Continental, Fast Food',
         price: '₹200 for one',
         delieveryTime: '60 mins',
+        veg: true,
     },
     {
         img: './assets/food/La_pinoz.avif',
@@ -476,6 +486,7 @@ var deliveryRestaurants = [
         cuisine: 'Pizza, Pasta, Italian, Fast Food',
         price: '₹200 for one',
         delieveryTime: '10 mins',
+        veg: true,
     },
     {
         img: './assets/food/Nazeer_foods.avif',
@@ -485,6 +496,7 @@ var deliveryRestaurants = [
         cuisine: 'North Indian, Fast Food, Biryani',
         price: '₹500 for one',
         delieveryTime: '50 mins',
+        veg: false,
     },
     {
         img: './assets/food/mcdonald.avif',
@@ -494,6 +506,7 @@ var deliveryRestaurants = [
         cuisine: 'Burger, Fast Food, Beverages',
         price: '₹300 for one',
         delieveryTime: '40 mins',
+        veg: true,
     },
     {
         img: './assets/food/royal_briyani.avif',
@@ -503,6 +516,7 @@ var deliveryRestaurants = [
         cuisine: 'Biryani, Kebab, North Indian',
         price: '₹500 for one',
         delieveryTime: '45 mins',
+        veg: false,
     },
     {
         img: './assets/food/New_pizza_king.avif',
@@ -512,6 +526,7 @@ var deliveryRestaurants = [
         cuisine: 'Pizza',
         price: '₹400 for one',
         delieveryTime: '30 mins',
+        veg: true,
     },
     {
         img: './assets/food/pizzahut.avif',
@@ -521,6 +536,7 @@ var deliveryRestaurants = [
         cuisine: 'Pizza',
         price: '₹300 for one',
         delieveryTime: '55 mins',
+        veg: true,
     },
 ]
 var deliveryRestaurantsContainer = document.querySelector('.deliveryRestaurants-container');
