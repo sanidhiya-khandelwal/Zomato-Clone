@@ -14,6 +14,11 @@ cityNameInBreadcrumb.textContent = capitalizedCity;
 var deliveryRestaurantsHeaderCityName = document.querySelector('.deliveryRestaurants-Header-city-name');
 deliveryRestaurantsHeaderCityName.textContent = capitalizedCity;
 
+document.addEventListener('DOMContentLoaded', function () {
+    var pageTitle = document.querySelector('.pageTitle');
+    pageTitle.textContent += capitalizedCity;
+})
+
 
 
 
