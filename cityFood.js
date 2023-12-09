@@ -638,6 +638,40 @@ deliveryRestaurants.forEach((item, idx) => {
     displayRestaurants(item, idx)
 })
 
+// function to filter restaurants based on criteria
+function filterRestaurants() {
+    var isRatingFilterSelected = ratingBoxFlag === 0;
+    var isPureVegFilterSelected = pureVegFlag === 0;
+
+    //both the filters are selected
+    if (isRatingFilterSelected && isPureVegFilterSelected) {
+        deliveryRestaurantsContainer.innerHTML = '';
+        deliveryRestaurants.filter(item => item.rating >= 4 && item.veg === true).forEach((item, idx) => {
+            displayRestaurants(item, idx);
+        });
+    }
+    else if (isRatingFilterSelected) {
+        // Only the Rating filter is selected
+        deliveryRestaurantsContainer.innerHTML = '';
+        deliveryRestaurants.filter(item => item.rating >= 4).forEach((item, idx) => {
+            displayRestaurants(item, idx);
+        });
+    }
+    else if (isPureVegFilterSelected) {
+        //only pure veg filter is selected
+        deliveryRestaurantsContainer.innerHTML = '';
+        deliveryRestaurants.filter(item => item.veg === true).forEach((item, idx) => {
+            displayRestaurants(item, idx);
+        });
+    }
+    else {
+        // No filters are selected
+        deliveryRestaurantsContainer.innerHTML = '';
+        deliveryRestaurants.forEach((item, idx) => {
+            displayRestaurants(item, idx);
+        });
+    }
+}
 
 //filter
 //filter image and filter count visible hidden
@@ -661,7 +695,8 @@ ratingBoxFilter.addEventListener('click', () => {
         filterImage.style.display = 'none';
         filterCount.style.display = 'flex';
         filterCount.textContent = parseInt(filterCount.textContent) + 1;
-    } else {
+    }
+    else {
         ratingBoxFilter.style.backgroundColor = 'white';
         ratingBoxFilter.style.color = 'rgb(156, 156, 156)';
         cross1.style.display = 'none';
@@ -677,11 +712,11 @@ ratingBoxFilter.addEventListener('click', () => {
             filterCount.style.display = 'flex';
             filterCount.textContent = filterCount.textContent;
         }
-
-
     }
-})
 
+    //function to show restaurants with filter 
+    filterRestaurants();
+})
 
 //pure veg filter
 var pureVegFilter = document.querySelector('.pure-veg-box')
@@ -699,15 +734,8 @@ pureVegFilter.addEventListener('click', () => {
         filterImage.style.display = 'none';
         filterCount.style.display = 'flex';
         filterCount.textContent = parseInt(filterCount.textContent) + 1;
-
-        // with filter display
-        deliveryRestaurantsContainer.innerHTML = '';
-        deliveryRestaurants.filter(item => item.veg == true).forEach((item, idx) => {
-            displayRestaurants(item, idx)
-        })
-
-
-    } else {
+    }
+    else {
         pureVegFilter.style.backgroundColor = 'white';
         pureVegFilter.style.color = 'rgb(156, 156, 156)';
         cross2.style.display = 'none';
@@ -723,15 +751,14 @@ pureVegFilter.addEventListener('click', () => {
             filterCount.style.display = 'flex';
             filterCount.textContent = filterCount.textContent;
         }
-
-        //without filter
-        deliveryRestaurantsContainer.innerHTML = '';
-        deliveryRestaurants.forEach((item, idx) => {
-            displayRestaurants(item, idx)
-
-        })
     }
+    //function to show restaurants with filter 
+    filterRestaurants();
 })
+
+//intitialy when screen loads 
+filterRestaurants();
+
 
 
 // footer code
