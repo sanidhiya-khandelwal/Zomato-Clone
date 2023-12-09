@@ -384,6 +384,91 @@ cuisines.forEach((item, idx) => {
 
 )
 
+
+//FUNCTION TO DISPLAY RESTAURANTS
+function displayRestaurants(item, idx) {
+    var deliveryRestaurantsCard = document.createElement('div');
+    deliveryRestaurantsCard.classList.add('deliveryRestaurants-card');
+
+    var restaurantsImage = document.createElement('img');
+    restaurantsImage.classList.add('foodImage');
+    restaurantsImage.src = item.img;
+
+    var discountContainer = document.createElement('div');
+    discountContainer.classList.add('discount-container');
+
+    var discountPercentage = document.createElement('p');
+    discountPercentage.classList.add('discount-percentage');
+    discountPercentage.textContent = item.discount;
+
+    var deliveryRestaurantsDetails = document.createElement('div');
+    deliveryRestaurantsDetails.classList.add('deliveryRestaurants-details');
+
+    var deliveryRestaurantsName = document.createElement('div');
+    deliveryRestaurantsName.classList.add('deliveryRestaurants-name');
+
+    var restaurantName = document.createElement('b');
+    restaurantName.classList.add('restaurant-name');
+    restaurantName.textContent = item.restaurantName;
+
+    var restaurantRatingContainer = document.createElement('div');
+    restaurantRatingContainer.classList.add('restaurant-rating-container');
+
+
+    var restaurantRating = document.createElement('b');
+    restaurantRating.classList.add('restaurant-rating');
+    restaurantRating.textContent = item.rating;
+
+    var starIcon = document.createElement('p');
+    starIcon.classList.add('star-icon')
+    starIcon.innerHTML = '&#9734';
+    starIcon.style.margin = '0 0 3px 2px'
+
+    var cuisinePrice = document.createElement('div');
+    cuisinePrice.classList.add('cuisine-price');
+
+    var cuisine = document.createElement('p');
+    cuisine.classList.add('cuisine');
+    cuisine.textContent = item.cuisine;
+
+    var price = document.createElement('div');
+    price.classList.add('price');
+
+    var priceForOne = document.createElement('p');
+    priceForOne.classList.add('price-for-one');
+    priceForOne.textContent = item.price;
+
+    var time = document.createElement('div');
+    time.classList.add('time');
+    time.textContent = item.delieveryTime;
+
+    var deliveryTime = document.createElement('b');
+    deliveryTime.classList.add('delivery-time');
+
+    deliveryRestaurantsCard.appendChild(restaurantsImage);
+    discountContainer.appendChild(discountPercentage);
+    deliveryRestaurantsCard.appendChild(discountContainer);
+
+    deliveryRestaurantsName.appendChild(restaurantName);
+    restaurantRatingContainer.appendChild(restaurantRating);
+    restaurantRatingContainer.appendChild(starIcon);
+    deliveryRestaurantsName.appendChild(restaurantRatingContainer);
+    deliveryRestaurantsDetails.appendChild(deliveryRestaurantsName);
+
+    cuisinePrice.appendChild(cuisine);
+    price.appendChild(priceForOne);
+    cuisinePrice.appendChild(price);
+    deliveryRestaurantsDetails.appendChild(cuisinePrice);
+
+    time.appendChild(deliveryTime);
+    deliveryRestaurantsDetails.appendChild(time);
+
+    deliveryRestaurantsCard.appendChild(deliveryRestaurantsDetails);
+
+    deliveryRestaurantsContainer.appendChild(deliveryRestaurantsCard);
+
+}
+
 // show delivery restaurants code
 var deliveryRestaurants = [
     {
@@ -550,86 +635,7 @@ var deliveryRestaurants = [
 var deliveryRestaurantsContainer = document.querySelector('.deliveryRestaurants-container');
 
 deliveryRestaurants.forEach((item, idx) => {
-    var deliveryRestaurantsCard = document.createElement('div');
-    deliveryRestaurantsCard.classList.add('deliveryRestaurants-card');
-
-    var restaurantsImage = document.createElement('img');
-    restaurantsImage.classList.add('foodImage');
-    restaurantsImage.src = item.img;
-
-    var discountContainer = document.createElement('div');
-    discountContainer.classList.add('discount-container');
-
-    var discountPercentage = document.createElement('p');
-    discountPercentage.classList.add('discount-percentage');
-    discountPercentage.textContent = item.discount;
-
-    var deliveryRestaurantsDetails = document.createElement('div');
-    deliveryRestaurantsDetails.classList.add('deliveryRestaurants-details');
-
-    var deliveryRestaurantsName = document.createElement('div');
-    deliveryRestaurantsName.classList.add('deliveryRestaurants-name');
-
-    var restaurantName = document.createElement('b');
-    restaurantName.classList.add('restaurant-name');
-    restaurantName.textContent = item.restaurantName;
-
-    var restaurantRatingContainer = document.createElement('div');
-    restaurantRatingContainer.classList.add('restaurant-rating-container');
-
-
-    var restaurantRating = document.createElement('b');
-    restaurantRating.classList.add('restaurant-rating');
-    restaurantRating.textContent = item.rating;
-
-    var starIcon = document.createElement('p');
-    starIcon.classList.add('star-icon')
-    starIcon.innerHTML = '&#9734';
-    starIcon.style.margin = '0 0 3px 2px'
-
-    var cuisinePrice = document.createElement('div');
-    cuisinePrice.classList.add('cuisine-price');
-
-    var cuisine = document.createElement('p');
-    cuisine.classList.add('cuisine');
-    cuisine.textContent = item.cuisine;
-
-    var price = document.createElement('div');
-    price.classList.add('price');
-
-    var priceForOne = document.createElement('p');
-    priceForOne.classList.add('price-for-one');
-    priceForOne.textContent = item.price;
-
-    var time = document.createElement('div');
-    time.classList.add('time');
-    time.textContent = item.delieveryTime;
-
-    var deliveryTime = document.createElement('b');
-    deliveryTime.classList.add('delivery-time');
-
-    deliveryRestaurantsCard.appendChild(restaurantsImage);
-    discountContainer.appendChild(discountPercentage);
-    deliveryRestaurantsCard.appendChild(discountContainer);
-
-    deliveryRestaurantsName.appendChild(restaurantName);
-    restaurantRatingContainer.appendChild(restaurantRating);
-    restaurantRatingContainer.appendChild(starIcon);
-    deliveryRestaurantsName.appendChild(restaurantRatingContainer);
-    deliveryRestaurantsDetails.appendChild(deliveryRestaurantsName);
-
-    cuisinePrice.appendChild(cuisine);
-    price.appendChild(priceForOne);
-    cuisinePrice.appendChild(price);
-    deliveryRestaurantsDetails.appendChild(cuisinePrice);
-
-    time.appendChild(deliveryTime);
-    deliveryRestaurantsDetails.appendChild(time);
-
-    deliveryRestaurantsCard.appendChild(deliveryRestaurantsDetails);
-
-    deliveryRestaurantsContainer.appendChild(deliveryRestaurantsCard);
-
+    displayRestaurants(item, idx)
 })
 
 
@@ -697,86 +703,7 @@ pureVegFilter.addEventListener('click', () => {
         // with filter display
         deliveryRestaurantsContainer.innerHTML = '';
         deliveryRestaurants.filter(item => item.veg == true).forEach((item, idx) => {
-            var deliveryRestaurantsCard = document.createElement('div');
-            deliveryRestaurantsCard.classList.add('deliveryRestaurants-card');
-
-            var restaurantsImage = document.createElement('img');
-            restaurantsImage.classList.add('foodImage');
-            restaurantsImage.src = item.img;
-
-            var discountContainer = document.createElement('div');
-            discountContainer.classList.add('discount-container');
-
-            var discountPercentage = document.createElement('p');
-            discountPercentage.classList.add('discount-percentage');
-            discountPercentage.textContent = item.discount;
-
-            var deliveryRestaurantsDetails = document.createElement('div');
-            deliveryRestaurantsDetails.classList.add('deliveryRestaurants-details');
-
-            var deliveryRestaurantsName = document.createElement('div');
-            deliveryRestaurantsName.classList.add('deliveryRestaurants-name');
-
-            var restaurantName = document.createElement('b');
-            restaurantName.classList.add('restaurant-name');
-            restaurantName.textContent = item.restaurantName;
-
-            var restaurantRatingContainer = document.createElement('div');
-            restaurantRatingContainer.classList.add('restaurant-rating-container');
-
-
-            var restaurantRating = document.createElement('b');
-            restaurantRating.classList.add('restaurant-rating');
-            restaurantRating.textContent = item.rating;
-
-            var starIcon = document.createElement('p');
-            starIcon.classList.add('star-icon')
-            starIcon.innerHTML = '&#9734';
-            starIcon.style.margin = '0 0 3px 2px'
-
-            var cuisinePrice = document.createElement('div');
-            cuisinePrice.classList.add('cuisine-price');
-
-            var cuisine = document.createElement('p');
-            cuisine.classList.add('cuisine');
-            cuisine.textContent = item.cuisine;
-
-            var price = document.createElement('div');
-            price.classList.add('price');
-
-            var priceForOne = document.createElement('p');
-            priceForOne.classList.add('price-for-one');
-            priceForOne.textContent = item.price;
-
-            var time = document.createElement('div');
-            time.classList.add('time');
-            time.textContent = item.delieveryTime;
-
-            var deliveryTime = document.createElement('b');
-            deliveryTime.classList.add('delivery-time');
-
-            deliveryRestaurantsCard.appendChild(restaurantsImage);
-            discountContainer.appendChild(discountPercentage);
-            deliveryRestaurantsCard.appendChild(discountContainer);
-
-            deliveryRestaurantsName.appendChild(restaurantName);
-            restaurantRatingContainer.appendChild(restaurantRating);
-            restaurantRatingContainer.appendChild(starIcon);
-            deliveryRestaurantsName.appendChild(restaurantRatingContainer);
-            deliveryRestaurantsDetails.appendChild(deliveryRestaurantsName);
-
-            cuisinePrice.appendChild(cuisine);
-            price.appendChild(priceForOne);
-            cuisinePrice.appendChild(price);
-            deliveryRestaurantsDetails.appendChild(cuisinePrice);
-
-            time.appendChild(deliveryTime);
-            deliveryRestaurantsDetails.appendChild(time);
-
-            deliveryRestaurantsCard.appendChild(deliveryRestaurantsDetails);
-
-            deliveryRestaurantsContainer.appendChild(deliveryRestaurantsCard);
-
+            displayRestaurants(item, idx)
         })
 
 
@@ -800,85 +727,7 @@ pureVegFilter.addEventListener('click', () => {
         //without filter
         deliveryRestaurantsContainer.innerHTML = '';
         deliveryRestaurants.forEach((item, idx) => {
-            var deliveryRestaurantsCard = document.createElement('div');
-            deliveryRestaurantsCard.classList.add('deliveryRestaurants-card');
-
-            var restaurantsImage = document.createElement('img');
-            restaurantsImage.classList.add('foodImage');
-            restaurantsImage.src = item.img;
-
-            var discountContainer = document.createElement('div');
-            discountContainer.classList.add('discount-container');
-
-            var discountPercentage = document.createElement('p');
-            discountPercentage.classList.add('discount-percentage');
-            discountPercentage.textContent = item.discount;
-
-            var deliveryRestaurantsDetails = document.createElement('div');
-            deliveryRestaurantsDetails.classList.add('deliveryRestaurants-details');
-
-            var deliveryRestaurantsName = document.createElement('div');
-            deliveryRestaurantsName.classList.add('deliveryRestaurants-name');
-
-            var restaurantName = document.createElement('b');
-            restaurantName.classList.add('restaurant-name');
-            restaurantName.textContent = item.restaurantName;
-
-            var restaurantRatingContainer = document.createElement('div');
-            restaurantRatingContainer.classList.add('restaurant-rating-container');
-
-
-            var restaurantRating = document.createElement('b');
-            restaurantRating.classList.add('restaurant-rating');
-            restaurantRating.textContent = item.rating;
-
-            var starIcon = document.createElement('p');
-            starIcon.classList.add('star-icon')
-            starIcon.innerHTML = '&#9734';
-            starIcon.style.margin = '0 0 3px 2px'
-
-            var cuisinePrice = document.createElement('div');
-            cuisinePrice.classList.add('cuisine-price');
-
-            var cuisine = document.createElement('p');
-            cuisine.classList.add('cuisine');
-            cuisine.textContent = item.cuisine;
-
-            var price = document.createElement('div');
-            price.classList.add('price');
-
-            var priceForOne = document.createElement('p');
-            priceForOne.classList.add('price-for-one');
-            priceForOne.textContent = item.price;
-
-            var time = document.createElement('div');
-            time.classList.add('time');
-            time.textContent = item.delieveryTime;
-
-            var deliveryTime = document.createElement('b');
-            deliveryTime.classList.add('delivery-time');
-
-            deliveryRestaurantsCard.appendChild(restaurantsImage);
-            discountContainer.appendChild(discountPercentage);
-            deliveryRestaurantsCard.appendChild(discountContainer);
-
-            deliveryRestaurantsName.appendChild(restaurantName);
-            restaurantRatingContainer.appendChild(restaurantRating);
-            restaurantRatingContainer.appendChild(starIcon);
-            deliveryRestaurantsName.appendChild(restaurantRatingContainer);
-            deliveryRestaurantsDetails.appendChild(deliveryRestaurantsName);
-
-            cuisinePrice.appendChild(cuisine);
-            price.appendChild(priceForOne);
-            cuisinePrice.appendChild(price);
-            deliveryRestaurantsDetails.appendChild(cuisinePrice);
-
-            time.appendChild(deliveryTime);
-            deliveryRestaurantsDetails.appendChild(time);
-
-            deliveryRestaurantsCard.appendChild(deliveryRestaurantsDetails);
-
-            deliveryRestaurantsContainer.appendChild(deliveryRestaurantsCard);
+            displayRestaurants(item, idx)
 
         })
     }
