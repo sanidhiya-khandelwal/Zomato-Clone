@@ -184,6 +184,80 @@ header {
     color: red;
 }
 
+/* restaurant images */
+.restaurant-images {
+    padding: 0 6rem;
+    margin-top: 1.2rem;
+}
+
+.restaurant-images-container {
+    display: flex;
+    gap: 0.6rem;
+    height: 375px;
+    width: 100%;
+}
+
+.restaurant-image-left {
+    width: 80%;
+    overflow: hidden;
+}
+
+.restaurant-image-left img {
+    height: 100%;
+    width: 100%;
+}
+
+.restaurant-image-centre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.restaurant-image-centre-top img,
+.restaurant-image-centre-bottom img {
+    object-fit: cover;
+    height: 11.5rem;
+    width: 10rem;
+}
+
+.restaurant-image-left img,
+.restaurant-image-centre-top img,
+.restaurant-image-centre-bottom img,
+.restaurant-image-right img {
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.8s;
+}
+
+.restaurant-image-left:hover img,
+.restaurant-image-centre-top:hover img,
+.restaurant-image-centre-bottom:hover img {
+    transform: scale(1.1);
+}
+
+.restaurant-image-right {
+    width: 30%;
+    position: relative;
+
+}
+
+.restaurant-image-right img {
+    height: 100%;
+    width: 100%;
+    filter: blur(1.5px);
+    cursor: pointer;
+}
+
+.viewgallery {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    color: white;
+    font-size: 1.2rem;
+}
 
 /* media query */
 @media all and (width<=1300px) {
@@ -305,7 +379,22 @@ header {
         display: block;
     }
 
+    /* bread crumb */
     .bread-crumb {
         padding: .1rem 2rem;
+    }
+
+    /* restraunt images */
+
+    .restaurant-images {
+        padding: 1.5rem 2rem;
+    }
+
+}
+
+@media all and (width<=900px) {
+
+    .restaurant-images {
+        display: none;
     }
 }

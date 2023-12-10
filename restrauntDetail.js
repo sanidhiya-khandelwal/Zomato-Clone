@@ -64,6 +64,64 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 
+    // display restaurants images
+    const [
+        {
+            restaurantImg1: restaurantImg1
+        },
+        {
+            restaurantImg2: restaurantImg2
+        },
+        {
+            restaurantImg3: restaurantImg3
+        }
+    ] = selectedRestauraunt.restaurantImgs;
+
+    restaurantImg01 = restaurantImg1 !== '' ? restaurantImg1 : './assets/food/restaurant imgs/defaultRestrauntImage.webp'
+    restaurantImg02 = restaurantImg2 !== '' ? restaurantImg2 : './assets/food/restaurant imgs/defaultRestrauntImage.webp'
+    restaurantImg03 = restaurantImg3 !== '' ? restaurantImg3 : './assets/food/restaurant imgs/defaultRestrauntImage.webp'
+
+
+    var restaurantImagesContainer = document.querySelector('.restaurant-images-container');
+
+    var restaurantImageLeft = document.createElement('div');
+    restaurantImageLeft.classList.add('restaurant-image-left');
+    var restaurantImageLeftImg = document.createElement('img');
+    restaurantImageLeftImg.src = restaurantImg01;
+    restaurantImageLeft.appendChild(restaurantImageLeftImg);
+    restaurantImagesContainer.appendChild(restaurantImageLeft);
+
+    var restaurantImageCentre = document.createElement('div');
+    restaurantImageCentre.classList.add('restaurant-image-centre');
+    var restaurantImageCentreTop = document.createElement('div');
+    restaurantImageCentreTop.classList.add('restaurant-image-centre-top');
+    var restaurantImageCentreTopImg = document.createElement('img');
+    restaurantImageCentreTopImg.src = restaurantImg02;
+    restaurantImageCentreTop.appendChild(restaurantImageCentreTopImg);
+    restaurantImageCentre.appendChild(restaurantImageCentreTop);
+
+    var restaurantImageCentreBottom = document.createElement('div');
+    restaurantImageCentreBottom.classList.add('restaurant-image-centre-bottom');
+    var restaurantImageCentreBottomImg = document.createElement('img');
+    restaurantImageCentreBottomImg.src = restaurantImg03;
+    restaurantImageCentreBottom.appendChild(restaurantImageCentreBottomImg);
+    restaurantImageCentre.appendChild(restaurantImageCentreBottom);
+    restaurantImagesContainer.appendChild(restaurantImageCentre)
+
+    var restaurantImageRight = document.createElement('div');
+    restaurantImageRight.classList.add('restaurant-image-right');
+    var restaurantImageRightImg = document.createElement('img');
+    restaurantImageRightImg.src = './assets/food/restaurant imgs/view gallery image.avif';
+    var viewgalleryText = document.createElement('p');
+    viewgalleryText.classList.add('viewgallery');
+    viewgalleryText.textContent = "View Gallery"
+    restaurantImageRight.appendChild(restaurantImageRightImg);
+    restaurantImageRight.appendChild(viewgalleryText);
+    restaurantImageCentre.appendChild(restaurantImageRight);
+    restaurantImagesContainer.appendChild(restaurantImageRight);
+
+
+
 
 
 
