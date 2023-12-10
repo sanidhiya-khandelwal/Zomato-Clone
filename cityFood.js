@@ -472,7 +472,7 @@ function displayRestaurants(item, idx) {
         setTimeout(() => {
             let restaurantName = item.restaurantName;
             let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
-            window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}+restaurant=${encodeURIComponent(restaurantNameReplace)}`;
+            window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}&restaurant=${encodeURIComponent(restaurantNameReplace)}`;
         }, 100);
     }
     )
