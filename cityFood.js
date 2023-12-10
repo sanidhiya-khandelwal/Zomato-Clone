@@ -466,8 +466,15 @@ function displayRestaurants(item, idx) {
     deliveryRestaurantsContainer.appendChild(deliveryRestaurantsCard);
 
     //detail of restraunt
-    deliveryRestaurantsCard.addEventListener('click', () =>
-        console.log(item)
+    deliveryRestaurantsCard.addEventListener('click', () => {
+        localStorage.setItem('selectedRestauraunt', JSON.stringify(item))
+
+        setTimeout(() => {
+            let restaurantName = item.restaurantName;
+            let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
+            window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}+restaurant=${encodeURIComponent(restaurantNameReplace)}`;
+        }, 100);
+    }
     )
 
 }
