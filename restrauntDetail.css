@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 1450px;
+    margin: auto;
+}
+
+
+
+/* header */
+header {
+    margin-top: 1.5rem;
+    padding: 0 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.extra-space-top,
+.dish-container-sm {
+    display: none;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 75%;
+
+}
+
+.zomato-logo {
+    width: 175px;
+    height: 32px;
+}
+
+.search-locality {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 50px;
+    width: 75%;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.location-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.location-container img {
+    width: 25px;
+}
+
+.down-arrow img {
+    width: 15px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.vertical-line {
+    height: 25px;
+}
+
+.sub-header-sm {
+    display: none;
+}
+
+.dish-sm {
+    display: none;
+}
+
+.dish-container {
+    padding-right: 8rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.dish-container img {
+    width: 25px;
+}
+
+.dish-container input {
+    border: none;
+    width: 250px;
+    font-size: 1.2rem;
+}
+
+.dish-container input:focus {
+    outline: none;
+    border: none;
+}
+
+.dish-container input::placeholder {
+    font-size: 0.9rem;
+}
+
+.right-header {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    cursor: pointer;
+}
+
+.right-header p {
+    font-size: 1.2rem;
+    color: rgb(105, 105, 105);
+}
+
+.right-header p:hover {
+    color: black;
+}
+
+.detect-current-location {
+    border: 4px solid rgba(0, 0, 0, 0.01);
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    width: 30%;
+    padding: 15px 30px;
+    margin: 15px 0 0 295px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    visibility: hidden;
+}
+
+.detect-current-location img {
+    width: 25px;
+}
+
+.detect-current-location-text {
+    color: red;
+    font-size: 1.2rem;
+}
+
+.right-header-sm {
+    display: none;
+}
+
+.right-header-sm img {
+    width: 2.5rem;
+    display: none;
+}
+
+
+/* bread-cumb */
+.bread-crumb {
+    margin-top: -70px;
+    padding: 0 6rem;
+}
+
+.bread-cumb-container p {
+    color: rgb(130, 130, 130)
+}
+
+.city-name-in-breadcrumb {
+    cursor: pointer;
+}
+
+.bread-cumb-container p a {
+    color: black;
+    text-decoration: none;
+}
+
+.bread-cumb-container p a:hover {
+    color: red;
+}
+
+
+/* media query */
+@media all and (width<=1300px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        margin-top: 0rem;
+        padding: 1.5rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 6px -6px;
+    }
+
+    /* extra space on top */
+    .extra-space-top {
+        display: block;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        border: 2px solid white;
+        width: 100%;
+        z-index: 2;
+        color: white;
+    }
+
+    .search-locality-sm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 4rem;
+        width: 100%;
+        padding: 1.5rem 2rem;
+        box-shadow: rgba(28, 28, 28, 0.06) 0px 1px 4px;
+    }
+
+    .filters {
+        top: 80px;
+    }
+
+    .dish-sm {
+        position: sticky;
+        top: 5px;
+        display: block;
+        padding: 0.3rem 0.8rem;
+        display: none;
+        z-index: 2;
+        background-color: white;
+        border: 3px solid white;
+    }
+
+    .dish-container-sm {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 2px solid rgb(232, 232, 232);
+        box-shadow: rgba(54, 54, 54, 0.08) 0 2px 2px;
+        height: 4rem;
+        border-radius: 50px;
+        padding-left: 0.5rem;
+        gap: 0.8rem;
+    }
+
+    .dish-container-sm input {
+        width: 90%;
+        border: none;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        height: 3.5rem;
+        font-size: 1.3rem;
+        border-radius: 50px;
+    }
+
+    .dish-container-sm input:focus {
+        border: none;
+        outline: none;
+    }
+
+    .dish-container-sm input::placeholder {
+        font-size: 1.1rem;
+        color: rgb(156, 156, 156)
+    }
+
+    .dish-container-sm img {
+        width: 25px;
+    }
+
+    .search-locality {
+        display: none;
+    }
+
+    .right-header {
+        display: none;
+    }
+
+
+    .right-header-sm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        width: 8rem;
+    }
+
+    .sm-app {
+        background-color: red;
+        height: 2.5rem;
+        width: 5rem;
+        border-radius: 50px;
+        color: white;
+    }
+
+    .sm-app p {
+        text-align: center;
+        margin-top: 0.6rem;
+    }
+
+    .right-header-sm img {
+        display: block;
+    }
+
+    .bread-crumb {
+        padding: .1rem 2rem;
+    }
+}

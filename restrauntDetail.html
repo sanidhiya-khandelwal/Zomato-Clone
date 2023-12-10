@@ -8,7 +8,85 @@
     <link rel="stylesheet" href="restrauntDetail.css">
 </head>
 
-<body style="background-color: purple;">
+<body>
+    <!-- Header -->
+    <header>
+        <div class="left-header">
+            <img src="./assets/icons/footer-image.avif" alt="" class="zomato-logo">
+            <div class="search-locality">
+                <div class="location">
+                    <div class="location-container">
+                        <img src="./assets/icons/current-location.png" alt="current-location" class="location-img">
+                        <p class="city-name"></p>
+                    </div>
+                    <div class="down-arrow">
+                        <img src="./assets/icons/down-filled-triangular-arrow.png" alt="down-arrow"
+                            class="down-arrow-img">
+                    </div>
+                </div>
+                <img src="./assets/icons/vertical-line.png" alt="" class="vertical-line">
+                <div class="dish">
+                    <div class="dish-container">
+                        <img src="./assets/icons/search (2).png" alt="search-icon">
+                        <input type="text" placeholder="Search for restaurant, cuisine or a dish" class="search-input">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-header">
+            <p>Log in</p>
+            <p>Sign up</p>
+        </div>
+        <div class="right-header-sm">
+            <div class="sm-app">
+                <p>Use App</p>
+            </div>
+            <img src="./assets/icons/profile.png" alt="profile-pic">
+        </div>
+    </header>
+    <div class="extra-space-top">
+        hi
+    </div>
+    <div class="sub-header-sm">
+        <div class="search-locality-sm">
+            <div class="location-sm">
+                <div class="location-container">
+                    <img src="./assets/icons/current-location.png" alt="current-location" class="location-img-sm">
+                    <b class="city-name-sm"></b>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-container-sm">
+                    <img src="./assets/icons/search (2).png" alt="search-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dish-sm">
+        <div class="dish-container-sm">
+            <img src="./assets/icons/search (2).png" alt="search-icon">
+            <input type="text" placeholder="Search for restaurant, cuisine or a dish" class="search-input-sm">
+        </div>
+    </div>
+
+
+    <div class="detect-current-location">
+        <img src="./assets/icons/detect-current-location.png" alt="" class="current-location-img">
+        <div class="current-location-container">
+            <p class="detect-current-location-text">Detect current location</p>
+            <p class="gps">Using GPS</p>
+        </div>
+    </div>
+    <div class="bread-crumb">
+        <div class="bread-cumb-container">
+            <p><a href="index.html">Home </a> / <a href="index.html"> India </a> /
+                <a onclick="window.history.back()" class="city-name-in-breadcrumb" style="font-weight: 100;"></a> /
+                <b class="restaurant-name-in-breadcrumb" style="font-weight: 100;"></b>
+            </p>
+        </div>
+    </div>
+
     <script src="restrauntDetail.js"></script>
 </body>
 
