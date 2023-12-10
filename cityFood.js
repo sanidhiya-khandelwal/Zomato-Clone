@@ -2233,8 +2233,8 @@ var deliveryRestaurants = [
         veg: true,
         restaurantImgs: [
             { restaurantImg1: './assets/food/restaurant imgs/cake company/cakecompany1.avif' },
-            { restaurantImg2: './assets/food/restaurant imgs/cake company/cakecompany1.avif' },
-            { restaurantImg3: './assets/food/restaurant imgs/cake company/cakecompany1.avif' },
+            { restaurantImg2: '' },
+            { restaurantImg3: '' },
         ],
         food: [
             {
@@ -2555,7 +2555,7 @@ var deliveryRestaurants = [
         restaurantImgs: [
             { restaurantImg1: './assets/food/restaurant imgs/chopstics/chopstick1.avif' },
             { restaurantImg2: './assets/food/restaurant imgs/chopstics/chopstick2.avif' },
-            { restaurantImg3: './assets/food/restaurant imgs/chopstics/chopstick3.avif' },
+            { restaurantImg3: '' },
         ],
         food: [
             {
@@ -3585,7 +3585,7 @@ var deliveryRestaurants = [
         veg: true,
         restaurantImgs: [
             { restaurantImg1: './assets/food/restaurant imgs/Kwality on wheels/kwalityonwheels1.jpg' },
-            { restaurantImg2: './assets/food/restaurant imgs/Kwality on wheels/kwalityonwheels2.jpg' },
+            { restaurantImg2: '' },
             { restaurantImg3: './assets/food/restaurant imgs/Kwality on wheels/kwalityonwheels3.jpg' },
         ],
         food: [
