@@ -259,6 +259,126 @@ header {
     font-size: 1.2rem;
 }
 
+/* hotel detail section */
+
+.hotel-detail {
+    padding: 0 6rem;
+    margin-top: 1.2rem;
+}
+
+.hotel-detail-container {}
+
+.hotel-name-and-reviews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-name {
+    font-size: 2rem;
+}
+
+.review-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-rating-review-container,
+.dining-rating-review-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 11rem;
+    height: 3rem;
+    padding: 0 0.2rem;
+}
+
+.delivery-rating-container,
+.dining-rating-container {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    width: 35%;
+    background-color: green;
+    padding: 0.2rem;
+    color: white;
+    border-radius: 4px;
+}
+
+.delivery-rating-container h6,
+.dining-rating-container h6 {
+    font-size: 1.1rem;
+}
+
+.delivery-rating-container img,
+.dining-rating-container img {
+    height: 15px;
+    width: 45px;
+}
+
+.delivery-review-container,
+.dining-review-container {
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65%;
+}
+
+/* cuisines */
+.cuisines {
+    margin-top: -5px;
+    font-weight: 100;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.836);
+}
+
+/* location and timings */
+.location,
+.timings-text {
+    color: rgb(156, 156, 156);
+    font-weight: 100;
+}
+
+.open-now-text {
+    color: orangered;
+    font-weight: 300;
+}
+
+/* Buttons */
+.direction-bookmark-share-container {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.direction-container,
+.bookmark-container,
+.share-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    justify-content: center;
+    padding: 0.3rem;
+    border: 0.1px solid rgba(0, 0, 0, 0.352);
+    border-radius: 9px;
+    height: 2.4rem;
+    width: 9%;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.direction-container img,
+.bookmark-container img,
+.share-container img {
+    height: 18px;
+}
+
+.direction-container:hover,
+.bookmark-container:hover,
+.share-container:hover {
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 237, 239));
+}
+
 /* media query */
 @media all and (width<=1300px) {
     body {
