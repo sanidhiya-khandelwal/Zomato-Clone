@@ -271,6 +271,7 @@ header {
 .hotel-name-and-reviews {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .hotel-name {
@@ -377,6 +378,24 @@ header {
 .bookmark-container:hover,
 .share-container:hover {
     background: linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 237, 239));
+}
+
+/* more info */
+.more-info-link {
+    display: flex;
+    align-items: center;
+    color: red;
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.more-info-link img {
+    width: 20px;
+}
+
+.sm-screen {
+    display: none;
 }
 
 /* media query */
@@ -506,15 +525,129 @@ header {
 
     /* restraunt images */
 
-    .restaurant-images {
+    .restaurant-images,
+    .hotel-detail {
         padding: 1.5rem 2rem;
     }
+
+
+
+    /* hotel detail section */
+
+
+    .hotel-detail-container {
+        width: 100%;
+    }
+
+    .hotel-name-and-reviews {
+        display: flex;
+        justify-content: space-between;
+        margin: -2rem 0 0.3rem 0;
+    }
+
+
+
 
 }
 
 @media all and (width<=900px) {
 
-    .restaurant-images {
+    .restaurant-images-container {
         display: none;
+    }
+
+    .direction-container,
+    .bookmark-container,
+    .share-container {
+        width: 7rem;
+    }
+
+}
+
+@media all and (width<=600px) {
+    .hotel-name-and-reviews {
+        flex-direction: column-reverse;
+        align-items: start;
+        margin-top: -6rem;
+    }
+
+    .review-container {
+        display: none;
+        margin-top: 2rem;
+    }
+
+    .restaurant-images-container {
+        display: flex;
+        height: 200px;
+        display: none;
+    }
+
+    .restaurant-image-left {
+        display: flex;
+        width: 100%;
+        display: none;
+    }
+
+    .restaurant-image-right,
+    .restaurant-image-centre {
+        display: none;
+    }
+
+    .bg-screen {
+        display: none;
+    }
+
+    .sm-screen {
+        display: block;
+    }
+
+    .timings-container,
+    .direction-bookmark-share-container {
+        display: none;
+    }
+
+    .hotel-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.2rem;
+    }
+
+    .review-container {
+        display: none;
+    }
+
+    .delivery-rating-review-container,
+    .dining-rating-review-container {
+        gap: 0.7rem;
+        width: 10rem;
+        height: 2.2rem;
+    }
+
+    .delivery-rating-container,
+    .dining-rating-container {
+        gap: 0.3rem;
+        width: 29%;
+    }
+
+    .delivery-rating-container h6,
+    .dining-rating-container h6 {
+        font-size: 0.8rem;
+    }
+
+    .delivery-rating-container img,
+    .dining-rating-container img {
+        height: 13px;
+    }
+
+    .delivery-review-container,
+    .dining-review-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        width: auto;
+    }
+
+    .more-info-link {
+        display: flex;
     }
 }

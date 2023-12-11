@@ -120,11 +120,23 @@ document.addEventListener('DOMContentLoaded', function () {
     restaurantImageCentre.appendChild(restaurantImageRight);
     restaurantImagesContainer.appendChild(restaurantImageRight);
 
+    // more info functionlaity
 
+    var reviewContainer = document.querySelector('.review-container');
+    var timingsContainer = document.querySelector('.timings-container');
+    var directionBookmarkShareContainer = document.querySelector('.direction-bookmark-share-container');
+    var restaurantImagesContainer = document.querySelector('.restaurant-images-container');
+    var restaurantImageLeft = document.querySelector('.restaurant-image-left');
 
-
-
-
+    var moreInfoLink = document.querySelector('.more-info-link');
+    moreInfoLink.addEventListener('click', () => {
+        moreInfoLink.style.display = 'none';
+        reviewContainer.style.display = 'flex';
+        timingsContainer.style.display = 'flex';
+        directionBookmarkShareContainer.style.display = 'flex';
+        restaurantImagesContainer.style.display = 'flex';
+        restaurantImageLeft.style.display = 'flex';
+    })
 
 
 
