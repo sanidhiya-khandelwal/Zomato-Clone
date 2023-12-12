@@ -327,7 +327,7 @@ header {
 
 /* cuisines */
 .cuisines {
-    margin-top: -5px;
+    margin-top: -4px;
     font-weight: 100;
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.836);
@@ -336,8 +336,13 @@ header {
 /* location and timings */
 .city-location,
 .timings-text {
+    margin-top: 4px;
     color: rgb(156, 156, 156);
     font-weight: 100;
+}
+
+.timings {
+    margin-top: 3px
 }
 
 .open-now-text {
