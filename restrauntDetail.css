@@ -403,6 +403,35 @@ header {
     display: none;
 }
 
+/* restaurant options */
+
+.restaurant-options-section {
+    padding: 0 6rem;
+    margin-top: 1.2rem;
+}
+
+.restaurant-options {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.restaurant-options p {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    padding: 1rem 0.6rem;
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+}
+
+.order-online {
+    border-bottom: 3px solid red;
+
+}
+
+
+
+
 /* media query */
 @media all and (width<=1300px) {
     body {
@@ -482,7 +511,7 @@ header {
 
     .dish-container-sm input::placeholder {
         font-size: 1.1rem;
-        color: rgb(156, 156, 156)
+        color: rgb(156, 156, 156);
     }
 
     .dish-container-sm img {
@@ -548,6 +577,10 @@ header {
         display: flex;
         justify-content: space-between;
         margin: -2rem 0 0.3rem 0;
+    }
+
+    .restaurant-options-section {
+        padding: 0px 2rem;
     }
 
 }
@@ -644,6 +677,11 @@ header {
 
     .more-info-link {
         display: flex;
+    }
+
+    .restaurant-options,
+    .restaurant-options-container hr {
+        display: none;
     }
 }
 

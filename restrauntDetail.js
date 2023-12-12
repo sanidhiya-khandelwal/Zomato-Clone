@@ -155,12 +155,78 @@ document.addEventListener('DOMContentLoaded', function () {
         restaurantImageLeft.style.display = 'flex';
     })
 
+    // restaurant options
+    var overview = document.querySelector('.overview');
+    var orderOnline = document.querySelector('.order-online');
+    var reviews = document.querySelector('.reviews');
+    var photos = document.querySelector('.photos');
+    var menu = document.querySelector('.menu');
+    orderOnline.style.color = "red";
 
+    overview.addEventListener('click', () => {
+        overview.style.borderBottom = "3px solid red";
+        overview.style.color = 'red';
+        orderOnline.style.borderBottom = "none";
+        orderOnline.style.color = 'rgb(156, 156, 156)';
+        reviews.style.borderBottom = "none";
+        reviews.style.color = 'rgb(156, 156, 156)';
+        photos.style.borderBottom = "none";
+        photos.style.color = 'rgb(156, 156, 156)';
+        menu.style.borderBottom = "none";
+        menu.style.color = 'rgb(156, 156, 156)';
+    })
 
+    orderOnline.addEventListener('click', () => {
+        orderOnline.style.borderBottom = "3px solid red";
+        orderOnline.style.color = "red";
+        overview.style.borderBottom = "none";
+        overview.style.color = 'rgb(156, 156, 156)';
+        reviews.style.borderBottom = "none";
+        reviews.style.color = 'rgb(156, 156, 156)';
+        photos.style.borderBottom = "none";
+        photos.style.color = 'rgb(156, 156, 156)';
+        menu.style.borderBottom = "none";
+        menu.style.color = 'rgb(156, 156, 156)';
+    })
 
+    reviews.addEventListener('click', () => {
+        overview.style.borderBottom = "none";
+        overview.style.color = 'rgb(156, 156, 156)';
+        orderOnline.style.borderBottom = "none";
+        orderOnline.style.color = 'rgb(156, 156, 156)';
+        reviews.style.borderBottom = "3px solid red";
+        reviews.style.color = 'red';
+        photos.style.borderBottom = "none";
+        photos.style.color = 'rgb(156, 156, 156)';
+        menu.style.borderBottom = "none";
+        menu.style.color = 'rgb(156, 156, 156)';
+    })
 
+    photos.addEventListener('click', () => {
+        overview.style.borderBottom = "none";
+        overview.style.color = 'rgb(156, 156, 156)';
+        orderOnline.style.borderBottom = "none";
+        orderOnline.style.color = 'rgb(156, 156, 156)';
+        reviews.style.borderBottom = "none";
+        reviews.style.color = 'rgb(156, 156, 156)';
+        photos.style.borderBottom = "3px solid red";
+        photos.style.color = 'red';
+        menu.style.borderBottom = "none";
+        menu.style.color = 'rgb(156, 156, 156)';
+    })
 
-
+    menu.addEventListener('click', () => {
+        overview.style.borderBottom = "none";
+        overview.style.color = 'rgb(156, 156, 156)';
+        orderOnline.style.borderBottom = "none";
+        orderOnline.style.color = 'rgb(156, 156, 156)';
+        reviews.style.borderBottom = "none";
+        reviews.style.color = 'rgb(156, 156, 156)';
+        photos.style.borderBottom = "none";
+        photos.style.color = 'rgb(156, 156, 156)';
+        menu.style.borderBottom = "3px solid red";
+        menu.style.color = 'red';
+    })
 
 
 
