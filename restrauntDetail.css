@@ -545,26 +545,9 @@ header {
         margin: -2rem 0 0.3rem 0;
     }
 
-
-
-
 }
 
 @media all and (width<=900px) {
-
-    .restaurant-images-container {
-        display: none;
-    }
-
-    .direction-container,
-    .bookmark-container,
-    .share-container {
-        width: 7rem;
-    }
-
-}
-
-@media all and (width<=600px) {
     .hotel-name-and-reviews {
         flex-direction: column-reverse;
         align-items: start;
@@ -578,8 +561,9 @@ header {
 
     .restaurant-images-container {
         display: flex;
-        height: 200px;
+        height: 300px;
         display: none;
+        margin-top: -1.5rem;
     }
 
     .restaurant-image-left {
@@ -647,7 +631,19 @@ header {
         width: auto;
     }
 
+    .direction-container,
+    .bookmark-container,
+    .share-container {
+        width: 7rem;
+    }
+
     .more-info-link {
         display: flex;
+    }
+}
+
+@media all and (width<=600px) {
+    .restaurant-images-container {
+        height: 200px;
     }
 }
