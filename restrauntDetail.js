@@ -120,6 +120,20 @@ document.addEventListener('DOMContentLoaded', function () {
     restaurantImageCentre.appendChild(restaurantImageRight);
     restaurantImagesContainer.appendChild(restaurantImageRight);
 
+
+    //display hotel detail functionality
+    var hotelName = document.querySelector('.hotel-name');
+    hotelName.textContent = selectedRestauraunt.restaurantName;
+
+    var diningRating = document.querySelector('.dining-rating');
+    diningRating.textContent = selectedRestauraunt.rating;
+
+    var cuisines = document.querySelector('.cuisines');
+    cuisines.textContent = selectedRestauraunt.cuisine;
+
+    var cityLocation = document.querySelector('.city-location');
+    cityLocation.textContent = capitalizedCity;
+
     // more info functionlaity
 
     var reviewContainer = document.querySelector('.review-container');
