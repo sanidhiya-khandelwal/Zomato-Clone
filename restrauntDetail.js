@@ -46,6 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     })
 
+    // page name on dom load
+    var restaurantPageTitle = document.querySelector('.restaurant-page-title');
+    restaurantPageTitle.textContent += restaurantName + ', ' + capitalizedCity;
 
 
     // makes search container visible on scroll in small screens
