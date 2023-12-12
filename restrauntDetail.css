@@ -334,7 +334,7 @@ header {
 }
 
 /* location and timings */
-.location,
+.city-location,
 .timings-text {
     color: rgb(156, 156, 156);
     font-weight: 100;
