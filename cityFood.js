@@ -497,7 +497,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                Chicken: [
+                'Chicken': [
                     {
                         foodImg: './assets/food/chicken/ChickenShaamiKebab.avif',
                         foodName: "Chicken Shaami Kebab",
@@ -525,7 +525,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -553,7 +553,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -581,7 +581,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -626,7 +626,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                NonVegTikka_Kebabs: [
+                'NonVeg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/classic chicken tikka.avif',
                         foodName: "Classic Chicken Tikka",
@@ -671,7 +671,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -691,7 +691,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -745,7 +745,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -773,7 +773,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -801,7 +801,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -829,7 +829,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -857,7 +857,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -886,7 +886,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                southIndian: [
+                'South Indian': [
                     {
                         foodImg: './assets/food/southIndian/cheese dosa.jpeg',
                         foodName: "Cheese Dosa",
@@ -931,7 +931,7 @@ var deliveryRestaurants = [
             }
             ,
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -943,7 +943,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -955,7 +955,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -1000,7 +1000,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -1020,7 +1020,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -1074,7 +1074,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -1102,7 +1102,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -1122,7 +1122,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -1150,7 +1150,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -1178,7 +1178,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -1207,7 +1207,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                southIndian: [
+                'South Indian': [
                     {
                         foodImg: './assets/food/southIndian/cheese dosa.jpeg',
                         foodName: "Cheese Dosa",
@@ -1252,7 +1252,7 @@ var deliveryRestaurants = [
             }
             ,
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -1264,7 +1264,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -1276,7 +1276,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -1321,7 +1321,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -1341,7 +1341,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -1395,7 +1395,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -1423,7 +1423,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -1443,7 +1443,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -1471,7 +1471,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -1499,7 +1499,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -1528,7 +1528,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                southIndian: [
+                'South Indian': [
                     {
                         foodImg: './assets/food/southIndian/cheese dosa.jpeg',
                         foodName: "Cheese Dosa",
@@ -1573,7 +1573,7 @@ var deliveryRestaurants = [
             }
             ,
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -1585,7 +1585,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'RoomaliRolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -1597,7 +1597,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -1642,7 +1642,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -1662,7 +1662,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -1716,7 +1716,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -1744,7 +1744,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -1764,7 +1764,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -1792,7 +1792,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -1820,7 +1820,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -1849,7 +1849,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                Chicken: [
+                'Chicken': [
                     {
                         foodImg: './assets/food/chicken/ChickenShaamiKebab.avif',
                         foodName: "Chicken Shaami Kebab",
@@ -1877,7 +1877,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -1905,7 +1905,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -1933,7 +1933,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -1978,7 +1978,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                NonVegTikka_Kebabs: [
+                'NonVeg-TikkaKebabs': [
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/classic chicken tikka.avif',
                         foodName: "Classic Chicken Tikka",
@@ -2023,7 +2023,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -2043,7 +2043,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -2097,7 +2097,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -2125,7 +2125,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -2153,7 +2153,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -2181,7 +2181,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -2209,7 +2209,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -2238,7 +2238,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                southIndian: [
+                'South Indian': [
                     {
                         foodImg: './assets/food/southIndian/cheese dosa.jpeg',
                         foodName: "Cheese Dosa",
@@ -2283,7 +2283,7 @@ var deliveryRestaurants = [
             }
             ,
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -2295,7 +2295,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -2307,7 +2307,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -2352,7 +2352,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -2372,7 +2372,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -2426,7 +2426,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -2454,7 +2454,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -2474,7 +2474,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -2502,7 +2502,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -2530,7 +2530,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -2559,7 +2559,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                southIndian: [
+                'South Indian': [
                     {
                         foodImg: './assets/food/southIndian/cheese dosa.jpeg',
                         foodName: "Cheese Dosa",
@@ -2604,7 +2604,7 @@ var deliveryRestaurants = [
             }
             ,
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -2616,7 +2616,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -2628,7 +2628,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -2673,7 +2673,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -2693,7 +2693,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -2747,7 +2747,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -2775,7 +2775,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -2795,7 +2795,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -2823,7 +2823,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -2851,7 +2851,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -2880,7 +2880,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                Chicken: [
+                'Chicken': [
                     {
                         foodImg: './assets/food/chicken/ChickenShaamiKebab.avif',
                         foodName: "Chicken Shaami Kebab",
@@ -2908,7 +2908,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -2936,7 +2936,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -2964,7 +2964,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -3009,7 +3009,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                NonVegTikka_Kebabs: [
+                'NonVeg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/classic chicken tikka.avif',
                         foodName: "Classic Chicken Tikka",
@@ -3054,7 +3054,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -3074,7 +3074,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -3128,7 +3128,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -3156,7 +3156,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -3184,7 +3184,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -3212,7 +3212,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -3240,7 +3240,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -3269,7 +3269,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                southIndian: [
+                'South Indian': [
                     {
                         foodImg: './assets/food/southIndian/cheese dosa.jpeg',
                         foodName: "Cheese Dosa",
@@ -3314,7 +3314,7 @@ var deliveryRestaurants = [
             }
             ,
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -3326,7 +3326,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -3338,7 +3338,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -3383,7 +3383,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -3403,7 +3403,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -3457,7 +3457,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -3485,7 +3485,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -3505,7 +3505,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -3533,7 +3533,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -3561,7 +3561,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -3590,7 +3590,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                southIndian: [
+                'South Indian': [
                     {
                         foodImg: './assets/food/southIndian/cheese dosa.jpeg',
                         foodName: "Cheese Dosa",
@@ -3635,7 +3635,7 @@ var deliveryRestaurants = [
             }
             ,
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -3647,7 +3647,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -3659,7 +3659,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -3704,7 +3704,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -3724,7 +3724,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -3778,7 +3778,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -3806,7 +3806,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -3826,7 +3826,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -3854,7 +3854,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -3882,7 +3882,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -3911,7 +3911,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                southIndian: [
+                'South Indian': [
                     {
                         foodImg: './assets/food/southIndian/cheese dosa.jpeg',
                         foodName: "Cheese Dosa",
@@ -3956,7 +3956,7 @@ var deliveryRestaurants = [
             }
             ,
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -3968,7 +3968,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -3980,7 +3980,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -4025,7 +4025,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -4045,7 +4045,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -4099,7 +4099,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -4127,7 +4127,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -4147,7 +4147,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -4175,7 +4175,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -4203,7 +4203,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -4233,7 +4233,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                Chicken: [
+                'Chicken': [
                     {
                         foodImg: './assets/food/chicken/ChickenShaamiKebab.avif',
                         foodName: "Chicken Shaami Kebab",
@@ -4261,7 +4261,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -4289,7 +4289,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -4317,7 +4317,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -4362,7 +4362,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                NonVegTikka_Kebabs: [
+                'NonVeg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/classic chicken tikka.avif',
                         foodName: "Classic Chicken Tikka",
@@ -4407,7 +4407,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -4427,7 +4427,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -4481,7 +4481,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -4509,7 +4509,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -4537,7 +4537,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -4565,7 +4565,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -4593,7 +4593,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -4622,7 +4622,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                southIndian: [
+                'South Indian': [
                     {
                         foodImg: './assets/food/southIndian/cheese dosa.jpeg',
                         foodName: "Cheese Dosa",
@@ -4667,7 +4667,7 @@ var deliveryRestaurants = [
             }
             ,
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -4679,7 +4679,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -4691,7 +4691,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -4736,7 +4736,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -4756,7 +4756,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -4810,7 +4810,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -4838,7 +4838,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -4858,7 +4858,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -4886,7 +4886,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -4914,7 +4914,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -4943,7 +4943,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                Chicken: [
+                'Chicken': [
                     {
                         foodImg: './assets/food/chicken/ChickenShaamiKebab.avif',
                         foodName: "Chicken Shaami Kebab",
@@ -4971,7 +4971,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -4999,7 +4999,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                RoomaliRolls: [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -5027,7 +5027,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -5072,7 +5072,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                NonVegTikka_Kebabs: [
+                'NonVeg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/classic chicken tikka.avif',
                         foodName: "Classic Chicken Tikka",
@@ -5117,7 +5117,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -5137,7 +5137,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -5191,7 +5191,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -5219,7 +5219,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -5247,7 +5247,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -5275,7 +5275,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -5303,7 +5303,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -5332,7 +5332,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                southIndian: [
+                'South Indian': [
                     {
                         foodImg: './assets/food/southIndian/cheese dosa.jpeg',
                         foodName: "Cheese Dosa",
@@ -5377,7 +5377,7 @@ var deliveryRestaurants = [
             }
             ,
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -5389,7 +5389,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -5401,7 +5401,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -5446,7 +5446,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -5466,7 +5466,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -5520,7 +5520,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -5548,7 +5548,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -5568,7 +5568,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -5596,7 +5596,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -5624,7 +5624,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
@@ -5653,7 +5653,7 @@ var deliveryRestaurants = [
         ],
         food: [
             {
-                southIndian: [
+                'South Indian': [
                     {
                         foodImg: './assets/food/southIndian/cheese dosa.jpeg',
                         foodName: "Cheese Dosa",
@@ -5698,7 +5698,7 @@ var deliveryRestaurants = [
             }
             ,
             {
-                Biryani: [
+                'Biryani': [
                     {
                         foodImg: './assets/food/biryani/vegBiryani.avif',
                         foodName: "Veg Biryani",
@@ -5710,7 +5710,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Roomali_Rolls: [
+                'Roomali Rolls': [
                     {
                         foodImg: './assets/food/Roomali Rolls/paneer tikka masala roll.avif',
                         foodName: "Paneer Tikka Masala Roll",
@@ -5722,7 +5722,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                VegTikka_Kebabs: [
+                'Veg-Tikka Kebabs': [
                     {
                         foodImg: './assets/food/veg tikka and kebabs/veg seekh kebab.jpg',
                         foodName: "Veg Seekh Kebab",
@@ -5767,7 +5767,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                vegCurry: [
+                'Veg Curry': [
                     {
                         foodImg: './assets/food/veg curry/Nawaabi Paneer.avif',
                         foodName: "Nawaabi Paneer",
@@ -5787,7 +5787,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                Breads: [
+                'Breads': [
                     {
                         foodImg: './assets/food/Breads/Roti.avif',
                         foodName: "Roti",
@@ -5841,7 +5841,7 @@ var deliveryRestaurants = [
 
             },
             {
-                Sides: [
+                'Sides': [
                     {
                         foodImg: './assets/food/Sides/Papad.avif',
                         foodName: "Papad",
@@ -5869,7 +5869,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dal: [
+                'Dal': [
                     {
                         foodImg: './assets/food/Dal/dal tadka.avif',
                         foodName: "Dal Tadka",
@@ -5889,7 +5889,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                drinks: [
+                'Drinks': [
                     {
                         foodImg: './assets/food/Dal/sprite.avif',
                         foodName: "Sprite",
@@ -5917,7 +5917,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                rice: [
+                'Rice': [
                     {
                         foodImg: './assets/food/Dal/rice.jpg',
                         foodName: "Rice",
@@ -5945,7 +5945,7 @@ var deliveryRestaurants = [
                 ]
             },
             {
-                dessert: [
+                'Dessert': [
                     {
                         foodImg: './assets/food/Dal/Rasgulla.avif',
                         foodName: "Rasgulla (2 pcs)",
