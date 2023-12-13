@@ -429,8 +429,39 @@ header {
 
 }
 
+/* online order option */
+.order-online-section {
+    margin-top: 1rem;
+}
 
+.order-online-container {
+    display: flex;
+}
 
+.order-online-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    font-size: 1.1rem;
+    width: 18%;
+}
+
+.order-online-options p {
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.cuisine-count {
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.order-online-dishes {
+    border: 2px solid violet;
+    width: 82%;
+    padding: 0.5rem 1rem;
+}
 
 /* media query */
 @media all and (width<=1300px) {

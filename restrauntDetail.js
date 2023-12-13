@@ -228,11 +228,27 @@ document.addEventListener('DOMContentLoaded', function () {
         menu.style.color = 'red';
     })
 
+    // cusines options
+    // console.log(selectedRestauraunt.food);
+    const cuisineMap = new Map();
+    selectedRestauraunt.food.forEach(category => {
+        const cuisineName = Object.keys(category)[0];
+        const cusineCount = category[cuisineName].length;
+        cuisineMap.set(cuisineName, cusineCount);
+    });
+    var orderOnlineOptions = document.querySelector('.order-online-options');
+    cuisineMap.forEach((key, value) => {
+        var cuisineCountHTML = document.createElement('b');
+        cuisineCountHTML.classList.add('cuisine-count');
+        cuisineCountHTML.textContent = ' ' + '(' + key + ')';
 
+        var cusineNameHTML = document.createElement('p');
+        cusineNameHTML.classList.add('cuisine-name');
+        cusineNameHTML.textContent = value;
 
-
-
-
+        cusineNameHTML.appendChild(cuisineCountHTML);
+        orderOnlineOptions.append(cusineNameHTML);
+    })
 
 
 
