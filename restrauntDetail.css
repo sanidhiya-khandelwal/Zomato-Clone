@@ -262,6 +262,10 @@ header {
 /* hotel detail section */
 
 .hotel-detail {
+    position: sticky;
+    z-index: 1;
+    background-color: white;
+    top: 0px;
     padding: 0 6rem;
     margin-top: 1.2rem;
 }
@@ -458,9 +462,177 @@ header {
 }
 
 .order-online-dishes {
-    border: 2px solid violet;
     width: 82%;
     padding: 0.5rem 1rem;
+}
+
+.order-online-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-online-heading h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.order-online-search-container {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 0.1rem solid rgb(207, 207, 207);
+    border-radius: 9px;
+    height: 3rem;
+    width: 18rem;
+}
+
+.order-online-search-container img {
+    width: 22px;
+    height: 22px;
+}
+
+.order-online-search-container input {
+    border: none;
+    width: 85%;
+    font-size: 1.2rem;
+}
+
+.order-online-search-container input:focus {
+    outline: none;
+    border: none;
+}
+
+.dish-container input::placeholder {
+    font-size: 0.9rem;
+}
+
+.track-order {
+    display: flex;
+}
+
+.track-order-container,
+.time-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: auto;
+    padding-right: 0.5rem;
+    color: rgb(156, 156, 156);
+}
+
+.track-order-container {
+    border-right: 2px solid rgb(156, 156, 156);
+}
+
+.time-container {
+    padding-left: 0.5rem;
+}
+
+.track-order-container img,
+.time-container img {
+    width: 1.2rem;
+    height: 1.3rem;
+    cursor: pointer;
+}
+
+/* coupons */
+.coupons-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.hungry-coupon,
+.walletonzom-coupon,
+.crednew-coupon {
+    border-radius: 5px;
+    box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
+    background: rgb(17, 85, 203);
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    cursor: pointer;
+}
+
+.veg-only-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.veg-only-container input {
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+}
+
+.veg-only-container label {
+    cursor: pointer;
+}
+
+.online-dishes {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.left-cuisine-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+.dish-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.dish-img-container {
+    width: 10rem;
+    height: 8.5rem;
+}
+
+.dish-img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.dish-details {
+    color: rgb(156, 156, 156);
+}
+
+.dish-details p {
+    margin-bottom: 0.2rem;
+}
+
+.rating-votes {
+    display: flex;
+    gap: 2rem;
+}
+
+.add-button,
+.add-remove-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    width: 5rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.add-remove-button {
+    display: none;
 }
 
 /* media query */
