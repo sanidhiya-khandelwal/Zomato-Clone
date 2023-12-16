@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // makes search container visible on scroll in small screens
     window.addEventListener('scroll', function () {
         var dishContainer = document.querySelector('.dish-sm');
-        var deliveryDiningContainerSM = document.querySelector('.delivery-dining-container-sm')
+        var deliveryDiningContainerSM = document.querySelector('.delivery-dining-container-sm');
         var scrollPosition = window.scrollY;
         if (scrollPosition > 150) {
             dishContainer.style.display = 'block';
@@ -248,6 +248,118 @@ document.addEventListener('DOMContentLoaded', function () {
 
         cusineNameHTML.appendChild(cuisineCountHTML);
         orderOnlineOptions.append(cusineNameHTML);
+    })
+
+    //display dish details
+    var onlineDishes = document.querySelector('.online-dishes');
+
+
+
+    selectedRestauraunt.food.forEach((category) => {
+        Object.entries(category).forEach(([categoryName, dishes]) => {
+            var onlineDishContainer = document.createElement('div');
+            onlineDishContainer.classList.add('online-dish-container');
+
+            var leftCuisineName = document.createElement('h3');
+            leftCuisineName.classList.add('left-cuisine-name');
+            leftCuisineName.textContent = categoryName;
+
+            onlineDishContainer.appendChild(leftCuisineName);
+            onlineDishes.appendChild(onlineDishContainer)
+            dishes.forEach((dish, index) => {
+                console.log(dish);
+                var dishContainer = document.createElement('div');
+                dishContainer.classList.add('dish-container');
+
+                //dish image
+                var dishImgContainer = document.createElement('div');
+                dishImgContainer.classList.add('dish-img-container');
+
+                var dishImage = document.createElement('img');
+                dishImage.classList.add('dish-img');
+                dishImage.src = dish.foodImg;
+
+                dishImgContainer.appendChild(dishImage);
+                dishContainer.appendChild(dishImgContainer);
+
+                //dish name
+                var dishDetails = document.createElement('div');
+                dishDetails.classList.add('dish-details');
+                var dishName = document.createElement('p');
+                dishName.classList.add('dishname');
+                dishName.textContent = dish.foodName
+                dishDetails.appendChild(dishName);
+
+
+                //dish rating rating-votes
+                var ratingVotes = document.createElement('div');
+                ratingVotes.classList.add('rating-votes');
+
+                var rating = document.createElement('p');
+                rating.classList.add('rating');
+                rating.textContent = dish.foodRating;
+                ratingVotes.appendChild(rating);
+
+                var votes = document.createElement('p');
+                votes.classList.add('votes');
+                votes.textContent = dish.foodVote;
+                ratingVotes.appendChild(votes);
+                dishDetails.appendChild(ratingVotes);
+
+                //dish cost
+                var dishCost = document.createElement('p');
+                dishCost.classList.add('dish-cost');
+                dishCost.textContent = dish.foodPrice;
+                dishDetails.appendChild(dishCost);
+
+                //dish contains
+                var dishMadeFrom = document.createElement('p');
+                dishMadeFrom.classList.add('dish-made-from');
+                dishMadeFrom.textContent = dish.foodDescription;
+                dishDetails.appendChild(dishMadeFrom);
+
+                //Add button
+                var addButton = document.createElement('div');
+                addButton.classList.add('add-button');
+
+                var addText = document.createElement('b');
+                addText.style.fontWeight = '100';
+                addText.textContent = 'Add';
+                addButton.appendChild(addText)
+
+                var addSign = document.createElement('p');
+                addSign.innerText = '+';
+                addButton.appendChild(addSign)
+                dishDetails.appendChild(addButton);
+
+                // Remove button
+                var addRemoveButton = document.createElement('div');
+                addRemoveButton.classList.add('add-remove-button');
+
+                var addSign = document.createElement('p');
+                addSign.innerText = '+';
+                addRemoveButton.appendChild(addSign)
+
+
+                var countText = document.createElement('b');
+                countText.classList.add('count');
+                countText.style.fontWeight = '100';
+                countText.textContent = '1';
+                addRemoveButton.appendChild(countText);
+
+                var subSign = document.createElement('p');
+                subSign.innerText = '-';
+                subSign.style.marginBottom = '0.3rem';
+                addRemoveButton.appendChild(subSign);
+                dishDetails.appendChild(addRemoveButton);
+
+                //all appended
+                dishContainer.appendChild(dishDetails);
+                onlineDishContainer.appendChild(dishContainer);
+                onlineDishes.appendChild(onlineDishContainer)
+            })
+        })
+
     })
 
 
