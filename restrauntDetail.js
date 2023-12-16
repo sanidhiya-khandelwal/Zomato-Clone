@@ -249,11 +249,17 @@ document.addEventListener('DOMContentLoaded', function () {
         cusineNameHTML.appendChild(cuisineCountHTML);
         orderOnlineOptions.append(cusineNameHTML);
     })
+    //pure veg box display
+    var vegOnlyContainer = document.querySelector('.veg-only-container');
+    if (selectedRestauraunt.veg === false) {
+        vegOnlyContainer.style.display = 'flex';
+    }
+    else {
+        vegOnlyContainer.style.display = 'none';
+    }
 
     //display dish details
     var onlineDishes = document.querySelector('.online-dishes');
-
-
 
     selectedRestauraunt.food.forEach((category) => {
         Object.entries(category).forEach(([categoryName, dishes]) => {
