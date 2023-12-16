@@ -229,7 +229,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     // cusines options
-    // console.log(selectedRestauraunt.food);
     const cuisineMap = new Map();
     selectedRestauraunt.food.forEach(category => {
         const cuisineName = Object.keys(category)[0];
@@ -237,17 +236,33 @@ document.addEventListener('DOMContentLoaded', function () {
         cuisineMap.set(cuisineName, cusineCount);
     });
     var orderOnlineOptions = document.querySelector('.order-online-options');
-    cuisineMap.forEach((key, value) => {
+    cuisineMap.forEach((key, value1) => {
         var cuisineCountHTML = document.createElement('b');
         cuisineCountHTML.classList.add('cuisine-count');
         cuisineCountHTML.textContent = ' ' + '(' + key + ')';
 
         var cusineNameHTML = document.createElement('p');
         cusineNameHTML.classList.add('cuisine-name');
-        cusineNameHTML.textContent = value;
+        cusineNameHTML.textContent = value1;
 
         cusineNameHTML.appendChild(cuisineCountHTML);
         orderOnlineOptions.append(cusineNameHTML);
+
+        // console.log(cusineNameHTML);
+        // cusineNameHTML.addEventListener('click', () => {
+        //     console.log(document.querySelector('.left-cuisine-name').textContent);
+        //     console.log(value1)
+        //     document.querySelector('.left-cuisine-name').value1.scrollIntoView({ behavior: 'smooth' });
+
+        // })
+        cusineNameHTML.addEventListener('click', () => {
+            document.getElementById(value1).scrollIntoView({
+                behavior: 'smooth',
+                // block: 'nearest',
+                // inline: 'nearest'
+            });
+        });
+
     })
     //pure veg box display
     var vegOnlyContainer = document.querySelector('.veg-only-container');
@@ -269,11 +284,11 @@ document.addEventListener('DOMContentLoaded', function () {
             var leftCuisineName = document.createElement('h3');
             leftCuisineName.classList.add('left-cuisine-name');
             leftCuisineName.textContent = categoryName;
+            leftCuisineName.setAttribute('id', categoryName);
 
             onlineDishContainer.appendChild(leftCuisineName);
             onlineDishes.appendChild(onlineDishContainer)
             dishes.forEach((dish, index) => {
-                console.log(dish);
                 var dishContainer = document.createElement('div');
                 dishContainer.classList.add('dish-container');
 
@@ -307,9 +322,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 //dispay stars basd on food rating
                 rates = dish.foodRating;
                 halfRate = dish.foodRating / 10;
-                console.log(rates);
+
                 if (!rates) {
-                    console.log(rates);
                     var noRating = document.createElement('p');
                     noRating.textContent = 'No Rating';
                     rating.appendChild(noRating);
@@ -388,7 +402,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     })
 
-
+    //scroll to view
+    // document.querySelector('.cuisineName[0]').addEventListener('click', () => alert('hi'))
 
 
 
