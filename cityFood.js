@@ -733,7 +733,7 @@ var deliveryRestaurants = [
                         foodVote: '17 Votes'
                     },
                     {
-                        foodImg: './assets/food/Breads/Garlicnaan.jpg',
+                        foodImg: './assets/food/Breads/garlicnaan.jpg',
                         foodName: "Garlic Naan",
                         foodPrice: 'Rs80',
                         foodDescription: 'Garlic Naan is a soft Indian leavened flatbread made with wheat flours and spiced with garlic.',
@@ -2085,7 +2085,7 @@ var deliveryRestaurants = [
                         foodVote: '17 Votes'
                     },
                     {
-                        foodImg: './assets/food/Breads/Garlicnaan.jpg',
+                        foodImg: './assets/food/Breads/garlicnaan.jpg',
                         foodName: "Garlic Naan",
                         foodPrice: 'Rs80',
                         foodDescription: 'Garlic Naan is a soft Indian leavened flatbread made with wheat flours and spiced with garlic.',
@@ -3116,7 +3116,7 @@ var deliveryRestaurants = [
                         foodVote: '17 Votes'
                     },
                     {
-                        foodImg: './assets/food/Breads/Garlicnaan.jpg',
+                        foodImg: './assets/food/Breads/garlicnaan.jpg',
                         foodName: "Garlic Naan",
                         foodPrice: 'Rs80',
                         foodDescription: 'Garlic Naan is a soft Indian leavened flatbread made with wheat flours and spiced with garlic.',
@@ -3505,7 +3505,7 @@ var deliveryRestaurants = [
                         foodVote: '17 Votes'
                     },
                     {
-                        foodImg: './assets/food/Breads/Garlicnaan.jpg',
+                        foodImg: './assets/food/Breads/garlicnaan.jpg',
                         foodName: "Garlic Naan",
                         foodPrice: 'Rs80',
                         foodDescription: 'Garlic Naan is a soft Indian leavened flatbread made with wheat flours and spiced with garlic.',
@@ -4537,7 +4537,7 @@ var deliveryRestaurants = [
                         foodVote: '17 Votes'
                     },
                     {
-                        foodImg: './assets/food/Breads/Garlicnaan.jpg',
+                        foodImg: './assets/food/Breads/garlicnaan.jpg',
                         foodName: "Garlic Naan",
                         foodPrice: 'Rs80',
                         foodDescription: 'Garlic Naan is a soft Indian leavened flatbread made with wheat flours and spiced with garlic.',
@@ -5247,7 +5247,7 @@ var deliveryRestaurants = [
                         foodVote: '17 Votes'
                     },
                     {
-                        foodImg: './assets/food/Breads/Garlicnaan.jpg',
+                        foodImg: './assets/food/Breads/garlicnaan.jpg',
                         foodName: "Garlic Naan",
                         foodPrice: 'Rs80',
                         foodDescription: 'Garlic Naan is a soft Indian leavened flatbread made with wheat flours and spiced with garlic.',
