@@ -301,9 +301,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 var ratingVotes = document.createElement('div');
                 ratingVotes.classList.add('rating-votes');
 
-                var rating = document.createElement('p');
+                var rating = document.createElement('div');
                 rating.classList.add('rating');
-                rating.textContent = dish.foodRating;
+
+                //dispay stars basd on food rating
+                rates = dish.foodRating;
+                halfRate = dish.foodRating / 10;
+                console.log(rates);
+                if (!rates) {
+                    console.log(rates);
+                    var noRating = document.createElement('p');
+                    noRating.textContent = 'No Rating';
+                    rating.appendChild(noRating);
+                }
+                for (var i = 1; i < rates; i++) {
+                    var starImg = document.createElement('img');
+                    starImg.src = './assets/icons/full-yellow-star (1).png';
+                    rating.appendChild(starImg);
+                }
+                if (halfRate) {
+                    var starImg = document.createElement('img');
+                    starImg.src = './assets/icons/half-yellow-star.png';
+                    rating.appendChild(starImg);
+                }
                 ratingVotes.appendChild(rating);
 
                 var votes = document.createElement('p');

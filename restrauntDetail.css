@@ -624,8 +624,13 @@ header {
 
 .rating-votes {
     display: flex;
+    align-items: center;
     gap: 2rem;
     color: rgb(156, 156, 156);
+}
+
+.rating img {
+    width: 1rem;
 }
 
 .dish-made-from {
