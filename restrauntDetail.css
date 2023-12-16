@@ -575,6 +575,8 @@ header {
     cursor: pointer;
 }
 
+
+/* display dish */
 .online-dishes {
     width: 100%;
     margin-top: 1.5rem;
@@ -589,11 +591,14 @@ header {
 .dish-container {
     display: flex;
     gap: 2rem;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 1.5rem;
 }
 
 .dish-img-container {
-    width: 10rem;
-    height: 8.5rem;
+    width: 48%;
+    height: 100%;
 }
 
 .dish-img-container img {
@@ -603,16 +608,33 @@ header {
 }
 
 .dish-details {
-    color: rgb(156, 156, 156);
+    width: 150%;
+    color: black;
 }
 
 .dish-details p {
     margin-bottom: 0.2rem;
 }
 
+.dishname {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem !important;
+}
+
+
 .rating-votes {
     display: flex;
     gap: 2rem;
+    color: rgb(156, 156, 156);
+}
+
+.dish-made-from {
+    color: rgb(156, 156, 156);
+}
+
+.dish-cost {
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .add-button,
