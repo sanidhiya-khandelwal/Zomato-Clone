@@ -442,13 +442,23 @@ header {
     display: flex;
 }
 
+/* .restaurant-options {
+    position: relative;
+} */
+
 .order-online-options {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     padding: 0.5rem 0rem 0.5rem 0.5rem;
     font-size: 1.1rem;
-    width: 18%;
+    width: 25%;
+    height: auto;
+    border-right: 1px solid rgb(232, 232, 232);
+    position: sticky;
+    top: 14.7rem;
+    height: 100%;
+
 }
 
 .order-online-options p {
@@ -912,7 +922,9 @@ header {
     .restaurant-options,
     .restaurant-options-container hr {
         display: none;
+
     }
+
 }
 
 @media all and (width<=600px) {
