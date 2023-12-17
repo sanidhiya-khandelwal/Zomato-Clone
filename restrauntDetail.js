@@ -259,7 +259,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 item.style.borderRight = "none";
                 item.style.background = "none";
             })
-            console.log(cuisineNames);
 
             var cuisineName = document.getElementById(`${value1}1`);
             cuisineName.style.color = "red";
@@ -272,6 +271,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     })
+
+
+
+
     //pure veg box display
     var vegOnlyContainer = document.querySelector('.veg-only-container');
     if (selectedRestauraunt.veg === false) {
@@ -409,10 +412,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
     })
-
-    //scroll to view
-    // document.querySelector('.cuisineName[0]').addEventListener('click', () => alert('hi'))
-
 
 
     // clearing the item from localStorage once it's retrieved

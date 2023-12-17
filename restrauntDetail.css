@@ -268,6 +268,7 @@ header {
     top: 0px;
     padding: 0 6rem;
     margin-top: 1.2rem;
+
 }
 
 .hotel-detail-container {}
@@ -407,12 +408,17 @@ header {
     display: none;
 }
 
+.restaurant-options-container {
+    margin-top: -1rem;
+}
+
 /* restaurant options */
 
 .restaurant-options-section {
     padding: 0 6rem;
     margin-top: 1.2rem;
 }
+
 
 .restaurant-options {
     display: flex;
@@ -451,20 +457,21 @@ header {
     height: auto;
     border-right: 1px solid rgb(232, 232, 232);
     position: sticky;
-    top: 14.5rem;
+    top: 13.5rem;
     height: 100%;
-
-}
-
-.cuisine-name {
-    height: 3rem;
-    padding: 1.5rem 0;
 }
 
 .order-online-options p {
     padding: 0.5rem 0;
     cursor: pointer;
 }
+
+.cuisine-name {
+    height: 2.3rem;
+    padding: 1.5rem 0;
+}
+
+
 
 .cuisine-count {
     font-weight: 100;
