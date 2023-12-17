@@ -239,27 +239,21 @@ document.addEventListener('DOMContentLoaded', function () {
     cuisineMap.forEach((key, value1) => {
         var cuisineCountHTML = document.createElement('b');
         cuisineCountHTML.classList.add('cuisine-count');
+
         cuisineCountHTML.textContent = ' ' + '(' + key + ')';
 
         var cusineNameHTML = document.createElement('p');
         cusineNameHTML.classList.add('cuisine-name');
         cusineNameHTML.textContent = value1;
-
         cusineNameHTML.appendChild(cuisineCountHTML);
         orderOnlineOptions.append(cusineNameHTML);
 
-        // console.log(cusineNameHTML);
-        // cusineNameHTML.addEventListener('click', () => {
-        //     console.log(document.querySelector('.left-cuisine-name').textContent);
-        //     console.log(value1)
-        //     document.querySelector('.left-cuisine-name').value1.scrollIntoView({ behavior: 'smooth' });
+        //scroll into view
 
-        // })
         cusineNameHTML.addEventListener('click', () => {
             document.getElementById(value1).scrollIntoView({
                 behavior: 'smooth',
-                // block: 'nearest',
-                // inline: 'nearest'
+                block: 'center'
             });
         });
 

@@ -442,23 +442,23 @@ header {
     display: flex;
 }
 
-/* .restaurant-options {
-    position: relative;
-} */
-
 .order-online-options {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.1rem;
     padding: 0.5rem 0rem 0.5rem 0.5rem;
     font-size: 1.1rem;
     width: 25%;
     height: auto;
     border-right: 1px solid rgb(232, 232, 232);
     position: sticky;
-    top: 14.7rem;
+    top: 15.2rem;
     height: 100%;
 
+}
+
+.cuisine-name {
+    /* border: 2px solid black; */
 }
 
 .order-online-options p {
