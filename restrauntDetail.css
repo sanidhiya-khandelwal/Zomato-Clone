@@ -445,20 +445,20 @@ header {
 .order-online-options {
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
     padding: 0.5rem 0rem 0.5rem 0.5rem;
     font-size: 1.1rem;
     width: 25%;
     height: auto;
     border-right: 1px solid rgb(232, 232, 232);
     position: sticky;
-    top: 15.2rem;
+    top: 14.5rem;
     height: 100%;
 
 }
 
 .cuisine-name {
-    /* border: 2px solid black; */
+    height: 3rem;
+    padding: 1.5rem 0;
 }
 
 .order-online-options p {

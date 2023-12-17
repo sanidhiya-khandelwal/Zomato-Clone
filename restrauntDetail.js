@@ -245,12 +245,26 @@ document.addEventListener('DOMContentLoaded', function () {
         var cusineNameHTML = document.createElement('p');
         cusineNameHTML.classList.add('cuisine-name');
         cusineNameHTML.textContent = value1;
+        cusineNameHTML.setAttribute('id', value1 + '1');
         cusineNameHTML.appendChild(cuisineCountHTML);
         orderOnlineOptions.append(cusineNameHTML);
 
         //scroll into view
 
         cusineNameHTML.addEventListener('click', () => {
+
+            var cuisineNames = document.querySelectorAll('.cuisine-name');
+            cuisineNames.forEach(function (item) {
+                item.style.color = 'black';
+                item.style.borderRight = "none";
+                item.style.background = "none";
+            })
+            console.log(cuisineNames);
+
+            var cuisineName = document.getElementById(`${value1}1`);
+            cuisineName.style.color = "red";
+            cuisineName.style.borderRight = "3px solid rgb(239, 79, 95)";
+            cuisineName.style.background = "linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 237, 239))";
             document.getElementById(value1).scrollIntoView({
                 behavior: 'smooth',
                 block: 'center'
