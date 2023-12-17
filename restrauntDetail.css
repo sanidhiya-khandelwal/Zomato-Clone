@@ -607,10 +607,10 @@ header {
 
 .dish-container {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     width: 100%;
     height: 30%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.2rem;
 }
 
 .dish-img-container {
