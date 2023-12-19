@@ -254,7 +254,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
         if (screenWidth <= 450) {
-            var orderOnlineOptionsId = document.getElementById('order-onine-options-id');
+            var orderOnlineOptionsId = document.getElementById('order-online-options-id');
+            console.log(orderOnlineOptionsId);
             orderOnlineOptionsId.classList.remove('order-online-options');
             orderOnlineOptionsId.classList.add('order-online-options-smallScreen');
 
