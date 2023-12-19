@@ -1191,9 +1191,11 @@ header {
 
     .add-button,
     .add-remove-button {
+        justify-content: space-around;
+        width: 8rem;
         position: absolute;
-        top: 8.5rem;
-        left: 13.1rem;
+        top: 8.6rem;
+        left: 11.6rem;
         color: red;
         font-weight: 900;
         background-color: rgb(255, 236, 236);
