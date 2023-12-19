@@ -1174,6 +1174,7 @@ header {
     .dish-cost {
         font-size: 1rem;
         font-weight: 600;
+        margin: 0.6rem 0;
     }
 
     /* dish image */
@@ -1200,7 +1201,9 @@ header {
     }
 
     .dish-made-from {
-        height: 4rem;
+        margin-top: 0.4rem;
+        height: 8rem;
+        overflow: auto;
     }
 }
 
