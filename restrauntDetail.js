@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function () {
             onlineDishes.appendChild(onlineDishContainer)
             dishes.forEach((dish, index) => {
                 var dishContainer = document.createElement('div');
-                dishContainer.classList.add('dish-container');
+                dishContainer.classList.add('dish-container-new');
 
                 //dish image
                 var dishImgContainer = document.createElement('div');
@@ -374,7 +374,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 addButton.classList.add('add-button');
 
                 var addText = document.createElement('b');
-                addText.style.fontWeight = '100';
+                // addText.style.fontWeight = '100';
                 addText.textContent = 'Add';
                 addButton.appendChild(addText)
 
