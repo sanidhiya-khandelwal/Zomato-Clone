@@ -933,7 +933,7 @@ header {
     }
 
     /* ORDER ONLINE OPTIONS */
-    .order-online-container {
+    /* .order-online-container {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -963,7 +963,7 @@ header {
 
     .cuisine-count {
         display: none;
-    }
+    } */
 
     .order-online-dishes {
         width: 100%;
@@ -1129,6 +1129,12 @@ header {
 }
 
 @media all and (width<=450px) {
+    .order-online-options {
+        position: static;
+    }
+}
+
+@media all and (width<=450px) {
     .order-online-dishes {
         padding: 0rem;
     }
@@ -1207,6 +1213,36 @@ header {
         height: 8rem;
         overflow: auto;
     }
+
+    /* ORDER ONLINE OPTIONS */
+    .order-online-options {
+        display: none;
+        width: 100%;
+    }
+
+    .order-online-options-smallScreen {
+        margin: auto;
+        width: 80%;
+        height: 2.8rem;
+        display: flex;
+        align-items: center;
+        /* padding-top: 0px; */
+        gap: 1rem;
+        position: fixed;
+        bottom: 0px;
+        z-index: 1;
+        background-color: white;
+        overflow-x: auto;
+        overflow-y: hidden;
+        border-radius: 5px;
+        box-shadow: -2px -3px 1px 1px rgba(0, 0, 0, 0.276), 2px -3px 1px 1px rgba(0, 0, 0, 0.276);
+    }
+
+    .cuisine-name-small-screen {
+        padding: 6px 10px 5px 10px;
+        height: 90%;
+    }
+
 }
 
 @media all and (width<=600px) {

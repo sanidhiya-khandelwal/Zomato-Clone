@@ -243,13 +243,25 @@ document.addEventListener('DOMContentLoaded', function () {
         cuisineCountHTML.textContent = ' ' + '(' + key + ')';
 
         var cusineNameHTML = document.createElement('p');
-        cusineNameHTML.classList.add('cuisine-name');
+        cusineNameHTML.classList.add('cuisine-name', 'cuisine-name-small-screen');
         cusineNameHTML.textContent = value1;
         cusineNameHTML.setAttribute('id', value1 + '1');
         cusineNameHTML.appendChild(cuisineCountHTML);
         orderOnlineOptions.append(cusineNameHTML);
 
         //scroll into view
+
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+
+        if (screenWidth <= 450) {
+            var orderOnlineOptionsId = document.getElementById('order-onine-options-id');
+            orderOnlineOptionsId.classList.remove('order-online-options');
+            orderOnlineOptionsId.classList.add('order-online-options-smallScreen');
+
+            document.querySelector('.cuisine-count').remove();
+            document.querySelector('.cuisine-name-small-screen').classList.remove('cuisine-name');
+        }
+
 
         cusineNameHTML.addEventListener('click', () => {
 
