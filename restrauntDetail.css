@@ -599,6 +599,7 @@ header {
     margin-top: 1.5rem;
 }
 
+
 .left-cuisine-name {
     font-size: 1.5rem;
     font-weight: 600;
@@ -609,8 +610,10 @@ header {
     display: flex;
     gap: 1rem;
     width: 100%;
-    height: 30%;
-    margin-bottom: 0.2rem;
+    height: 35%;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed rgb(130, 130, 130);
 }
 
 .dish-img-container {
@@ -663,16 +666,19 @@ header {
 .add-remove-button {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     cursor: pointer;
-    background-color: red;
-    color: white;
-    width: 5rem;
+    width: 9rem;
     height: 2rem;
     padding: 0.5rem;
     border-radius: 5px;
+    margin: auto;
     margin-top: 1rem;
     font-size: 1.2rem;
+    border: 1.5px solid red;
+    color: red;
+    font-weight: 900;
+    background-color: rgb(255, 236, 236);
 }
 
 .add-remove-button {
@@ -931,39 +937,6 @@ header {
         display: none;
 
     }
-
-    /* ORDER ONLINE OPTIONS */
-    /* .order-online-container {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-
-    .order-online-options {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        border: 2px solid rgb(88, 81, 81);
-        border-radius: 9px;
-        height: 4rem;
-        width: 90%;
-        overflow: auto;
-        overflow-y: hidden;
-        position: fixed;
-        top: 92%;
-        background-color: white;
-        display: none;
-    }
-
-
-    .order-online-options p {
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-    }
-
-    .cuisine-count {
-        display: none;
-    } */
 
     .order-online-dishes {
         width: 100%;

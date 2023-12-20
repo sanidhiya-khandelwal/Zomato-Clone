@@ -420,6 +420,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 dishMadeFrom.textContent = dish.foodDescription;
                 dishDetails.appendChild(dishMadeFrom);
 
+                var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+
+                //  if (screenWidth <= 900) { }
                 // //Add button
                 // var addButton = document.createElement('div');
                 // addButton.classList.add('add-button');
