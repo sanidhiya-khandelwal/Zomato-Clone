@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
-        if (screenWidth <= 450) {
+        if (screenWidth <= 800) {
             var orderOnlineOptionsId = document.getElementById('order-online-options-id');
             console.log(orderOnlineOptionsId);
             orderOnlineOptionsId.classList.remove('order-online-options');
