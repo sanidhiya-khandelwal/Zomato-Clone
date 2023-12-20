@@ -264,18 +264,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         cusineNameHTML.addEventListener('click', () => {
-
             var cuisineNames = document.querySelectorAll('.cuisine-name');
             cuisineNames.forEach(function (item) {
-                item.style.color = 'black';
-                item.style.borderRight = "none";
-                item.style.background = "none";
+                if (screenWidth <= 900) {
+                    item.style.fontWeight = '100';
+                    item.style.borderRadius = "none";
+                    item.style.background = "none";
+                }
+                else {
+                    item.style.color = 'black';
+                    item.style.borderRight = "none";
+                    item.style.background = "none";
+                }
+
             })
 
             var cuisineName = document.getElementById(`${value1}1`);
-            cuisineName.style.color = "red";
-            cuisineName.style.borderRight = "3px solid rgb(239, 79, 95)";
-            cuisineName.style.background = "linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 237, 239))";
+            if (screenWidth <= 900) {
+                cuisineName.style.fontWeight = "600";
+                cuisineName.style.borderRadius = "3px";
+                cuisineName.style.background = "rgba(128, 128, 128, 0.279)";
+            } else {
+                cuisineName.style.color = "red";
+                cuisineName.style.borderRight = "3px solid rgb(239, 79, 95)";
+                cuisineName.style.background = "linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 237, 239))";
+            }
+
             document.getElementById(value1).scrollIntoView({
                 behavior: 'smooth',
                 block: 'center'
