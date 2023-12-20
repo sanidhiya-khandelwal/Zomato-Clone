@@ -1023,13 +1023,13 @@ header {
 
 }
 
-@media all and (width<=800px) {
+@media all and (width<=900px) {
     .order-online-options {
         position: static;
     }
 }
 
-@media all and (width<=800px) {
+@media all and (width<=900px) {
     .order-online-dishes {
         padding: 0rem;
     }
@@ -1048,7 +1048,6 @@ header {
 
     .dish-details {
         width: 50%;
-        position: relative;
     }
 
     .dishname {
@@ -1081,10 +1080,9 @@ header {
     /* dish image */
 
     .dish-img-container {
-        width: 45%;
+        width: 40%;
         height: 70%;
-        background-color: hsl(0, 0%, 90%);
-        border-radius: 10px;
+        position: relative;
     }
 
     .dish-img-container img {
@@ -1099,12 +1097,13 @@ header {
         justify-content: space-around;
         width: 8.2rem;
         position: absolute;
-        top: 7.8rem;
-        left: 11.65rem;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -1rem;
         color: red;
         font-weight: 900;
         background-color: rgb(255, 236, 236);
-        border: 1px solid red;
+        border: 1px solid #ff0000;
     }
 
     .dish-made-from {
@@ -1147,5 +1146,29 @@ header {
 @media all and (width<=600px) {
     .restaurant-images-container {
         height: 200px;
+    }
+}
+
+@media all and (width<=512px) {
+
+    .add-button,
+    .add-remove-button {
+        width: 7rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -0.5rem;
+    }
+}
+
+@media all and (width<=472px) {
+
+    .add-button,
+    .add-remove-button {
+        width: 7rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0.6rem;
     }
 }

@@ -253,9 +253,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
-        if (screenWidth <= 800) {
+        if (screenWidth <= 900) {
             var orderOnlineOptionsId = document.getElementById('order-online-options-id');
-            console.log(orderOnlineOptionsId);
             orderOnlineOptionsId.classList.remove('order-online-options');
             orderOnlineOptionsId.classList.add('order-online-options-smallScreen');
 
@@ -325,6 +324,45 @@ document.addEventListener('DOMContentLoaded', function () {
                 dishImage.src = dish.foodImg;
 
                 dishImgContainer.appendChild(dishImage);
+
+
+                // //Add button
+                var addButton = document.createElement('div');
+                addButton.classList.add('add-button');
+
+                var addText = document.createElement('b');
+                // addText.style.fontWeight = '100';
+                addText.textContent = 'Add';
+                addButton.appendChild(addText)
+
+                var addSign = document.createElement('p');
+                addSign.innerText = '+';
+                addButton.appendChild(addSign)
+                dishImgContainer.appendChild(addButton);
+
+                // // Remove button
+                var addRemoveButton = document.createElement('div');
+                addRemoveButton.classList.add('add-remove-button');
+
+                var addSign = document.createElement('p');
+                addSign.innerText = '+';
+                addRemoveButton.appendChild(addSign)
+
+
+                var countText = document.createElement('b');
+                countText.classList.add('count');
+                countText.style.fontWeight = '100';
+                countText.textContent = '1';
+                addRemoveButton.appendChild(countText);
+
+                var subSign = document.createElement('p');
+                subSign.innerText = '-';
+                subSign.style.marginBottom = '0.3rem';
+                addRemoveButton.appendChild(subSign);
+                dishImgContainer.appendChild(addRemoveButton);
+
+
+
                 dishContainer.appendChild(dishImgContainer);
 
                 //dish name
@@ -382,40 +420,40 @@ document.addEventListener('DOMContentLoaded', function () {
                 dishMadeFrom.textContent = dish.foodDescription;
                 dishDetails.appendChild(dishMadeFrom);
 
-                //Add button
-                var addButton = document.createElement('div');
-                addButton.classList.add('add-button');
+                // //Add button
+                // var addButton = document.createElement('div');
+                // addButton.classList.add('add-button');
 
-                var addText = document.createElement('b');
-                // addText.style.fontWeight = '100';
-                addText.textContent = 'Add';
-                addButton.appendChild(addText)
+                // var addText = document.createElement('b');
+                // // addText.style.fontWeight = '100';
+                // addText.textContent = 'Add';
+                // addButton.appendChild(addText)
 
-                var addSign = document.createElement('p');
-                addSign.innerText = '+';
-                addButton.appendChild(addSign)
-                dishDetails.appendChild(addButton);
+                // var addSign = document.createElement('p');
+                // addSign.innerText = '+';
+                // addButton.appendChild(addSign)
+                // dishDetails.appendChild(addButton);
 
-                // Remove button
-                var addRemoveButton = document.createElement('div');
-                addRemoveButton.classList.add('add-remove-button');
+                // // Remove button
+                // var addRemoveButton = document.createElement('div');
+                // addRemoveButton.classList.add('add-remove-button');
 
-                var addSign = document.createElement('p');
-                addSign.innerText = '+';
-                addRemoveButton.appendChild(addSign)
+                // var addSign = document.createElement('p');
+                // addSign.innerText = '+';
+                // addRemoveButton.appendChild(addSign)
 
 
-                var countText = document.createElement('b');
-                countText.classList.add('count');
-                countText.style.fontWeight = '100';
-                countText.textContent = '1';
-                addRemoveButton.appendChild(countText);
+                // var countText = document.createElement('b');
+                // countText.classList.add('count');
+                // countText.style.fontWeight = '100';
+                // countText.textContent = '1';
+                // addRemoveButton.appendChild(countText);
 
-                var subSign = document.createElement('p');
-                subSign.innerText = '-';
-                subSign.style.marginBottom = '0.3rem';
-                addRemoveButton.appendChild(subSign);
-                dishDetails.appendChild(addRemoveButton);
+                // var subSign = document.createElement('p');
+                // subSign.innerText = '-';
+                // subSign.style.marginBottom = '0.3rem';
+                // addRemoveButton.appendChild(subSign);
+                // dishDetails.appendChild(addRemoveButton);
 
                 //all appended
                 dishContainer.appendChild(dishDetails);
