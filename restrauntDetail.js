@@ -241,13 +241,13 @@ document.addEventListener('DOMContentLoaded', function () {
         cuisineCountHTML.classList.add('cuisine-count');
 
         cuisineCountHTML.textContent = ' ' + '(' + key + ')';
-
         var cusineNameHTML = document.createElement('p');
         cusineNameHTML.classList.add('cuisine-name', 'cuisine-name-small-screen');
         cusineNameHTML.textContent = value1;
         cusineNameHTML.setAttribute('id', value1 + '1');
         cusineNameHTML.appendChild(cuisineCountHTML);
         orderOnlineOptions.append(cusineNameHTML);
+        // console.log('cusineNameHTML', cusineNameHTML);
 
         //scroll into view
 
@@ -265,6 +265,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         cusineNameHTML.addEventListener('click', () => {
             var cuisineNames = document.querySelectorAll('.cuisine-name');
+            console.log('cuisineNames', cuisineNames);
             cuisineNames.forEach(function (item) {
                 if (screenWidth <= 900) {
                     item.style.fontWeight = '100';

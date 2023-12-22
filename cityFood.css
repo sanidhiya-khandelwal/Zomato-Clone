@@ -85,7 +85,14 @@ header {
     display: none;
 }
 
+.dish {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
 .dish-container {
+    padding: 0.25rem 0;
     padding-right: 8rem;
     display: flex;
     gap: 1rem;
@@ -109,6 +116,78 @@ header {
 .dish-container input::placeholder {
     font-size: 0.9rem;
 }
+
+
+.search-dish-container {
+    border-radius: 5px;
+    background-color: white;
+    z-index: 3;
+    position: absolute;
+    top: 3rem;
+    height: 88vh;
+    width: 100%;
+    padding: 0.6rem 0rem 1rem 0rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 1px solid rgb(207, 207, 207);
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+    transition: opacity 0.25s ease 0s, top 0.25s ease 0s;
+    display: none;
+}
+
+.search-restaurant-container-img-details {
+    display: flex;
+    gap: 1rem;
+    height: auto;
+    padding: 0.8rem 0.8rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.search-restaurant-container-img-details:hover {
+    border-radius: 9px;
+    background-color: rgba(178, 216, 227, 0.176);
+}
+
+.search-restaurant-container-img-details img {
+    border-radius: 5px;
+    width: 8rem;
+    object-fit: cover;
+}
+
+.search-restaurant-container-details {}
+
+.search-restaurant-rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    padding: 0.2rem;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 0.7rem;
+    margin: 0.3rem 0;
+}
+
+.search-restaurant-order-now {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    color: red;
+    margin: 0.6rem 0;
+}
+
+.search-restaurant-deliverytime {
+    color: rgb(130, 130, 130);
+}
+
+.notfound-message {
+    color: rgb(156, 156, 156);
+    padding: 0.5rem 1rem;
+    display: none;
+}
+
 
 .right-header {
     display: flex;
@@ -686,6 +765,7 @@ header {
     height: 15rem;
 
 }
+
 
 .discount-container {
     position: absolute;
