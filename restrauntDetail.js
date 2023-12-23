@@ -351,7 +351,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 addButton.classList.add('add-button');
 
                 var addText = document.createElement('b');
-                // addText.style.fontWeight = '100';
                 addText.textContent = 'Add';
                 addButton.appendChild(addText)
 
@@ -364,17 +363,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 var addRemoveButton = document.createElement('div');
                 addRemoveButton.classList.add('add-remove-button');
 
-                var addSign = document.createElement('p');
-                addSign.classList.add('add-item');
-                addSign.innerText = '+';
-                addRemoveButton.appendChild(addSign)
-
-
-                var countText = document.createElement('b');
-                countText.classList.add('count');
-                countText.style.fontWeight = '100';
-                countText.textContent = 1;
-                addRemoveButton.appendChild(countText);
 
                 var subSign = document.createElement('p');
                 subSign.classList.add('remove-item');
@@ -383,6 +371,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 addRemoveButton.appendChild(subSign);
                 dishImgContainer.appendChild(addRemoveButton);
 
+                var countText = document.createElement('b');
+                countText.classList.add('count');
+                countText.style.fontWeight = '100';
+                countText.textContent = 1;
+                addRemoveButton.appendChild(countText);
+
+                var addSign = document.createElement('p');
+                addSign.classList.add('add-item');
+                addSign.innerText = '+';
+                addRemoveButton.appendChild(addSign)
 
 
                 dishContainer.appendChild(dishImgContainer);
