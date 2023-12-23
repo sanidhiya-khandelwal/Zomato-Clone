@@ -480,14 +480,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
                     document.querySelector('.items-added-container').style.display = 'flex';
 
+                    if (totalItems === 0) {
+                        document.querySelector('.items-added-container').style.display = 'none';
+                    }
+
+
                     if (countItems < 1) {
                         addButton.style.display = 'flex';
                         addRemoveButton.style.display = 'none';
                     }
 
-                    if (totalItemsCount == 0) {
-                        document.querySelector('.items-added-container').style.display = 'none';
-                    }
                 })
 
 
