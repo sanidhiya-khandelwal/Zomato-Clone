@@ -456,7 +456,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
-                    document.querySelector('.items-added-container').style.display = 'flex';
+                    document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
+                    document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
 
                     addButton.style.display = 'none';
                     addRemoveButton.style.display = 'flex';
@@ -468,7 +469,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
-                    document.querySelector('.items-added-container').style.display = 'flex';
+                    document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
+                    document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
                 })
                 subSign.addEventListener('click', () => {
                     countItems--;
@@ -476,10 +478,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     totalItems--;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
-                    document.querySelector('.items-added-container').style.display = 'flex';
+                    document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
+                    document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
 
                     if (totalItems === 0) {
-                        document.querySelector('.items-added-container').style.display = 'none';
+                        document.querySelector('.items-added-container').style.transform = 'translateX(28rem)';
+                        document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
                     }
 
 

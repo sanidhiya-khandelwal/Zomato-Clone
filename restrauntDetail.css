@@ -685,6 +685,9 @@ header {
     display: none;
 }
 
+/* items count container styling */
+
+
 .items-added-container {
     position: fixed;
     bottom: 1rem;
@@ -701,8 +704,10 @@ header {
     border-radius: 5px;
     font-size: 0.8rem;
     cursor: pointer;
-    display: none;
+    /* display: none; */
     z-index: 2;
+    transform: translateX(28rem);
+    transition: transform 0.5s ease-in-out;
 }
 
 .items-added {
