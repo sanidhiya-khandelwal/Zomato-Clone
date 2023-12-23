@@ -701,6 +701,7 @@ header {
     border-radius: 5px;
     font-size: 0.8rem;
     cursor: pointer;
+    display: none;
 }
 
 .items-added {
@@ -708,7 +709,14 @@ header {
     gap: 0.5rem;
 }
 
+.add-item,
+.remove-item {
+    padding: 0 1rem;
+}
 
+.count {
+    cursor: default;
+}
 
 /* media query */
 @media all and (width<=1300px) {

@@ -316,6 +316,9 @@ document.addEventListener('DOMContentLoaded', function () {
     //display dish details
     var onlineDishes = document.querySelector('.online-dishes');
 
+    var totalItems = 0;
+    var totalItemsCount = document.querySelector('#total-items-count');
+    // var countItems = 0;
     selectedRestauraunt.food.forEach((category) => {
         Object.entries(category).forEach(([categoryName, dishes]) => {
             var onlineDishContainer = document.createElement('div');
@@ -362,6 +365,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 addRemoveButton.classList.add('add-remove-button');
 
                 var addSign = document.createElement('p');
+                addSign.classList.add('add-item');
                 addSign.innerText = '+';
                 addRemoveButton.appendChild(addSign)
 
@@ -369,10 +373,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 var countText = document.createElement('b');
                 countText.classList.add('count');
                 countText.style.fontWeight = '100';
-                countText.textContent = '1';
+                countText.textContent = 1;
                 addRemoveButton.appendChild(countText);
 
                 var subSign = document.createElement('p');
+                subSign.classList.add('remove-item');
                 subSign.innerText = '-';
                 subSign.style.marginBottom = '0.3rem';
                 addRemoveButton.appendChild(subSign);
@@ -439,46 +444,80 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 var screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
-                //  if (screenWidth <= 900) { }
-                // //Add button
-                // var addButton = document.createElement('div');
-                // addButton.classList.add('add-button');
-
-                // var addText = document.createElement('b');
-                // // addText.style.fontWeight = '100';
-                // addText.textContent = 'Add';
-                // addButton.appendChild(addText)
-
-                // var addSign = document.createElement('p');
-                // addSign.innerText = '+';
-                // addButton.appendChild(addSign)
-                // dishDetails.appendChild(addButton);
-
-                // // Remove button
-                // var addRemoveButton = document.createElement('div');
-                // addRemoveButton.classList.add('add-remove-button');
-
-                // var addSign = document.createElement('p');
-                // addSign.innerText = '+';
-                // addRemoveButton.appendChild(addSign)
-
-
-                // var countText = document.createElement('b');
-                // countText.classList.add('count');
-                // countText.style.fontWeight = '100';
-                // countText.textContent = '1';
-                // addRemoveButton.appendChild(countText);
-
-                // var subSign = document.createElement('p');
-                // subSign.innerText = '-';
-                // subSign.style.marginBottom = '0.3rem';
-                // addRemoveButton.appendChild(subSign);
-                // dishDetails.appendChild(addRemoveButton);
 
                 //all appended
                 dishContainer.appendChild(dishDetails);
                 onlineDishContainer.appendChild(dishContainer);
-                onlineDishes.appendChild(onlineDishContainer)
+                onlineDishes.appendChild(onlineDishContainer);
+
+                //items count logic
+                let countItems = 1;
+                addButton.addEventListener('click', () => {
+                    countItems = 1;
+                    countText.textContent = countItems;
+                    addButton.style.display = 'none';
+                    addRemoveButton.style.display = 'flex';
+                })
+
+                addSign.addEventListener('click', () => {
+                    countItems++;
+                    countText.textContent = countItems;
+                })
+                subSign.addEventListener('click', () => {
+                    countItems--;
+                    countText.textContent = countItems;
+                    if (countItems < 1) {
+                        addButton.style.display = 'flex';
+                        addRemoveButton.style.display = 'none';
+                    }
+                })
+
+                // addButton.addEventListener('click', () => {
+                //     countItems = 1;
+                //     totalItems++;
+                //     countText.textContent = countItems;
+
+                //     updateItemsDisplay();
+
+                //     addButton.style.display = 'none';
+                //     addRemoveButton.style.display = 'flex';
+                // })
+
+                // addSign.addEventListener('click', () => {
+                //     countItems++;
+                //     totalItems++;
+                //     countText.textContent = countItems;
+
+                //     updateItemsDisplay();
+                // })
+
+                // subSign.addEventListener('click', () => {
+                //     if (countItems > 1) {
+                //         countItems--;
+                //         totalItems--;
+                //         countText.textContent = countItems;
+                //     } else if (countItems === 1) {
+                //         countItems--;
+                //         totalItems--;
+                //         countText.textContent = countItems;
+                //         addRemoveButton.style.display = 'none';
+                //         addButton.style.display = 'flex';
+                //     }
+                //     updateItemsDisplay();
+
+                // })
+
+                // function updateItemsDisplay() {
+                //     if (totalItems > 0) {
+                //         document.querySelector('.items-added-container').style.display = 'flex';
+                //     } else {
+                //         document.querySelector('.items-added-container').style.display = 'none';
+                //     }
+
+                //     totalItemsCount.textContent = totalItems === 1 ? totalItems + ' item added' : totalItems + ' items added';
+                // }
+
+
             })
         })
 
