@@ -685,6 +685,31 @@ header {
     display: none;
 }
 
+.items-added-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 1rem;
+    background-color: red;
+    color: white;
+    width: 18rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.items-added {
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+
 /* media query */
 @media all and (width<=1300px) {
     body {

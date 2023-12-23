@@ -6429,7 +6429,7 @@ function displayRestaurantOnSearch(item, idx) {
 
 
 
-// search functionality fo bg screens
+// search functionality fo sm,md screens
 
 var searchInputSM = document.querySelector('.search-input-sm');
 var searchDishContainerSM = document.querySelector('.search-dish-container-sm');
