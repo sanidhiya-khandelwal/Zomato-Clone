@@ -317,8 +317,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var onlineDishes = document.querySelector('.online-dishes');
 
     var totalItems = 0;
-    var totalItemsCount = document.querySelector('#total-items-count');
-    // var countItems = 0;
+    let totalItemsCount = document.querySelector('#total-items-count');
+
     selectedRestauraunt.food.forEach((category) => {
         Object.entries(category).forEach(([categoryName, dishes]) => {
             var onlineDishContainer = document.createElement('div');
@@ -455,6 +455,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 addButton.addEventListener('click', () => {
                     countItems = 1;
                     countText.textContent = countItems;
+
+                    totalItems++;
+                    totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
+                    document.querySelector('.items-added-container').style.display = 'flex';
+
                     addButton.style.display = 'none';
                     addRemoveButton.style.display = 'flex';
                 })
@@ -462,50 +467,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 addSign.addEventListener('click', () => {
                     countItems++;
                     countText.textContent = countItems;
+
+                    totalItems++;
+                    totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
+                    document.querySelector('.items-added-container').style.display = 'flex';
                 })
                 subSign.addEventListener('click', () => {
                     countItems--;
                     countText.textContent = countItems;
+
+                    totalItems--;
+                    totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
+                    document.querySelector('.items-added-container').style.display = 'flex';
+
                     if (countItems < 1) {
                         addButton.style.display = 'flex';
                         addRemoveButton.style.display = 'none';
                     }
+
+                    if (totalItemsCount == 0) {
+                        document.querySelector('.items-added-container').style.display = 'none';
+                    }
                 })
 
-                // addButton.addEventListener('click', () => {
-                //     countItems = 1;
-                //     totalItems++;
-                //     countText.textContent = countItems;
-
-                //     updateItemsDisplay();
-
-                //     addButton.style.display = 'none';
-                //     addRemoveButton.style.display = 'flex';
-                // })
-
-                // addSign.addEventListener('click', () => {
-                //     countItems++;
-                //     totalItems++;
-                //     countText.textContent = countItems;
-
-                //     updateItemsDisplay();
-                // })
-
-                // subSign.addEventListener('click', () => {
-                //     if (countItems > 1) {
-                //         countItems--;
-                //         totalItems--;
-                //         countText.textContent = countItems;
-                //     } else if (countItems === 1) {
-                //         countItems--;
-                //         totalItems--;
-                //         countText.textContent = countItems;
-                //         addRemoveButton.style.display = 'none';
-                //         addButton.style.display = 'flex';
-                //     }
-                //     updateItemsDisplay();
-
-                // })
 
                 // function updateItemsDisplay() {
                 //     if (totalItems > 0) {
