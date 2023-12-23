@@ -1185,4 +1185,9 @@ header {
         transform: translateX(-50%);
         bottom: 0.6rem;
     }
+
+    .items-added-container {
+        width: 100%;
+    }
+
 }
