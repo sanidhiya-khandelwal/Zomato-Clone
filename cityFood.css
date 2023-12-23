@@ -96,6 +96,7 @@ header {
     padding-right: 8rem;
     display: flex;
     gap: 1rem;
+    ;
 }
 
 .dish-container img {
@@ -118,7 +119,8 @@ header {
 }
 
 
-.search-dish-container {
+.search-dish-container,
+.search-dish-container-sm {
     border-radius: 5px;
     background-color: white;
     z-index: 3;
@@ -135,7 +137,13 @@ header {
     display: none;
 }
 
-.search-restaurant-container-img-details {
+.search-dish-container-sm {
+    margin: 1.7rem 0 0 0.5rem;
+    width: 90%;
+}
+
+.search-restaurant-container-img-details,
+.search-restaurant-container-img-details-sm {
     display: flex;
     gap: 1rem;
     height: auto;
@@ -144,12 +152,14 @@ header {
     cursor: pointer;
 }
 
-.search-restaurant-container-img-details:hover {
+.search-restaurant-container-img-details:hover,
+.search-restaurant-container-img-details-sm:hover {
     border-radius: 9px;
     background-color: rgba(178, 216, 227, 0.176);
 }
 
-.search-restaurant-container-img-details img {
+.search-restaurant-container-img-details img,
+.search-restaurant-container-img-details-sm img {
     border-radius: 5px;
     width: 8rem;
     object-fit: cover;
@@ -157,7 +167,8 @@ header {
 
 .search-restaurant-container-details {}
 
-.search-restaurant-rating-container {
+.search-restaurant-rating-container,
+.search-restaurant-rating-container-sm {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -170,7 +181,8 @@ header {
     margin: 0.3rem 0;
 }
 
-.search-restaurant-order-now {
+.search-restaurant-order-now,
+.search-restaurant-order-now-sm {
     display: flex;
     gap: 0.2rem;
     align-items: center;
@@ -178,15 +190,14 @@ header {
     margin: 0.6rem 0;
 }
 
-.search-restaurant-deliverytime {
+.search-restaurant-deliverytime,
+.search-restaurant-deliverytime-sm {
     color: rgb(130, 130, 130);
 }
 
-.notfound-message {
-    color: rgb(156, 156, 156);
-    padding: 0.5rem 1rem;
-    display: none;
-}
+
+
+
 
 
 .right-header {
@@ -1082,9 +1093,12 @@ a {
     }
 
     .dish-sm {
+        display: flex;
+        flex-direction: column;
+        position: relative;
         position: sticky;
         top: 5px;
-        display: block;
+        /* display: block; */
         padding: 0.3rem 0.8rem;
         display: none;
         z-index: 2;
@@ -1128,6 +1142,8 @@ a {
     .dish-container-sm img {
         width: 25px;
     }
+
+
 
     .search-locality {
         display: none;

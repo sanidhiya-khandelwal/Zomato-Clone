@@ -6315,7 +6315,7 @@ diningOutContainerSM.addEventListener('click', () => {
 })
 
 
-// search functionality
+// search functionality fo bg screens
 
 var searchInput = document.querySelector('.search-input');
 var searchDishContainer = document.querySelector('.search-dish-container');
@@ -6412,4 +6412,110 @@ function displayRestaurantOnSearch(item, idx) {
     searchRestaurantContainerImgDetails.appendChild(searchRestaurantContainerDetails);
 
     searchDishContainer.appendChild(searchRestaurantContainerImgDetails);
+}
+
+
+
+
+// search functionality fo bg screens
+
+var searchInputSM = document.querySelector('.search-input-sm');
+var searchDishContainerSM = document.querySelector('.search-dish-container-sm');
+var filtersSM = document.querySelector('.filters');
+
+searchInputSM.addEventListener('input', function () {
+    searchDishContainerSM.innerHTML = '';
+
+    var searchedRestaurantsSM = deliveryRestaurants.filter((item) =>
+        (item.restaurantName.toLowerCase().includes(searchInputSM.value.toLowerCase()) ||
+            item.cuisine.toLowerCase().includes(searchInputSM.value.toLowerCase())) &&
+        searchInputSM.value.length > 0)
+
+    if (searchedRestaurantsSM.length == 0 && searchInputSM.value.length != 0) {
+        filtersSM.style.display = 'none';
+        searchDishContainerSM.style.display = 'block';
+        searchDishContainerSM.style.overflowY = 'hidden'
+        searchDishContainerSM.style.color = 'rgb(156, 156, 156)';
+        searchDishContainerSM.style.padding = '1.3rem 1rem';
+        searchDishContainerSM.innerHTML = 'Oops! <br><p style="font-size:0.8rem; margin-top:0.2rem">We could not understand what you mean,try rephrasing the query.</p>'
+        searchDishContainerSM.style.height = 'auto';
+
+    }
+    else {
+        searchedRestaurantsSM.forEach((item, idx) => {
+            filtersSM.style.display = 'none';
+            searchDishContainerSM.style.display = 'block';
+            searchDishContainerSM.style.height = '88vh';
+            searchDishContainerSM.style.backgroundColor = 'white';
+            displayRestaurantOnSearchSM(item, idx);
+        });
+
+        if (searchInputSM.value.length === 0) {
+            filtersSM.style.display = 'flex';
+            searchDishContainerSM.style.display = 'none';
+        }
+    }
+});
+
+
+function displayRestaurantOnSearchSM(item, idx) {
+    var searchDishContainerSM = document.querySelector('.search-dish-container-sm');
+
+    var searchRestaurantContainerImgDetailsSM = document.createElement('div');
+    searchRestaurantContainerImgDetailsSM.classList.add('search-restaurant-container-img-details-sm');
+
+    var searchRestaurantImgSM = document.createElement('img');
+    searchRestaurantImgSM.classList.add('search-restaurant-img-sm');
+    searchRestaurantImgSM.src = item.img;
+    searchRestaurantContainerImgDetailsSM.appendChild(searchRestaurantImgSM);
+
+    var searchRestaurantContainerDetailsSM = document.createElement('div');
+    searchRestaurantContainerDetailsSM.classList.add('search-restaurant-container-details-sm');
+
+    //restaurant name
+    var searchRestaurantHeadingSM = document.createElement('p');
+    searchRestaurantHeadingSM.classList.add('search-restaurant-heading-sm');
+    searchRestaurantHeadingSM.textContent = item.restaurantName;
+    searchRestaurantContainerDetailsSM.appendChild(searchRestaurantHeadingSM);
+
+    // rating
+    var searchRestaurantRatingContainerSM = document.createElement('div');
+    searchRestaurantRatingContainerSM.classList.add('search-restaurant-rating-container-sm');
+
+
+    let restaurantRatingSM = document.createElement('b');
+    restaurantRatingSM.classList.add('search-restaurant-rating-sm');
+    restaurantRatingSM.textContent = item.rating;
+    searchRestaurantRatingContainerSM.appendChild(restaurantRatingSM)
+
+    let starIconSM = document.createElement('p');
+    starIconSM.classList.add('search-star-icon-sm')
+    starIconSM.innerHTML = '&#9734';
+    starIconSM.style.margin = '0 0 3px 2px';
+    searchRestaurantRatingContainerSM.appendChild(starIconSM)
+
+    searchRestaurantContainerDetailsSM.appendChild(searchRestaurantRatingContainerSM);
+
+    let searchRestaurantOrderNowSM = document.createElement('div');
+    searchRestaurantOrderNowSM.classList.add('search-restaurant-order-now-sm');
+    let orderNowSM = document.createElement('p');
+    orderNowSM.classList.add('order-now-sm');
+    orderNowSM.textContent = 'Order Now';
+    searchRestaurantOrderNowSM.appendChild(orderNowSM);
+
+    let redRightArrowSM = document.createElement('img');
+    redRightArrowSM.src = './assets/icons/red-right-arrow.png';
+    redRightArrowSM.style.width = '1.1rem';
+    searchRestaurantOrderNowSM.appendChild(redRightArrowSM);
+    searchRestaurantContainerDetailsSM.appendChild(searchRestaurantOrderNowSM);
+
+    let searchRestaurantDeliverytimeSM = document.createElement('p');
+    searchRestaurantDeliverytimeSM.classList.add('search-restaurant-deliverytime-sm');
+    searchRestaurantDeliverytimeSM.textContent = 'Delivery in ' + item.delieveryTime;
+    searchRestaurantContainerDetailsSM.appendChild(searchRestaurantDeliverytimeSM);
+
+
+    searchRestaurantContainerImgDetailsSM.appendChild(searchRestaurantContainerDetailsSM);
+
+    searchDishContainerSM.appendChild(searchRestaurantContainerImgDetailsSM);
 }
