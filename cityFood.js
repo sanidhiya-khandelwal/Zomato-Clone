@@ -6422,6 +6422,7 @@ function displayRestaurantOnSearch(item, idx) {
 var searchInputSM = document.querySelector('.search-input-sm');
 var searchDishContainerSM = document.querySelector('.search-dish-container-sm');
 var filtersSM = document.querySelector('.filters');
+var body = document.querySelector('body');
 
 searchInputSM.addEventListener('input', function () {
     searchDishContainerSM.innerHTML = '';
@@ -6440,6 +6441,9 @@ searchInputSM.addEventListener('input', function () {
         searchDishContainerSM.innerHTML = 'Oops! <br><p style="font-size:0.8rem; margin-top:0.2rem">We could not understand what you mean,try rephrasing the query.</p>'
         searchDishContainerSM.style.height = 'auto';
 
+        // Freeze the body
+        body.style.overflow = 'hidden';
+
     }
     else {
         searchedRestaurantsSM.forEach((item, idx) => {
@@ -6447,12 +6451,16 @@ searchInputSM.addEventListener('input', function () {
             searchDishContainerSM.style.display = 'block';
             searchDishContainerSM.style.height = '88vh';
             searchDishContainerSM.style.backgroundColor = 'white';
+            // Freeze the body
+            body.style.overflow = 'hidden';
             displayRestaurantOnSearchSM(item, idx);
         });
 
         if (searchInputSM.value.length === 0) {
             filtersSM.style.display = 'flex';
             searchDishContainerSM.style.display = 'none';
+            // Unfreeze the body
+            body.style.overflow = 'auto';
         }
     }
 });
