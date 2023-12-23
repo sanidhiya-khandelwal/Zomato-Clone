@@ -6434,7 +6434,7 @@ searchInputSM.addEventListener('input', function () {
     if (searchedRestaurantsSM.length == 0 && searchInputSM.value.length != 0) {
         filtersSM.style.display = 'none';
         searchDishContainerSM.style.display = 'block';
-        searchDishContainerSM.style.overflowY = 'hidden'
+        searchDishContainerSM.style.overflowX = 'hidden'
         searchDishContainerSM.style.color = 'rgb(156, 156, 156)';
         searchDishContainerSM.style.padding = '1.3rem 1rem';
         searchDishContainerSM.innerHTML = 'Oops! <br><p style="font-size:0.8rem; margin-top:0.2rem">We could not understand what you mean,try rephrasing the query.</p>'
