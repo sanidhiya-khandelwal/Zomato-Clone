@@ -6412,6 +6412,18 @@ function displayRestaurantOnSearch(item, idx) {
     searchRestaurantContainerImgDetails.appendChild(searchRestaurantContainerDetails);
 
     searchDishContainer.appendChild(searchRestaurantContainerImgDetails);
+
+    //detail of restraunt
+    searchRestaurantContainerImgDetails.addEventListener('click', () => {
+        localStorage.setItem('selectedRestauraunt', JSON.stringify(item))
+
+        setTimeout(() => {
+            let restaurantName = item.restaurantName;
+            let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
+            window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}&restaurant=${encodeURIComponent(restaurantNameReplace)}`;
+        }, 100);
+    }
+    )
 }
 
 
@@ -6454,6 +6466,7 @@ searchInputSM.addEventListener('input', function () {
             // Freeze the body
             body.style.overflow = 'hidden';
             displayRestaurantOnSearchSM(item, idx);
+
         });
 
         if (searchInputSM.value.length === 0) {
@@ -6526,4 +6539,17 @@ function displayRestaurantOnSearchSM(item, idx) {
     searchRestaurantContainerImgDetailsSM.appendChild(searchRestaurantContainerDetailsSM);
 
     searchDishContainerSM.appendChild(searchRestaurantContainerImgDetailsSM);
+
+
+    //detail of restraunt
+    searchRestaurantContainerImgDetailsSM.addEventListener('click', () => {
+        localStorage.setItem('selectedRestauraunt', JSON.stringify(item))
+
+        setTimeout(() => {
+            let restaurantName = item.restaurantName;
+            let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
+            window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}&restaurant=${encodeURIComponent(restaurantNameReplace)}`;
+        }, 100);
+    }
+    )
 }
