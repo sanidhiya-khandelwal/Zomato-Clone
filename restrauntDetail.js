@@ -461,6 +461,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     addButton.style.display = 'none';
                     addRemoveButton.style.display = 'flex';
+
+                    // display cart total container
+                    document.querySelector('.items-added-container').addEventListener('click', () => {
+                        document.querySelector('.cart-section-container').style.transform = 'translateX(0rem)';
+                        document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
+                    })
+
+                    document.querySelector('.close-cart').addEventListener('click', () => {
+                        document.querySelector('.cart-section-container').style.transform = 'translateX(28rem)';
+                        document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
+                    })
+
                 })
 
                 addSign.addEventListener('click', () => {
@@ -471,6 +483,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
                     document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
                     document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
+
+
                 })
                 subSign.addEventListener('click', () => {
                     countItems--;

@@ -685,6 +685,11 @@ header {
     display: none;
 }
 
+/* 
+.add-item {
+    cursor: default;
+} */
+
 /* items count container styling */
 
 
@@ -738,7 +743,7 @@ header {
     right: 6rem;
     z-index: 4;
     background-color: rgb(255, 236, 236);
-    border: 2px solid red;
+    border: 1px solid red;
     transform: translateX(28rem);
     transition: transform 0.5s ease-in-out;
 }
