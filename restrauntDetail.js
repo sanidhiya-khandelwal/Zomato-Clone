@@ -320,7 +320,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let totalItemsCount = document.querySelector('#total-items-count');
 
     selectedRestauraunt.food.forEach((category) => {
+
         Object.entries(category).forEach(([categoryName, dishes]) => {
+
             var onlineDishContainer = document.createElement('div');
             onlineDishContainer.classList.add('online-dish-container');
 
@@ -466,6 +468,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('.items-added-container').addEventListener('click', () => {
                         document.querySelector('.cart-section-container').style.transform = 'translateX(0rem)';
                         document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
+                        //Adding name to cart
+                        document.querySelector('.cart-restraunt-name').textContent = selectedRestauraunt.restaurantName;
                     })
 
                     document.querySelector('.close-cart').addEventListener('click', () => {
@@ -481,6 +485,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
+
+                    //cart display
+                    // console.log('restaurantName');
                     document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
                     document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
 
@@ -525,7 +532,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var searchDishContainer = document.querySelector('.search-dish-container');
 
     searchInput.addEventListener('input', function () {
-        console.log('searchedRes', selectedRestauraunt);
         searchDishContainer.innerHTML = '';
 
         var searchedRestaurants = deliveryRestaurants.filter((item) =>
