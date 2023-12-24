@@ -495,15 +495,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 })
 
 
-                // function updateItemsDisplay() {
-                //     if (totalItems > 0) {
-                //         document.querySelector('.items-added-container').style.display = 'flex';
-                //     } else {
-                //         document.querySelector('.items-added-container').style.display = 'none';
-                //     }
 
-                //     totalItemsCount.textContent = totalItems === 1 ? totalItems + ' item added' : totalItems + ' items added';
-                // }
 
 
             })
@@ -624,7 +616,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         )
     }
-
 
 
 

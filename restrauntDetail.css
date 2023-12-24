@@ -704,7 +704,6 @@ header {
     border-radius: 5px;
     font-size: 0.8rem;
     cursor: pointer;
-    /* display: none; */
     z-index: 2;
     transform: translateX(28rem);
     transition: transform 0.5s ease-in-out;
@@ -722,6 +721,186 @@ header {
 
 .count {
     cursor: default;
+}
+
+/* cart section styling */
+.cart-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-section-container {
+    padding: 0.5rem 0;
+    width: 18rem;
+    height: 100vh;
+    position: fixed;
+    bottom: 0rem;
+    right: 6rem;
+    z-index: 4;
+    background-color: rgb(255, 236, 236);
+    border: 2px solid red;
+    transform: translateX(28rem);
+    transition: transform 0.5s ease-in-out;
+}
+
+.cart-restraunt-name-close-container {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding-left: 0.5rem;
+    cursor: pointer;
+
+}
+
+.cart-restraunt-name-close-container img {
+    width: 1.3rem;
+    height: 1.3rem;
+
+}
+
+.cart-restraunt-name {
+    margin: 0.2rem 0.2rem;
+}
+
+.cart-total-container {
+    height: 60vh;
+    overflow: auto;
+}
+
+.cart-total {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    color: rgb(9, 9, 9);
+    padding: 1rem 0;
+}
+
+.cart-img img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.cart-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-dish-name {
+    font-weight: 600;
+}
+
+.cart-rating-votes,
+.cart-dish-cost {
+    display: flex;
+    font-size: 0.8rem;
+}
+
+
+.cart-add-remove-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    width: 4rem;
+    height: 1.3rem;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 3px;
+    color: black;
+    margin-top: 0.3rem;
+}
+
+.cart-add-remove-button p {
+    padding: 0 0.4rem;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.total-amount-container {
+    position: fixed;
+    bottom: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 0.5rem;
+    width: 17rem;
+    z-index: 5;
+    background: inherit;
+
+}
+
+.item-total-container,
+.gst-charges-container,
+.delivery-charges-container,
+.feeding-India-donation-container,
+.coupon-container,
+.grand-total-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.coupon-container {
+    color: rgb(3, 20, 255);
+}
+
+.add-symbol-container {
+    display: flex;
+}
+
+.cart-order {
+    border: 1px solid white;
+    padding: 0.5rem;
+    display: flex;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#place-order {
+    transform: translateX(30%);
+    width: 100%;
+    /* display: none; */
+}
+
+#order-placed {
+    transform: translateX(30%);
+    width: 100%;
+    cursor: not-allowed;
+    display: none;
+}
+
+/* coupons in cart */
+.cart-coupons-section {
+    position: fixed;
+    right: 25rem;
+    bottom: 0rem;
+    width: 15rem;
+    height: auto;
+    padding: 1rem;
+    background-color: red;
+    border-radius: 5px;
+    display: none;
+}
+
+.cart-coupons-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-hungry-coupon,
+.cart-walletonzom-coupon,
+.cart-crednew-coupon {
+    background-color: white;
+    margin-bottom: 0.5rem;
+    border-radius: 2px;
+    padding: 0.3rem;
+    cursor: pointer;
 }
 
 /* media query */
