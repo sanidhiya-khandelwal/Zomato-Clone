@@ -458,6 +458,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 cartCount.classList.add('cart-count');
                 cartCount.style.fontWeight = '100';
 
+                //to make cartTotal accessible outside this block
+                var cartTotal = document.createElement('div');
+                cartTotal.classList.add('cart-total');
+
                 addButton.addEventListener('click', () => {
                     countItems = 1;
                     countText.textContent = countItems;
@@ -486,8 +490,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     })
 
                     var cartTotalContainer = document.querySelector('.cart-total-container');
-                    var cartTotal = document.createElement('div');
-                    cartTotal.classList.add('cart-total');
+                    //defining cart total outside this block to make it accessible outside this block
 
                     var cartImg = document.createElement('div');
                     cartImg.classList.add('cart-img');
@@ -643,6 +646,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (countItems < 1) {
                         addButton.style.display = 'flex';
                         addRemoveButton.style.display = 'none';
+                        cartTotal.innerHTML = '';
                     }
                 })
             })
