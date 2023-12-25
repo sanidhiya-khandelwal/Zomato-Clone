@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 addButton.appendChild(addSign)
                 dishImgContainer.appendChild(addButton);
 
-                // // Remove button
+                //  Remove button
                 var addRemoveButton = document.createElement('div');
                 addRemoveButton.classList.add('add-remove-button');
 
@@ -392,7 +392,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 dishDetails.classList.add('dish-details');
                 var dishName = document.createElement('p');
                 dishName.classList.add('dishname');
-                dishName.textContent = dish.foodName
+                dishName.textContent = dish.foodName;
                 dishDetails.appendChild(dishName);
 
 
@@ -470,24 +470,130 @@ document.addEventListener('DOMContentLoaded', function () {
                         document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
                         //Adding name to cart
                         document.querySelector('.cart-restraunt-name').textContent = selectedRestauraunt.restaurantName;
+
                     })
+
 
                     document.querySelector('.close-cart').addEventListener('click', () => {
                         document.querySelector('.cart-section-container').style.transform = 'translateX(28rem)';
                         document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
                     })
 
+                    var cartTotalContainer = document.querySelector('.cart-total-container');
+                    var cartTotal = document.createElement('div');
+                    cartTotal.classList.add('cart-total');
+
+                    var cartImg = document.createElement('div');
+                    cartImg.classList.add('cart-img');
+
+
+                    var cartDishImg = document.createElement('img');
+                    cartDishImg.classList.add('cart-dish-img');
+                    cartDishImg.src = dish.foodImg;
+                    cartImg.appendChild(cartDishImg);
+                    cartTotal.appendChild(cartImg);
+
+                    // cart details container
+                    var cartDetailsContainer = document.createElement('div');
+                    cartDetailsContainer.classList.add('cart-details-container');
+
+                    var cartDetails = document.createElement('div');
+                    cartDetails.classList.add('cart-details');
+
+                    var cartDishName = document.createElement('p');
+                    cartDishName.classList.add('cart-dish-name');
+                    cartDishName.textContent = dish.foodName;
+                    cartDetails.appendChild(cartDishName)
+                    //    ===
+                    //dish rating rating-votes
+                    var cartRatingVotes = document.createElement('div');
+                    cartRatingVotes.classList.add('cart-rating-votes');
+
+                    var cartRating = document.createElement('div');
+                    cartRating.classList.add('cart-rating');
+
+                    //dispay stars basd on food rating
+                    rates = dish.foodRating;
+                    halfRate = dish.foodRating / 10;
+
+                    if (!rates) {
+                        var noRating = document.createElement('p');
+                        noRating.textContent = 'No Rating';
+                        rating.appendChild(noRating);
+                    }
+                    for (var i = 1; i < rates; i++) {
+                        var starImg = document.createElement('img');
+                        starImg.src = './assets/icons/full-yellow-star (1).png';
+                        cartRating.appendChild(starImg);
+                    }
+                    if (halfRate) {
+                        var starImg = document.createElement('img');
+                        starImg.src = './assets/icons/half-yellow-star.png';
+                        cartRating.appendChild(starImg);
+                    }
+                    cartRatingVotes.appendChild(cartRating);
+
+                    var cartVotes = document.createElement('p');
+                    cartVotes.classList.add('cart-votes');
+                    cartVotes.textContent = dish.foodVote;
+                    cartRatingVotes.appendChild(cartVotes);
+                    cartDetails.appendChild(cartRatingVotes);
+
+                    //====
+
+                    // cart dish cost
+                    var cartDishCost = document.createElement('div');
+                    cartDishCost.classList.add('cart-dish-cost');
+                    cartDishCost.textContent = dish.foodPrice;
+                    cartDetails.appendChild(cartDishCost);
+                    // 
+
+                    cartDetailsContainer.appendChild(cartDetails);
+                    cartTotal.appendChild(cartDetailsContainer)
+                    cartTotalContainer.appendChild(cartTotal)
+                    console.log('dish', dish.foodName, dish.foodPrice, dish.foodImg, dish.foodRating, dish.foodVote);
+
+                    // Button in cart
+                    var cartAddRemoveButton = document.createElement('div');
+                    cartAddRemoveButton.classList.add('cart-add-remove-button');
+
+                    var addSign = document.createElement('p');
+                    addSign.classList.add('add-item');
+                    addSign.innerText = '+';
+                    cartAddRemoveButton.appendChild(addSign);
+
+
+
+                    var cartCount = document.createElement('b');
+                    cartCount.classList.add('cart-count');
+                    cartCount.style.fontWeight = '100';
+                    cartCount.textContent = countItems;
+                    cartAddRemoveButton.appendChild(cartCount);
+
+                    var subSign = document.createElement('p');
+                    subSign.classList.add('remove-item');
+                    subSign.innerText = '-';
+                    subSign.style.padding = '0 0.5rem';
+                    subSign.style.paddingBottom = '0.1rem';
+                    cartAddRemoveButton.appendChild(subSign);
+                    cartDetails.appendChild(cartAddRemoveButton);
+
+                    cartDetails.appendChild(cartAddRemoveButton)
+
+                    // dishContainer.appendChild(dishImgContainer);
+
+
+
                 })
 
                 addSign.addEventListener('click', () => {
                     countItems++;
                     countText.textContent = countItems;
-
+                    // console.log(add);
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
 
-                    //cart display
-                    // console.log('restaurantName');
+
                     document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
                     document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
 

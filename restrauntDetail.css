@@ -642,14 +642,16 @@ header {
 }
 
 
-.rating-votes {
+.rating-votes,
+.cart-rating-votes {
     display: flex;
     align-items: center;
     gap: 2rem;
     color: rgb(156, 156, 156);
 }
 
-.rating img {
+.rating img,
+.cart-rating img {
     width: 1rem;
 }
 
@@ -794,6 +796,7 @@ header {
 
 .cart-dish-name {
     font-weight: 600;
+    word-wrap: wrap;
 }
 
 .cart-rating-votes,
