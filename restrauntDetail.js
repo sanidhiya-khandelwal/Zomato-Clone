@@ -513,7 +513,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     cartDishName.classList.add('cart-dish-name');
                     cartDishName.textContent = dish.foodName;
                     cartDetails.appendChild(cartDishName)
-                    //    ===
+
                     //dish rating rating-votes
                     var cartRatingVotes = document.createElement('div');
                     cartRatingVotes.classList.add('cart-rating-votes');
@@ -528,7 +528,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (!rates) {
                         var noRating = document.createElement('p');
                         noRating.textContent = 'No Rating';
-                        rating.appendChild(noRating);
+                        cartRating.appendChild(noRating);
                     }
                     for (var i = 1; i < rates; i++) {
                         var starImg = document.createElement('img');
@@ -548,19 +548,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     cartRatingVotes.appendChild(cartVotes);
                     cartDetails.appendChild(cartRatingVotes);
 
-                    //====
 
                     // cart dish cost
                     var cartDishCost = document.createElement('div');
                     cartDishCost.classList.add('cart-dish-cost');
                     cartDishCost.textContent = dish.foodPrice;
                     cartDetails.appendChild(cartDishCost);
-                    // 
 
                     cartDetailsContainer.appendChild(cartDetails);
                     cartTotal.appendChild(cartDetailsContainer)
                     cartTotalContainer.appendChild(cartTotal)
-                    console.log('dish', dish.foodName, dish.foodPrice, dish.foodImg, dish.foodRating, dish.foodVote);
 
                     // Button in cart
                     var cartAddRemoveButton = document.createElement('div');
@@ -599,8 +596,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         totalItems--;
                         totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
-                        // document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
-                        // document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
 
                         if (totalItems === 0) {
                             document.querySelector('.items-added-container').style.transform = 'translateX(28rem)';
