@@ -600,6 +600,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         if (totalItems === 0) {
                             document.querySelector('.items-added-container').style.transform = 'translateX(28rem)';
                             document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
+                            document.querySelector('.cart-section-container').style.transform = 'translateX(28rem)';
+                            document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
                         }
 
                         if (countItems < 1) {
@@ -637,6 +639,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (totalItems === 0) {
                         document.querySelector('.items-added-container').style.transform = 'translateX(28rem)';
                         document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
+                        document.querySelector('.cart-section-container').style.transform = 'translateX(28rem)';
+                        document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
                     }
 
                     if (countItems < 1) {
