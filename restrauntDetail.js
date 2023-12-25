@@ -321,6 +321,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // total cost
     var totalCost = 0;
+    var itemTotal = document.querySelector('#item-total');
 
     selectedRestauraunt.food.forEach((category) => {
 
@@ -436,7 +437,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 //dish cost
                 var dishCost = document.createElement('p');
                 dishCost.classList.add('dish-cost');
-                dishCost.textContent = dish.foodPrice;
+                dishCost.textContent = '₹' + dish.foodPrice;
                 dishDetails.appendChild(dishCost);
 
                 //dish contains
@@ -468,8 +469,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 addButton.addEventListener('click', () => {
                     countItems = 1;
                     countText.textContent = countItems;
+
                     totalCost = totalCost + dish.foodPrice;
-                    console.log('dish', totalCost);
+                    itemTotal.textContent = totalCost;
+
 
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
@@ -557,7 +560,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     // cart dish cost
                     var cartDishCost = document.createElement('div');
                     cartDishCost.classList.add('cart-dish-cost');
-                    cartDishCost.textContent = dish.foodPrice;
+                    cartDishCost.textContent = '₹' + dish.foodPrice;
                     cartDetails.appendChild(cartDishCost);
 
                     cartDetailsContainer.appendChild(cartDetails);
@@ -590,6 +593,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         countItems++;
                         cartCount.textContent = countItems;
                         countText.textContent = countItems;
+
+                        totalCost = totalCost + dish.foodPrice;
+                        itemTotal.textContent = totalCost;
+
+
                         totalItems++;
                         totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
                     })
@@ -598,6 +606,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         countItems--;
                         cartCount.textContent = countItems;
                         countText.textContent = countItems;
+
+                        totalCost = totalCost - dish.foodPrice;
+                        itemTotal.textContent = totalCost;
+
 
                         totalItems--;
                         totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
@@ -624,6 +636,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     countText.textContent = countItems;
                     cartCount.textContent = countItems;
 
+                    totalCost = totalCost + dish.foodPrice;
+                    itemTotal.textContent = totalCost;
+
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
 
@@ -635,6 +650,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     countItems--;
                     countText.textContent = countItems;
                     cartCount.textContent = countItems;
+
+                    totalCost = totalCost - dish.foodPrice;
+                    itemTotal.textContent = totalCost;
 
                     totalItems--;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
