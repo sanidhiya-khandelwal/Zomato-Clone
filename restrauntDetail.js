@@ -452,6 +452,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 //items count logic
                 let countItems = 1;
+
+                //to make cartCount accessible outside this block
+                var cartCount = document.createElement('b');
+                cartCount.classList.add('cart-count');
+                cartCount.style.fontWeight = '100';
+
                 addButton.addEventListener('click', () => {
                     countItems = 1;
                     countText.textContent = countItems;
@@ -562,11 +568,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     addSign.innerText = '+';
                     cartAddRemoveButton.appendChild(addSign);
 
+                    addSign.addEventListener('click', () => {
+                        countItems++;
+                        cartCount.textContent = countItems;
+                        countText.textContent = countItems;
+                        totalItems++;
+                        totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
+                    })
 
-
-                    var cartCount = document.createElement('b');
-                    cartCount.classList.add('cart-count');
-                    cartCount.style.fontWeight = '100';
+                    //cartCount is defined outside this block to make it accessible to next block
                     cartCount.textContent = countItems;
                     cartAddRemoveButton.appendChild(cartCount);
 
@@ -578,26 +588,19 @@ document.addEventListener('DOMContentLoaded', function () {
                     cartAddRemoveButton.appendChild(subSign);
                     cartDetails.appendChild(cartAddRemoveButton);
 
-                    cartDetails.appendChild(cartAddRemoveButton)
-
-                    // dishContainer.appendChild(dishImgContainer);
-
-
-
+                    cartDetails.appendChild(cartAddRemoveButton);
                 })
 
                 addSign.addEventListener('click', () => {
                     countItems++;
                     countText.textContent = countItems;
-                    // console.log(add);
+                    cartCount.textContent = countItems;
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
 
 
                     document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
                     document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
-
-
                 })
                 subSign.addEventListener('click', () => {
                     countItems--;
@@ -613,18 +616,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
                     }
 
-
                     if (countItems < 1) {
                         addButton.style.display = 'flex';
                         addRemoveButton.style.display = 'none';
                     }
-
                 })
-
-
-
-
-
             })
         })
 
