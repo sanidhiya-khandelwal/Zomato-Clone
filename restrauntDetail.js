@@ -319,6 +319,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var totalItems = 0;
     let totalItemsCount = document.querySelector('#total-items-count');
 
+    // total cost
+    var totalCost = 0;
+
     selectedRestauraunt.food.forEach((category) => {
 
         Object.entries(category).forEach(([categoryName, dishes]) => {
@@ -465,6 +468,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 addButton.addEventListener('click', () => {
                     countItems = 1;
                     countText.textContent = countItems;
+                    totalCost = totalCost + dish.foodPrice;
+                    console.log('dish', totalCost);
 
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
