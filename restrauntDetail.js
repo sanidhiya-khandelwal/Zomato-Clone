@@ -607,6 +607,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         if (countItems < 1) {
                             addButton.style.display = 'flex';
                             addRemoveButton.style.display = 'none';
+                            cartTotal.innerHTML = '';
                         }
                     })
 
