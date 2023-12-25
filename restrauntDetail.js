@@ -568,14 +568,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     addSign.innerText = '+';
                     cartAddRemoveButton.appendChild(addSign);
 
-                    addSign.addEventListener('click', () => {
-                        countItems++;
-                        cartCount.textContent = countItems;
-                        countText.textContent = countItems;
-                        totalItems++;
-                        totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
-                    })
-
                     //cartCount is defined outside this block to make it accessible to next block
                     cartCount.textContent = countItems;
                     cartAddRemoveButton.appendChild(cartCount);
@@ -586,15 +578,45 @@ document.addEventListener('DOMContentLoaded', function () {
                     subSign.style.padding = '0 0.5rem';
                     subSign.style.paddingBottom = '0.1rem';
                     cartAddRemoveButton.appendChild(subSign);
-                    cartDetails.appendChild(cartAddRemoveButton);
 
                     cartDetails.appendChild(cartAddRemoveButton);
+
+                    addSign.addEventListener('click', () => {
+                        countItems++;
+                        cartCount.textContent = countItems;
+                        countText.textContent = countItems;
+                        totalItems++;
+                        totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
+                    })
+
+                    subSign.addEventListener('click', () => {
+                        countItems--;
+                        cartCount.textContent = countItems;
+                        countText.textContent = countItems;
+
+                        totalItems--;
+                        totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
+                        // document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
+                        // document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
+
+                        if (totalItems === 0) {
+                            document.querySelector('.items-added-container').style.transform = 'translateX(28rem)';
+                            document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
+                        }
+
+                        if (countItems < 1) {
+                            addButton.style.display = 'flex';
+                            addRemoveButton.style.display = 'none';
+                        }
+                    })
+
                 })
 
                 addSign.addEventListener('click', () => {
                     countItems++;
                     countText.textContent = countItems;
                     cartCount.textContent = countItems;
+
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
 
@@ -605,6 +627,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 subSign.addEventListener('click', () => {
                     countItems--;
                     countText.textContent = countItems;
+                    cartCount.textContent = countItems;
 
                     totalItems--;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
