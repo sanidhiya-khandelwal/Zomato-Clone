@@ -1352,6 +1352,15 @@ header {
 
     }
 
+    /* cart styling container */
+    .cart-section-container {
+        bottom: 0rem;
+        right: 0rem;
+    }
+
+
+
+
 }
 
 
@@ -1387,6 +1396,37 @@ header {
 
     .items-added-container {
         font-size: 0.9rem;
+        width: 100%;
+    }
+
+
+    /* cart section styling */
+
+    .cart-section-container {
+        padding: 0.5rem 0;
+        bottom: 0rem;
+        right: 0rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cart-total {
+        justify-content: space-around;
+    }
+
+    .cart-img img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .cart-details-container {
+        width: 15rem;
+        font-size: 0.9rem;
+    }
+
+
+    .total-amount-container {
+        padding: 0.3rem 1.9rem;
         width: 100%;
     }
 
