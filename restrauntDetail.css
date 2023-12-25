@@ -756,6 +756,7 @@ header {
     gap: 0.3rem;
     padding-left: 0.5rem;
     cursor: pointer;
+    margin-bottom: 0.8rem;
 
 }
 
@@ -766,20 +767,20 @@ header {
 }
 
 .cart-restraunt-name {
-    margin: 0.2rem 0.2rem;
+    margin: 0.2rem;
 }
 
 .cart-total-container {
     height: 60vh;
     overflow: auto;
+    padding: 0 0.6rem;
 }
 
 .cart-total {
     display: flex;
-    align-items: start;
-    justify-content: space-around;
+    justify-content: space-between;
     color: rgb(9, 9, 9);
-    padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .cart-img img {
@@ -792,11 +793,17 @@ header {
 .cart-details-container {
     display: flex;
     flex-direction: column;
+    width: 11rem;
+    font-size: 0.8rem;
 }
 
 .cart-dish-name {
     font-weight: 600;
     word-wrap: wrap;
+}
+
+.cart-rating img {
+    width: 0.8rem;
 }
 
 .cart-rating-votes,
@@ -810,9 +817,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 1.1rem;
+    font-size: 1rem;
     width: 4rem;
-    height: 1.3rem;
+    height: 1rem;
     border: 1px solid transparent;
     background-color: white;
     border-radius: 3px;

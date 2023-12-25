@@ -606,6 +606,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             addButton.style.display = 'flex';
                             addRemoveButton.style.display = 'none';
                             cartTotal.innerHTML = '';
+                            cartTotal.style.marginBottom = '0';
                         }
                     })
 
@@ -642,6 +643,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         addButton.style.display = 'flex';
                         addRemoveButton.style.display = 'none';
                         cartTotal.innerHTML = '';
+                        cartTotal.style.padding = '0';
                     }
                 })
             })
