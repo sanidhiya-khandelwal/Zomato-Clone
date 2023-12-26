@@ -342,8 +342,9 @@ document.addEventListener('DOMContentLoaded', function () {
         leftCuisineName.classList.add('left-cuisine-name');
         leftCuisineName.textContent = categoryName;
         leftCuisineName.setAttribute('id', categoryName);
-
         onlineDishContainer.appendChild(leftCuisineName);
+
+
         onlineDishes.appendChild(onlineDishContainer)
         dishes.forEach((dish, index) => {
             var dishContainer = document.createElement('div');
@@ -800,27 +801,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
     // display only veg dishes on click of pure veg box
-    var vegDishes = []; var check = 1;
+    var vegDishes = [];
+    var check = 1;
     vegOnlyContainer.addEventListener('click', () => {
-        onlineDishes.innerHTML = '';
-        selectedRestauraunt.food.forEach((category) => {
-            vegDishes = [];
-            Object.entries(category).forEach(([categoryName, dishes]) => {
-                // if (check == 1) {
-                for (var dish of dishes) {
-                    if (dish.nonVeg != true) {
-                        vegDishes.push(dish);
+
+        if (check === 1) {
+            onlineDishes.innerHTML = '';
+            selectedRestauraunt.food.forEach((category) => {
+                vegDishes = [];
+                Object.entries(category).forEach(([categoryName, dishes]) => {
+                    for (var dish of dishes) {
+                        if (dish.nonVeg != true) {
+                            vegDishes.push(dish);
+                        }
                     }
-                }
-                displayDishes(categoryName, vegDishes);
-                // check = 0;
-                // }
-                // else {
-                //     displayDishes(categoryName, dishes);
-                //     check = 1;
-                // }
+                    displayDishes(categoryName, vegDishes);
+                    vegOnlyContainer.style.display = 'none';
+                })
             })
-        })
+        }
 
     })
 
