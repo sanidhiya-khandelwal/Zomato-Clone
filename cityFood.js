@@ -536,7 +536,7 @@ var deliveryRestaurants = [
                         foodDescription: 'Vegetable biryani is an aromatic rice dish made by cooking basmati rice with mix veggies, herbs & biryani spices.',
                         foodRating: '4.5',
                         foodVote: '31 Votes',
-                        nonVeg: true
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/biryani/EggBiryani.avif',
@@ -576,7 +576,7 @@ var deliveryRestaurants = [
                         foodDescription: '',
                         foodRating: '4.5',
                         foodVote: '15 Votes',
-                        nonVeg: false
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/Roomali Rolls/butter chicken roll.avif',
@@ -585,7 +585,7 @@ var deliveryRestaurants = [
                         foodDescription: 'Butter chicken roll is made with our creamy butter chicken masala curry, topped with your favorite vegetables and chutneys, and wrapped in a flakey paratha roll.',
                         foodRating: '4',
                         foodVote: '5 Votes',
-                        nonVeg: false
+                        nonVeg: true
                     }
                 ]
             },
@@ -1928,7 +1928,7 @@ var deliveryRestaurants = [
                         foodDescription: 'Vegetable biryani is an aromatic rice dish made by cooking basmati rice with mix veggies, herbs & biryani spices.',
                         foodRating: '4.5',
                         foodVote: '31 Votes',
-                        nonVeg: true
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/biryani/EggBiryani.avif',
@@ -1968,7 +1968,7 @@ var deliveryRestaurants = [
                         foodDescription: '',
                         foodRating: '4.5',
                         foodVote: '15 Votes',
-                        nonVeg: false
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/Roomali Rolls/butter chicken roll.avif',
@@ -1977,7 +1977,7 @@ var deliveryRestaurants = [
                         foodDescription: 'Butter chicken roll is made with our creamy butter chicken masala curry, topped with your favorite vegetables and chutneys, and wrapped in a flakey paratha roll.',
                         foodRating: '4',
                         foodVote: '5 Votes',
-                        nonVeg: false
+                        nonVeg: true
                     }
                 ]
             },

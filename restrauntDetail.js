@@ -312,6 +312,8 @@ document.addEventListener('DOMContentLoaded', function () {
         vegOnlyContainer.style.display = 'none';
     }
 
+
+
     //display dish details
     var onlineDishes = document.querySelector('.online-dishes');
 
@@ -325,86 +327,215 @@ document.addEventListener('DOMContentLoaded', function () {
     selectedRestauraunt.food.forEach((category) => {
 
         Object.entries(category).forEach(([categoryName, dishes]) => {
-
-            var onlineDishContainer = document.createElement('div');
-            onlineDishContainer.classList.add('online-dish-container');
-
-            var leftCuisineName = document.createElement('h3');
-            leftCuisineName.classList.add('left-cuisine-name');
-            leftCuisineName.textContent = categoryName;
-            leftCuisineName.setAttribute('id', categoryName);
-
-            onlineDishContainer.appendChild(leftCuisineName);
-            onlineDishes.appendChild(onlineDishContainer)
-            dishes.forEach((dish, index) => {
-                var dishContainer = document.createElement('div');
-                dishContainer.classList.add('dish-container-new');
-
-                //dish image
-                var dishImgContainer = document.createElement('div');
-                dishImgContainer.classList.add('dish-img-container');
-
-                var dishImage = document.createElement('img');
-                dishImage.classList.add('dish-img');
-                dishImage.src = dish.foodImg;
-
-                dishImgContainer.appendChild(dishImage);
+            displayDishes(categoryName, dishes);
+        })
+    })
 
 
-                // //Add button
-                var addButton = document.createElement('div');
-                addButton.classList.add('add-button');
 
-                var addText = document.createElement('b');
-                addText.textContent = 'Add';
-                addButton.appendChild(addText)
+    // Dislay dishes
+    function displayDishes(categoryName, dishes) {
+        var onlineDishContainer = document.createElement('div');
+        onlineDishContainer.classList.add('online-dish-container');
 
-                var addSign = document.createElement('p');
-                addSign.innerText = '+';
-                addButton.appendChild(addSign)
-                dishImgContainer.appendChild(addButton);
+        var leftCuisineName = document.createElement('h3');
+        leftCuisineName.classList.add('left-cuisine-name');
+        leftCuisineName.textContent = categoryName;
+        leftCuisineName.setAttribute('id', categoryName);
 
-                //  Remove button
-                var addRemoveButton = document.createElement('div');
-                addRemoveButton.classList.add('add-remove-button');
+        onlineDishContainer.appendChild(leftCuisineName);
+        onlineDishes.appendChild(onlineDishContainer)
+        dishes.forEach((dish, index) => {
+            var dishContainer = document.createElement('div');
+            dishContainer.classList.add('dish-container-new');
 
+            //dish image
+            var dishImgContainer = document.createElement('div');
+            dishImgContainer.classList.add('dish-img-container');
 
-                var subSign = document.createElement('p');
-                subSign.classList.add('remove-item');
-                subSign.innerText = '-';
-                subSign.style.marginBottom = '0.3rem';
-                addRemoveButton.appendChild(subSign);
-                dishImgContainer.appendChild(addRemoveButton);
+            var dishImage = document.createElement('img');
+            dishImage.classList.add('dish-img');
+            dishImage.src = dish.foodImg;
 
-                var countText = document.createElement('b');
-                countText.classList.add('count');
-                countText.style.fontWeight = '100';
-                countText.textContent = 1;
-                addRemoveButton.appendChild(countText);
-
-                var addSign = document.createElement('p');
-                addSign.classList.add('add-item');
-                addSign.innerText = '+';
-                addRemoveButton.appendChild(addSign)
+            dishImgContainer.appendChild(dishImage);
 
 
-                dishContainer.appendChild(dishImgContainer);
+            // //Add button
+            var addButton = document.createElement('div');
+            addButton.classList.add('add-button');
 
-                //dish name
-                var dishDetails = document.createElement('div');
-                dishDetails.classList.add('dish-details');
-                var dishName = document.createElement('p');
-                dishName.classList.add('dishname');
-                dishName.textContent = dish.foodName;
-                dishDetails.appendChild(dishName);
+            var addText = document.createElement('b');
+            addText.textContent = 'Add';
+            addButton.appendChild(addText)
 
+            var addSign = document.createElement('p');
+            addSign.innerText = '+';
+            addButton.appendChild(addSign)
+            dishImgContainer.appendChild(addButton);
+
+            //  Remove button
+            var addRemoveButton = document.createElement('div');
+            addRemoveButton.classList.add('add-remove-button');
+
+
+            var subSign = document.createElement('p');
+            subSign.classList.add('remove-item');
+            subSign.innerText = '-';
+            subSign.style.marginBottom = '0.3rem';
+            addRemoveButton.appendChild(subSign);
+            dishImgContainer.appendChild(addRemoveButton);
+
+            var countText = document.createElement('b');
+            countText.classList.add('count');
+            countText.style.fontWeight = '100';
+            countText.textContent = 1;
+            addRemoveButton.appendChild(countText);
+
+            var addSign = document.createElement('p');
+            addSign.classList.add('add-item');
+            addSign.innerText = '+';
+            addRemoveButton.appendChild(addSign)
+
+
+            dishContainer.appendChild(dishImgContainer);
+
+            //dish name
+            var dishDetails = document.createElement('div');
+            dishDetails.classList.add('dish-details');
+            var dishName = document.createElement('p');
+            dishName.classList.add('dishname');
+            dishName.textContent = dish.foodName;
+            dishDetails.appendChild(dishName);
+
+
+            //dish rating rating-votes
+            var ratingVotes = document.createElement('div');
+            ratingVotes.classList.add('rating-votes');
+
+            var rating = document.createElement('div');
+            rating.classList.add('rating');
+
+            //dispay stars basd on food rating
+            rates = dish.foodRating;
+            halfRate = dish.foodRating / 10;
+
+            if (!rates) {
+                var noRating = document.createElement('p');
+                noRating.textContent = 'No Rating';
+                rating.appendChild(noRating);
+            }
+            for (var i = 1; i < rates; i++) {
+                var starImg = document.createElement('img');
+                starImg.src = './assets/icons/full-yellow-star (1).png';
+                rating.appendChild(starImg);
+            }
+            if (halfRate) {
+                var starImg = document.createElement('img');
+                starImg.src = './assets/icons/half-yellow-star.png';
+                rating.appendChild(starImg);
+            }
+            ratingVotes.appendChild(rating);
+
+            var votes = document.createElement('p');
+            votes.classList.add('votes');
+            votes.textContent = dish.foodVote;
+            ratingVotes.appendChild(votes);
+            dishDetails.appendChild(ratingVotes);
+
+            //dish cost
+            var dishCost = document.createElement('p');
+            dishCost.classList.add('dish-cost');
+            dishCost.textContent = '₹' + dish.foodPrice;
+            dishDetails.appendChild(dishCost);
+
+            //dish contains
+            var dishMadeFrom = document.createElement('p');
+            dishMadeFrom.classList.add('dish-made-from');
+            dishMadeFrom.textContent = dish.foodDescription;
+            dishDetails.appendChild(dishMadeFrom);
+
+            // var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+
+
+            //all appended
+            dishContainer.appendChild(dishDetails);
+            onlineDishContainer.appendChild(dishContainer);
+            onlineDishes.appendChild(onlineDishContainer);
+
+            //items count logic
+            let countItems = 1;
+
+            //to make cartCount accessible outside this block
+            var cartCount = document.createElement('b');
+            cartCount.classList.add('cart-count');
+            cartCount.style.fontWeight = '100';
+
+            //to make cartTotal accessible outside this block
+            var cartTotal = document.createElement('div');
+            cartTotal.classList.add('cart-total');
+
+            addButton.addEventListener('click', () => {
+                countItems = 1;
+                countText.textContent = countItems;
+
+                totalCost = totalCost + dish.foodPrice;
+                itemTotal.textContent = totalCost;
+
+
+                totalItems++;
+                totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
+                document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
+                document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
+
+                addButton.style.display = 'none';
+                addRemoveButton.style.display = 'flex';
+
+                // display cart total container
+                document.querySelector('.items-added-container').addEventListener('click', () => {
+                    document.querySelector('.cart-section-container').style.transform = 'translateX(0rem)';
+                    document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
+                    //Adding name to cart
+                    document.querySelector('.cart-restraunt-name').textContent = selectedRestauraunt.restaurantName;
+
+                })
+
+
+                document.querySelector('.close-cart').addEventListener('click', () => {
+                    document.querySelector('.cart-section-container').style.transform = 'translateX(28rem)';
+                    document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
+                })
+
+                var cartTotalContainer = document.querySelector('.cart-total-container');
+                //defining cart total outside this block to make it accessible outside this block
+
+                var cartImg = document.createElement('div');
+                cartImg.classList.add('cart-img');
+
+
+                var cartDishImg = document.createElement('img');
+                cartDishImg.classList.add('cart-dish-img');
+                cartDishImg.src = dish.foodImg;
+                cartImg.appendChild(cartDishImg);
+                cartTotal.appendChild(cartImg);
+
+                // cart details container
+                var cartDetailsContainer = document.createElement('div');
+                cartDetailsContainer.classList.add('cart-details-container');
+
+                var cartDetails = document.createElement('div');
+                cartDetails.classList.add('cart-details');
+
+                var cartDishName = document.createElement('p');
+                cartDishName.classList.add('cart-dish-name');
+                cartDishName.textContent = dish.foodName;
+                cartDetails.appendChild(cartDishName)
 
                 //dish rating rating-votes
-                var ratingVotes = document.createElement('div');
-                ratingVotes.classList.add('rating-votes');
+                var cartRatingVotes = document.createElement('div');
+                cartRatingVotes.classList.add('cart-rating-votes');
 
-                var rating = document.createElement('div');
-                rating.classList.add('rating');
+                var cartRating = document.createElement('div');
+                cartRating.classList.add('cart-rating');
 
                 //dispay stars basd on food rating
                 rates = dish.foodRating;
@@ -413,250 +544,83 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (!rates) {
                     var noRating = document.createElement('p');
                     noRating.textContent = 'No Rating';
-                    rating.appendChild(noRating);
+                    cartRating.appendChild(noRating);
                 }
                 for (var i = 1; i < rates; i++) {
                     var starImg = document.createElement('img');
                     starImg.src = './assets/icons/full-yellow-star (1).png';
-                    rating.appendChild(starImg);
+                    cartRating.appendChild(starImg);
                 }
                 if (halfRate) {
                     var starImg = document.createElement('img');
                     starImg.src = './assets/icons/half-yellow-star.png';
-                    rating.appendChild(starImg);
+                    cartRating.appendChild(starImg);
                 }
-                ratingVotes.appendChild(rating);
+                cartRatingVotes.appendChild(cartRating);
 
-                var votes = document.createElement('p');
-                votes.classList.add('votes');
-                votes.textContent = dish.foodVote;
-                ratingVotes.appendChild(votes);
-                dishDetails.appendChild(ratingVotes);
-
-                //dish cost
-                var dishCost = document.createElement('p');
-                dishCost.classList.add('dish-cost');
-                dishCost.textContent = '₹' + dish.foodPrice;
-                dishDetails.appendChild(dishCost);
-
-                //dish contains
-                var dishMadeFrom = document.createElement('p');
-                dishMadeFrom.classList.add('dish-made-from');
-                dishMadeFrom.textContent = dish.foodDescription;
-                dishDetails.appendChild(dishMadeFrom);
-
-                var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+                var cartVotes = document.createElement('p');
+                cartVotes.classList.add('cart-votes');
+                cartVotes.textContent = dish.foodVote;
+                cartRatingVotes.appendChild(cartVotes);
+                cartDetails.appendChild(cartRatingVotes);
 
 
-                //all appended
-                dishContainer.appendChild(dishDetails);
-                onlineDishContainer.appendChild(dishContainer);
-                onlineDishes.appendChild(onlineDishContainer);
+                // cart dish cost
+                var cartDishCost = document.createElement('div');
+                cartDishCost.classList.add('cart-dish-cost');
+                cartDishCost.textContent = '₹' + dish.foodPrice;
+                cartDetails.appendChild(cartDishCost);
 
-                //items count logic
-                let countItems = 1;
+                cartDetailsContainer.appendChild(cartDetails);
+                cartTotal.appendChild(cartDetailsContainer)
+                cartTotalContainer.appendChild(cartTotal)
 
-                //to make cartCount accessible outside this block
-                var cartCount = document.createElement('b');
-                cartCount.classList.add('cart-count');
-                cartCount.style.fontWeight = '100';
+                // Button in cart
+                var cartAddRemoveButton = document.createElement('div');
+                cartAddRemoveButton.classList.add('cart-add-remove-button');
 
-                //to make cartTotal accessible outside this block
-                var cartTotal = document.createElement('div');
-                cartTotal.classList.add('cart-total');
+                var addSign = document.createElement('p');
+                addSign.classList.add('add-item');
+                addSign.innerText = '+';
+                cartAddRemoveButton.appendChild(addSign);
 
-                addButton.addEventListener('click', () => {
-                    countItems = 1;
-                    countText.textContent = countItems;
+                //cartCount is defined outside this block to make it accessible to next block
+                cartCount.textContent = countItems;
+                cartAddRemoveButton.appendChild(cartCount);
 
-                    totalCost = totalCost + dish.foodPrice;
-                    itemTotal.textContent = totalCost;
+                var subSign = document.createElement('p');
+                subSign.classList.add('remove-item');
+                subSign.innerText = '-';
+                subSign.style.padding = '0 0.5rem';
+                subSign.style.paddingBottom = '0.1rem';
+                cartAddRemoveButton.appendChild(subSign);
 
-
-                    totalItems++;
-                    totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
-                    document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
-                    document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
-
-                    addButton.style.display = 'none';
-                    addRemoveButton.style.display = 'flex';
-
-                    // display cart total container
-                    document.querySelector('.items-added-container').addEventListener('click', () => {
-                        document.querySelector('.cart-section-container').style.transform = 'translateX(0rem)';
-                        document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
-                        //Adding name to cart
-                        document.querySelector('.cart-restraunt-name').textContent = selectedRestauraunt.restaurantName;
-
-                    })
-
-
-                    document.querySelector('.close-cart').addEventListener('click', () => {
-                        document.querySelector('.cart-section-container').style.transform = 'translateX(28rem)';
-                        document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
-                    })
-
-                    var cartTotalContainer = document.querySelector('.cart-total-container');
-                    //defining cart total outside this block to make it accessible outside this block
-
-                    var cartImg = document.createElement('div');
-                    cartImg.classList.add('cart-img');
-
-
-                    var cartDishImg = document.createElement('img');
-                    cartDishImg.classList.add('cart-dish-img');
-                    cartDishImg.src = dish.foodImg;
-                    cartImg.appendChild(cartDishImg);
-                    cartTotal.appendChild(cartImg);
-
-                    // cart details container
-                    var cartDetailsContainer = document.createElement('div');
-                    cartDetailsContainer.classList.add('cart-details-container');
-
-                    var cartDetails = document.createElement('div');
-                    cartDetails.classList.add('cart-details');
-
-                    var cartDishName = document.createElement('p');
-                    cartDishName.classList.add('cart-dish-name');
-                    cartDishName.textContent = dish.foodName;
-                    cartDetails.appendChild(cartDishName)
-
-                    //dish rating rating-votes
-                    var cartRatingVotes = document.createElement('div');
-                    cartRatingVotes.classList.add('cart-rating-votes');
-
-                    var cartRating = document.createElement('div');
-                    cartRating.classList.add('cart-rating');
-
-                    //dispay stars basd on food rating
-                    rates = dish.foodRating;
-                    halfRate = dish.foodRating / 10;
-
-                    if (!rates) {
-                        var noRating = document.createElement('p');
-                        noRating.textContent = 'No Rating';
-                        cartRating.appendChild(noRating);
-                    }
-                    for (var i = 1; i < rates; i++) {
-                        var starImg = document.createElement('img');
-                        starImg.src = './assets/icons/full-yellow-star (1).png';
-                        cartRating.appendChild(starImg);
-                    }
-                    if (halfRate) {
-                        var starImg = document.createElement('img');
-                        starImg.src = './assets/icons/half-yellow-star.png';
-                        cartRating.appendChild(starImg);
-                    }
-                    cartRatingVotes.appendChild(cartRating);
-
-                    var cartVotes = document.createElement('p');
-                    cartVotes.classList.add('cart-votes');
-                    cartVotes.textContent = dish.foodVote;
-                    cartRatingVotes.appendChild(cartVotes);
-                    cartDetails.appendChild(cartRatingVotes);
-
-
-                    // cart dish cost
-                    var cartDishCost = document.createElement('div');
-                    cartDishCost.classList.add('cart-dish-cost');
-                    cartDishCost.textContent = '₹' + dish.foodPrice;
-                    cartDetails.appendChild(cartDishCost);
-
-                    cartDetailsContainer.appendChild(cartDetails);
-                    cartTotal.appendChild(cartDetailsContainer)
-                    cartTotalContainer.appendChild(cartTotal)
-
-                    // Button in cart
-                    var cartAddRemoveButton = document.createElement('div');
-                    cartAddRemoveButton.classList.add('cart-add-remove-button');
-
-                    var addSign = document.createElement('p');
-                    addSign.classList.add('add-item');
-                    addSign.innerText = '+';
-                    cartAddRemoveButton.appendChild(addSign);
-
-                    //cartCount is defined outside this block to make it accessible to next block
-                    cartCount.textContent = countItems;
-                    cartAddRemoveButton.appendChild(cartCount);
-
-                    var subSign = document.createElement('p');
-                    subSign.classList.add('remove-item');
-                    subSign.innerText = '-';
-                    subSign.style.padding = '0 0.5rem';
-                    subSign.style.paddingBottom = '0.1rem';
-                    cartAddRemoveButton.appendChild(subSign);
-
-                    cartDetails.appendChild(cartAddRemoveButton);
-
-                    addSign.addEventListener('click', () => {
-                        countItems++;
-                        cartCount.textContent = countItems;
-                        countText.textContent = countItems;
-
-                        totalCost = totalCost + dish.foodPrice;
-                        itemTotal.textContent = totalCost;
-
-
-                        totalItems++;
-                        totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
-                    })
-
-                    subSign.addEventListener('click', () => {
-                        countItems--;
-                        cartCount.textContent = countItems;
-                        countText.textContent = countItems;
-
-                        totalCost = totalCost - dish.foodPrice;
-                        itemTotal.textContent = totalCost;
-
-
-                        totalItems--;
-                        totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
-
-                        if (totalItems === 0) {
-                            document.querySelector('.items-added-container').style.transform = 'translateX(28rem)';
-                            document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
-                            document.querySelector('.cart-section-container').style.transform = 'translateX(28rem)';
-                            document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
-                        }
-
-                        if (countItems < 1) {
-                            addButton.style.display = 'flex';
-                            addRemoveButton.style.display = 'none';
-                            cartTotal.innerHTML = '';
-                            cartTotal.style.marginBottom = '0';
-                        }
-                    })
-
-                })
+                cartDetails.appendChild(cartAddRemoveButton);
 
                 addSign.addEventListener('click', () => {
                     countItems++;
-                    countText.textContent = countItems;
                     cartCount.textContent = countItems;
+                    countText.textContent = countItems;
 
                     totalCost = totalCost + dish.foodPrice;
                     itemTotal.textContent = totalCost;
 
+
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
-
-
-                    document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
-                    document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
                 })
+
                 subSign.addEventListener('click', () => {
                     countItems--;
-                    countText.textContent = countItems;
                     cartCount.textContent = countItems;
+                    countText.textContent = countItems;
 
                     totalCost = totalCost - dish.foodPrice;
                     itemTotal.textContent = totalCost;
 
+
                     totalItems--;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
-                    document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
-                    document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
 
                     if (totalItems === 0) {
                         document.querySelector('.items-added-container').style.transform = 'translateX(28rem)';
@@ -669,129 +633,196 @@ document.addEventListener('DOMContentLoaded', function () {
                         addButton.style.display = 'flex';
                         addRemoveButton.style.display = 'none';
                         cartTotal.innerHTML = '';
-                        cartTotal.style.padding = '0';
+                        cartTotal.style.marginBottom = '0';
                     }
                 })
+
+            })
+
+            addSign.addEventListener('click', () => {
+                countItems++;
+                countText.textContent = countItems;
+                cartCount.textContent = countItems;
+
+                totalCost = totalCost + dish.foodPrice;
+                itemTotal.textContent = totalCost;
+
+                totalItems++;
+                totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
+
+
+                document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
+                document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
+            })
+            subSign.addEventListener('click', () => {
+                countItems--;
+                countText.textContent = countItems;
+                cartCount.textContent = countItems;
+
+                totalCost = totalCost - dish.foodPrice;
+                itemTotal.textContent = totalCost;
+
+                totalItems--;
+                totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
+                document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
+                document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
+
+                if (totalItems === 0) {
+                    document.querySelector('.items-added-container').style.transform = 'translateX(28rem)';
+                    document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
+                    document.querySelector('.cart-section-container').style.transform = 'translateX(28rem)';
+                    document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
+                }
+
+                if (countItems < 1) {
+                    addButton.style.display = 'flex';
+                    addRemoveButton.style.display = 'none';
+                    cartTotal.innerHTML = '';
+                    cartTotal.style.padding = '0';
+                }
+            })
+
+        })
+
+
+
+
+        // search functionality fo bg screens
+
+        var searchInput = document.querySelector('.search-input');
+        var searchDishContainer = document.querySelector('.search-dish-container');
+
+        searchInput.addEventListener('input', function () {
+            searchDishContainer.innerHTML = '';
+
+            var searchedRestaurants = deliveryRestaurants.filter((item) =>
+                (item.restaurantName.toLowerCase().includes(searchInput.value.toLowerCase()) ||
+                    item.cuisine.toLowerCase().includes(searchInput.value.toLowerCase())) &&
+                searchInput.value.length > 0)
+
+            if (searchedRestaurants.length == 0 && searchInput.value.length != 0) {
+                searchDishContainer.style.display = 'block';
+                searchDishContainer.style.overflowY = 'hidden'
+                searchDishContainer.style.color = 'rgb(156, 156, 156)';
+                searchDishContainer.style.padding = '1.3rem 1rem';
+                searchDishContainer.innerHTML = 'Oops! <br><p style="font-size:0.8rem; margin-top:0.2rem">We could not understand what you mean,try rephrasing the query.</p>'
+                searchDishContainer.style.height = 'auto';
+
+            }
+            else {
+                searchedRestaurants.forEach((item, idx) => {
+                    searchDishContainer.style.display = 'block';
+                    searchDishContainer.style.height = '88vh';
+                    searchDishContainer.style.backgroundColor = 'white';
+                    displayRestaurantOnSearch(item, idx);
+                });
+
+                if (searchInput.value.length === 0) {
+                    searchDishContainer.style.display = 'none';
+                }
+            }
+        });
+
+
+        function displayRestaurantOnSearch(item, idx) {
+            var searchDishContainer = document.querySelector('.search-dish-container');
+
+            var searchRestaurantContainerImgDetails = document.createElement('div');
+            searchRestaurantContainerImgDetails.classList.add('search-restaurant-container-img-details');
+
+            var searchRestaurantImg = document.createElement('img');
+            searchRestaurantImg.classList.add('search-restaurant-img');
+            searchRestaurantImg.src = item.img;
+            searchRestaurantContainerImgDetails.appendChild(searchRestaurantImg);
+
+            var searchRestaurantContainerDetails = document.createElement('div');
+            searchRestaurantContainerDetails.classList.add('search-restaurant-container-details');
+
+            //restaurant name
+            var searchRestaurantHeading = document.createElement('p');
+            searchRestaurantHeading.classList.add('search-restaurant-heading');
+            searchRestaurantHeading.textContent = item.restaurantName;
+            searchRestaurantContainerDetails.appendChild(searchRestaurantHeading);
+
+            // rating
+            var searchRestaurantRatingContainer = document.createElement('div');
+            searchRestaurantRatingContainer.classList.add('search-restaurant-rating-container');
+
+
+            let restaurantRating = document.createElement('b');
+            restaurantRating.classList.add('search-restaurant-rating');
+            restaurantRating.textContent = item.rating;
+            searchRestaurantRatingContainer.appendChild(restaurantRating)
+
+            let starIcon = document.createElement('p');
+            starIcon.classList.add('search-star-icon')
+            starIcon.innerHTML = '&#9734';
+            starIcon.style.margin = '0 0 3px 2px';
+            searchRestaurantRatingContainer.appendChild(starIcon)
+
+            searchRestaurantContainerDetails.appendChild(searchRestaurantRatingContainer);
+
+            let searchRestaurantOrderNow = document.createElement('div');
+            searchRestaurantOrderNow.classList.add('search-restaurant-order-now');
+            let orderNow = document.createElement('p');
+            orderNow.classList.add('order-now');
+            orderNow.textContent = 'Order Now';
+            searchRestaurantOrderNow.appendChild(orderNow);
+
+            let redRightArrow = document.createElement('img');
+            redRightArrow.src = './assets/icons/red-right-arrow.png';
+            redRightArrow.style.width = '1.1rem';
+            searchRestaurantOrderNow.appendChild(redRightArrow);
+            searchRestaurantContainerDetails.appendChild(searchRestaurantOrderNow);
+
+            let searchRestaurantDeliverytime = document.createElement('p');
+            searchRestaurantDeliverytime.classList.add('search-restaurant-deliverytime');
+            searchRestaurantDeliverytime.textContent = 'Delivery in ' + item.delieveryTime;
+            searchRestaurantContainerDetails.appendChild(searchRestaurantDeliverytime);
+
+
+            searchRestaurantContainerImgDetails.appendChild(searchRestaurantContainerDetails);
+
+            searchDishContainer.appendChild(searchRestaurantContainerImgDetails);
+
+            //detail of restraunt
+            searchRestaurantContainerImgDetails.addEventListener('click', () => {
+                localStorage.setItem('selectedRestauraunt', JSON.stringify(item))
+
+                setTimeout(() => {
+                    let restaurantName = item.restaurantName;
+                    let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
+                    window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}&restaurant=${encodeURIComponent(restaurantNameReplace)}`;
+                }, 100);
+            }
+            )
+        }
+
+    }
+    // display only veg dishes on click of pure veg box
+    var vegDishes = []; var check = 1;
+    vegOnlyContainer.addEventListener('click', () => {
+        onlineDishes.innerHTML = '';
+        selectedRestauraunt.food.forEach((category) => {
+            vegDishes = [];
+            Object.entries(category).forEach(([categoryName, dishes]) => {
+                // if (check == 1) {
+                for (var dish of dishes) {
+                    if (dish.nonVeg != true) {
+                        vegDishes.push(dish);
+                    }
+                }
+                displayDishes(categoryName, vegDishes);
+                // check = 0;
+                // }
+                // else {
+                //     displayDishes(categoryName, dishes);
+                //     check = 1;
+                // }
             })
         })
 
     })
-
-
-
-    // search functionality fo bg screens
-
-    var searchInput = document.querySelector('.search-input');
-    var searchDishContainer = document.querySelector('.search-dish-container');
-
-    searchInput.addEventListener('input', function () {
-        searchDishContainer.innerHTML = '';
-
-        var searchedRestaurants = deliveryRestaurants.filter((item) =>
-            (item.restaurantName.toLowerCase().includes(searchInput.value.toLowerCase()) ||
-                item.cuisine.toLowerCase().includes(searchInput.value.toLowerCase())) &&
-            searchInput.value.length > 0)
-
-        if (searchedRestaurants.length == 0 && searchInput.value.length != 0) {
-            searchDishContainer.style.display = 'block';
-            searchDishContainer.style.overflowY = 'hidden'
-            searchDishContainer.style.color = 'rgb(156, 156, 156)';
-            searchDishContainer.style.padding = '1.3rem 1rem';
-            searchDishContainer.innerHTML = 'Oops! <br><p style="font-size:0.8rem; margin-top:0.2rem">We could not understand what you mean,try rephrasing the query.</p>'
-            searchDishContainer.style.height = 'auto';
-
-        }
-        else {
-            searchedRestaurants.forEach((item, idx) => {
-                searchDishContainer.style.display = 'block';
-                searchDishContainer.style.height = '88vh';
-                searchDishContainer.style.backgroundColor = 'white';
-                displayRestaurantOnSearch(item, idx);
-            });
-
-            if (searchInput.value.length === 0) {
-                searchDishContainer.style.display = 'none';
-            }
-        }
-    });
-
-
-    function displayRestaurantOnSearch(item, idx) {
-        var searchDishContainer = document.querySelector('.search-dish-container');
-
-        var searchRestaurantContainerImgDetails = document.createElement('div');
-        searchRestaurantContainerImgDetails.classList.add('search-restaurant-container-img-details');
-
-        var searchRestaurantImg = document.createElement('img');
-        searchRestaurantImg.classList.add('search-restaurant-img');
-        searchRestaurantImg.src = item.img;
-        searchRestaurantContainerImgDetails.appendChild(searchRestaurantImg);
-
-        var searchRestaurantContainerDetails = document.createElement('div');
-        searchRestaurantContainerDetails.classList.add('search-restaurant-container-details');
-
-        //restaurant name
-        var searchRestaurantHeading = document.createElement('p');
-        searchRestaurantHeading.classList.add('search-restaurant-heading');
-        searchRestaurantHeading.textContent = item.restaurantName;
-        searchRestaurantContainerDetails.appendChild(searchRestaurantHeading);
-
-        // rating
-        var searchRestaurantRatingContainer = document.createElement('div');
-        searchRestaurantRatingContainer.classList.add('search-restaurant-rating-container');
-
-
-        let restaurantRating = document.createElement('b');
-        restaurantRating.classList.add('search-restaurant-rating');
-        restaurantRating.textContent = item.rating;
-        searchRestaurantRatingContainer.appendChild(restaurantRating)
-
-        let starIcon = document.createElement('p');
-        starIcon.classList.add('search-star-icon')
-        starIcon.innerHTML = '&#9734';
-        starIcon.style.margin = '0 0 3px 2px';
-        searchRestaurantRatingContainer.appendChild(starIcon)
-
-        searchRestaurantContainerDetails.appendChild(searchRestaurantRatingContainer);
-
-        let searchRestaurantOrderNow = document.createElement('div');
-        searchRestaurantOrderNow.classList.add('search-restaurant-order-now');
-        let orderNow = document.createElement('p');
-        orderNow.classList.add('order-now');
-        orderNow.textContent = 'Order Now';
-        searchRestaurantOrderNow.appendChild(orderNow);
-
-        let redRightArrow = document.createElement('img');
-        redRightArrow.src = './assets/icons/red-right-arrow.png';
-        redRightArrow.style.width = '1.1rem';
-        searchRestaurantOrderNow.appendChild(redRightArrow);
-        searchRestaurantContainerDetails.appendChild(searchRestaurantOrderNow);
-
-        let searchRestaurantDeliverytime = document.createElement('p');
-        searchRestaurantDeliverytime.classList.add('search-restaurant-deliverytime');
-        searchRestaurantDeliverytime.textContent = 'Delivery in ' + item.delieveryTime;
-        searchRestaurantContainerDetails.appendChild(searchRestaurantDeliverytime);
-
-
-        searchRestaurantContainerImgDetails.appendChild(searchRestaurantContainerDetails);
-
-        searchDishContainer.appendChild(searchRestaurantContainerImgDetails);
-
-        //detail of restraunt
-        searchRestaurantContainerImgDetails.addEventListener('click', () => {
-            localStorage.setItem('selectedRestauraunt', JSON.stringify(item))
-
-            setTimeout(() => {
-                let restaurantName = item.restaurantName;
-                let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
-                window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}&restaurant=${encodeURIComponent(restaurantNameReplace)}`;
-            }, 100);
-        }
-        )
-    }
-
-
-
 
     // clearing the item from localStorage once it's retrieved
     // localStorage.removeItem('selectedRestauraunt');

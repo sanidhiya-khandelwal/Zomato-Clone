@@ -581,7 +581,6 @@ header {
     align-items: center;
     gap: 0.5rem;
     width: 6.5rem;
-    border: 1px solid black;
 }
 
 .veg-only-container input {
