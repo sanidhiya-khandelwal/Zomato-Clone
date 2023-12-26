@@ -881,7 +881,6 @@ header {
 #place-order {
     transform: translateX(30%);
     width: 100%;
-    /* display: none; */
 }
 
 #order-placed {
@@ -1428,6 +1427,11 @@ header {
 
     .total-amount-container {
         padding: 0.3rem 1.9rem;
+        width: 100%;
+    }
+
+    #place-order {
+        transform: translateX(35%);
         width: 100%;
     }
 
