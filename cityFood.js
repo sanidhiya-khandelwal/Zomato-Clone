@@ -504,7 +504,8 @@ var deliveryRestaurants = [
                         foodPrice: 420,
                         foodDescription: 'It is an Indian style kabab where cooked chicken is combined with lentils and spices, shaped into a patty and shallow fried.(Portion Size 8 pieces)',
                         foodRating: '4',
-                        foodVote: '7 Votes'
+                        foodVote: '7 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/chicken/ClassicChickenTikka.avif',
@@ -512,7 +513,8 @@ var deliveryRestaurants = [
                         foodPrice: 389,
                         foodDescription: 'Chicken tikka is cubed chicken that is marinated in spiced yogurt mixture & then grilled to perfection (Portion 8 pieces) NOTE: No colour',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/chicken/ChickenTandoori.avif',
@@ -520,7 +522,8 @@ var deliveryRestaurants = [
                         foodPrice: 319,
                         foodDescription: 'It is a chicken dish prepared by roasting chicken marinated in yogurt and spices in a tandoor.',
                         foodRating: '4.5',
-                        foodVote: '69 Votes'
+                        foodVote: '69 Votes',
+                        nonVeg: true
                     }
                 ]
             },
@@ -532,7 +535,8 @@ var deliveryRestaurants = [
                         foodPrice: 269,
                         foodDescription: 'Vegetable biryani is an aromatic rice dish made by cooking basmati rice with mix veggies, herbs & biryani spices.',
                         foodRating: '4.5',
-                        foodVote: '31 Votes'
+                        foodVote: '31 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/biryani/EggBiryani.avif',
@@ -540,7 +544,8 @@ var deliveryRestaurants = [
                         foodPrice: 289,
                         foodDescription: 'Egg Biryani or Anda Biryani is a flavorful and delicious Indian rice preparation where rice is cooked with a spicy egg layer and cook in dum method. Potion size 2/4 pieces egg',
                         foodRating: '4.5',
-                        foodVote: '9 Votes'
+                        foodVote: '9 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/biryani/ChickenTikkaBiryani.avif',
@@ -548,7 +553,8 @@ var deliveryRestaurants = [
                         foodPrice: 349,
                         foodDescription: 'Chicken Tikka Biryani is a spicy and flavorful, incredibly delicious Rice preparation consist of tikka masala and tikka boneless pieces. (Portion 3/6 pieces Chicken boneless)',
                         foodRating: '4.5',
-                        foodVote: '60 Votes'
+                        foodVote: '60 Votes',
+                        nonVeg: true
                     }
                 ]
             },
@@ -560,7 +566,8 @@ var deliveryRestaurants = [
                         foodPrice: 229,
                         foodDescription: 'In this roll the stuffing is a lip-smacking paneer tikka made on skillet, a vibrant green chutney and a crunchy mixed veggie salad wrapped inside a whole wheat dough.',
                         foodRating: '4',
-                        foodVote: '18 Votes'
+                        foodVote: '18 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Roomali Rolls/chicken tikka masala roll.avif',
@@ -568,7 +575,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: '',
                         foodRating: '4.5',
-                        foodVote: '15 Votes'
+                        foodVote: '15 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Roomali Rolls/butter chicken roll.avif',
@@ -576,7 +584,8 @@ var deliveryRestaurants = [
                         foodPrice: 259,
                         foodDescription: 'Butter chicken roll is made with our creamy butter chicken masala curry, topped with your favorite vegetables and chutneys, and wrapped in a flakey paratha roll.',
                         foodRating: '4',
-                        foodVote: '5 Votes'
+                        foodVote: '5 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -588,7 +597,8 @@ var deliveryRestaurants = [
                         foodPrice: 359,
                         foodDescription: 'Veg Seekh kebab is a delicious veg starter made using mixed vegetables and spices.(Portion 8 pieces)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/malai soya chaap.avif',
@@ -596,7 +606,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'An Exclusive preparation made with earthy masala, marinated in White Masala cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '10 Votes'
+                        foodVote: '10 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/lahori soya chaap.avif',
@@ -604,7 +615,8 @@ var deliveryRestaurants = [
                         foodPrice: 329,
                         foodDescription: 'Made in red spicy marination cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/classic panner tikka.avif',
@@ -612,7 +624,8 @@ var deliveryRestaurants = [
                         foodPrice: 359,
                         foodDescription: 'Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. (Portion 8 pieces)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/malai soya chaap.avif',
@@ -620,7 +633,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'An Exclusive preparation made with earthy masala, marinated in White Masala cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '10 Votes'
+                        foodVote: '10 Votes',
+                        nonVeg: false
                     }
 
                 ]
@@ -633,7 +647,8 @@ var deliveryRestaurants = [
                         foodPrice: 389,
                         foodDescription: 'Chicken tikka is cubed chicken that is marinated in spiced yogurt mixture & then grilled to perfection (Portion 8 pieces) NOTE: No colour',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/achari chicken tikka.avif',
@@ -641,7 +656,8 @@ var deliveryRestaurants = [
                         foodPrice: 399,
                         foodDescription: 'It is one of those phenomenal Indian chicken kebabs whose taste is simply unbeatable. Soft tender pieces of chicken bathed in pickling spices (achari masala) & yogurt marinade (Portion 8 pieces) NOTE: No color used.]',
                         foodRating: '4.5',
-                        foodVote: '14 Votes'
+                        foodVote: '14 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/chicken tandoori.avif',
@@ -649,7 +665,8 @@ var deliveryRestaurants = [
                         foodPrice: 319,
                         foodDescription: 'It is a chicken dish prepared by roasting chicken marinated in yogurt and spices in a tandoor.',
                         foodRating: '4',
-                        foodVote: '69 Votes'
+                        foodVote: '69 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/afghani tandoori.avif',
@@ -657,7 +674,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'Afghani style tandoori chicken is an incredibly moist and juicy and tender roasted chicken marinated with yogurt, kasoori methi and few spices',
                         foodRating: '4',
-                        foodVote: '27 Votes'
+                        foodVote: '27 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/fish fry.jpg',
@@ -665,7 +683,8 @@ var deliveryRestaurants = [
                         foodPrice: 369,
                         foodDescription: 'Fish fry is scrumptious dish made by marinating fish with delectable spices and shallow frying it (Portion Size 8 pieces)',
                         foodRating: '4.5',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     }
 
                 ]
@@ -678,7 +697,8 @@ var deliveryRestaurants = [
                         foodPrice: 279,
                         foodDescription: 'Nawaabi Paneer curry made in Rich Yellow Gravy',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg curry/Paneer Tikka Masala.avif',
@@ -686,7 +706,8 @@ var deliveryRestaurants = [
                         foodPrice: 309,
                         foodDescription: 'Paneer Tikka Masala Is a Dish of Chunks of Roasted Marinated Cottage cheese in A Spiced Curry Sauce. (Portion 5 pieces Paneer)',
                         foodRating: '4',
-                        foodVote: '8 Votes'
+                        foodVote: '8 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -698,7 +719,8 @@ var deliveryRestaurants = [
                         foodPrice: 30,
                         foodDescription: 'Handmade soft and fluffy flatbread, cooked on an iron griddle.',
                         foodRating: '4',
-                        foodVote: '43 Votes'
+                        foodVote: '43 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Naan.avif',
@@ -706,7 +728,8 @@ var deliveryRestaurants = [
                         foodPrice: 40,
                         foodDescription: 'Savory and soft slightly leavened flatbread cooked in tandoor.',
                         foodRating: '4',
-                        foodVote: '72 Votes'
+                        foodVote: '72 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Lachha Paratha.avif',
@@ -714,7 +737,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: 'Flaky and multi layered flatbread cooked until crisp on the outside.',
                         foodRating: '4',
-                        foodVote: '15 Votes'
+                        foodVote: '15 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Roomali Roti.avif',
@@ -722,7 +746,8 @@ var deliveryRestaurants = [
                         foodPrice: 45,
                         foodDescription: 'Roomali roti is one of the unleavened Indian breads that is made traditionally in the Awadhi, Mughlai and Hyderabadi cuisine.',
                         foodRating: '4.5',
-                        foodVote: '33 Votes'
+                        foodVote: '33 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Cheese Naan.avif',
@@ -730,7 +755,8 @@ var deliveryRestaurants = [
                         foodPrice: 90,
                         foodDescription: 'Soft and fluffy cheese stuffed naan bread filled with cheesy mozzarella and chives.',
                         foodRating: '4.5',
-                        foodVote: '17 Votes'
+                        foodVote: '17 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/garlicnaan.jpg',
@@ -738,7 +764,8 @@ var deliveryRestaurants = [
                         foodPrice: 80,
                         foodDescription: 'Garlic Naan is a soft Indian leavened flatbread made with wheat flours and spiced with garlic.',
                         foodRating: '4.5',
-                        foodVote: '17 Votes'
+                        foodVote: '17 Votes',
+                        nonVeg: false
                     }
 
                 ]
@@ -752,7 +779,8 @@ var deliveryRestaurants = [
                         foodPrice: 79,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Sides/Green Salad.avif',
@@ -760,7 +788,8 @@ var deliveryRestaurants = [
                         foodPrice: 149,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Sides/Boondi Raita.avif',
@@ -768,7 +797,8 @@ var deliveryRestaurants = [
                         foodPrice: 169,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     }
                 ]
             },
@@ -780,7 +810,8 @@ var deliveryRestaurants = [
                         foodPrice: 399,
                         foodDescription: 'Creamy, delicious, and thick lentil curry enriched with a tempering of spices and whole chillies in ghee.',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Dal/dal makhani.avif',
@@ -788,7 +819,8 @@ var deliveryRestaurants = [
                         foodPrice: 349,
                         foodDescription: 'Dal Makhani is one of the most popular lentil recipes from the North Indian Punjabi cuisine made with Whole Black Lentils',
                         foodRating: '4.5',
-                        foodVote: '7 Votes'
+                        foodVote: '7 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Dal/dal ghost.avif',
@@ -796,7 +828,8 @@ var deliveryRestaurants = [
                         foodPrice: 449,
                         foodDescription: 'A mutton simmered with spices, mixture of toor dal and masoor dal, or ... read more',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: true
                     }
                 ]
             },
@@ -808,7 +841,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: '(Can)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/drinks/thumbs up.avif',
@@ -816,7 +850,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: '(Can)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/drinks/coke.avif',
@@ -824,7 +859,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: 'Can',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     }
                 ]
             },
@@ -836,7 +872,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: 'Fragrant white rice steamed until fluffy. ',
                         foodRating: '4.5',
-                        foodVote: '6 Votes'
+                        foodVote: '6 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/rice/zeera rice.avif',
@@ -844,7 +881,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: 'An Indian dish consisting of rice and cumin seeds.',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/rice/dal khichdi.jpg',
@@ -852,7 +890,8 @@ var deliveryRestaurants = [
                         foodPrice: 299,
                         foodDescription: 'A combination of lentils and vegetables cooked with rice in one pot to create a wholesome and delicious vegetarian goulash',
                         foodRating: '4',
-                        foodVote: '21 Votes'
+                        foodVote: '21 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -864,7 +903,8 @@ var deliveryRestaurants = [
                         foodPrice: 80,
                         foodDescription: '',
                         foodRating: '4',
-                        foodVote: '59 Votes'
+                        foodVote: '59 Votes',
+                        nonVeg: false
                     }
                 ]
             }
@@ -1856,7 +1896,8 @@ var deliveryRestaurants = [
                         foodPrice: 420,
                         foodDescription: 'It is an Indian style kabab where cooked chicken is combined with lentils and spices, shaped into a patty and shallow fried.(Portion Size 8 pieces)',
                         foodRating: '4',
-                        foodVote: '7 Votes'
+                        foodVote: '7 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/chicken/ClassicChickenTikka.avif',
@@ -1864,7 +1905,8 @@ var deliveryRestaurants = [
                         foodPrice: 389,
                         foodDescription: 'Chicken tikka is cubed chicken that is marinated in spiced yogurt mixture & then grilled to perfection (Portion 8 pieces) NOTE: No colour',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/chicken/ChickenTandoori.avif',
@@ -1872,7 +1914,8 @@ var deliveryRestaurants = [
                         foodPrice: 319,
                         foodDescription: 'It is a chicken dish prepared by roasting chicken marinated in yogurt and spices in a tandoor.',
                         foodRating: '4.5',
-                        foodVote: '69 Votes'
+                        foodVote: '69 Votes',
+                        nonVeg: true
                     }
                 ]
             },
@@ -1884,7 +1927,8 @@ var deliveryRestaurants = [
                         foodPrice: 269,
                         foodDescription: 'Vegetable biryani is an aromatic rice dish made by cooking basmati rice with mix veggies, herbs & biryani spices.',
                         foodRating: '4.5',
-                        foodVote: '31 Votes'
+                        foodVote: '31 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/biryani/EggBiryani.avif',
@@ -1892,7 +1936,8 @@ var deliveryRestaurants = [
                         foodPrice: 289,
                         foodDescription: 'Egg Biryani or Anda Biryani is a flavorful and delicious Indian rice preparation where rice is cooked with a spicy egg layer and cook in dum method. Potion size 2/4 pieces egg',
                         foodRating: '4.5',
-                        foodVote: '9 Votes'
+                        foodVote: '9 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/biryani/ChickenTikkaBiryani.avif',
@@ -1900,7 +1945,8 @@ var deliveryRestaurants = [
                         foodPrice: 349,
                         foodDescription: 'Chicken Tikka Biryani is a spicy and flavorful, incredibly delicious Rice preparation consist of tikka masala and tikka boneless pieces. (Portion 3/6 pieces Chicken boneless)',
                         foodRating: '4.5',
-                        foodVote: '60 Votes'
+                        foodVote: '60 Votes',
+                        nonVeg: true
                     }
                 ]
             },
@@ -1912,7 +1958,8 @@ var deliveryRestaurants = [
                         foodPrice: 229,
                         foodDescription: 'In this roll the stuffing is a lip-smacking paneer tikka made on skillet, a vibrant green chutney and a crunchy mixed veggie salad wrapped inside a whole wheat dough.',
                         foodRating: '4',
-                        foodVote: '18 Votes'
+                        foodVote: '18 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Roomali Rolls/chicken tikka masala roll.avif',
@@ -1920,7 +1967,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: '',
                         foodRating: '4.5',
-                        foodVote: '15 Votes'
+                        foodVote: '15 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Roomali Rolls/butter chicken roll.avif',
@@ -1928,7 +1976,8 @@ var deliveryRestaurants = [
                         foodPrice: 259,
                         foodDescription: 'Butter chicken roll is made with our creamy butter chicken masala curry, topped with your favorite vegetables and chutneys, and wrapped in a flakey paratha roll.',
                         foodRating: '4',
-                        foodVote: '5 Votes'
+                        foodVote: '5 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -1940,7 +1989,8 @@ var deliveryRestaurants = [
                         foodPrice: 359,
                         foodDescription: 'Veg Seekh kebab is a delicious veg starter made using mixed vegetables and spices.(Portion 8 pieces)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/malai soya chaap.avif',
@@ -1948,7 +1998,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'An Exclusive preparation made with earthy masala, marinated in White Masala cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '10 Votes'
+                        foodVote: '10 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/lahori soya chaap.avif',
@@ -1956,7 +2007,8 @@ var deliveryRestaurants = [
                         foodPrice: 329,
                         foodDescription: 'Made in red spicy marination cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/classic panner tikka.avif',
@@ -1964,7 +2016,8 @@ var deliveryRestaurants = [
                         foodPrice: 359,
                         foodDescription: 'Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. (Portion 8 pieces)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/malai soya chaap.avif',
@@ -1972,7 +2025,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'An Exclusive preparation made with earthy masala, marinated in White Masala cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '10 Votes'
+                        foodVote: '10 Votes',
+                        nonVeg: false
                     }
 
                 ]
@@ -1985,7 +2039,8 @@ var deliveryRestaurants = [
                         foodPrice: 389,
                         foodDescription: 'Chicken tikka is cubed chicken that is marinated in spiced yogurt mixture & then grilled to perfection (Portion 8 pieces) NOTE: No colour',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/achari chicken tikka.avif',
@@ -1993,7 +2048,8 @@ var deliveryRestaurants = [
                         foodPrice: 399,
                         foodDescription: 'It is one of those phenomenal Indian chicken kebabs whose taste is simply unbeatable. Soft tender pieces of chicken bathed in pickling spices (achari masala) & yogurt marinade (Portion 8 pieces) NOTE: No color used.]',
                         foodRating: '4.5',
-                        foodVote: '14 Votes'
+                        foodVote: '14 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/chicken tandoori.avif',
@@ -2001,7 +2057,8 @@ var deliveryRestaurants = [
                         foodPrice: 319,
                         foodDescription: 'It is a chicken dish prepared by roasting chicken marinated in yogurt and spices in a tandoor.',
                         foodRating: '4',
-                        foodVote: '69 Votes'
+                        foodVote: '69 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/afghani tandoori.avif',
@@ -2009,7 +2066,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'Afghani style tandoori chicken is an incredibly moist and juicy and tender roasted chicken marinated with yogurt, kasoori methi and few spices',
                         foodRating: '4',
-                        foodVote: '27 Votes'
+                        foodVote: '27 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/fish fry.jpg',
@@ -2017,7 +2075,8 @@ var deliveryRestaurants = [
                         foodPrice: 369,
                         foodDescription: 'Fish fry is scrumptious dish made by marinating fish with delectable spices and shallow frying it (Portion Size 8 pieces)',
                         foodRating: '4.5',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     }
 
                 ]
@@ -2030,7 +2089,8 @@ var deliveryRestaurants = [
                         foodPrice: 279,
                         foodDescription: 'Nawaabi Paneer curry made in Rich Yellow Gravy',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg curry/Paneer Tikka Masala.avif',
@@ -2038,7 +2098,8 @@ var deliveryRestaurants = [
                         foodPrice: 309,
                         foodDescription: 'Paneer Tikka Masala Is a Dish of Chunks of Roasted Marinated Cottage cheese in A Spiced Curry Sauce. (Portion 5 pieces Paneer)',
                         foodRating: '4',
-                        foodVote: '8 Votes'
+                        foodVote: '8 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -2050,7 +2111,8 @@ var deliveryRestaurants = [
                         foodPrice: 30,
                         foodDescription: 'Handmade soft and fluffy flatbread, cooked on an iron griddle.',
                         foodRating: '4',
-                        foodVote: '43 Votes'
+                        foodVote: '43 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Naan.avif',
@@ -2058,7 +2120,8 @@ var deliveryRestaurants = [
                         foodPrice: 40,
                         foodDescription: 'Savory and soft slightly leavened flatbread cooked in tandoor.',
                         foodRating: '4',
-                        foodVote: '72 Votes'
+                        foodVote: '72 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Lachha Paratha.avif',
@@ -2066,7 +2129,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: 'Flaky and multi layered flatbread cooked until crisp on the outside.',
                         foodRating: '4',
-                        foodVote: '15 Votes'
+                        foodVote: '15 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Roomali Roti.avif',
@@ -2074,7 +2138,8 @@ var deliveryRestaurants = [
                         foodPrice: 45,
                         foodDescription: 'Roomali roti is one of the unleavened Indian breads that is made traditionally in the Awadhi, Mughlai and Hyderabadi cuisine.',
                         foodRating: '4.5',
-                        foodVote: '33 Votes'
+                        foodVote: '33 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Cheese Naan.avif',
@@ -2082,7 +2147,8 @@ var deliveryRestaurants = [
                         foodPrice: 90,
                         foodDescription: 'Soft and fluffy cheese stuffed naan bread filled with cheesy mozzarella and chives.',
                         foodRating: '4.5',
-                        foodVote: '17 Votes'
+                        foodVote: '17 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/garlicnaan.jpg',
@@ -2090,7 +2156,8 @@ var deliveryRestaurants = [
                         foodPrice: 80,
                         foodDescription: 'Garlic Naan is a soft Indian leavened flatbread made with wheat flours and spiced with garlic.',
                         foodRating: '4.5',
-                        foodVote: '17 Votes'
+                        foodVote: '17 Votes',
+                        nonVeg: false
                     }
 
                 ]
@@ -2104,7 +2171,8 @@ var deliveryRestaurants = [
                         foodPrice: 79,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Sides/Green Salad.avif',
@@ -2112,7 +2180,8 @@ var deliveryRestaurants = [
                         foodPrice: 149,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Sides/Boondi Raita.avif',
@@ -2120,7 +2189,8 @@ var deliveryRestaurants = [
                         foodPrice: 169,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     }
                 ]
             },
@@ -2132,7 +2202,8 @@ var deliveryRestaurants = [
                         foodPrice: 399,
                         foodDescription: 'Creamy, delicious, and thick lentil curry enriched with a tempering of spices and whole chillies in ghee.',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Dal/dal makhani.avif',
@@ -2140,7 +2211,8 @@ var deliveryRestaurants = [
                         foodPrice: 349,
                         foodDescription: 'Dal Makhani is one of the most popular lentil recipes from the North Indian Punjabi cuisine made with Whole Black Lentils',
                         foodRating: '4.5',
-                        foodVote: '7 Votes'
+                        foodVote: '7 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Dal/dal ghost.avif',
@@ -2148,7 +2220,8 @@ var deliveryRestaurants = [
                         foodPrice: 449,
                         foodDescription: 'A mutton simmered with spices, mixture of toor dal and masoor dal, or ... read more',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: true
                     }
                 ]
             },
@@ -2160,7 +2233,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: '(Can)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/drinks/thumbs up.avif',
@@ -2168,7 +2242,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: '(Can)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/drinks/coke.avif',
@@ -2176,7 +2251,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: 'Can',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     }
                 ]
             },
@@ -2188,7 +2264,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: 'Fragrant white rice steamed until fluffy. ',
                         foodRating: '4.5',
-                        foodVote: '6 Votes'
+                        foodVote: '6 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/rice/zeera rice.avif',
@@ -2196,7 +2273,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: 'An Indian dish consisting of rice and cumin seeds.',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/rice/dal khichdi.jpg',
@@ -2204,7 +2282,8 @@ var deliveryRestaurants = [
                         foodPrice: 299,
                         foodDescription: 'A combination of lentils and vegetables cooked with rice in one pot to create a wholesome and delicious vegetarian goulash',
                         foodRating: '4',
-                        foodVote: '21 Votes'
+                        foodVote: '21 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -2216,7 +2295,8 @@ var deliveryRestaurants = [
                         foodPrice: 80,
                         foodDescription: '',
                         foodRating: '4',
-                        foodVote: '59 Votes'
+                        foodVote: '59 Votes',
+                        nonVeg: false
                     }
                 ]
             }
@@ -2887,7 +2967,8 @@ var deliveryRestaurants = [
                         foodPrice: 420,
                         foodDescription: 'It is an Indian style kabab where cooked chicken is combined with lentils and spices, shaped into a patty and shallow fried.(Portion Size 8 pieces)',
                         foodRating: '4',
-                        foodVote: '7 Votes'
+                        foodVote: '7 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/chicken/ClassicChickenTikka.avif',
@@ -2895,7 +2976,8 @@ var deliveryRestaurants = [
                         foodPrice: 389,
                         foodDescription: 'Chicken tikka is cubed chicken that is marinated in spiced yogurt mixture & then grilled to perfection (Portion 8 pieces) NOTE: No colour',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/chicken/ChickenTandoori.avif',
@@ -2903,7 +2985,8 @@ var deliveryRestaurants = [
                         foodPrice: 319,
                         foodDescription: 'It is a chicken dish prepared by roasting chicken marinated in yogurt and spices in a tandoor.',
                         foodRating: '4.5',
-                        foodVote: '69 Votes'
+                        foodVote: '69 Votes',
+                        nonVeg: true
                     }
                 ]
             },
@@ -2915,7 +2998,8 @@ var deliveryRestaurants = [
                         foodPrice: 269,
                         foodDescription: 'Vegetable biryani is an aromatic rice dish made by cooking basmati rice with mix veggies, herbs & biryani spices.',
                         foodRating: '4.5',
-                        foodVote: '31 Votes'
+                        foodVote: '31 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/biryani/EggBiryani.avif',
@@ -2923,7 +3007,8 @@ var deliveryRestaurants = [
                         foodPrice: 289,
                         foodDescription: 'Egg Biryani or Anda Biryani is a flavorful and delicious Indian rice preparation where rice is cooked with a spicy egg layer and cook in dum method. Potion size 2/4 pieces egg',
                         foodRating: '4.5',
-                        foodVote: '9 Votes'
+                        foodVote: '9 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/biryani/ChickenTikkaBiryani.avif',
@@ -2931,7 +3016,8 @@ var deliveryRestaurants = [
                         foodPrice: 349,
                         foodDescription: 'Chicken Tikka Biryani is a spicy and flavorful, incredibly delicious Rice preparation consist of tikka masala and tikka boneless pieces. (Portion 3/6 pieces Chicken boneless)',
                         foodRating: '4.5',
-                        foodVote: '60 Votes'
+                        foodVote: '60 Votes',
+                        nonVeg: true
                     }
                 ]
             },
@@ -2943,7 +3029,8 @@ var deliveryRestaurants = [
                         foodPrice: 229,
                         foodDescription: 'In this roll the stuffing is a lip-smacking paneer tikka made on skillet, a vibrant green chutney and a crunchy mixed veggie salad wrapped inside a whole wheat dough.',
                         foodRating: '4',
-                        foodVote: '18 Votes'
+                        foodVote: '18 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Roomali Rolls/chicken tikka masala roll.avif',
@@ -2951,7 +3038,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: '',
                         foodRating: '4.5',
-                        foodVote: '15 Votes'
+                        foodVote: '15 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Roomali Rolls/butter chicken roll.avif',
@@ -2959,7 +3047,8 @@ var deliveryRestaurants = [
                         foodPrice: 259,
                         foodDescription: 'Butter chicken roll is made with our creamy butter chicken masala curry, topped with your favorite vegetables and chutneys, and wrapped in a flakey paratha roll.',
                         foodRating: '4',
-                        foodVote: '5 Votes'
+                        foodVote: '5 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -2971,7 +3060,8 @@ var deliveryRestaurants = [
                         foodPrice: 359,
                         foodDescription: 'Veg Seekh kebab is a delicious veg starter made using mixed vegetables and spices.(Portion 8 pieces)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/malai soya chaap.avif',
@@ -2979,7 +3069,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'An Exclusive preparation made with earthy masala, marinated in White Masala cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '10 Votes'
+                        foodVote: '10 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/lahori soya chaap.avif',
@@ -2987,7 +3078,8 @@ var deliveryRestaurants = [
                         foodPrice: 329,
                         foodDescription: 'Made in red spicy marination cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/classic panner tikka.avif',
@@ -2995,7 +3087,8 @@ var deliveryRestaurants = [
                         foodPrice: 359,
                         foodDescription: 'Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. (Portion 8 pieces)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/malai soya chaap.avif',
@@ -3003,7 +3096,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'An Exclusive preparation made with earthy masala, marinated in White Masala cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '10 Votes'
+                        foodVote: '10 Votes',
+                        nonVeg: false
                     }
 
                 ]
@@ -3016,7 +3110,8 @@ var deliveryRestaurants = [
                         foodPrice: 389,
                         foodDescription: 'Chicken tikka is cubed chicken that is marinated in spiced yogurt mixture & then grilled to perfection (Portion 8 pieces) NOTE: No colour',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/achari chicken tikka.avif',
@@ -3024,7 +3119,8 @@ var deliveryRestaurants = [
                         foodPrice: 399,
                         foodDescription: 'It is one of those phenomenal Indian chicken kebabs whose taste is simply unbeatable. Soft tender pieces of chicken bathed in pickling spices (achari masala) & yogurt marinade (Portion 8 pieces) NOTE: No color used.]',
                         foodRating: '4.5',
-                        foodVote: '14 Votes'
+                        foodVote: '14 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/chicken tandoori.avif',
@@ -3032,7 +3128,8 @@ var deliveryRestaurants = [
                         foodPrice: 319,
                         foodDescription: 'It is a chicken dish prepared by roasting chicken marinated in yogurt and spices in a tandoor.',
                         foodRating: '4',
-                        foodVote: '69 Votes'
+                        foodVote: '69 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/afghani tandoori.avif',
@@ -3040,7 +3137,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'Afghani style tandoori chicken is an incredibly moist and juicy and tender roasted chicken marinated with yogurt, kasoori methi and few spices',
                         foodRating: '4',
-                        foodVote: '27 Votes'
+                        foodVote: '27 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/fish fry.jpg',
@@ -3048,7 +3146,8 @@ var deliveryRestaurants = [
                         foodPrice: 369,
                         foodDescription: 'Fish fry is scrumptious dish made by marinating fish with delectable spices and shallow frying it (Portion Size 8 pieces)',
                         foodRating: '4.5',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     }
 
                 ]
@@ -3061,7 +3160,8 @@ var deliveryRestaurants = [
                         foodPrice: 279,
                         foodDescription: 'Nawaabi Paneer curry made in Rich Yellow Gravy',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg curry/Paneer Tikka Masala.avif',
@@ -3069,7 +3169,8 @@ var deliveryRestaurants = [
                         foodPrice: 309,
                         foodDescription: 'Paneer Tikka Masala Is a Dish of Chunks of Roasted Marinated Cottage cheese in A Spiced Curry Sauce. (Portion 5 pieces Paneer)',
                         foodRating: '4',
-                        foodVote: '8 Votes'
+                        foodVote: '8 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -3081,7 +3182,8 @@ var deliveryRestaurants = [
                         foodPrice: 30,
                         foodDescription: 'Handmade soft and fluffy flatbread, cooked on an iron griddle.',
                         foodRating: '4',
-                        foodVote: '43 Votes'
+                        foodVote: '43 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Naan.avif',
@@ -3089,7 +3191,8 @@ var deliveryRestaurants = [
                         foodPrice: 40,
                         foodDescription: 'Savory and soft slightly leavened flatbread cooked in tandoor.',
                         foodRating: '4',
-                        foodVote: '72 Votes'
+                        foodVote: '72 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Lachha Paratha.avif',
@@ -3097,7 +3200,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: 'Flaky and multi layered flatbread cooked until crisp on the outside.',
                         foodRating: '4',
-                        foodVote: '15 Votes'
+                        foodVote: '15 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Roomali Roti.avif',
@@ -3105,7 +3209,8 @@ var deliveryRestaurants = [
                         foodPrice: 45,
                         foodDescription: 'Roomali roti is one of the unleavened Indian breads that is made traditionally in the Awadhi, Mughlai and Hyderabadi cuisine.',
                         foodRating: '4.5',
-                        foodVote: '33 Votes'
+                        foodVote: '33 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Cheese Naan.avif',
@@ -3113,7 +3218,8 @@ var deliveryRestaurants = [
                         foodPrice: 90,
                         foodDescription: 'Soft and fluffy cheese stuffed naan bread filled with cheesy mozzarella and chives.',
                         foodRating: '4.5',
-                        foodVote: '17 Votes'
+                        foodVote: '17 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/garlicnaan.jpg',
@@ -3121,7 +3227,8 @@ var deliveryRestaurants = [
                         foodPrice: 80,
                         foodDescription: 'Garlic Naan is a soft Indian leavened flatbread made with wheat flours and spiced with garlic.',
                         foodRating: '4.5',
-                        foodVote: '17 Votes'
+                        foodVote: '17 Votes',
+                        nonVeg: false
                     }
 
                 ]
@@ -3135,7 +3242,8 @@ var deliveryRestaurants = [
                         foodPrice: 79,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Sides/Green Salad.avif',
@@ -3143,7 +3251,8 @@ var deliveryRestaurants = [
                         foodPrice: 149,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Sides/Boondi Raita.avif',
@@ -3151,7 +3260,8 @@ var deliveryRestaurants = [
                         foodPrice: 169,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     }
                 ]
             },
@@ -3163,7 +3273,8 @@ var deliveryRestaurants = [
                         foodPrice: 399,
                         foodDescription: 'Creamy, delicious, and thick lentil curry enriched with a tempering of spices and whole chillies in ghee.',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Dal/dal makhani.avif',
@@ -3171,7 +3282,8 @@ var deliveryRestaurants = [
                         foodPrice: 349,
                         foodDescription: 'Dal Makhani is one of the most popular lentil recipes from the North Indian Punjabi cuisine made with Whole Black Lentils',
                         foodRating: '4.5',
-                        foodVote: '7 Votes'
+                        foodVote: '7 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Dal/dal ghost.avif',
@@ -3179,7 +3291,8 @@ var deliveryRestaurants = [
                         foodPrice: 449,
                         foodDescription: 'A mutton simmered with spices, mixture of toor dal and masoor dal, or ... read more',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: true
                     }
                 ]
             },
@@ -3191,7 +3304,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: '(Can)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/drinks/thumbs up.avif',
@@ -3199,7 +3313,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: '(Can)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/drinks/coke.avif',
@@ -3207,7 +3322,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: 'Can',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     }
                 ]
             },
@@ -3219,7 +3335,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: 'Fragrant white rice steamed until fluffy. ',
                         foodRating: '4.5',
-                        foodVote: '6 Votes'
+                        foodVote: '6 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/rice/zeera rice.avif',
@@ -3227,7 +3344,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: 'An Indian dish consisting of rice and cumin seeds.',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/rice/dal khichdi.jpg',
@@ -3235,7 +3353,8 @@ var deliveryRestaurants = [
                         foodPrice: 299,
                         foodDescription: 'A combination of lentils and vegetables cooked with rice in one pot to create a wholesome and delicious vegetarian goulash',
                         foodRating: '4',
-                        foodVote: '21 Votes'
+                        foodVote: '21 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -3247,7 +3366,8 @@ var deliveryRestaurants = [
                         foodPrice: 80,
                         foodDescription: '',
                         foodRating: '4',
-                        foodVote: '59 Votes'
+                        foodVote: '59 Votes',
+                        nonVeg: false
                     }
                 ]
             }
@@ -4240,7 +4360,8 @@ var deliveryRestaurants = [
                         foodPrice: 420,
                         foodDescription: 'It is an Indian style kabab where cooked chicken is combined with lentils and spices, shaped into a patty and shallow fried.(Portion Size 8 pieces)',
                         foodRating: '4',
-                        foodVote: '7 Votes'
+                        foodVote: '7 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/chicken/ClassicChickenTikka.avif',
@@ -4248,7 +4369,8 @@ var deliveryRestaurants = [
                         foodPrice: 389,
                         foodDescription: 'Chicken tikka is cubed chicken that is marinated in spiced yogurt mixture & then grilled to perfection (Portion 8 pieces) NOTE: No colour',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/chicken/ChickenTandoori.avif',
@@ -4256,7 +4378,8 @@ var deliveryRestaurants = [
                         foodPrice: 319,
                         foodDescription: 'It is a chicken dish prepared by roasting chicken marinated in yogurt and spices in a tandoor.',
                         foodRating: '4.5',
-                        foodVote: '69 Votes'
+                        foodVote: '69 Votes',
+                        nonVeg: true
                     }
                 ]
             },
@@ -4268,7 +4391,8 @@ var deliveryRestaurants = [
                         foodPrice: 269,
                         foodDescription: 'Vegetable biryani is an aromatic rice dish made by cooking basmati rice with mix veggies, herbs & biryani spices.',
                         foodRating: '4.5',
-                        foodVote: '31 Votes'
+                        foodVote: '31 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/biryani/EggBiryani.avif',
@@ -4276,7 +4400,8 @@ var deliveryRestaurants = [
                         foodPrice: 289,
                         foodDescription: 'Egg Biryani or Anda Biryani is a flavorful and delicious Indian rice preparation where rice is cooked with a spicy egg layer and cook in dum method. Potion size 2/4 pieces egg',
                         foodRating: '4.5',
-                        foodVote: '9 Votes'
+                        foodVote: '9 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/biryani/ChickenTikkaBiryani.avif',
@@ -4284,7 +4409,8 @@ var deliveryRestaurants = [
                         foodPrice: 349,
                         foodDescription: 'Chicken Tikka Biryani is a spicy and flavorful, incredibly delicious Rice preparation consist of tikka masala and tikka boneless pieces. (Portion 3/6 pieces Chicken boneless)',
                         foodRating: '4.5',
-                        foodVote: '60 Votes'
+                        foodVote: '60 Votes',
+                        nonVeg: true
                     }
                 ]
             },
@@ -4296,7 +4422,8 @@ var deliveryRestaurants = [
                         foodPrice: 229,
                         foodDescription: 'In this roll the stuffing is a lip-smacking paneer tikka made on skillet, a vibrant green chutney and a crunchy mixed veggie salad wrapped inside a whole wheat dough.',
                         foodRating: '4',
-                        foodVote: '18 Votes'
+                        foodVote: '18 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Roomali Rolls/chicken tikka masala roll.avif',
@@ -4304,7 +4431,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: '',
                         foodRating: '4.5',
-                        foodVote: '15 Votes'
+                        foodVote: '15 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Roomali Rolls/butter chicken roll.avif',
@@ -4312,7 +4440,8 @@ var deliveryRestaurants = [
                         foodPrice: 259,
                         foodDescription: 'Butter chicken roll is made with our creamy butter chicken masala curry, topped with your favorite vegetables and chutneys, and wrapped in a flakey paratha roll.',
                         foodRating: '4',
-                        foodVote: '5 Votes'
+                        foodVote: '5 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -4324,7 +4453,8 @@ var deliveryRestaurants = [
                         foodPrice: 359,
                         foodDescription: 'Veg Seekh kebab is a delicious veg starter made using mixed vegetables and spices.(Portion 8 pieces)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/malai soya chaap.avif',
@@ -4332,7 +4462,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'An Exclusive preparation made with earthy masala, marinated in White Masala cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '10 Votes'
+                        foodVote: '10 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/lahori soya chaap.avif',
@@ -4340,7 +4471,8 @@ var deliveryRestaurants = [
                         foodPrice: 329,
                         foodDescription: 'Made in red spicy marination cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/classic panner tikka.avif',
@@ -4348,7 +4480,8 @@ var deliveryRestaurants = [
                         foodPrice: 359,
                         foodDescription: 'Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. (Portion 8 pieces)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/malai soya chaap.avif',
@@ -4356,7 +4489,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'An Exclusive preparation made with earthy masala, marinated in White Masala cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '10 Votes'
+                        foodVote: '10 Votes',
+                        nonVeg: false
                     }
 
                 ]
@@ -4369,7 +4503,8 @@ var deliveryRestaurants = [
                         foodPrice: 389,
                         foodDescription: 'Chicken tikka is cubed chicken that is marinated in spiced yogurt mixture & then grilled to perfection (Portion 8 pieces) NOTE: No colour',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/achari chicken tikka.avif',
@@ -4377,7 +4512,8 @@ var deliveryRestaurants = [
                         foodPrice: 399,
                         foodDescription: 'It is one of those phenomenal Indian chicken kebabs whose taste is simply unbeatable. Soft tender pieces of chicken bathed in pickling spices (achari masala) & yogurt marinade (Portion 8 pieces) NOTE: No color used.]',
                         foodRating: '4.5',
-                        foodVote: '14 Votes'
+                        foodVote: '14 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/chicken tandoori.avif',
@@ -4385,7 +4521,8 @@ var deliveryRestaurants = [
                         foodPrice: 319,
                         foodDescription: 'It is a chicken dish prepared by roasting chicken marinated in yogurt and spices in a tandoor.',
                         foodRating: '4',
-                        foodVote: '69 Votes'
+                        foodVote: '69 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/afghani tandoori.avif',
@@ -4393,7 +4530,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'Afghani style tandoori chicken is an incredibly moist and juicy and tender roasted chicken marinated with yogurt, kasoori methi and few spices',
                         foodRating: '4',
-                        foodVote: '27 Votes'
+                        foodVote: '27 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/fish fry.jpg',
@@ -4401,7 +4539,8 @@ var deliveryRestaurants = [
                         foodPrice: 369,
                         foodDescription: 'Fish fry is scrumptious dish made by marinating fish with delectable spices and shallow frying it (Portion Size 8 pieces)',
                         foodRating: '4.5',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     }
 
                 ]
@@ -4414,7 +4553,8 @@ var deliveryRestaurants = [
                         foodPrice: 279,
                         foodDescription: 'Nawaabi Paneer curry made in Rich Yellow Gravy',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg curry/Paneer Tikka Masala.avif',
@@ -4422,7 +4562,8 @@ var deliveryRestaurants = [
                         foodPrice: 309,
                         foodDescription: 'Paneer Tikka Masala Is a Dish of Chunks of Roasted Marinated Cottage cheese in A Spiced Curry Sauce. (Portion 5 pieces Paneer)',
                         foodRating: '4',
-                        foodVote: '8 Votes'
+                        foodVote: '8 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -4434,7 +4575,8 @@ var deliveryRestaurants = [
                         foodPrice: 30,
                         foodDescription: 'Handmade soft and fluffy flatbread, cooked on an iron griddle.',
                         foodRating: '4',
-                        foodVote: '43 Votes'
+                        foodVote: '43 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Naan.avif',
@@ -4442,7 +4584,8 @@ var deliveryRestaurants = [
                         foodPrice: 40,
                         foodDescription: 'Savory and soft slightly leavened flatbread cooked in tandoor.',
                         foodRating: '4',
-                        foodVote: '72 Votes'
+                        foodVote: '72 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Lachha Paratha.avif',
@@ -4450,7 +4593,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: 'Flaky and multi layered flatbread cooked until crisp on the outside.',
                         foodRating: '4',
-                        foodVote: '15 Votes'
+                        foodVote: '15 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Roomali Roti.avif',
@@ -4458,7 +4602,8 @@ var deliveryRestaurants = [
                         foodPrice: 45,
                         foodDescription: 'Roomali roti is one of the unleavened Indian breads that is made traditionally in the Awadhi, Mughlai and Hyderabadi cuisine.',
                         foodRating: '4.5',
-                        foodVote: '33 Votes'
+                        foodVote: '33 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Cheese Naan.avif',
@@ -4466,7 +4611,8 @@ var deliveryRestaurants = [
                         foodPrice: 90,
                         foodDescription: 'Soft and fluffy cheese stuffed naan bread filled with cheesy mozzarella and chives.',
                         foodRating: '4.5',
-                        foodVote: '17 Votes'
+                        foodVote: '17 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/garlicnaan.jpg',
@@ -4474,7 +4620,8 @@ var deliveryRestaurants = [
                         foodPrice: 80,
                         foodDescription: 'Garlic Naan is a soft Indian leavened flatbread made with wheat flours and spiced with garlic.',
                         foodRating: '4.5',
-                        foodVote: '17 Votes'
+                        foodVote: '17 Votes',
+                        nonVeg: false
                     }
 
                 ]
@@ -4488,7 +4635,8 @@ var deliveryRestaurants = [
                         foodPrice: 79,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Sides/Green Salad.avif',
@@ -4496,7 +4644,8 @@ var deliveryRestaurants = [
                         foodPrice: 149,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Sides/Boondi Raita.avif',
@@ -4504,7 +4653,8 @@ var deliveryRestaurants = [
                         foodPrice: 169,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     }
                 ]
             },
@@ -4516,7 +4666,8 @@ var deliveryRestaurants = [
                         foodPrice: 399,
                         foodDescription: 'Creamy, delicious, and thick lentil curry enriched with a tempering of spices and whole chillies in ghee.',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Dal/dal makhani.avif',
@@ -4524,7 +4675,8 @@ var deliveryRestaurants = [
                         foodPrice: 349,
                         foodDescription: 'Dal Makhani is one of the most popular lentil recipes from the North Indian Punjabi cuisine made with Whole Black Lentils',
                         foodRating: '4.5',
-                        foodVote: '7 Votes'
+                        foodVote: '7 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Dal/dal ghost.avif',
@@ -4532,7 +4684,8 @@ var deliveryRestaurants = [
                         foodPrice: 449,
                         foodDescription: 'A mutton simmered with spices, mixture of toor dal and masoor dal, or ... read more',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: true
                     }
                 ]
             },
@@ -4544,7 +4697,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: '(Can)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/drinks/thumbs up.avif',
@@ -4552,7 +4706,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: '(Can)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/drinks/coke.avif',
@@ -4560,7 +4715,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: 'Can',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     }
                 ]
             },
@@ -4572,7 +4728,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: 'Fragrant white rice steamed until fluffy. ',
                         foodRating: '4.5',
-                        foodVote: '6 Votes'
+                        foodVote: '6 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/rice/zeera rice.avif',
@@ -4580,7 +4737,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: 'An Indian dish consisting of rice and cumin seeds.',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/rice/dal khichdi.jpg',
@@ -4588,7 +4746,8 @@ var deliveryRestaurants = [
                         foodPrice: 299,
                         foodDescription: 'A combination of lentils and vegetables cooked with rice in one pot to create a wholesome and delicious vegetarian goulash',
                         foodRating: '4',
-                        foodVote: '21 Votes'
+                        foodVote: '21 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -4600,7 +4759,8 @@ var deliveryRestaurants = [
                         foodPrice: 80,
                         foodDescription: '',
                         foodRating: '4',
-                        foodVote: '59 Votes'
+                        foodVote: '59 Votes',
+                        nonVeg: false
                     }
                 ]
             }
@@ -4950,7 +5110,8 @@ var deliveryRestaurants = [
                         foodPrice: 420,
                         foodDescription: 'It is an Indian style kabab where cooked chicken is combined with lentils and spices, shaped into a patty and shallow fried.(Portion Size 8 pieces)',
                         foodRating: '4',
-                        foodVote: '7 Votes'
+                        foodVote: '7 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/chicken/ClassicChickenTikka.avif',
@@ -4958,7 +5119,8 @@ var deliveryRestaurants = [
                         foodPrice: 389,
                         foodDescription: 'Chicken tikka is cubed chicken that is marinated in spiced yogurt mixture & then grilled to perfection (Portion 8 pieces) NOTE: No colour',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/chicken/ChickenTandoori.avif',
@@ -4966,7 +5128,8 @@ var deliveryRestaurants = [
                         foodPrice: 319,
                         foodDescription: 'It is a chicken dish prepared by roasting chicken marinated in yogurt and spices in a tandoor.',
                         foodRating: '4.5',
-                        foodVote: '69 Votes'
+                        foodVote: '69 Votes',
+                        nonVeg: true
                     }
                 ]
             },
@@ -4978,7 +5141,8 @@ var deliveryRestaurants = [
                         foodPrice: 269,
                         foodDescription: 'Vegetable biryani is an aromatic rice dish made by cooking basmati rice with mix veggies, herbs & biryani spices.',
                         foodRating: '4.5',
-                        foodVote: '31 Votes'
+                        foodVote: '31 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/biryani/EggBiryani.avif',
@@ -4986,7 +5150,8 @@ var deliveryRestaurants = [
                         foodPrice: 289,
                         foodDescription: 'Egg Biryani or Anda Biryani is a flavorful and delicious Indian rice preparation where rice is cooked with a spicy egg layer and cook in dum method. Potion size 2/4 pieces egg',
                         foodRating: '4.5',
-                        foodVote: '9 Votes'
+                        foodVote: '9 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/biryani/ChickenTikkaBiryani.avif',
@@ -4994,7 +5159,8 @@ var deliveryRestaurants = [
                         foodPrice: 349,
                         foodDescription: 'Chicken Tikka Biryani is a spicy and flavorful, incredibly delicious Rice preparation consist of tikka masala and tikka boneless pieces. (Portion 3/6 pieces Chicken boneless)',
                         foodRating: '4.5',
-                        foodVote: '60 Votes'
+                        foodVote: '60 Votes',
+                        nonVeg: true
                     }
                 ]
             },
@@ -5006,7 +5172,8 @@ var deliveryRestaurants = [
                         foodPrice: 229,
                         foodDescription: 'In this roll the stuffing is a lip-smacking paneer tikka made on skillet, a vibrant green chutney and a crunchy mixed veggie salad wrapped inside a whole wheat dough.',
                         foodRating: '4',
-                        foodVote: '18 Votes'
+                        foodVote: '18 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Roomali Rolls/chicken tikka masala roll.avif',
@@ -5014,7 +5181,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: '',
                         foodRating: '4.5',
-                        foodVote: '15 Votes'
+                        foodVote: '15 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Roomali Rolls/butter chicken roll.avif',
@@ -5022,7 +5190,8 @@ var deliveryRestaurants = [
                         foodPrice: 259,
                         foodDescription: 'Butter chicken roll is made with our creamy butter chicken masala curry, topped with your favorite vegetables and chutneys, and wrapped in a flakey paratha roll.',
                         foodRating: '4',
-                        foodVote: '5 Votes'
+                        foodVote: '5 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -5034,7 +5203,8 @@ var deliveryRestaurants = [
                         foodPrice: 359,
                         foodDescription: 'Veg Seekh kebab is a delicious veg starter made using mixed vegetables and spices.(Portion 8 pieces)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/malai soya chaap.avif',
@@ -5042,7 +5212,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'An Exclusive preparation made with earthy masala, marinated in White Masala cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '10 Votes'
+                        foodVote: '10 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/lahori soya chaap.avif',
@@ -5050,7 +5221,8 @@ var deliveryRestaurants = [
                         foodPrice: 329,
                         foodDescription: 'Made in red spicy marination cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/classic panner tikka.avif',
@@ -5058,7 +5230,8 @@ var deliveryRestaurants = [
                         foodPrice: 359,
                         foodDescription: 'Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. (Portion 8 pieces)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg tikka and kebabs/malai soya chaap.avif',
@@ -5066,7 +5239,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'An Exclusive preparation made with earthy masala, marinated in White Masala cooked in tandoor (Portion 8 pieces)',
                         foodRating: '4',
-                        foodVote: '10 Votes'
+                        foodVote: '10 Votes',
+                        nonVeg: false
                     }
 
                 ]
@@ -5079,7 +5253,8 @@ var deliveryRestaurants = [
                         foodPrice: 389,
                         foodDescription: 'Chicken tikka is cubed chicken that is marinated in spiced yogurt mixture & then grilled to perfection (Portion 8 pieces) NOTE: No colour',
                         foodRating: '4',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/achari chicken tikka.avif',
@@ -5087,7 +5262,8 @@ var deliveryRestaurants = [
                         foodPrice: 399,
                         foodDescription: 'It is one of those phenomenal Indian chicken kebabs whose taste is simply unbeatable. Soft tender pieces of chicken bathed in pickling spices (achari masala) & yogurt marinade (Portion 8 pieces) NOTE: No color used.]',
                         foodRating: '4.5',
-                        foodVote: '14 Votes'
+                        foodVote: '14 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/chicken tandoori.avif',
@@ -5095,7 +5271,8 @@ var deliveryRestaurants = [
                         foodPrice: 319,
                         foodDescription: 'It is a chicken dish prepared by roasting chicken marinated in yogurt and spices in a tandoor.',
                         foodRating: '4',
-                        foodVote: '69 Votes'
+                        foodVote: '69 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/afghani tandoori.avif',
@@ -5103,7 +5280,8 @@ var deliveryRestaurants = [
                         foodPrice: 339,
                         foodDescription: 'Afghani style tandoori chicken is an incredibly moist and juicy and tender roasted chicken marinated with yogurt, kasoori methi and few spices',
                         foodRating: '4',
-                        foodVote: '27 Votes'
+                        foodVote: '27 Votes',
+                        nonVeg: true
                     },
                     {
                         foodImg: './assets/food/non veg tikka and kebabs/fish fry.jpg',
@@ -5111,7 +5289,8 @@ var deliveryRestaurants = [
                         foodPrice: 369,
                         foodDescription: 'Fish fry is scrumptious dish made by marinating fish with delectable spices and shallow frying it (Portion Size 8 pieces)',
                         foodRating: '4.5',
-                        foodVote: '11 Votes'
+                        foodVote: '11 Votes',
+                        nonVeg: true
                     }
 
                 ]
@@ -5124,7 +5303,8 @@ var deliveryRestaurants = [
                         foodPrice: 279,
                         foodDescription: 'Nawaabi Paneer curry made in Rich Yellow Gravy',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/veg curry/Paneer Tikka Masala.avif',
@@ -5132,7 +5312,8 @@ var deliveryRestaurants = [
                         foodPrice: 309,
                         foodDescription: 'Paneer Tikka Masala Is a Dish of Chunks of Roasted Marinated Cottage cheese in A Spiced Curry Sauce. (Portion 5 pieces Paneer)',
                         foodRating: '4',
-                        foodVote: '8 Votes'
+                        foodVote: '8 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -5144,7 +5325,8 @@ var deliveryRestaurants = [
                         foodPrice: 30,
                         foodDescription: 'Handmade soft and fluffy flatbread, cooked on an iron griddle.',
                         foodRating: '4',
-                        foodVote: '43 Votes'
+                        foodVote: '43 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Naan.avif',
@@ -5152,7 +5334,8 @@ var deliveryRestaurants = [
                         foodPrice: 40,
                         foodDescription: 'Savory and soft slightly leavened flatbread cooked in tandoor.',
                         foodRating: '4',
-                        foodVote: '72 Votes'
+                        foodVote: '72 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Lachha Paratha.avif',
@@ -5160,7 +5343,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: 'Flaky and multi layered flatbread cooked until crisp on the outside.',
                         foodRating: '4',
-                        foodVote: '15 Votes'
+                        foodVote: '15 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Roomali Roti.avif',
@@ -5168,7 +5352,8 @@ var deliveryRestaurants = [
                         foodPrice: 45,
                         foodDescription: 'Roomali roti is one of the unleavened Indian breads that is made traditionally in the Awadhi, Mughlai and Hyderabadi cuisine.',
                         foodRating: '4.5',
-                        foodVote: '33 Votes'
+                        foodVote: '33 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/Cheese Naan.avif',
@@ -5176,7 +5361,8 @@ var deliveryRestaurants = [
                         foodPrice: 90,
                         foodDescription: 'Soft and fluffy cheese stuffed naan bread filled with cheesy mozzarella and chives.',
                         foodRating: '4.5',
-                        foodVote: '17 Votes'
+                        foodVote: '17 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Breads/garlicnaan.jpg',
@@ -5184,7 +5370,8 @@ var deliveryRestaurants = [
                         foodPrice: 80,
                         foodDescription: 'Garlic Naan is a soft Indian leavened flatbread made with wheat flours and spiced with garlic.',
                         foodRating: '4.5',
-                        foodVote: '17 Votes'
+                        foodVote: '17 Votes',
+                        nonVeg: false
                     }
 
                 ]
@@ -5198,7 +5385,8 @@ var deliveryRestaurants = [
                         foodPrice: 79,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Sides/Green Salad.avif',
@@ -5206,7 +5394,8 @@ var deliveryRestaurants = [
                         foodPrice: 149,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Sides/Boondi Raita.avif',
@@ -5214,7 +5403,8 @@ var deliveryRestaurants = [
                         foodPrice: 169,
                         foodDescription: '',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     }
                 ]
             },
@@ -5226,7 +5416,8 @@ var deliveryRestaurants = [
                         foodPrice: 399,
                         foodDescription: 'Creamy, delicious, and thick lentil curry enriched with a tempering of spices and whole chillies in ghee.',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Dal/dal makhani.avif',
@@ -5234,7 +5425,8 @@ var deliveryRestaurants = [
                         foodPrice: 349,
                         foodDescription: 'Dal Makhani is one of the most popular lentil recipes from the North Indian Punjabi cuisine made with Whole Black Lentils',
                         foodRating: '4.5',
-                        foodVote: '7 Votes'
+                        foodVote: '7 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/Dal/dal ghost.avif',
@@ -5242,7 +5434,8 @@ var deliveryRestaurants = [
                         foodPrice: 449,
                         foodDescription: 'A mutton simmered with spices, mixture of toor dal and masoor dal, or ... read more',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: true
                     }
                 ]
             },
@@ -5254,7 +5447,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: '(Can)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/drinks/thumbs up.avif',
@@ -5262,7 +5456,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: '(Can)',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/drinks/coke.avif',
@@ -5270,7 +5465,8 @@ var deliveryRestaurants = [
                         foodPrice: 60,
                         foodDescription: 'Can',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     }
                 ]
             },
@@ -5282,7 +5478,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: 'Fragrant white rice steamed until fluffy. ',
                         foodRating: '4.5',
-                        foodVote: '6 Votes'
+                        foodVote: '6 Votes',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/rice/zeera rice.avif',
@@ -5290,7 +5487,8 @@ var deliveryRestaurants = [
                         foodPrice: 249,
                         foodDescription: 'An Indian dish consisting of rice and cumin seeds.',
                         foodRating: '',
-                        foodVote: ''
+                        foodVote: '',
+                        nonVeg: false
                     },
                     {
                         foodImg: './assets/food/rice/dal khichdi.jpg',
@@ -5298,7 +5496,8 @@ var deliveryRestaurants = [
                         foodPrice: 299,
                         foodDescription: 'A combination of lentils and vegetables cooked with rice in one pot to create a wholesome and delicious vegetarian goulash',
                         foodRating: '4',
-                        foodVote: '21 Votes'
+                        foodVote: '21 Votes',
+                        nonVeg: false
                     }
                 ]
             },
@@ -5310,7 +5509,8 @@ var deliveryRestaurants = [
                         foodPrice: 80,
                         foodDescription: '',
                         foodRating: '4',
-                        foodVote: '59 Votes'
+                        foodVote: '59 Votes',
+                        nonVeg: false
                     }
                 ]
             }

@@ -249,7 +249,6 @@ document.addEventListener('DOMContentLoaded', function () {
         cusineNameHTML.setAttribute('id', value1 + '1');
         cusineNameHTML.appendChild(cuisineCountHTML);
         orderOnlineOptions.append(cusineNameHTML);
-        // console.log('cusineNameHTML', cusineNameHTML);
 
         //scroll into view
 
