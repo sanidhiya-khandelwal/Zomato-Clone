@@ -339,6 +339,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var gstCost = 0;
     var gstCharge = document.querySelector('#item-gst');
 
+    // delivery charge
+    var delieveryCost = 0;
+    var deliveryCharge = document.querySelector('#delivery-charges');
+
     selectedRestauraunt.food.forEach((category) => {
 
         Object.entries(category).forEach(([categoryName, dishes]) => {
@@ -500,6 +504,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 gstCost = gstCost + (dish.foodPrice * 0.05);
                 gstCharge.textContent = parseFloat(gstCost.toFixed(2));
 
+                if (totalCost >= 500) {
+                    document.querySelector('.delivery-charges').style.display = 'none';
+                    document.querySelector('.free-delivery-container').style.display = 'block';
+                }
+                else {
+                    deliveryCharge.textContent = 30;
+                    document.querySelector('.delivery-charges').style.display = 'flex';
+                    document.querySelector('.free-delivery-container').style.display = 'none';
+                }
+
+
+
 
 
                 totalItems++;
@@ -628,6 +644,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     gstCost = gstCost + (dish.foodPrice * 0.05);
                     gstCharge.textContent = parseFloat(gstCost.toFixed(2));
 
+                    if (totalCost >= 500) {
+                        document.querySelector('.delivery-charges').style.display = 'none';
+                        document.querySelector('.free-delivery-container').style.display = 'block';
+                    }
+                    else {
+                        deliveryCharge.textContent = 30;
+                        document.querySelector('.delivery-charges').style.display = 'flex';
+                        document.querySelector('.free-delivery-container').style.display = 'none';
+                    }
+
 
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
@@ -643,6 +669,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     gstCost = gstCost - (dish.foodPrice * 0.05);
                     gstCharge.textContent = parseFloat(gstCost.toFixed(2));
+
+                    if (totalCost >= 500) {
+                        document.querySelector('.delivery-charges').style.display = 'none';
+                        document.querySelector('.free-delivery-container').style.display = 'block';
+                    }
+                    else {
+                        deliveryCharge.textContent = 30;
+                        document.querySelector('.delivery-charges').style.display = 'flex';
+                        document.querySelector('.free-delivery-container').style.display = 'none';
+                    }
 
 
                     totalItems--;
@@ -679,6 +715,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 gstCost = gstCost + (dish.foodPrice * 0.05);
                 gstCharge.textContent = parseFloat(gstCost.toFixed(2));
 
+                if (totalCost >= 500) {
+                    document.querySelector('.delivery-charges').style.display = 'none';
+                    document.querySelector('.free-delivery-container').style.display = 'block';
+                }
+                else {
+                    deliveryCharge.textContent = 30;
+                    document.querySelector('.delivery-charges').style.display = 'flex';
+                    document.querySelector('.free-delivery-container').style.display = 'none';
+                }
+
 
 
                 document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
@@ -694,6 +740,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 gstCost = gstCost - (dish.foodPrice * 0.05);
                 gstCharge.textContent = parseFloat(gstCost.toFixed(2));
+
+                if (totalCost >= 500) {
+                    document.querySelector('.delivery-charges').style.display = 'none';
+                    document.querySelector('.free-delivery-container').style.display = 'block';
+                }
+                else {
+                    deliveryCharge.textContent = 30;
+                    document.querySelector('.delivery-charges').style.display = 'flex';
+                    document.querySelector('.free-delivery-container').style.display = 'none';
+                }
 
                 totalItems--;
                 totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';

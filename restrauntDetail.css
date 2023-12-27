@@ -861,6 +861,11 @@ header {
     font-size: 0.9rem;
 }
 
+.free-delivery-container {
+    color: green;
+    display: none;
+}
+
 .coupon-container {
     color: rgb(3, 20, 255);
 }
