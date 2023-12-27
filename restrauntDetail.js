@@ -69,6 +69,17 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 
+    // hide bookmark direction share container
+    const hotelDetailContainer = document.querySelector('.hotel-detail');
+
+    // Get the position from the top of the container
+    // const hotelDetailContainerPositionFromTop = hotelDetailContainer.offsetTop;
+    // console.log(hotelDetailContainer.offsetTop);
+    // if (hotelDetailContainerPositionFromTop === 596) {
+    //     document.querySelector('.direction-bookmark-share-container').style.display = 'none';
+    // }
+
+
     // display restaurants images
     const [
         {
@@ -324,6 +335,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var totalCost = 0;
     var itemTotal = document.querySelector('#item-total');
 
+    //GST and restaurant charges
+    var gstCost = 0;
+    var gstCharge = document.querySelector('#item-gst');
+
     selectedRestauraunt.food.forEach((category) => {
 
         Object.entries(category).forEach(([categoryName, dishes]) => {
@@ -482,6 +497,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 totalCost = totalCost + dish.foodPrice;
                 itemTotal.textContent = totalCost;
 
+                gstCost = gstCost + (dish.foodPrice * 0.05);
+                gstCharge.textContent = parseFloat(gstCost.toFixed(2));
+
+
 
                 totalItems++;
                 totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
@@ -606,6 +625,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     totalCost = totalCost + dish.foodPrice;
                     itemTotal.textContent = totalCost;
 
+                    gstCost = gstCost + (dish.foodPrice * 0.05);
+                    gstCharge.textContent = parseFloat(gstCost.toFixed(2));
+
 
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
@@ -618,6 +640,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     totalCost = totalCost - dish.foodPrice;
                     itemTotal.textContent = totalCost;
+
+                    gstCost = gstCost - (dish.foodPrice * 0.05);
+                    gstCharge.textContent = parseFloat(gstCost.toFixed(2));
 
 
                     totalItems--;
@@ -651,6 +676,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 totalItems++;
                 totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
 
+                gstCost = gstCost + (dish.foodPrice * 0.05);
+                gstCharge.textContent = parseFloat(gstCost.toFixed(2));
+
+
 
                 document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
                 document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
@@ -662,6 +691,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 totalCost = totalCost - dish.foodPrice;
                 itemTotal.textContent = totalCost;
+
+                gstCost = gstCost - (dish.foodPrice * 0.05);
+                gstCharge.textContent = parseFloat(gstCost.toFixed(2));
 
                 totalItems--;
                 totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
