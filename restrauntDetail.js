@@ -509,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('.free-delivery-container').style.display = 'block';
 
                     grandTotalCost = totalCost + gstCost + 1 - 50;
-                    grandTotal.textContent = grandTotalCost;
+                    grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
 
                 }
                 else {
@@ -518,7 +518,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('.free-delivery-container').style.display = 'none';
 
                     grandTotalCost = totalCost + gstCost + 30 + 1 - 50;
-                    grandTotal.textContent = grandTotalCost;
+                    grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                 }
 
 
@@ -656,7 +656,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         document.querySelector('.free-delivery-container').style.display = 'block';
 
                         grandTotalCost = totalCost + gstCost + 1 - 50;
-                        grandTotal.textContent = grandTotalCost;
+                        grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                     }
                     else {
                         document.querySelector('.delivery-charges').textContent = 30;
@@ -664,7 +664,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         document.querySelector('.free-delivery-container').style.display = 'none';
 
                         grandTotalCost = totalCost + gstCost + 30 + 1 - 50;
-                        grandTotal.textContent = grandTotalCost;
+                        grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                     }
 
 
@@ -688,7 +688,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         document.querySelector('.free-delivery-container').style.display = 'block';
 
                         grandTotalCost = totalCost + gstCost + 1 - 50;
-                        grandTotal.textContent = grandTotalCost;
+                        grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                     }
                     else {
                         document.querySelector('.delivery-charges').textContent = 30;
@@ -696,7 +696,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         document.querySelector('.free-delivery-container').style.display = 'none';
 
                         grandTotalCost = totalCost + gstCost + 30 + 1 - 50;
-                        grandTotal.textContent = grandTotalCost;
+                        grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                     }
 
 
@@ -739,7 +739,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('.free-delivery-container').style.display = 'block';
 
                     grandTotalCost = totalCost + gstCost + 1 - 50;
-                    grandTotal.textContent = grandTotalCost;
+                    grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                 }
                 else {
                     document.querySelector('.delivery-charges').textContent = 30;
@@ -747,7 +747,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('.free-delivery-container').style.display = 'none';
 
                     grandTotalCost = totalCost + gstCost + 30 + 1 - 50;
-                    grandTotal.textContent = grandTotalCost;
+                    grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                 }
 
 
@@ -771,7 +771,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('.free-delivery-container').style.display = 'block';
 
                     grandTotalCost = totalCost + gstCost + 1 - 50;
-                    grandTotal.textContent = grandTotalCost;
+                    grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                 }
                 else {
                     document.querySelector('.delivery-charges').textContent = 30;
@@ -779,7 +779,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('.free-delivery-container').style.display = 'none';
 
                     grandTotalCost = totalCost + gstCost + 30 + 1 - 50;
-                    grandTotal.textContent = grandTotalCost;
+                    grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                 }
 
                 totalItems--;
