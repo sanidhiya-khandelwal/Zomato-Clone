@@ -919,6 +919,27 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
     }
+
+
+    // place order
+    var placeOrderButton = document.querySelector('#place-order');
+    placeOrderButton.addEventListener('click', () => {
+        placeOrderButton.style.display = 'none';
+        document.querySelector('#modify-order').style.display = 'block';
+        document.querySelector('.order-placed-section').style.transform = 'scale(1)';
+
+        setTimeout(() => {
+            document.querySelector('.order-placed-section').style.transform = 'scale(0)';
+        }, 4000)
+
+        setTimeout(() => {
+            document.querySelector('#modify-order').textContent = 'Order Placed';
+            document.querySelector('#modify-order').style.cursor = 'not-allowed';
+            // document.querySelector('.add-button').style.cursor = 'not-allowed';
+            // document.querySelector('.add-remove-button').style.cursor = 'not-allowed';
+            document.querySelector('.cart-order').style.backgroundColor = '#5f4747';
+        }, 4000)
+    })
     // display only veg dishes on click of pure veg box
     var vegDishes = [];
     var check = 1;
