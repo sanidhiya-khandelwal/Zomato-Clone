@@ -929,10 +929,13 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.order-placed-section').style.transform = 'scale(1)';
 
         document.querySelector('body').style.overflow = 'hidden';
+        document.querySelector('#overlay').style.display = 'block';
+
 
         setTimeout(() => {
             document.querySelector('.order-placed-section').style.transform = 'scale(0)';
             document.querySelector('body').style.overflow = 'visible';
+            document.querySelector('#overlay').style.display = 'none';
         }, 4000)
 
         setTimeout(() => {
