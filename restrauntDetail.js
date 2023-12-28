@@ -944,6 +944,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.cart-order').style.backgroundColor = '#5f4747';
         }, 5000)//change to 120000
 
+        //order accepted
         setTimeout(() => {
             document.querySelector('.notification-section').style.transform = 'scale(1)';
             document.querySelector('#notification').textContent = 'Your order has been accepted by restaurant';
@@ -955,6 +956,17 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.notification-section').style.transform = 'scale(0)';
         }, 15000)//change to 195000
 
+        //order getting prepared
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(1)';
+            document.querySelector('#notification').textContent = 'Your order is being prepared';
+            document.querySelector('#notificationImg').src = './assets/icons/food-preparing.png';
+            document.querySelector('#notificationThought').textContent = '"When the talk revolves around food, it\'s bound to get funny sooner or later!"';
+        }, 20000)//change to 210000
+
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(0)';
+        }, 25000)//change to 22000
 
     })
     // display only veg dishes on click of pure veg box
