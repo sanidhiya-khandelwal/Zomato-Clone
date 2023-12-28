@@ -339,9 +339,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var gstCost = 0;
     var gstCharge = document.querySelector('#item-gst');
 
-    // delivery charge
-    var delieveryCost = 0;
-    var deliveryCharge = document.querySelector('#delivery-charges');
+    //grand total
+    var grandTotalCost = 0;
+    var grandTotal = document.querySelector('#grand-total');
 
     selectedRestauraunt.food.forEach((category) => {
 
@@ -507,11 +507,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (totalCost >= 500) {
                     document.querySelector('.delivery-charges').style.display = 'none';
                     document.querySelector('.free-delivery-container').style.display = 'block';
+
+                    grandTotalCost = totalCost + gstCost + 1;
+                    grandTotal.textContent = grandTotalCost;
+
                 }
                 else {
-                    deliveryCharge.textContent = 30;
+                    document.querySelector('.delivery-charges').textContent = 30;
                     document.querySelector('.delivery-charges').style.display = 'flex';
                     document.querySelector('.free-delivery-container').style.display = 'none';
+
+                    grandTotalCost = totalCost + gstCost + 30 + 1;
+                    grandTotal.textContent = grandTotalCost;
                 }
 
 
@@ -647,11 +654,17 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (totalCost >= 500) {
                         document.querySelector('.delivery-charges').style.display = 'none';
                         document.querySelector('.free-delivery-container').style.display = 'block';
+
+                        grandTotalCost = totalCost + gstCost + 1;
+                        grandTotal.textContent = grandTotalCost;
                     }
                     else {
-                        deliveryCharge.textContent = 30;
+                        document.querySelector('.delivery-charges').textContent = 30;
                         document.querySelector('.delivery-charges').style.display = 'flex';
                         document.querySelector('.free-delivery-container').style.display = 'none';
+
+                        grandTotalCost = totalCost + gstCost + 30 + 1;
+                        grandTotal.textContent = grandTotalCost;
                     }
 
 
@@ -673,11 +686,17 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (totalCost >= 500) {
                         document.querySelector('.delivery-charges').style.display = 'none';
                         document.querySelector('.free-delivery-container').style.display = 'block';
+
+                        grandTotalCost = totalCost + gstCost + 1;
+                        grandTotal.textContent = grandTotalCost;
                     }
                     else {
-                        deliveryCharge.textContent = 30;
+                        document.querySelector('.delivery-charges').textContent = 30;
                         document.querySelector('.delivery-charges').style.display = 'flex';
                         document.querySelector('.free-delivery-container').style.display = 'none';
+
+                        grandTotalCost = totalCost + gstCost + 30 + 1;
+                        grandTotal.textContent = grandTotalCost;
                     }
 
 
@@ -718,11 +737,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (totalCost >= 500) {
                     document.querySelector('.delivery-charges').style.display = 'none';
                     document.querySelector('.free-delivery-container').style.display = 'block';
+
+                    grandTotalCost = totalCost + gstCost + 1;
+                    grandTotal.textContent = grandTotalCost;
                 }
                 else {
-                    deliveryCharge.textContent = 30;
+                    document.querySelector('.delivery-charges').textContent = 30;
                     document.querySelector('.delivery-charges').style.display = 'flex';
                     document.querySelector('.free-delivery-container').style.display = 'none';
+
+                    grandTotalCost = totalCost + gstCost + 30 + 1;
+                    grandTotal.textContent = grandTotalCost;
                 }
 
 
@@ -744,11 +769,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (totalCost >= 500) {
                     document.querySelector('.delivery-charges').style.display = 'none';
                     document.querySelector('.free-delivery-container').style.display = 'block';
+
+                    grandTotalCost = totalCost + gstCost + 1;
+                    grandTotal.textContent = grandTotalCost;
                 }
                 else {
-                    deliveryCharge.textContent = 30;
+                    document.querySelector('.delivery-charges').textContent = 30;
                     document.querySelector('.delivery-charges').style.display = 'flex';
                     document.querySelector('.free-delivery-container').style.display = 'none';
+
+                    grandTotalCost = totalCost + gstCost + 30 + 1;
+                    grandTotal.textContent = grandTotalCost;
                 }
 
                 totalItems--;
