@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', function () {
             dishImgContainer.appendChild(dishImage);
 
 
-            // //Add button
+            //Add button
             var addButton = document.createElement('div');
             addButton.classList.add('add-button');
 
@@ -809,114 +809,114 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // search functionality fo bg screens
 
-        var searchInput = document.querySelector('.search-input');
-        var searchDishContainer = document.querySelector('.search-dish-container');
+        // var searchInput = document.querySelector('.search-input');
+        // var searchDishContainer = document.querySelector('.search-dish-container');
 
-        searchInput.addEventListener('input', function () {
-            searchDishContainer.innerHTML = '';
+        // searchInput.addEventListener('input', function () {
+        //     searchDishContainer.innerHTML = '';
 
-            var searchedRestaurants = deliveryRestaurants.filter((item) =>
-                (item.restaurantName.toLowerCase().includes(searchInput.value.toLowerCase()) ||
-                    item.cuisine.toLowerCase().includes(searchInput.value.toLowerCase())) &&
-                searchInput.value.length > 0)
+        //     var searchedRestaurants = deliveryRestaurants.filter((item) =>
+        //         (item.restaurantName.toLowerCase().includes(searchInput.value.toLowerCase()) ||
+        //             item.cuisine.toLowerCase().includes(searchInput.value.toLowerCase())) &&
+        //         searchInput.value.length > 0)
 
-            if (searchedRestaurants.length == 0 && searchInput.value.length != 0) {
-                searchDishContainer.style.display = 'block';
-                searchDishContainer.style.overflowY = 'hidden'
-                searchDishContainer.style.color = 'rgb(156, 156, 156)';
-                searchDishContainer.style.padding = '1.3rem 1rem';
-                searchDishContainer.innerHTML = 'Oops! <br><p style="font-size:0.8rem; margin-top:0.2rem">We could not understand what you mean,try rephrasing the query.</p>'
-                searchDishContainer.style.height = 'auto';
+        //     if (searchedRestaurants.length == 0 && searchInput.value.length != 0) {
+        //         searchDishContainer.style.display = 'block';
+        //         searchDishContainer.style.overflowY = 'hidden'
+        //         searchDishContainer.style.color = 'rgb(156, 156, 156)';
+        //         searchDishContainer.style.padding = '1.3rem 1rem';
+        //         searchDishContainer.innerHTML = 'Oops! <br><p style="font-size:0.8rem; margin-top:0.2rem">We could not understand what you mean,try rephrasing the query.</p>'
+        //         searchDishContainer.style.height = 'auto';
 
-            }
-            else {
-                searchedRestaurants.forEach((item, idx) => {
-                    searchDishContainer.style.display = 'block';
-                    searchDishContainer.style.height = '88vh';
-                    searchDishContainer.style.backgroundColor = 'white';
-                    displayRestaurantOnSearch(item, idx);
-                });
+        //     }
+        //     else {
+        //         searchedRestaurants.forEach((item, idx) => {
+        //             searchDishContainer.style.display = 'block';
+        //             searchDishContainer.style.height = '88vh';
+        //             searchDishContainer.style.backgroundColor = 'white';
+        //             displayRestaurantOnSearch(item, idx);
+        //         });
 
-                if (searchInput.value.length === 0) {
-                    searchDishContainer.style.display = 'none';
-                }
-            }
-        });
-
-
-        function displayRestaurantOnSearch(item, idx) {
-            var searchDishContainer = document.querySelector('.search-dish-container');
-
-            var searchRestaurantContainerImgDetails = document.createElement('div');
-            searchRestaurantContainerImgDetails.classList.add('search-restaurant-container-img-details');
-
-            var searchRestaurantImg = document.createElement('img');
-            searchRestaurantImg.classList.add('search-restaurant-img');
-            searchRestaurantImg.src = item.img;
-            searchRestaurantContainerImgDetails.appendChild(searchRestaurantImg);
-
-            var searchRestaurantContainerDetails = document.createElement('div');
-            searchRestaurantContainerDetails.classList.add('search-restaurant-container-details');
-
-            //restaurant name
-            var searchRestaurantHeading = document.createElement('p');
-            searchRestaurantHeading.classList.add('search-restaurant-heading');
-            searchRestaurantHeading.textContent = item.restaurantName;
-            searchRestaurantContainerDetails.appendChild(searchRestaurantHeading);
-
-            // rating
-            var searchRestaurantRatingContainer = document.createElement('div');
-            searchRestaurantRatingContainer.classList.add('search-restaurant-rating-container');
+        //         if (searchInput.value.length === 0) {
+        //             searchDishContainer.style.display = 'none';
+        //         }
+        //     }
+        // });
 
 
-            let restaurantRating = document.createElement('b');
-            restaurantRating.classList.add('search-restaurant-rating');
-            restaurantRating.textContent = item.rating;
-            searchRestaurantRatingContainer.appendChild(restaurantRating)
+        // function displayRestaurantOnSearch(item, idx) {
+        //     var searchDishContainer = document.querySelector('.search-dish-container');
 
-            let starIcon = document.createElement('p');
-            starIcon.classList.add('search-star-icon')
-            starIcon.innerHTML = '&#9734';
-            starIcon.style.margin = '0 0 3px 2px';
-            searchRestaurantRatingContainer.appendChild(starIcon)
+        //     var searchRestaurantContainerImgDetails = document.createElement('div');
+        //     searchRestaurantContainerImgDetails.classList.add('search-restaurant-container-img-details');
 
-            searchRestaurantContainerDetails.appendChild(searchRestaurantRatingContainer);
+        //     var searchRestaurantImg = document.createElement('img');
+        //     searchRestaurantImg.classList.add('search-restaurant-img');
+        //     searchRestaurantImg.src = item.img;
+        //     searchRestaurantContainerImgDetails.appendChild(searchRestaurantImg);
 
-            let searchRestaurantOrderNow = document.createElement('div');
-            searchRestaurantOrderNow.classList.add('search-restaurant-order-now');
-            let orderNow = document.createElement('p');
-            orderNow.classList.add('order-now');
-            orderNow.textContent = 'Order Now';
-            searchRestaurantOrderNow.appendChild(orderNow);
+        //     var searchRestaurantContainerDetails = document.createElement('div');
+        //     searchRestaurantContainerDetails.classList.add('search-restaurant-container-details');
 
-            let redRightArrow = document.createElement('img');
-            redRightArrow.src = './assets/icons/red-right-arrow.png';
-            redRightArrow.style.width = '1.1rem';
-            searchRestaurantOrderNow.appendChild(redRightArrow);
-            searchRestaurantContainerDetails.appendChild(searchRestaurantOrderNow);
+        //     //restaurant name
+        //     var searchRestaurantHeading = document.createElement('p');
+        //     searchRestaurantHeading.classList.add('search-restaurant-heading');
+        //     searchRestaurantHeading.textContent = item.restaurantName;
+        //     searchRestaurantContainerDetails.appendChild(searchRestaurantHeading);
 
-            let searchRestaurantDeliverytime = document.createElement('p');
-            searchRestaurantDeliverytime.classList.add('search-restaurant-deliverytime');
-            searchRestaurantDeliverytime.textContent = 'Delivery in ' + item.delieveryTime;
-            searchRestaurantContainerDetails.appendChild(searchRestaurantDeliverytime);
+        //     // rating
+        //     var searchRestaurantRatingContainer = document.createElement('div');
+        //     searchRestaurantRatingContainer.classList.add('search-restaurant-rating-container');
 
 
-            searchRestaurantContainerImgDetails.appendChild(searchRestaurantContainerDetails);
+        //     let restaurantRating = document.createElement('b');
+        //     restaurantRating.classList.add('search-restaurant-rating');
+        //     restaurantRating.textContent = item.rating;
+        //     searchRestaurantRatingContainer.appendChild(restaurantRating)
 
-            searchDishContainer.appendChild(searchRestaurantContainerImgDetails);
+        //     let starIcon = document.createElement('p');
+        //     starIcon.classList.add('search-star-icon')
+        //     starIcon.innerHTML = '&#9734';
+        //     starIcon.style.margin = '0 0 3px 2px';
+        //     searchRestaurantRatingContainer.appendChild(starIcon)
 
-            //detail of restraunt
-            searchRestaurantContainerImgDetails.addEventListener('click', () => {
-                localStorage.setItem('selectedRestauraunt', JSON.stringify(item))
+        //     searchRestaurantContainerDetails.appendChild(searchRestaurantRatingContainer);
 
-                setTimeout(() => {
-                    let restaurantName = item.restaurantName;
-                    let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
-                    window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}&restaurant=${encodeURIComponent(restaurantNameReplace)}`;
-                }, 100);
-            }
-            )
-        }
+        //     let searchRestaurantOrderNow = document.createElement('div');
+        //     searchRestaurantOrderNow.classList.add('search-restaurant-order-now');
+        //     let orderNow = document.createElement('p');
+        //     orderNow.classList.add('order-now');
+        //     orderNow.textContent = 'Order Now';
+        //     searchRestaurantOrderNow.appendChild(orderNow);
+
+        //     let redRightArrow = document.createElement('img');
+        //     redRightArrow.src = './assets/icons/red-right-arrow.png';
+        //     redRightArrow.style.width = '1.1rem';
+        //     searchRestaurantOrderNow.appendChild(redRightArrow);
+        //     searchRestaurantContainerDetails.appendChild(searchRestaurantOrderNow);
+
+        //     let searchRestaurantDeliverytime = document.createElement('p');
+        //     searchRestaurantDeliverytime.classList.add('search-restaurant-deliverytime');
+        //     searchRestaurantDeliverytime.textContent = 'Delivery in ' + item.delieveryTime;
+        //     searchRestaurantContainerDetails.appendChild(searchRestaurantDeliverytime);
+
+
+        //     searchRestaurantContainerImgDetails.appendChild(searchRestaurantContainerDetails);
+
+        //     searchDishContainer.appendChild(searchRestaurantContainerImgDetails);
+
+        //     //detail of restraunt
+        //     searchRestaurantContainerImgDetails.addEventListener('click', () => {
+        //         localStorage.setItem('selectedRestauraunt', JSON.stringify(item))
+
+        //         setTimeout(() => {
+        //             let restaurantName = item.restaurantName;
+        //             let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
+        //             window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}&restaurant=${encodeURIComponent(restaurantNameReplace)}`;
+        //         }, 100);
+        //     }
+        //     )
+        // }
 
     }
 
@@ -928,17 +928,18 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('#modify-order').style.display = 'block';
         document.querySelector('.order-placed-section').style.transform = 'scale(1)';
 
+        document.querySelector('body').style.overflow = 'hidden';
+
         setTimeout(() => {
             document.querySelector('.order-placed-section').style.transform = 'scale(0)';
+            document.querySelector('body').style.overflow = 'visible';
         }, 4000)
 
         setTimeout(() => {
             document.querySelector('#modify-order').textContent = 'Order Placed';
             document.querySelector('#modify-order').style.cursor = 'not-allowed';
-            // document.querySelector('.add-button').style.cursor = 'not-allowed';
-            // document.querySelector('.add-remove-button').style.cursor = 'not-allowed';
             document.querySelector('.cart-order').style.backgroundColor = '#5f4747';
-        }, 4000)
+        }, 4000)//change to 120000
     })
     // display only veg dishes on click of pure veg box
     var vegDishes = [];
