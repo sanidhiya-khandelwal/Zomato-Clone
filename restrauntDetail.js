@@ -966,7 +966,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
         setTimeout(() => {
             document.querySelector('.notification-section').style.transform = 'scale(0)';
-        }, 25000)//change to 22000
+        }, 30000)//change to 220000
+
+        //Delivery person is on the way to pick up your order
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(1)';
+            document.querySelector('#notification').textContent = 'Delivery person is on the way to pick up your order';
+            document.querySelector('#notificationImg').src = './assets/icons/deliveryBoy.jpg';
+            document.querySelector('#notificationThought').textContent = '"Those 30 minutes from the time you order a pizza, to the time it gets to your doorstep. 🙃"';
+        }, 35000)//change to 210000
+
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(0)';
+        }, 45000)//change to 22000
+
 
     })
     // display only veg dishes on click of pure veg box
