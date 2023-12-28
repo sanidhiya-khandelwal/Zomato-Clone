@@ -517,7 +517,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('.delivery-charges').style.display = 'flex';
                     document.querySelector('.free-delivery-container').style.display = 'none';
 
-                    grandTotalCost = totalCost + gstCost + 30 + 1;
+                    grandTotalCost = totalCost + gstCost + 30 + 1 - 50;
                     grandTotal.textContent = grandTotalCost;
                 }
 
@@ -663,7 +663,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         document.querySelector('.delivery-charges').style.display = 'flex';
                         document.querySelector('.free-delivery-container').style.display = 'none';
 
-                        grandTotalCost = totalCost + gstCost + 30 + 1;
+                        grandTotalCost = totalCost + gstCost + 30 + 1 - 50;
                         grandTotal.textContent = grandTotalCost;
                     }
 
@@ -695,7 +695,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         document.querySelector('.delivery-charges').style.display = 'flex';
                         document.querySelector('.free-delivery-container').style.display = 'none';
 
-                        grandTotalCost = totalCost + gstCost + 30 + 1;
+                        grandTotalCost = totalCost + gstCost + 30 + 1 - 50;
                         grandTotal.textContent = grandTotalCost;
                     }
 
@@ -746,7 +746,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('.delivery-charges').style.display = 'flex';
                     document.querySelector('.free-delivery-container').style.display = 'none';
 
-                    grandTotalCost = totalCost + gstCost + 30 + 1;
+                    grandTotalCost = totalCost + gstCost + 30 + 1 - 50;
                     grandTotal.textContent = grandTotalCost;
                 }
 
@@ -778,7 +778,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('.delivery-charges').style.display = 'flex';
                     document.querySelector('.free-delivery-container').style.display = 'none';
 
-                    grandTotalCost = totalCost + gstCost + 30 + 1;
+                    grandTotalCost = totalCost + gstCost + 30 + 1 - 50;
                     grandTotal.textContent = grandTotalCost;
                 }
 
