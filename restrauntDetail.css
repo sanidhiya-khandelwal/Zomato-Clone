@@ -973,6 +973,56 @@ header {
     z-index: 5;
 }
 
+
+/* notification */
+.notification-section {
+    width: 30%;
+    height: 15vh;
+    position: fixed;
+    bottom: 2rem;
+    z-index: 5;
+    left: 40%;
+    background-color: rgb(99, 231, 231);
+    border-radius: 5px;
+}
+
+.notification-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.notification-message {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#notification {
+    font-weight: 600;
+}
+
+#notificationImg {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.notification-thought {
+    font-size: 0.8rem;
+}
+
+.notification-tooltip {
+    position: absolute;
+    left: 1.5rem;
+    background-color: rgb(99, 231, 231);
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 2.5px;
+    transform: rotate(45deg);
+    ;
+}
+
 /* media query */
 @media all and (width<=1300px) {
     body {
