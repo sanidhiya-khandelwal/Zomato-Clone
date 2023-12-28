@@ -942,7 +942,20 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('#modify-order').textContent = 'Order Placed';
             document.querySelector('#modify-order').style.cursor = 'not-allowed';
             document.querySelector('.cart-order').style.backgroundColor = '#5f4747';
-        }, 4000)//change to 120000
+        }, 5000)//change to 120000
+
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(1)';
+            document.querySelector('#notification').textContent = 'Your order has been accepted by restaurant';
+            document.querySelector('#notificationImg').src = './assets/icons/success-filled.png';
+            document.querySelector('#notificationThought').textContent = '"Trying to lose weight? We deliver meals with \' less calories\'... Less likely to leave you hungry!"';
+        }, 8000)//change to 180000
+
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(0)';
+        }, 15000)//change to 195000
+
+
     })
     // display only veg dishes on click of pure veg box
     var vegDishes = [];

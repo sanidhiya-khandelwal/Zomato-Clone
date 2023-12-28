@@ -984,6 +984,8 @@ header {
     left: 40%;
     background-color: rgb(99, 231, 231);
     border-radius: 5px;
+    transform: scale(0);
+    transition: transform 0.3s ease;
 }
 
 .notification-container {
