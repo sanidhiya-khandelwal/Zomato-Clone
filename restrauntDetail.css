@@ -1475,6 +1475,15 @@ header {
     .restaurant-images-container {
         height: 200px;
     }
+
+    .order-online-heading,
+    .coupons-container {
+        display: none;
+    }
+
+    .order-online-dishes {
+        margin-top: -2rem;
+    }
 }
 
 @media all and (width<=512px) {
