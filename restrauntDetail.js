@@ -944,12 +944,15 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.cart-order').style.backgroundColor = '#5f4747';
         }, 5000)//change to 120000
 
+        //test
+        // document.querySelector('.notification-section').style.transform = 'scale(1)';
+
         //order accepted
         setTimeout(() => {
             document.querySelector('.notification-section').style.transform = 'scale(1)';
             document.querySelector('#notification').textContent = 'Your order has been accepted by restaurant';
             document.querySelector('#notificationImg').src = './assets/icons/success-filled.png';
-            document.querySelector('#notificationThought').textContent = '"Trying to lose weight? We deliver meals with \' less calories\'... Less likely to leave you hungry!"';
+            document.querySelector('#notificationThought').textContent = '"Trying to lose weight? We deliver meals with \' less calories\'... Less likely to leave you hungry! 😉"';
         }, 8000)//change to 180000
 
         setTimeout(() => {
@@ -971,7 +974,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //Delivery person is on the way to pick up your order
         setTimeout(() => {
             document.querySelector('.notification-section').style.transform = 'scale(1)';
-            document.querySelector('#notification').textContent = 'Delivery person is on the way to pick up your order';
+            document.querySelector('#notification').textContent = 'Delivery person is on the way to pick your order';
             document.querySelector('#notificationImg').src = './assets/icons/deliveryBoy.jpg';
             document.querySelector('#notificationThought').textContent = '"Those 30 minutes from the time you order a pizza, to the time it gets to your doorstep. 🙃"';
         }, 35000)//change to 210000
@@ -983,7 +986,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //Delivery person has picked up your order
         setTimeout(() => {
             document.querySelector('.notification-section').style.transform = 'scale(1)';
-            document.querySelector('#notification').textContent = 'Delivery person has picked up your order';
+            document.querySelector('#notification').textContent = 'Your order has been picked up';
             document.querySelector('#notificationImg').src = './assets/icons/order_pick_up.webp';
             document.querySelector('#notificationThought').textContent = '"Zomato is the fastest way to find great places to eat around you. 😜"';
         }, 55000)//change to 210000
@@ -997,7 +1000,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.notification-section').style.transform = 'scale(1)';
             document.querySelector('#notification').textContent = 'Your order is on the way';
             document.querySelector('#notificationImg').src = './assets/icons/deliveryBoy.jpg';
-            document.querySelector('#notificationThought').textContent = '"Trying to lose weight? We deliver meals with \' less calories\'... Less likely to leave you hungry!"';
+            document.querySelector('#notificationThought').textContent = '"Trying to lose weight? We deliver meals with \' less calories\'... Less likely to leave you hungry! 😉"';
         }, 70000)//change to 210000
 
         setTimeout(() => {

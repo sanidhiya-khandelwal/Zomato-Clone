@@ -927,7 +927,6 @@ header {
     position: fixed;
     top: 40%;
     left: 30%;
-    /* border: 2px solid red; */
     width: 25%;
     height: 30vh;
     margin: auto;
@@ -977,12 +976,13 @@ header {
 /* notification */
 .notification-section {
     width: 30%;
-    height: 15vh;
+    height: auto;
     position: fixed;
     bottom: 2rem;
     z-index: 5;
     left: 40%;
-    background-color: rgb(99, 231, 231);
+    background-color: red;
+    color: white;
     border-radius: 5px;
     transform: scale(0);
     transition: transform 0.3s ease;
@@ -1008,6 +1008,7 @@ header {
 #notificationImg {
     width: 1.1rem;
     height: 1.1rem;
+    border-radius: 2px;
 }
 
 .notification-thought {
@@ -1016,13 +1017,13 @@ header {
 
 .notification-tooltip {
     position: absolute;
+    top: -0.5rem;
     left: 1.5rem;
-    background-color: rgb(99, 231, 231);
+    background-color: red;
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 2.5px;
     transform: rotate(45deg);
-    ;
 }
 
 /* media query */
