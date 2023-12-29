@@ -980,6 +980,20 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.notification-section').style.transform = 'scale(0)';
         }, 45000)//change to 22000
 
+        //Delivery person has picked up your order
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(1)';
+            document.querySelector('#notification').textContent = 'Delivery person has picked up your order';
+            document.querySelector('#notificationImg').src = './assets/icons/order_pick_up.webp';
+            document.querySelector('#notificationThought').textContent = '"Zomato is the fastest way to find great places to eat around you. 😜"';
+        }, 55000)//change to 210000
+
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(0)';
+        }, 65000)//change to 22000
+
+
+
 
     })
     // display only veg dishes on click of pure veg box
