@@ -992,7 +992,17 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.notification-section').style.transform = 'scale(0)';
         }, 65000)//change to 22000
 
+        //Your order is on the way 
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(1)';
+            document.querySelector('#notification').textContent = 'Your order is on the way';
+            document.querySelector('#notificationImg').src = './assets/icons/deliveryBoy.jpg';
+            document.querySelector('#notificationThought').textContent = '"Trying to lose weight? We deliver meals with \' less calories\'... Less likely to leave you hungry!"';
+        }, 70000)//change to 210000
 
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(0)';
+        }, 80000)//change to 22000
 
 
     })
