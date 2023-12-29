@@ -961,7 +961,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.notification-section').style.transform = 'scale(1)';
             document.querySelector('#notification').textContent = 'Your order is being prepared';
             document.querySelector('#notificationImg').src = './assets/icons/food-preparing.png';
-            document.querySelector('#notificationThought').textContent = '"When the talk revolves around food, it\'s bound to get funny sooner or later!"';
+            document.querySelector('#notificationThought').textContent = '"When the talk revolves around food, it\'s bound to get funny sooner or later! 😜"';
         }, 20000)//change to 210000
 
         setTimeout(() => {
@@ -1003,6 +1003,18 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => {
             document.querySelector('.notification-section').style.transform = 'scale(0)';
         }, 80000)//change to 22000
+
+        //Delivery person has reached your address 
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(1)';
+            document.querySelector('#notification').textContent = 'Your order has been arrived';
+            document.querySelector('#notificationImg').src = './assets/icons/deliveryBoyReachedHome.jpg';
+            document.querySelector('#notificationThought').textContent = '"When the talk revolves around food, it\'s bound to get funny sooner or later! 😜"';
+        }, 85000)//change to 210000
+
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(0)';
+        }, 95000)//change to 22000
 
 
     })
