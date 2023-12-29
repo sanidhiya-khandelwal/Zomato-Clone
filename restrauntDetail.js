@@ -1016,7 +1016,17 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.notification-section').style.transform = 'scale(0)';
         }, 95000)//change to 22000
 
+        // order delivered successfully
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(1)';
+            document.querySelector('#notification').textContent = 'Order delivered successfully';
+            document.querySelector('#notificationImg').src = './assets/icons/success-filled.png';
+            document.querySelector('#notificationThought').textContent = '"Enjoy your meal 😋"';
+        }, 100000)//change to 210000
 
+        setTimeout(() => {
+            document.querySelector('.notification-section').style.transform = 'scale(0)';
+        }, 110000)//change to 22000
     })
     // display only veg dishes on click of pure veg box
     var vegDishes = [];
