@@ -944,8 +944,6 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.cart-order').style.backgroundColor = '#5f4747';
         }, 5000)//change to 120000
 
-        //test
-        // document.querySelector('.notification-section').style.transform = 'scale(1)';
 
         //order accepted
         setTimeout(() => {

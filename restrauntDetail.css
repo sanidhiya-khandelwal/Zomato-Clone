@@ -950,9 +950,8 @@ header {
 }
 
 .order-placed {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .disclaimer {
