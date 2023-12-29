@@ -1471,7 +1471,17 @@ header {
 }
 
 
-@media all and (width<=600px) {
+@media (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        border: 4px solid black;
+    }
+
     .restaurant-images-container {
         height: 200px;
     }

@@ -922,6 +922,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // place order
     var placeOrderButton = document.querySelector('#place-order');
     placeOrderButton.addEventListener('click', () => {
+        document.querySelector('#order-placed-sound').play();
         placeOrderButton.style.display = 'none';
         document.querySelector('#modify-order').style.display = 'block';
         document.querySelector('.order-placed-section').style.transform = 'scale(1)';
@@ -934,7 +935,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.order-placed-section').style.transform = 'scale(0)';
             document.querySelector('body').style.overflow = 'visible';
             document.querySelector('#overlay').style.display = 'none';
-        }, 4000)
+        }, 2000)
 
         setTimeout(() => {
             document.querySelector('#modify-order').textContent = 'Order Placed';
