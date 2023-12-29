@@ -352,6 +352,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
     // Dislay dishes
     function displayDishes(categoryName, dishes) {
         var onlineDishContainer = document.createElement('div');
@@ -473,8 +474,6 @@ document.addEventListener('DOMContentLoaded', function () {
             dishMadeFrom.classList.add('dish-made-from');
             dishMadeFrom.textContent = dish.foodDescription;
             dishDetails.appendChild(dishMadeFrom);
-
-            // var screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
 
             //all appended
@@ -801,7 +800,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     cartTotal.style.padding = '0';
                 }
             })
-
         })
 
 
@@ -1028,6 +1026,11 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => {
             document.querySelector('.notification-section').style.transform = 'scale(0)';
         }, 110000)//change to 22000
+
+        // clear everything from cart
+        setTimeout(() => {
+            location.reload(true)
+        }, 120000)
     })
     // display only veg dishes on click of pure veg box
     var vegDishes = [];
