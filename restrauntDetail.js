@@ -543,7 +543,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
                 document.querySelector('.close-cart').addEventListener('click', () => {
-                    document.querySelector('.cart-section-container').style.transform = 'translateX(28rem)';
+                    document.querySelector('.cart-section-container').style.transform = 'translateX(45rem)';
                     document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
                 })
 
@@ -703,9 +703,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
 
                     if (totalItems === 0) {
-                        document.querySelector('.items-added-container').style.transform = 'translateX(28rem)';
+                        document.querySelector('.items-added-container').style.transform = 'translateX(45rem)';
                         document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
-                        document.querySelector('.cart-section-container').style.transform = 'translateX(28rem)';
+                        document.querySelector('.cart-section-container').style.transform = 'translateX(45rem)';
                         document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
                     }
 
@@ -787,9 +787,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
 
                 if (totalItems === 0) {
-                    document.querySelector('.items-added-container').style.transform = 'translateX(28rem)';
+                    document.querySelector('.items-added-container').style.transform = 'translateX(45rem)';
                     document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
-                    document.querySelector('.cart-section-container').style.transform = 'translateX(28rem)';
+                    document.querySelector('.cart-section-container').style.transform = 'translateX(45rem)';
                     document.querySelector('.cart-section-container').style.transition = 'transform 0.5s ease';
                 }
 

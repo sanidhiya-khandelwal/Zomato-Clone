@@ -710,7 +710,7 @@ header {
     font-size: 0.8rem;
     cursor: pointer;
     z-index: 2;
-    transform: translateX(28rem);
+    transform: translateX(45rem);
     transition: transform 0.5s ease-in-out;
 }
 
@@ -744,7 +744,7 @@ header {
     z-index: 4;
     background-color: rgb(255, 236, 236);
     border: 1px solid rgb(224, 186, 186);
-    transform: translateX(28rem);
+    transform: translateX(35rem);
     transition: transform 0.5s ease-in-out;
 }
 
@@ -1479,7 +1479,7 @@ header {
     }
 
     body {
-        border: 4px solid black;
+        width: 129%;
     }
 
     .restaurant-images-container {
