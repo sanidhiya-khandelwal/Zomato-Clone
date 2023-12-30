@@ -1324,6 +1324,7 @@ a {
 
 @media all and (width<=500px) {
 
+
     body,
     header,
     .dish-sm,
@@ -1332,6 +1333,7 @@ a {
     footer,
     .filters {
         width: 28.5rem;
+        /* width: 100%; */
     }
 
 
