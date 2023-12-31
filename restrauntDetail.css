@@ -1484,6 +1484,10 @@ header {
         display: none;
     }
 
+    .bread-crumb {
+        margin-top: 1rem;
+    }
+
     .restaurant-images-container {
         height: 200px;
     }
