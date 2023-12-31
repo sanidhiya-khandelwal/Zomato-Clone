@@ -1204,6 +1204,7 @@ a {
     /* footer disclaimer */
 
     .footer-disclaimer-sm {
+        box-sizing: border-box;
         position: fixed;
         bottom: 0px;
         z-index: 2;
@@ -1320,22 +1321,24 @@ a {
     .filters {
         margin-left: -5rem;
     }
+
+    .detect-current-location {
+        display: none;
+    }
 }
 
 @media all and (width<=500px) {
 
-
     body,
     header,
     .dish-sm,
-    .footer-disclaimer-sm,
-    .footer-disclaimer-sm-container,
-    footer,
     .filters {
-        width: 28.5rem;
-        /* width: 100%; */
+        width: 100%;
     }
 
+    .dish-sm {
+        display: none;
+    }
 
     .filters {
         margin-left: 0rem;
