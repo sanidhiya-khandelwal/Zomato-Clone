@@ -1466,9 +1466,6 @@ header {
         right: 0rem;
     }
 
-
-
-
 }
 
 
@@ -1480,7 +1477,11 @@ header {
     }
 
     body {
-        width: 129%;
+        width: 100%;
+    }
+
+    .detect-current-location {
+        display: none;
     }
 
     .restaurant-images-container {
