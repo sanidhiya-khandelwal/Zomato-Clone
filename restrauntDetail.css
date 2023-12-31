@@ -1184,6 +1184,11 @@ header {
         height: 42vh;
     }
 
+    /* notification */
+    .notification-section {
+        width: 35%;
+        left: 25rem;
+    }
 }
 
 @media all and (width<=1100px) {
@@ -1194,6 +1199,12 @@ header {
         left: 35%;
         width: 30%;
         height: 35vh;
+    }
+
+    /* notification */
+    .notification-section {
+        width: 40%;
+        left: 20rem;
     }
 }
 
@@ -1493,6 +1504,22 @@ header {
         height: 35vh;
     }
 
+    /* notification */
+    .notification-section {
+        width: 50%;
+        left: 12.5rem;
+        bottom: 5.9rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    /* notification */
+    .notification-section {
+        width: 60%;
+        left: 8.5rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1532,6 +1559,12 @@ header {
         left: 22%;
         width: 50%;
     }
+
+    /* notification */
+    .notification-section {
+        width: 80%;
+        left: 3.5rem;
+    }
 }
 
 @media all and (width<=512px) {
@@ -1552,6 +1585,12 @@ header {
         left: 18%;
         width: 60%;
         height: 35vh;
+    }
+
+    /* notification */
+    .notification-section {
+        width: 80%;
+        left: 1.8rem;
     }
 }
 
@@ -1625,5 +1664,11 @@ header {
         top: 30%;
         left: 16%;
         width: 70%;
+    }
+
+    /* notification */
+    .notification-section {
+        width: 90%;
+        left: 1.5rem;
     }
 }

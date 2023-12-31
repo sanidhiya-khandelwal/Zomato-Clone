@@ -917,6 +917,10 @@ document.addEventListener('DOMContentLoaded', function () {
         // }
 
     }
+    document.querySelector('.notification-section').style.transform = 'scale(1)';
+    document.querySelector('#notification').textContent = 'Your order has been accepted by restaurant';
+    document.querySelector('#notificationImg').src = './assets/icons/success-filled.png';
+    document.querySelector('#notificationThought').textContent = '"Trying to lose weight? We deliver meals with \' less calories\'... Less likely to leave you hungry! 😉"';
 
     // place order
     var placeOrderButton = document.querySelector('#place-order');
