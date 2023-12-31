@@ -1434,7 +1434,7 @@ header {
     .order-online-options-smallScreen {
         margin-left: -2rem;
         width: 100%;
-        height: 2.5rem;
+        height: 2.7rem;
         display: flex;
         align-items: center;
         gap: 1rem;
@@ -1448,7 +1448,7 @@ header {
     }
 
     .cuisine-name-small-screen {
-        padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+        padding: 0.5rem;
         height: 85%;
         white-space: nowrap;
     }
