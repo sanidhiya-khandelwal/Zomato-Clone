@@ -1176,6 +1176,25 @@ header {
         padding: 0px 2rem;
     }
 
+
+    /* order placed */
+    .order-placed-section {
+        left: 30%;
+        width: 30%;
+        height: 42vh;
+    }
+
+}
+
+@media all and (width<=1100px) {
+
+    /* order placed */
+    .order-placed-section {
+        top: 35%;
+        left: 35%;
+        width: 30%;
+        height: 35vh;
+    }
 }
 
 @media all and (width<=900px) {
@@ -1466,8 +1485,15 @@ header {
         right: 0rem;
     }
 
-}
+    /* order placed */
+    .order-placed-section {
+        top: 30%;
+        left: 28%;
+        width: 40%;
+        height: 35vh;
+    }
 
+}
 
 @media (max-width: 600px) {
     * {
@@ -1500,6 +1526,12 @@ header {
     .order-online-dishes {
         margin-top: -2rem;
     }
+
+    /* order placed */
+    .order-placed-section {
+        left: 22%;
+        width: 50%;
+    }
 }
 
 @media all and (width<=512px) {
@@ -1513,6 +1545,14 @@ header {
         bottom: -0.6rem;
     }
 
+
+    /* order placed */
+    .order-placed-section {
+        top: 30%;
+        left: 18%;
+        width: 60%;
+        height: 35vh;
+    }
 }
 
 @media all and (width<=472px) {
@@ -1578,5 +1618,12 @@ header {
     .total-amount-container {
         padding: 0.3rem 1.9rem;
         width: 100%;
+    }
+
+    /* order placed */
+    .order-placed-section {
+        top: 30%;
+        left: 16%;
+        width: 70%;
     }
 }
