@@ -1360,7 +1360,12 @@ a {
     }
 
     .deliveryRestaurants-Header {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .deliveryRestaurants-Header-city-name {
+        font-size: 1.1rem;
+        font-weight: 600;
     }
 
     .footer-disclaimer-sm {
