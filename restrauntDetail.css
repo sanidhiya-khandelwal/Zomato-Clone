@@ -1547,15 +1547,33 @@ header {
     }
 
     .cart-img img {
-        width: 5rem;
-        height: 5rem;
+        width: 7rem;
+        height: 7rem;
     }
 
     .cart-details-container {
-        width: 15rem;
+        width: 13rem;
         font-size: 0.9rem;
     }
 
+    .cart-dish-name {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .cart-rating-votes {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .cart-rating img {
+        width: 1rem;
+    }
+
+    .cart-dish-cost {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
 
     .total-amount-container {
         padding: 0.3rem 1.9rem;
