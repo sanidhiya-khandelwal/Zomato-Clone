@@ -918,7 +918,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
-    document.querySelector('.order-placed-section').style.transform = 'scale(1)';
     // place order
     var placeOrderButton = document.querySelector('#place-order');
     placeOrderButton.addEventListener('click', () => {
