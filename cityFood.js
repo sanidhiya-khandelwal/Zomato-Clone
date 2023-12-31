@@ -30,10 +30,12 @@ window.addEventListener('scroll', function () {
     var scrollPosition = window.scrollY;
     if (scrollPosition > 150) {
         dishContainer.style.display = 'block';
+        document.querySelector('.filters').style.padding = '1rem 5.3rem';
         deliveryDiningContainerSM.style.display = 'none';
     }
     else {
         dishContainer.style.display = 'none';
+        document.querySelector('.filters').style.padding = '0 6rem';
         deliveryDiningContainerSM.style.display = 'flex';
     }
 })
