@@ -1510,7 +1510,7 @@ header {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: -0.5rem;
+        bottom: -0.6rem;
     }
 
 }
@@ -1523,6 +1523,7 @@ header {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        bottom: 0.8rem;
     }
 
     .items-added-container {
