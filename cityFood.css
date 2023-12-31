@@ -1098,7 +1098,6 @@ a {
         position: relative;
         position: sticky;
         top: 5px;
-        /* display: block; */
         padding: 0.3rem 0.8rem;
         display: none;
         z-index: 2;
@@ -1177,10 +1176,6 @@ a {
 
     .right-header-sm img {
         display: block;
-    }
-
-    .bread-crumb {
-        display: none;
     }
 
     .categories {
@@ -1304,9 +1299,26 @@ a {
 
 @media all and (width<=700px) {
 
-    .filter-container,
-    .deliveryRestaurants-Header {
-        margin-left: 1rem;
+    .bread-crumb {
+        margin-top: 1.2rem;
+        padding: 0 2rem;
+        font-size: 1.1rem;
+    }
+
+    .filters {
+        padding: 0rem 6rem;
+        margin-top: 0.8rem;
+    }
+
+
+    .detect-current-location {
+        display: none;
+    }
+
+    .filter-box,
+    .rating-box,
+    .pure-veg-box {
+        height: 2rem;
     }
 
     .deliveryRestaurants-container {
@@ -1318,21 +1330,14 @@ a {
         width: 100%;
     }
 
-    .filters {
-        margin-left: -5rem;
-    }
-
-    .detect-current-location {
-        display: none;
-    }
 }
 
 @media all and (width<=500px) {
 
+
     body,
     header,
-    .dish-sm,
-    .filters {
+    .dish-sm {
         width: 100%;
     }
 
@@ -1341,8 +1346,8 @@ a {
     }
 
     .filters {
-        margin-left: 0rem;
-        margin-right: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0rem;
     }
 
 
@@ -1355,7 +1360,7 @@ a {
     }
 
     .deliveryRestaurants-Header {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
     }
 
     .footer-disclaimer-sm {
