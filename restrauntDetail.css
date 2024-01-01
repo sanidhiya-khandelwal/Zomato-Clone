@@ -424,7 +424,7 @@ header {
 .restaurant-options {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 66%;
 }
 
 .restaurant-options p {
