@@ -494,4 +494,9 @@ a {
         padding: 0 10px;
     }
 
+    /* overlay */
+    #overlay p {
+        font-size: 1.5rem;
+    }
+
 }
