@@ -470,12 +470,13 @@ function displayRestaurants(item, idx) {
     //detail of restraunt
     deliveryRestaurantsCard.addEventListener('click', () => {
         localStorage.setItem('selectedRestauraunt', JSON.stringify(item))
-
+        document.querySelector('#overlay').style.display = 'block';
         setTimeout(() => {
+            document.querySelector('#overlay').style.display = 'none';
             let restaurantName = item.restaurantName;
             let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
             window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}&restaurant=${encodeURIComponent(restaurantNameReplace)}`;
-        }, 100);
+        }, 3000);
     }
     )
 

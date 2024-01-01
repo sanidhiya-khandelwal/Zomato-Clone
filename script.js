@@ -28,9 +28,14 @@ function displayCities(item) {
     statesContainer.appendChild(statesRestaurant);
 
     statesRestaurant.addEventListener('click', function () {
+        document.querySelector('#overlay').style.display = 'block';
         var p = cityName.textContent;
         var pReplace = p.replace(' Restaurants', "").toLowerCase();
-        window.location.href = `cityFood.html?city=${encodeURIComponent(pReplace)}`;
+        setTimeout(() => {
+            document.querySelector('#overlay').style.display = 'none';
+            window.location.href = `cityFood.html?city=${encodeURIComponent(pReplace)}`;
+        }, 2000)
+
     })
 }
 
