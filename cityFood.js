@@ -6452,18 +6452,19 @@ diningOutContainerSM.addEventListener('click', () => {
 
 // search functionality fo bg screens
 
+
+
+
 var searchInput = document.querySelector('.search-input');
 var searchDishContainer = document.querySelector('.search-dish-container');
 
-searchInput.addEventListener('input', function () {
-    searchDishContainer.innerHTML = '';
-
+function searchInputFunction(searchInputValue) {
     var searchedRestaurants = deliveryRestaurants.filter((item) =>
-        (item.restaurantName.toLowerCase().includes(searchInput.value.toLowerCase()) ||
-            item.cuisine.toLowerCase().includes(searchInput.value.toLowerCase())) &&
-        searchInput.value.length > 0)
+        (item.restaurantName.toLowerCase().includes(searchInputValue.toLowerCase()) ||
+            item.cuisine.toLowerCase().includes(searchInputValue.toLowerCase())) &&
+        searchInputValue.length > 0)
 
-    if (searchedRestaurants.length == 0 && searchInput.value.length != 0) {
+    if (searchedRestaurants.length == 0 && searchInputValue.length != 0) {
         searchDishContainer.style.display = 'block';
         searchDishContainer.style.overflowY = 'hidden'
         searchDishContainer.style.color = 'rgb(156, 156, 156)';
@@ -6480,10 +6481,19 @@ searchInput.addEventListener('input', function () {
             displayRestaurantOnSearch(item, idx);
         });
 
-        if (searchInput.value.length === 0) {
+        if (searchInputValue.length === 0) {
             searchDishContainer.style.display = 'none';
         }
     }
+}
+
+
+
+searchInput.addEventListener('input', function () {
+    searchDishContainer.innerHTML = '';
+    let searchInputValue = searchInput.value;
+    searchInputFunction(searchInputValue)
+
 });
 
 
@@ -6561,7 +6571,60 @@ function displayRestaurantOnSearch(item, idx) {
     )
 }
 
+// voice search
+let microphoneContainer = document.querySelector('.microphone-container');
+let recognition;
 
+microphoneContainer.addEventListener('click', function () {
+    microphoneContainer.style.backgroundColor = 'red';
+    microphoneContainer.style.transform = 'scale(1.5)';
+    microphoneContainer.style.transition = 'transform 0.1s ease-in-out';
+
+    if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+        recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        recognition.lang = 'en-US';
+        let timeoutId;
+
+        //Handle the result event
+        recognition.onresult = function (event) {
+            const transcript = event.results[0][0].transcript;
+            let voiceInputValue = document.querySelector('.search-input').value = transcript;
+            searchInputFunction(voiceInputValue)
+            restartRecognition();
+        }
+
+        //Handle error event
+        recognition.onerror = function (event) {
+            console.error('Speech recognition error', event.error);
+            restartRecognition();
+        }
+        //Start recognition
+        recognition.start();
+        document.querySelector('.search-input').value = 'Listening...';
+
+        // Set a timeout to disable the mic if no input is received in 7 seconds
+        timeoutId = setTimeout(function () {
+            recognition.stop();
+            microphoneContainer.style.backgroundColor = 'white';
+            microphoneContainer.style.transform = 'scale(1)';
+            microphoneContainer.style.transition = 'transform 0.1s ease-in-out';
+            document.querySelector('.search-input').value = '';
+        }, 7000)
+
+        function restartRecognition() {
+            clearTimeout(timeoutId);
+            microphoneContainer.style.backgroundColor = 'white';
+            microphoneContainer.style.transform = 'scale(1)';
+            microphoneContainer.style.transition = 'transform 0.1s ease-in-out';
+            recognition.stop();
+        }
+
+    } else {
+        microphoneContainer.style.backgroundColor = 'grey';
+        microphoneContainer.style.transform = 'scale(1)';
+        microphoneContainer.style.transition = 'transform 0.3s ease-in-out';
+    }
+})
 
 
 // search functionality fo sm,md screens
