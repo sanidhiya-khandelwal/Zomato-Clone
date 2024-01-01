@@ -95,12 +95,13 @@ header {
     padding: 0.25rem 0;
     padding-right: 8rem;
     display: flex;
+    align-items: center;
     gap: 1rem;
-    ;
 }
 
 .dish-container img {
-    width: 25px;
+    width: 1.6rem;
+    height: 1.6rem;
 }
 
 .dish-container input {
@@ -118,7 +119,6 @@ header {
     font-size: 0.9rem;
 }
 
-
 .search-dish-container,
 .search-dish-container-sm {
     border-radius: 5px;
@@ -135,6 +135,21 @@ header {
     box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
     transition: opacity 0.25s ease 0s, top 0.25s ease 0s;
     display: none;
+}
+
+/* microphone */
+.microphone-container {
+    border: 1px solid white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+#microphone {
+    width: 80%;
+    height: 80%;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
 }
 
 .search-dish-container-sm {
