@@ -53,26 +53,29 @@ document.addEventListener('DOMContentLoaded', function () {
     restaurantPageTitle.textContent += restaurantName + ', ' + capitalizedCity;
 
     // HIDE DIRECTION SHARE BOOKMARK CONTAINER
-    window.addEventListener('scroll', function () {
-        var directionBookmarkShareContainer = document.querySelector('.direction-bookmark-share-container');
-        // var deliveryDiningContainerSM = document.querySelector('.delivery-dining-container-sm');
-        var scrollPosition = window.scrollY;
-        if (scrollPosition >= 800) {
-            directionBookmarkShareContainer.style.display = 'none';
-            document.querySelector('.restaurant-options-container').style.transform = 'translateY(-0.3rem)'
-            document.querySelector('.restaurant-options-container').style.transition = 'transform 0.1s ease-in';
-            document.querySelector('.restaurant-options-container').style.margin = '0';
-            document.querySelector('.order-online-options').style.top = '9.6rem';
-        }
-        else {
-            directionBookmarkShareContainer.style.display = 'flex';
-            document.querySelector('.restaurant-options-container').style.transform = 'translateY(-0rem)'
-            document.querySelector('.restaurant-options-container').style.transition = 'transform 0.1s ease'
-            document.querySelector('.restaurant-options-container').style.margin = '0 0';
-            document.querySelector('.order-online-options').style.top = '13.6rem';
-        }
-    })
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
+    if (screenWidth >= 900) {
+        window.addEventListener('scroll', function () {
+            var directionBookmarkShareContainer = document.querySelector('.direction-bookmark-share-container');
+            // var deliveryDiningContainerSM = document.querySelector('.delivery-dining-container-sm');
+            var scrollPosition = window.scrollY;
+            if (scrollPosition >= 800) {
+                directionBookmarkShareContainer.style.display = 'none';
+                document.querySelector('.restaurant-options-container').style.transform = 'translateY(-0.3rem)'
+                document.querySelector('.restaurant-options-container').style.transition = 'transform 0.1s ease-in';
+                document.querySelector('.restaurant-options-container').style.margin = '0';
+                document.querySelector('.order-online-options').style.top = '9.6rem';
+            }
+            else {
+                directionBookmarkShareContainer.style.display = 'flex';
+                document.querySelector('.restaurant-options-container').style.transform = 'translateY(-0rem)'
+                document.querySelector('.restaurant-options-container').style.transition = 'transform 0.1s ease'
+                document.querySelector('.restaurant-options-container').style.margin = '0 0';
+                document.querySelector('.order-online-options').style.top = '13.6rem';
+            }
+        })
+    }
 
     // makes search container visible on scroll in small screens
     window.addEventListener('scroll', function () {
