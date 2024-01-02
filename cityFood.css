@@ -1342,6 +1342,8 @@ a {
 
 }
 
+/* media query */
+
 @media all and (width<=850px) {
     .deliveryRestaurants-card {
         width: 45%;
@@ -1349,6 +1351,11 @@ a {
 }
 
 @media all and (width<=700px) {
+
+    .dish-container input,
+    .search-locality {
+        display: none;
+    }
 
     .bread-crumb {
         margin-top: 1.2rem;
