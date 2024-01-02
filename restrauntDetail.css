@@ -1184,6 +1184,7 @@ header {
         margin-top: 1rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+
     }
 
     .search-locality,
@@ -1578,6 +1579,10 @@ header {
 }
 
 @media all and (width<=512px) {
+    .zomato-logo {
+        width: 10rem;
+        height: 2rem;
+    }
 
     .add-button,
     .add-remove-button {
