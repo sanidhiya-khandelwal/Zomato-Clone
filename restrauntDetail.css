@@ -1167,6 +1167,103 @@ header {
 
 
 @media all and (width<=900px) {
+
+    /* header */
+    body {
+        width: 100%;
+    }
+
+    /* header */
+    header {
+        position: fixed;
+        top: -1rem;
+        width: 100%;
+        padding: 0 1rem;
+        z-index: 1;
+        background-color: white;
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .search-locality,
+    .right-header {
+        display: none;
+    }
+
+    .right-header-sm,
+    .right-header-sm img {
+        display: flex;
+    }
+
+    .right-header-sm img {
+        width: 2rem;
+    }
+
+    .sm-app p {
+        display: none;
+    }
+
+    /* bread crumb */
+
+    .bread-crumb {
+        padding: 0 1rem;
+        margin-top: -2rem;
+        /* margin-top: 1rem; */
+    }
+
+    /* hotel detail */
+    .hotel-detail {
+        position: sticky;
+        top: 3.2rem;
+        margin-top: 6.5rem;
+        padding: 0 1rem;
+    }
+
+    .hotel-detail-container {
+        padding-top: 0rem;
+    }
+
+    /* restaurant image */
+    .restaurant-images {
+        padding: 0 1rem;
+        margin-top: 2.5rem;
+    }
+
+    /* reviews container*/
+
+    .review-container {
+        display: none;
+        margin: 0.5rem 0;
+    }
+
+    /* direction bookmark share container */
+    .direction-bookmark-share-container {
+        display: none;
+    }
+
+    /* order online */
+    .order-online-heading {
+        display: none;
+    }
+
+    /* restaurant options section */
+    .restaurant-options-section {
+        padding: 0 1rem;
+        margin-top: 3.2rem;
+    }
+
+    .order-online-search-container,
+    .track-order,
+    .coupons-container,
+    .hungry-coupon,
+    .walletonzom-coupon,
+    .crednew-coupon {
+        display: none;
+    }
+
+
+
     .order-online-options {
         position: static;
     }
@@ -1177,10 +1274,6 @@ header {
         margin-top: -6rem;
     }
 
-    .review-container {
-        display: none;
-        margin-top: 2rem;
-    }
 
     .restaurant-images-container {
         display: flex;
@@ -1254,12 +1347,6 @@ header {
         width: auto;
     }
 
-    .direction-container,
-    .bookmark-container,
-    .share-container {
-        width: 7rem;
-    }
-
     .more-info-link {
         display: flex;
     }
@@ -1276,42 +1363,8 @@ header {
         padding: 0.5rem 1rem;
     }
 
-    .order-online-heading {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .order-online-heading h3 {
-        font-size: 1.5rem;
-    }
-
-    .order-online-search-container {
-        margin-bottom: 1rem;
-        height: 2.5rem;
-    }
-
-    .track-order {
-        display: none;
-    }
-
-    .coupons-container {
-        flex-direction: column;
-        width: 60%;
-        margin: auto;
-    }
-
-    .hungry-coupon,
-    .walletonzom-coupon,
-    .crednew-coupon {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .veg-only-container {
-        margin-top: 1rem;
+        margin-top: 0rem;
 
     }
 
@@ -1325,10 +1378,7 @@ header {
         cursor: pointer;
         font-size: 1.2rem;
     }
-}
 
-
-@media all and (width<=900px) {
     .order-online-dishes {
         padding: 0rem;
     }
@@ -1418,7 +1468,7 @@ header {
     }
 
     .order-online-options-smallScreen {
-        margin-left: -2rem;
+        margin-left: -1rem;
         width: 100%;
         height: 2.7rem;
         display: flex;
@@ -1494,7 +1544,11 @@ header {
     }
 
     .bread-crumb {
-        margin-top: 1rem;
+        margin-top: 3.5rem;
+    }
+
+    .veg-only-container {
+        margin-top: 2rem;
     }
 
     .restaurant-images-container {
