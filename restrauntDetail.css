@@ -346,6 +346,7 @@ header {
     margin-top: 4px;
     color: rgb(156, 156, 156);
     font-weight: 100;
+    margin-left: -0.5rem;
 }
 
 .timings {
