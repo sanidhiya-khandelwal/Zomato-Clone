@@ -1183,8 +1183,8 @@ header {
         background-color: white;
         margin-top: 1rem;
         padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-
+        padding-bottom: 0.6rem;
+        border-bottom: 2px solid rgb(226, 226, 226);
     }
 
     .search-locality,
@@ -1311,6 +1311,7 @@ header {
         font-size: 1.2rem;
         font-weight: 600;
         margin-bottom: 0.2rem;
+        margin-top: 0.5rem;
     }
 
     .review-container {
@@ -1545,7 +1546,7 @@ header {
     }
 
     .bread-crumb {
-        margin-top: 3.5rem;
+        margin-top: 3.8rem;
     }
 
     .veg-only-container {
