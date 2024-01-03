@@ -323,8 +323,8 @@ header {
     display: flex;
     align-items: center;
     height: 100px;
-    width: 18%;
-    padding-left: 25px;
+    width: auto;
+    padding: 0 25px;
     gap: 15px;
     margin-bottom: -3rem;
     cursor: pointer;
@@ -1114,8 +1114,24 @@ a {
 
 
 /* media query */
-@media all and (width<=1350px) {}
+@media all and (width<=1335px) {
+    .down-arrow {
+        display: none;
+    }
 
+    .dish-container img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .microphone-container {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-left: 0rem;
+    }
+}
+
+@media all and (width<=1140px) {}
 
 @media all and (width<=900px) {
     .down-arrow {
