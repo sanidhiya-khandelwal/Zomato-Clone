@@ -42,7 +42,7 @@ header {
 .search-locality {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    /* gap: 1rem; */
     height: 50px;
     width: 75%;
     border: 1px solid transparent;
@@ -55,6 +55,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 60%;
+    padding: 0 1rem;
 }
 
 .location-container {
@@ -69,6 +70,7 @@ header {
 
 .down-arrow img {
     width: 15px;
+    margin-top: 0.2rem;
     cursor: pointer;
     transition: transform 0.1s ease;
 }
@@ -89,11 +91,12 @@ header {
     display: flex;
     flex-direction: column;
     position: relative;
+    padding: 0 1rem;
 }
 
 .dish-container {
     padding: 0.25rem 0;
-    padding-right: 8rem;
+    padding-right: 0rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -150,6 +153,7 @@ header {
     border: 1px solid black;
     width: 2rem;
     height: 2rem;
+    margin-left: 5rem;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -1106,7 +1110,14 @@ a {
 
 
 /* media query */
-@media all and (width<=1300px) {
+@media all and (width<=900px) {
+    .down-arrow {
+        display: none;
+    }
+}
+
+
+@media all and (width<=900px) {
     body {
         width: 100%;
     }
