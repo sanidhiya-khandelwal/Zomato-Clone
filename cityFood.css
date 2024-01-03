@@ -1131,7 +1131,15 @@ a {
     }
 }
 
-@media all and (width<=1140px) {}
+@media all and (width<=1140px) {
+    .left-header {
+        width: 84%;
+    }
+
+    .location {
+        width: 25%;
+    }
+}
 
 @media all and (width<=900px) {
     .down-arrow {
