@@ -140,6 +140,10 @@ header {
     display: none;
 }
 
+.search-dish-container {
+    width: 94%;
+}
+
 /* Listening container */
 .listening-container {
     display: flex;
@@ -1110,6 +1114,9 @@ a {
 
 
 /* media query */
+@media all and (width<=1350px) {}
+
+
 @media all and (width<=900px) {
     .down-arrow {
         display: none;
