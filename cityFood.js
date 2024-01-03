@@ -39,6 +39,25 @@ window.addEventListener('scroll', function () {
     }
 })
 
+var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+
+if (screenWidth <= 600) {
+    var dishContainer = document.querySelector('.dish-sm');
+    var deliveryDiningContainerSM = document.querySelector('.delivery-dining-container-sm')
+    var scrollPosition = window.scrollY;
+    if (scrollPosition > 150) {
+        dishContainer.style.display = 'block';
+        document.querySelector('.filters').style.padding = '0rem 5.3rem 0.5rem 0.3rem';
+        document.querySelector('.filters').style.top = '2.7rem';
+        deliveryDiningContainerSM.style.display = 'none';
+    }
+    else {
+        dishContainer.style.display = 'none';
+        document.querySelector('.filters').style.padding = '0.8rem 6rem';
+        document.querySelector('.filters').style.top = '2.7rem';
+        deliveryDiningContainerSM.style.display = 'flex';
+    }
+}
 
 
 // location code

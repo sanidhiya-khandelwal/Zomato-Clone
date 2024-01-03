@@ -1508,8 +1508,9 @@ a {
     }
 
     .filters {
-        margin-left: 0.5rem;
+        margin-left: 0.4rem;
         margin-right: 0rem;
+        margin-top: 0rem;
     }
 
 
@@ -1523,6 +1524,7 @@ a {
 
     .deliveryRestaurants-Header {
         font-size: 1.1rem;
+        margin-top: -7.5rem;
     }
 
     .deliveryRestaurants-Header-city-name {
