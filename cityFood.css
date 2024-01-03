@@ -1234,6 +1234,38 @@ a {
         box-shadow: rgba(28, 28, 28, 0.06) 0px 1px 4px;
     }
 
+    /* Listening container */
+    .listening-container-sm {
+        display: flex;
+        gap: 0.3rem;
+        display: none;
+    }
+
+
+    /* microphone */
+    .microphone-container-sm {
+        border: 1px solid black;
+        width: 2.4rem;
+        height: 2.2rem;
+        margin-right: 3rem;
+        border-radius: 50%;
+        cursor: pointer;
+
+    }
+
+    #microphone-sm {
+        width: 80%;
+        height: 80%;
+        margin-left: 0.25rem;
+        margin-top: 0.25rem;
+    }
+
+    .microphone-preloader-sm {
+        display: none;
+    }
+
+    /*  */
+
     .down-arrow {
         display: none;
     }
@@ -1494,6 +1526,19 @@ a {
 
 }
 
+@media all and (width<=600px) {
+
+    /* microphone */
+    .microphone-container-sm {
+        width: 2.6em;
+        height: 2.2rem;
+        margin-right: 1rem;
+    }
+
+}
+
+
+
 @media all and (width<=500px) {
 
 
@@ -1505,6 +1550,20 @@ a {
 
     .dish-sm {
         display: none;
+    }
+
+    /* microphone */
+    .microphone-container-sm {
+        width: 2.6em;
+        height: 2.1rem;
+        margin-right: 1rem;
+    }
+
+    #microphone-sm {
+        width: 75%;
+        height: 75%;
+        margin-left: 0.28rem;
+        margin-top: 0.25rem;
     }
 
     .filters {
