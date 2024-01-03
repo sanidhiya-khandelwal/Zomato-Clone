@@ -1141,6 +1141,66 @@ a {
     }
 }
 
+@media all and (width<=1000px) {
+    .left-header {
+        gap: 0.8rem;
+    }
+
+    .zomato-logo {
+        width: 124px;
+        height: 32px;
+    }
+
+    .location-container img {
+        width: 20px;
+        margin-right: -0.5rem;
+    }
+
+    .city-name {
+        font-size: 0.9rem;
+    }
+
+    .dish-container {
+        padding-right: 2rem;
+    }
+
+    .search-locality {
+        height: 38px;
+        width: 80%;
+    }
+
+    .dish-container img {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-left: -1rem;
+    }
+
+    .right-header {
+        display: none;
+    }
+
+    #microphone {
+        width: 66%;
+        height: 65%;
+        margin-left: 0.3rem;
+        margin-top: 0.3rem;
+    }
+
+    .right-header-sm {
+        display: flex;
+    }
+
+    .sm-app {
+        display: none;
+    }
+
+    .right-header-sm img {
+        display: block;
+        width: 2.2rem;
+    }
+}
+
+
 @media all and (width<=900px) {
     .down-arrow {
         display: none;
@@ -1235,8 +1295,6 @@ a {
         width: 25px;
     }
 
-
-
     .search-locality {
         display: none;
     }
@@ -1255,8 +1313,9 @@ a {
     }
 
     .sm-app {
+        display: block;
         background-color: red;
-        height: 2.5rem;
+        height: 2.3rem;
         width: 5rem;
         border-radius: 50px;
         color: white;
@@ -1269,6 +1328,7 @@ a {
 
     .right-header-sm img {
         display: block;
+        width: 2.35rem;
     }
 
     .categories {
