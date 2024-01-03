@@ -1202,20 +1202,13 @@ a {
 
 
 @media all and (width<=900px) {
-    .down-arrow {
-        display: none;
-    }
-}
-
-
-@media all and (width<=900px) {
     body {
         width: 100%;
     }
 
     header {
         margin-top: 0rem;
-        padding: 1.5rem 2rem;
+        padding: 1.5rem 2rem 1rem 2rem;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 6px -6px;
     }
 
@@ -1241,8 +1234,21 @@ a {
         box-shadow: rgba(28, 28, 28, 0.06) 0px 1px 4px;
     }
 
+    .down-arrow {
+        display: none;
+    }
+
+    .bread-crumb {
+        display: flex;
+        margin-top: -5rem;
+        padding: 0px 2rem;
+    }
+
     .filters {
-        top: 80px;
+        top: 6.7rem;
+        margin-top: -8rem;
+        margin-bottom: 7.5rem;
+        margin-left: -4rem;
     }
 
     .dish-sm {
@@ -1335,18 +1341,14 @@ a {
         display: none;
     }
 
-    .filters {
-        margin-top: -5rem;
-        margin-left: -4rem;
-    }
-
     .deliveryRestaurants {
         padding: 0 5rem;
-        margin: -1rem 0 0 -3rem;
+        margin: 0 0 0 -3rem;
     }
 
     .deliveryRestaurants-Header {
         font-size: 1.5rem;
+        margin-top: 2.3rem;
     }
 
     /* footer disclaimer */

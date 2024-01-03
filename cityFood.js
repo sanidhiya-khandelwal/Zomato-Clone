@@ -20,9 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 
-
-
-
 // makes search container visible on scroll in small screens
 window.addEventListener('scroll', function () {
     var dishContainer = document.querySelector('.dish-sm');
@@ -31,11 +28,13 @@ window.addEventListener('scroll', function () {
     if (scrollPosition > 150) {
         dishContainer.style.display = 'block';
         document.querySelector('.filters').style.padding = '1.8rem 5.3rem';
+        document.querySelector('.filters').style.top = '4.7rem';
         deliveryDiningContainerSM.style.display = 'none';
     }
     else {
         dishContainer.style.display = 'none';
         document.querySelector('.filters').style.padding = '1.8rem 6rem';
+        document.querySelector('.filters').style.top = '6.7rem';
         deliveryDiningContainerSM.style.display = 'flex';
     }
 })
