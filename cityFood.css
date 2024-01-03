@@ -144,6 +144,10 @@ header {
     width: 94%;
 }
 
+.search-dish-container-sm {
+    top: 2.6rem;
+}
+
 /* Listening container */
 .listening-container {
     display: flex;

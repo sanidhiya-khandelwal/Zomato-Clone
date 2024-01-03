@@ -6589,7 +6589,7 @@ function displayRestaurantOnSearch(item, idx) {
     )
 }
 
-// voice search
+// voice search for bg screens
 let microphoneContainer = document.querySelector('.microphone-container');
 let recognition;
 
@@ -6645,22 +6645,71 @@ microphoneContainer.addEventListener('click', function () {
 })
 
 
-// search functionality fo sm,md screens
 
-var searchInputSM = document.querySelector('.search-input-sm');
-var searchDishContainerSM = document.querySelector('.search-dish-container-sm');
-var filtersSM = document.querySelector('.filters');
-var body = document.querySelector('body');
+// voice search for sm,md screens
+let microphoneContainerSM = document.querySelector('.microphone-container-sm');
+let recognitionSM;
 
-searchInputSM.addEventListener('input', function () {
+microphoneContainerSM.addEventListener('click', function () {
+    microphoneContainerSM.style.backgroundColor = 'red';
+    microphoneContainerSM.style.transform = 'scale(1.5)';
+    microphoneContainerSM.style.transition = 'transform 0.1s ease-in-out';
+
+    if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+        recognitionSM = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        recognitionSM.lang = 'en-US';
+        let timeoutIdSM;
+
+        //Handle the result event
+        recognitionSM.onresult = function (event) {
+            const transcriptSM = event.results[0][0].transcript;
+            let voiceInputValueSM = document.querySelector('.search-input-sm').value = transcriptSM;
+            searchInputFunctionSM(voiceInputValueSM)
+            restartRecognitionSM();
+        }
+
+        //Handle error event
+        recognitionSM.onerror = function (event) {
+            console.error('Speech recognition error', event.error);
+            restartRecognitionSM();
+        }
+        //Start recognition
+        recognitionSM.start();
+        document.querySelector('.search-input-sm').value = 'Listening...';
+
+        // Set a timeout to disable the mic if no input is received in 7 seconds
+        timeoutIdSM = setTimeout(function () {
+            recognitionSM.stop();
+            microphoneContainerSM.style.backgroundColor = 'white';
+            microphoneContainerSM.style.transform = 'scale(1)';
+            microphoneContainerSM.style.transition = 'transform 0.1s ease-in-out';
+            document.querySelector('.search-input-sm').value = '';
+        }, 5000)
+
+        function restartRecognitionSM() {
+            clearTimeout(timeoutIdSM);
+            microphoneContainerSM.style.backgroundColor = 'white';
+            microphoneContainerSM.style.transform = 'scale(1)';
+            microphoneContainerSM.style.transition = 'transform 0.1s ease-in-out';
+            recognitionSM.stop();
+        }
+
+    } else {
+        microphoneContainerSM.style.backgroundColor = 'grey';
+        microphoneContainerSM.style.transform = 'scale(1)';
+        microphoneContainerSM.style.transition = 'transform 0.3s ease-in-out';
+    }
+})
+
+function searchInputFunctionSM(searchInputValueSM) {
     searchDishContainerSM.innerHTML = '';
 
     var searchedRestaurantsSM = deliveryRestaurants.filter((item) =>
-        (item.restaurantName.toLowerCase().includes(searchInputSM.value.toLowerCase()) ||
-            item.cuisine.toLowerCase().includes(searchInputSM.value.toLowerCase())) &&
-        searchInputSM.value.length > 0)
+        (item.restaurantName.toLowerCase().includes(searchInputValueSM.toLowerCase()) ||
+            item.cuisine.toLowerCase().includes(searchInputValueSM.toLowerCase())) &&
+        searchInputValueSM.length > 0)
 
-    if (searchedRestaurantsSM.length == 0 && searchInputSM.value.length != 0) {
+    if (searchedRestaurantsSM.length == 0 && searchInputValueSM.length != 0) {
         filtersSM.style.display = 'none';
         searchDishContainerSM.style.display = 'block';
         searchDishContainerSM.style.overflowX = 'hidden'
@@ -6692,6 +6741,18 @@ searchInputSM.addEventListener('input', function () {
             body.style.overflow = 'auto';
         }
     }
+}
+
+
+// search functionality fo sm,md screens
+
+var searchInputSM = document.querySelector('.search-input-sm');
+var searchDishContainerSM = document.querySelector('.search-dish-container-sm');
+var filtersSM = document.querySelector('.filters');
+var body = document.querySelector('body');
+
+searchInputSM.addEventListener('input', function () {
+    searchInputFunctionSM(searchInputSM.value)
 });
 
 
