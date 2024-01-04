@@ -390,6 +390,10 @@ header {
     padding: 0.8rem;
 }
 
+.filter-box {
+    cursor: default;
+}
+
 .filter-box img {
     width: 25px;
 }
