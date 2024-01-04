@@ -139,21 +139,21 @@ nightLife.addEventListener('click', function () {
 })
 
 // filter box
-var body = document.querySelector('body');
-var filters = document.querySelector('.filters')
-var filterBox = document.querySelector('.filter-box');
-var allFilters = document.querySelector('.all-filters');
-filterBox.addEventListener('click', function () {
-    allFilters.style.display = 'block';
-    body.style.position = 'fixed';
-})
+// var body = document.querySelector('body');
+// var filters = document.querySelector('.filters')
+// var filterBox = document.querySelector('.filter-box');
+// var allFilters = document.querySelector('.all-filters');
+// filterBox.addEventListener('click', function () {
+//     allFilters.style.display = 'block';
+//     body.style.position = 'fixed';
+// })
 
-var filterCloseButton = document.querySelector('.filter-close-icon');
-filterCloseButton.addEventListener('click', () => {
-    allFilters.style.display = 'none';
-    body.style.background = 'none';
-    body.style.position = 'static';
-})
+// var filterCloseButton = document.querySelector('.filter-close-icon');
+// filterCloseButton.addEventListener('click', () => {
+//     allFilters.style.display = 'none';
+//     body.style.background = 'none';
+//     body.style.position = 'static';
+// })
 
 var sortByType = document.querySelector('.sort-by-type')
 var popularityBox = document.querySelector('.popularity-box');
