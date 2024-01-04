@@ -30,7 +30,6 @@ window.addEventListener('scroll', function () {
     var scrollPosition = window.scrollY;
     if (screenWidth > 900) {
         if (scrollPosition > 150) {
-            console.log('SW ', screenWidth);
             dishContainer.style.display = 'block';
             document.querySelector('.filters').style.padding = '1.8rem 5.3rem';
             // document.querySelector('.filters').style.top = '4.7rem';
@@ -40,6 +39,23 @@ window.addEventListener('scroll', function () {
             dishContainer.style.display = 'none';
             document.querySelector('.filters').style.padding = '1.8rem 6rem';
             // document.querySelector('.filters').style.top = '6.7rem';
+            deliveryDiningContainerSM.style.display = 'flex';
+        }
+    }
+    else if (screenWidth > 600 && screenWidth <= 700) {
+        if (scrollPosition > 150) {
+            console.log('SW ', screenWidth);
+            dishContainer.style.display = 'block';
+            // document.querySelector('.filters').style.padding = '0rem 5.3rem 0.5rem 6rem';
+            document.querySelector('.filters').style.padding = '1.2rem 6rem';
+            document.querySelector('.filters').style.top = '4.6rem';
+            deliveryDiningContainerSM.style.display = 'none';
+        }
+        else {
+            dishContainer.style.display = 'none';
+            document.querySelector('.filters').style.padding = '0.3rem 6rem';
+            document.querySelector('.filters').style.top = '2rem';
+            // document.querySelector('.filters').style.border = '1px solid red';
             deliveryDiningContainerSM.style.display = 'flex';
         }
     }

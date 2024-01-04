@@ -1518,6 +1518,10 @@ a {
         height: 2rem;
     }
 
+    .deliveryRestaurants-Header {
+        margin-top: -6.5rem;
+    }
+
     .deliveryRestaurants-container {
         margin-left: 1.5rem;
         width: 100%;
