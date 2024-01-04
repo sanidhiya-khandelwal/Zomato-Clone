@@ -1508,7 +1508,6 @@ a {
         margin-top: 0.8rem;
     }
 
-
     .detect-current-location {
         display: none;
     }
@@ -1574,6 +1573,7 @@ a {
         margin-left: 0.4rem;
         margin-right: 0rem;
         margin-top: 0rem;
+        padding: 1.5rem 6rem;
     }
 
 
