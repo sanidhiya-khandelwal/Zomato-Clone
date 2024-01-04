@@ -6501,6 +6501,8 @@ var searchInput = document.querySelector('.search-input');
 var searchDishContainer = document.querySelector('.search-dish-container');
 
 function searchInputFunction(searchInputValue) {
+
+    searchDishContainer.innerHTML = '';
     var searchedRestaurants = deliveryRestaurants.filter((item) =>
         (item.restaurantName.toLowerCase().includes(searchInputValue.toLowerCase()) ||
             item.cuisine.toLowerCase().includes(searchInputValue.toLowerCase())) &&
@@ -6644,14 +6646,17 @@ microphoneContainer.addEventListener('click', function () {
         recognition.start();
         document.querySelector('.search-input').value = 'Listening...';
 
-        // Set a timeout to disable the mic if no input is received in 7 seconds
+        // Set a timeout to disable the mic if no input is received in 4 seconds
         timeoutId = setTimeout(function () {
             recognition.stop();
             microphoneContainer.style.backgroundColor = 'white';
             microphoneContainer.style.transform = 'scale(1)';
             microphoneContainer.style.transition = 'transform 0.1s ease-in-out';
-            document.querySelector('.search-input').value = '';
-        }, 7000)
+            document.querySelector('.search-input').value = 'Try again...';
+            setTimeout(function () {
+                document.querySelector('.search-input').value = 'Search for restaurant, cuisine or a dish';
+            }, 4000)
+        }, 4000)
 
         function restartRecognition() {
             clearTimeout(timeoutId);
@@ -6701,14 +6706,17 @@ microphoneContainerSM.addEventListener('click', function () {
         recognitionSM.start();
         document.querySelector('.search-input-sm').value = 'Listening...';
 
-        // Set a timeout to disable the mic if no input is received in 7 seconds
+        // Set a timeout to disable the mic if no input is received in 4 seconds
         timeoutIdSM = setTimeout(function () {
             recognitionSM.stop();
             microphoneContainerSM.style.backgroundColor = 'white';
             microphoneContainerSM.style.transform = 'scale(1)';
             microphoneContainerSM.style.transition = 'transform 0.1s ease-in-out';
-            document.querySelector('.search-input-sm').value = '';
-        }, 5000)
+            document.querySelector('.search-input-sm').value = 'Try again...';
+            setTimeout(function () {
+                document.querySelector('.search-input-sm').value = 'Search for restaurant, cuisine or a dish';
+            }, 4000)
+        }, 4000)
 
         function restartRecognitionSM() {
             clearTimeout(timeoutIdSM);
