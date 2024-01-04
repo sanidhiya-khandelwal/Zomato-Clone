@@ -1145,6 +1145,12 @@ a {
     }
 }
 
+@media all and (width<=1180px) {
+    .dish-container {
+        gap: 0.5rem;
+    }
+}
+
 @media all and (width<=1000px) {
     .left-header {
         gap: 0.8rem;
