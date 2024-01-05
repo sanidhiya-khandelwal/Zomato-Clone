@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     selectedRestauraunt = JSON.parse(localStorage.getItem('selectedRestauraunt'));
-    console.log(selectedRestauraunt);
-
-
 
     //Fetching the City name from URL
     const currentUrl = window.location.href;
@@ -13,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const capitalizedCity = cityValue.charAt(0).toUpperCase() + cityValue.slice(1);
     const restaurantName = restaurantValue.charAt(0).toUpperCase() + restaurantValue.slice(1);
 
-
     //Adding City Name wherever necessary
     var cityName = document.querySelector('.city-name');
     cityName.textContent = capitalizedCity;
@@ -21,14 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
     cityNameInBreadcrumb.textContent = capitalizedCity;
     var restaurantNameInBreadcrumb = document.querySelector('.restaurant-name-in-breadcrumb');
     restaurantNameInBreadcrumb.textContent = restaurantName;
-    // var deliveryRestaurantsHeaderCityName = document.querySelector('.deliveryRestaurants-Header-city-name');
-    // deliveryRestaurantsHeaderCityName.textContent = capitalizedCity;
-
-    // document.addEventListener('DOMContentLoaded', function () {
-    //     var pageTitle = document.querySelector('.pageTitle');
-    //     pageTitle.textContent += capitalizedCity;
-    // })
-
 
     // location code
     var downArrow = document.querySelector('.down-arrow-img');
@@ -45,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
             detectCurrentLocation.style.visibility = 'hidden';
             flag = 0;
         }
-
     })
 
     // page name on dom load
@@ -95,14 +82,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // hide bookmark direction share container
     const hotelDetailContainer = document.querySelector('.hotel-detail');
-
-    // Get the position from the top of the container
-    // const hotelDetailContainerPositionFromTop = hotelDetailContainer.offsetTop;
-    // console.log(hotelDetailContainer.offsetTop);
-    // if (hotelDetailContainerPositionFromTop === 596) {
-    //     document.querySelector('.direction-bookmark-share-container').style.display = 'none';
-    // }
-
 
     // display restaurants images
     const [
@@ -175,7 +154,6 @@ document.addEventListener('DOMContentLoaded', function () {
     cityLocation.textContent = capitalizedCity;
 
     // more info functionlaity
-
     var reviewContainer = document.querySelector('.review-container');
     var timingsContainer = document.querySelector('.timings-container');
     var directionBookmarkShareContainer = document.querySelector('.direction-bookmark-share-container');
@@ -286,9 +264,7 @@ document.addEventListener('DOMContentLoaded', function () {
         orderOnlineOptions.append(cusineNameHTML);
 
         //scroll into view
-
         var screenWidth = window.innerWidth || document.documentElement.clientWidth;
-
         if (screenWidth <= 900) {
             var orderOnlineOptionsId = document.getElementById('order-online-options-id');
             orderOnlineOptionsId.classList.remove('order-online-options');
@@ -297,7 +273,6 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.cuisine-count').remove();
             document.querySelector('.cuisine-name-small-screen').classList.remove('cuisine-name');
         }
-
 
         cusineNameHTML.addEventListener('click', () => {
             var cuisineNames = document.querySelectorAll('.cuisine-name');
@@ -313,7 +288,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     item.style.borderRight = "none";
                     item.style.background = "none";
                 }
-
             })
 
             var cuisineName = document.getElementById(`${value1}1`);
@@ -332,11 +306,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 block: 'center'
             });
         });
-
     })
-
-
-
 
     //pure veg box display
     var vegOnlyContainer = document.querySelector('.veg-only-container');
@@ -346,8 +316,6 @@ document.addEventListener('DOMContentLoaded', function () {
     else {
         vegOnlyContainer.style.display = 'none';
     }
-
-
 
     //display dish details
     var onlineDishes = document.querySelector('.online-dishes');
@@ -544,10 +512,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                 }
 
-
-
-
-
                 totalItems++;
                 totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
                 document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
@@ -630,7 +594,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 cartRatingVotes.appendChild(cartVotes);
                 cartDetails.appendChild(cartRatingVotes);
 
-
                 // cart dish cost
                 var cartDishCost = document.createElement('div');
                 cartDishCost.classList.add('cart-dish-cost');
@@ -690,7 +653,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                     }
 
-
                     totalItems++;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
                 })
@@ -722,7 +684,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                     }
 
-
                     totalItems--;
                     totalItemsCount.textContent = totalItems == 1 ? totalItems + ' item added' : totalItems + ' items added';
 
@@ -740,7 +701,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         cartTotal.style.marginBottom = '0';
                     }
                 })
-
             })
 
             addSign.addEventListener('click', () => {
@@ -772,8 +732,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     grandTotalCost = totalCost + gstCost + 30 + 1 - 50;
                     grandTotal.textContent = parseFloat(grandTotalCost.toFixed(2));
                 }
-
-
 
                 document.querySelector('.items-added-container').style.transform = 'translateX(0rem)';
                 document.querySelector('.items-added-container').style.transition = 'transform 0.5s ease';
@@ -825,121 +783,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             })
         })
-
-
-
-
-        // search functionality fo bg screens
-
-        // var searchInput = document.querySelector('.search-input');
-        // var searchDishContainer = document.querySelector('.search-dish-container');
-
-        // searchInput.addEventListener('input', function () {
-        //     searchDishContainer.innerHTML = '';
-
-        //     var searchedRestaurants = deliveryRestaurants.filter((item) =>
-        //         (item.restaurantName.toLowerCase().includes(searchInput.value.toLowerCase()) ||
-        //             item.cuisine.toLowerCase().includes(searchInput.value.toLowerCase())) &&
-        //         searchInput.value.length > 0)
-
-        //     if (searchedRestaurants.length == 0 && searchInput.value.length != 0) {
-        //         searchDishContainer.style.display = 'block';
-        //         searchDishContainer.style.overflowY = 'hidden'
-        //         searchDishContainer.style.color = 'rgb(156, 156, 156)';
-        //         searchDishContainer.style.padding = '1.3rem 1rem';
-        //         searchDishContainer.innerHTML = 'Oops! <br><p style="font-size:0.8rem; margin-top:0.2rem">We could not understand what you mean,try rephrasing the query.</p>'
-        //         searchDishContainer.style.height = 'auto';
-
-        //     }
-        //     else {
-        //         searchedRestaurants.forEach((item, idx) => {
-        //             searchDishContainer.style.display = 'block';
-        //             searchDishContainer.style.height = '88vh';
-        //             searchDishContainer.style.backgroundColor = 'white';
-        //             displayRestaurantOnSearch(item, idx);
-        //         });
-
-        //         if (searchInput.value.length === 0) {
-        //             searchDishContainer.style.display = 'none';
-        //         }
-        //     }
-        // });
-
-
-        // function displayRestaurantOnSearch(item, idx) {
-        //     var searchDishContainer = document.querySelector('.search-dish-container');
-
-        //     var searchRestaurantContainerImgDetails = document.createElement('div');
-        //     searchRestaurantContainerImgDetails.classList.add('search-restaurant-container-img-details');
-
-        //     var searchRestaurantImg = document.createElement('img');
-        //     searchRestaurantImg.classList.add('search-restaurant-img');
-        //     searchRestaurantImg.src = item.img;
-        //     searchRestaurantContainerImgDetails.appendChild(searchRestaurantImg);
-
-        //     var searchRestaurantContainerDetails = document.createElement('div');
-        //     searchRestaurantContainerDetails.classList.add('search-restaurant-container-details');
-
-        //     //restaurant name
-        //     var searchRestaurantHeading = document.createElement('p');
-        //     searchRestaurantHeading.classList.add('search-restaurant-heading');
-        //     searchRestaurantHeading.textContent = item.restaurantName;
-        //     searchRestaurantContainerDetails.appendChild(searchRestaurantHeading);
-
-        //     // rating
-        //     var searchRestaurantRatingContainer = document.createElement('div');
-        //     searchRestaurantRatingContainer.classList.add('search-restaurant-rating-container');
-
-
-        //     let restaurantRating = document.createElement('b');
-        //     restaurantRating.classList.add('search-restaurant-rating');
-        //     restaurantRating.textContent = item.rating;
-        //     searchRestaurantRatingContainer.appendChild(restaurantRating)
-
-        //     let starIcon = document.createElement('p');
-        //     starIcon.classList.add('search-star-icon')
-        //     starIcon.innerHTML = '&#9734';
-        //     starIcon.style.margin = '0 0 3px 2px';
-        //     searchRestaurantRatingContainer.appendChild(starIcon)
-
-        //     searchRestaurantContainerDetails.appendChild(searchRestaurantRatingContainer);
-
-        //     let searchRestaurantOrderNow = document.createElement('div');
-        //     searchRestaurantOrderNow.classList.add('search-restaurant-order-now');
-        //     let orderNow = document.createElement('p');
-        //     orderNow.classList.add('order-now');
-        //     orderNow.textContent = 'Order Now';
-        //     searchRestaurantOrderNow.appendChild(orderNow);
-
-        //     let redRightArrow = document.createElement('img');
-        //     redRightArrow.src = './assets/icons/red-right-arrow.png';
-        //     redRightArrow.style.width = '1.1rem';
-        //     searchRestaurantOrderNow.appendChild(redRightArrow);
-        //     searchRestaurantContainerDetails.appendChild(searchRestaurantOrderNow);
-
-        //     let searchRestaurantDeliverytime = document.createElement('p');
-        //     searchRestaurantDeliverytime.classList.add('search-restaurant-deliverytime');
-        //     searchRestaurantDeliverytime.textContent = 'Delivery in ' + item.delieveryTime;
-        //     searchRestaurantContainerDetails.appendChild(searchRestaurantDeliverytime);
-
-
-        //     searchRestaurantContainerImgDetails.appendChild(searchRestaurantContainerDetails);
-
-        //     searchDishContainer.appendChild(searchRestaurantContainerImgDetails);
-
-        //     //detail of restraunt
-        //     searchRestaurantContainerImgDetails.addEventListener('click', () => {
-        //         localStorage.setItem('selectedRestauraunt', JSON.stringify(item))
-
-        //         setTimeout(() => {
-        //             let restaurantName = item.restaurantName;
-        //             let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
-        //             window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}&restaurant=${encodeURIComponent(restaurantNameReplace)}`;
-        //         }, 100);
-        //     }
-        //     )
-        // }
-
     }
 
     // place order
@@ -1078,9 +921,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
     })
-
-    // clearing the item from localStorage once it's retrieved
-    // localStorage.removeItem('selectedRestauraunt');
-
 });
 
