@@ -33,8 +33,10 @@ function displayCities(item) {
         var pReplace = p.replace(' Restaurants', "").toLowerCase();
         setTimeout(() => {
             document.querySelector('#overlay').style.display = 'none';
-            window.location.href = `cityFood.html?city=${encodeURIComponent(pReplace)}`;
         }, 2000)
+        setTimeout(() => {
+            window.location.href = `cityFood.html?city=${encodeURIComponent(pReplace)}`;
+        }, 1900)
 
     })
 }
