@@ -515,12 +515,9 @@ function displayRestaurants(item, idx) {
         document.querySelector('#overlay').style.display = 'block';
         setTimeout(() => {
             document.querySelector('#overlay').style.display = 'none';
-            setTimeout('click', () => {
-                let restaurantName = item.restaurantName;
-                let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
-                window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}&restaurant=${encodeURIComponent(restaurantNameReplace)}`;
-            }, 3000)
-
+            let restaurantName = item.restaurantName;
+            let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
+            window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}&restaurant=${encodeURIComponent(restaurantNameReplace)}`;
         }, 3000);
     }
     )
