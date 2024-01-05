@@ -77,13 +77,6 @@ window.addEventListener('scroll', function () {
     }
 })
 
-// var dishContainer = document.querySelector('.dish-sm');
-// var deliveryDiningContainerSM = document.querySelector('.delivery-dining-container-sm')
-// var scrollPosition1 = window.scrollY;
-
-// }
-
-
 // location code
 var downArrow = document.querySelector('.down-arrow-img');
 var detectCurrentLocation = document.querySelector('.detect-current-location')
@@ -6334,7 +6327,6 @@ pureVegFilter.addEventListener('click', () => {
 filterRestaurants();
 
 
-
 // footer code
 var showCountry = document.querySelector('.show-country')
 var countriesDropDown = document.querySelector('.countries-drop-down');
@@ -6496,9 +6488,6 @@ diningOutContainerSM.addEventListener('click', () => {
 
 // search functionality fo bg screens
 
-
-
-
 var searchInput = document.querySelector('.search-input');
 var searchDishContainer = document.querySelector('.search-dish-container');
 
@@ -6532,8 +6521,6 @@ function searchInputFunction(searchInputValue) {
         }
     }
 }
-
-
 
 searchInput.addEventListener('input', function () {
     searchDishContainer.innerHTML = '';
@@ -6674,8 +6661,6 @@ microphoneContainer.addEventListener('click', function () {
         microphoneContainer.style.transition = 'transform 0.3s ease-in-out';
     }
 })
-
-
 
 // voice search for sm,md screens
 let microphoneContainerSM = document.querySelector('.microphone-container-sm');
