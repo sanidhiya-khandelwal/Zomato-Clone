@@ -515,10 +515,12 @@ function displayRestaurants(item, idx) {
         document.querySelector('#overlay').style.display = 'block';
         setTimeout(() => {
             document.querySelector('#overlay').style.display = 'none';
+        }, 3000);
+        setTimeout(() => {
             let restaurantName = item.restaurantName;
             let restaurantNameReplace = restaurantName.replace(' ', "-").toLowerCase();
             window.location.href = `restrauntDetail.html?city=${encodeURIComponent(cityValue)}&restaurant=${encodeURIComponent(restaurantNameReplace)}`;
-        }, 3000);
+        }, 2900);
     }
     )
 
